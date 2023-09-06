@@ -41,7 +41,36 @@ const register = async (req, res) => {
   }
 };
 
-const login = async (req, res) => {};
+const login = async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res
+      .status(400)
+      .json({ msg: "Please provide email and password to login" });
+  }
+
+  const user = await User.findOne({ email });
+
+  if (!user) {
+    return res.status(400).json({ msg: "Invalid credentials" });
+  }
+
+  const isPasswordValid = await user.comparePassword(password);
+
+  if (!isPasswordValid) {
+    return res.status(400).json({ msg: "Invalid credentials" });
+  }
+
+  try {
+    const tokenUser = createTokenUser(user);
+    attachCookiesToResponse({ res, user: tokenUser });
+    res.status(200).json({ user: tokenUser });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ msg: error });
+  }
+};
 
 const logout = async (req, res) => {};
 
