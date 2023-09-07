@@ -85,9 +85,31 @@ const updateProperty = async (req, res) => {
   }
 };
 
+const deleteProperty = async (req, res) => {
+  const userId = req.user.userId;
+  const { id: propertyId } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(propertyId)) {
+    return res.status(400).json({ msg: "Invalid property id" });
+  }
+
+  try {
+    const property = await Property.findOne({ userId, _id: propertyId });
+    if (!property) {
+      return res.status(404).json({ msg: "Property not found" });
+    }
+
+    await property.deleteOne({ _id: propertyId });
+    res.status(200).json({ msg: "Property deleted" });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 module.exports = {
   getProperties,
   addProperty,
   getSingleProperty,
   updateProperty,
+  deleteProperty,
 };
