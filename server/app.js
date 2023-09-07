@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 
 const connectDB = require("./db/connect");
 const authRouter = require("./routes/authRoutes");
+const propertyRouter = require("./routes/propertyRoutes");
 
 const app = express();
 
@@ -16,7 +17,9 @@ app.get("/", (req, res) => {
   console.log(req.signedCookies.token);
   res.send("<h1>HELLO</h1>");
 });
+
 app.use("/api/auth", authRouter);
+app.use("/api/properties", propertyRouter);
 
 const port = process.env.PORT || 3000;
 

@@ -19,3 +19,5 @@ const PropertySchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
+module.exports = mongoose.model("Property", PropertySchema);
