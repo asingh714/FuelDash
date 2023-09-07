@@ -2,10 +2,16 @@ const Property = require("../models/Property");
 
 const getProperties = async (req, res) => {
   const userId = req.user.userId;
-  res.status(200).json({ msg: "getProperties" });
+
+  try {
+    const properties = await Property.find({ userId });
+    res.status(200).json({ properties });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
 };
 
-// 2 restrictions - need userId and need to be subscribed otherwise the max you can add is 3
+
 const addProperty = async (req, res) => {
   const userId = req.user.userId;
   const subscriptionStatus = req.user.subscriptionStatus;
