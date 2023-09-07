@@ -58,8 +58,36 @@ const addProperty = async (req, res) => {
   }
 };
 
+const updateProperty = async (req, res) => {
+  const userId = req.user.userId;
+  const { id: propertyId } = req.params;
+  const { name, address } = req.body;
+
+  if (!name || !address) {
+    return res.status(400).json({ msg: "Please provide name and address" });
+  }
+
+  if (!mongoose.Types.ObjectId.isValid(propertyId)) {
+    return res.status(400).json({ msg: "Invalid property id" });
+  }
+
+  try {
+    const property = await Property.findOne({ userId, _id: propertyId });
+    if (!property) {
+      return res.status(404).json({ msg: "Property not found" });
+    }
+    property.name = name;
+    property.address = address;
+    await property.save();
+    res.status(200).json({ property });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 module.exports = {
   getProperties,
   addProperty,
   getSingleProperty,
+  updateProperty,
 };
