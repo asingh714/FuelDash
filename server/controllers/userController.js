@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const validator = require("validator");
+const { createTokenUser, attachCookiesToResponse } = require("../utils");
 
 const updatePassword = async (req, res) => {
   const userId = req.user.userId;
@@ -72,9 +73,31 @@ const deleteUser = async (req, res) => {
   const userId = req.user.userId;
 
   try {
-    await User.deleteOne({ _id: userId });
-
+    const user = await User.findOne({ _id: userId });
+    await user.remove();
     res.status(200).json({ msg: "User deleted" });
+  } catch {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
+const becomePaidUser = async (req, res) => {
+  const { userId, name, subscriptionStatus } = req.user;
+
+  try {
+    const paidUser = await User.findOneAndUpdate(
+      { _id: userId },
+      { subscriptionStatus: "Paid" },
+      { new: true, runValidators: true }
+    );
+
+    const tokenUser = createTokenUser({
+      _id: userId,
+      name,
+      subscriptionStatus: "Paid",
+    });
+    attachCookiesToResponse({ res, user: tokenUser });
+    res.status(200).json({ user: paidUser });
   } catch {
     return res.status(500).json({ msg: error.message });
   }
@@ -84,4 +107,5 @@ module.exports = {
   updatePassword,
   updateUser,
   deleteUser,
+  becomePaidUser,
 };

@@ -34,6 +34,7 @@ const getSingleProperty = async (req, res) => {
 const addProperty = async (req, res) => {
   const userId = req.user.userId;
   const subscriptionStatus = req.user.subscriptionStatus;
+  console.log("subscriptionStatus", subscriptionStatus);
 
   const { name, address } = req.body;
 
