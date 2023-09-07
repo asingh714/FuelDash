@@ -48,6 +48,70 @@ const DailySalesMetricsSchema = new mongoose.Schema({
   ],
 });
 
+// Total Gallons Sold
+DailySalesMetrics.aggregate([
+  {
+    $match: { propertyId: yourPropertyId, date: yourDate },
+  },
+  {
+    $unwind: "$gasolineSales",
+  },
+  {
+    $group: {
+      _id: "$propertyId",
+      totalGallons: { $sum: "$gasolineSales.gallonsSold" },
+    },
+  },
+]);
 
+// Top 10 Non-Gas Items Sold
+DailySalesMetrics.aggregate([
+  { $match: { propertyId: yourPropertyId } },
+  { $unwind: "$nonGasolineSales" },
+  {
+    $group: {
+      _id: "$nonGasolineSales._id",
+      totalItemsSold: { $sum: "$nonGasolineSales.itemsSold" },
+    },
+  },
+  { $sort: { totalItemsSold: -1 } },
+  { $limit: 10 },
+]);
+
+// Daily Revenue Per Day for the Past 7 Days
+DailySalesMetrics.aggregate([
+  {
+    $match: {
+      propertyId: yourPropertyId,
+      date: { $gte: sevenDaysAgo, $lte: today },
+    },
+  },
+  {
+    $group: {
+      _id: "$date",
+      dailyRevenue: { $sum: "$totalRevenue" },
+    },
+  },
+  { $sort: { _id: 1 } },
+]);
+
+// Total Sold Per Day for the Past 7 Days
+DailySalesMetrics.aggregate([
+  {
+    $match: {
+      propertyId: yourPropertyId,
+      date: { $gte: sevenDaysAgo, $lte: today },
+    },
+  },
+  {
+    $group: {
+      _id: "$date",
+      totalSold: {
+        $sum: { $add: ["$dailyCashPurchases", "$dailyCreditCardPayments"] },
+      },
+    },
+  },
+  { $sort: { _id: 1 } },
+]);
 
 module.exports = mongoose.model("DailySalesMetrics", DailySalesMetricsSchema);
