@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser");
 const connectDB = require("./db/connect");
 const authRouter = require("./routes/authRoutes");
 const propertyRouter = require("./routes/propertyRoutes");
+const userRouter = require("./routes/userRoutes");
 const notFound = require("./middleware/notFound");
 
 const app = express();
@@ -19,6 +20,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/auth", authRouter);
+app.use("/api/user", userRouter);
 app.use("/api/properties", propertyRouter);
 
 app.use(notFound);
