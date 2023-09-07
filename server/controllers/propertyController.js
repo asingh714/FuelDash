@@ -1,4 +1,5 @@
 const Property = require("../models/Property");
+const mongoose = require("mongoose");
 
 const getProperties = async (req, res) => {
   const userId = req.user.userId;
@@ -11,6 +12,24 @@ const getProperties = async (req, res) => {
   }
 };
 
+const getSingleProperty = async (req, res) => {
+  const userId = req.user.userId;
+  const { id: propertyId } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(propertyId)) {
+    return res.status(400).json({ msg: "Invalid property id" });
+  }
+
+  try {
+    const property = await Property.findOne({ userId, _id: propertyId });
+    if (!property) {
+      return res.status(404).json({ msg: "Property not found" });
+    }
+    res.status(200).json({ property });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
 
 const addProperty = async (req, res) => {
   const userId = req.user.userId;
@@ -42,4 +61,5 @@ const addProperty = async (req, res) => {
 module.exports = {
   getProperties,
   addProperty,
+  getSingleProperty,
 };

@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const connectDB = require("./db/connect");
 const authRouter = require("./routes/authRoutes");
 const propertyRouter = require("./routes/propertyRoutes");
-const notFound = require("./middleware/not-found");
+const notFound = require("./middleware/notFound");
 
 const app = express();
 
