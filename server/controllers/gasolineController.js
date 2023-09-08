@@ -35,6 +35,52 @@ const addGasolineProduct = async (req, res) => {
   }
 };
 
+const updateGasolineProduct = async (req, res) => {
+  const { id } = req.params; // Now we use id to find the gasolineProduct
+  const { newBatch, costPerGallon, quantityInGallons, gasType, receivedDate } =
+    req.body;
+
+  try {
+    // Find the GasolineProduct based on _id
+    const gasolineProduct = await GasolineProduct.findById(id);
+
+    if (!gasolineProduct) {
+      return res.status(404).json({
+        msg: `No GasolineProduct found for id ${id}`,
+      });
+    }
+    if (gasType) {
+      gasolineProduct.gasType = gasType;
+    }
+    // If there's a new cost, update it
+    if (costPerGallon) {
+      gasolineProduct.batches[0].costPerGallon = costPerGallon;
+    }
+
+    if (quantityInGallons) {
+      gasolineProduct.batches[0].quantityInGallons = quantityInGallons;
+    }
+
+    if (receivedDate) {
+      gasolineProduct.batches[0].receivedDate = receivedDate;
+    }
+
+    // If there's a new batch, add it
+    if (newBatch) {
+      gasolineProduct.batches.push(newBatch);
+    }
+
+    // Save the updated GasolineProduct document
+    await gasolineProduct.save();
+
+    // Return the updated GasolineProduct
+    res.status(200).json({ gasolineProduct });
+  } catch (error) {
+    console.error("An error occurred:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
 const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
   // Find the GasolineProduct based on propertyId and gasType
   const gasolineProducts = await GasolineProduct.find({
@@ -73,7 +119,7 @@ const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
     }
 
     await gasolineProduct.save();
-    
+
     if (gasolineProduct.batches.length === 0) {
       await GasolineProduct.findByIdAndDelete(gasolineProduct._id);
     }
@@ -91,4 +137,5 @@ module.exports = {
   getGasolineProducts,
   addGasolineProduct,
   updateGasolineBatches,
+  updateGasolineProduct,
 };
