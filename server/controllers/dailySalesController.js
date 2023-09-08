@@ -87,6 +87,22 @@ const updateSingleDailySalesMetrics = async (req, res) => {
   }
 };
 
+const deleteSingleDailySalesMetrics = async (req, res) => {
+  const propertyId = req.params.id;
+  const salesId = req.params.salesId;
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.findOneAndDelete({
+      propertyId,
+      _id: salesId,
+    });
+
+    res.status(200).json({ msg: "deleted" });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const addDailySalesMetrics = async (req, res) => {
   const {
     date,
@@ -139,7 +155,8 @@ const addDailySalesMetrics = async (req, res) => {
 
 module.exports = {
   getAllDailySalesMetrics,
-  addDailySalesMetrics,
   getSingleDailySalesMetrics,
   updateSingleDailySalesMetrics,
+  deleteSingleDailySalesMetrics,
+  addDailySalesMetrics,
 };
