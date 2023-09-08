@@ -81,6 +81,25 @@ const updateGasolineProduct = async (req, res) => {
   }
 };
 
+const deleteGasolineProduct = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const gasolineProduct = await GasolineProduct.findById(id);
+
+    if (!gasolineProduct) {
+      return res.status(404).json({
+        msg: `No GasolineProduct found for id ${id}`,
+      });
+    }
+    const deletedGasolineProduct = await GasolineProduct.findByIdAndDelete(id);
+    res.status(200).json({ deleted: deletedGasolineProduct });
+  } catch (error) {
+    console.error("An error occurred:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
 const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
   // Find the GasolineProduct based on propertyId and gasType
   const gasolineProducts = await GasolineProduct.find({
@@ -137,5 +156,6 @@ module.exports = {
   getGasolineProducts,
   addGasolineProduct,
   updateGasolineBatches,
+  deleteGasolineProduct,
   updateGasolineProduct,
 };
