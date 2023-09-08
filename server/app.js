@@ -8,6 +8,7 @@ const authRouter = require("./routes/authRoutes");
 const propertyRouter = require("./routes/propertyRoutes");
 const userRouter = require("./routes/userRoutes");
 const gasolineRouter = require("./routes/gasolineRoutes");
+const dailySalesRouter = require("./routes/dailySalesRoutes");
 const notFound = require("./middleware/notFound");
 
 const app = express();
@@ -24,6 +25,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
 app.use("/api/properties", propertyRouter);
 app.use("/api/gasoline", gasolineRouter);
+app.use("/api/sales", dailySalesRouter);
 
 app.use(notFound);
 

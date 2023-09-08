@@ -8,7 +8,7 @@ const DailySalesMetricsSchema = new mongoose.Schema({
   },
   date: {
     type: Date,
-    required: true,
+    default: Date.now,
   },
   totalRevenue: {
     type: Number,
@@ -24,94 +24,21 @@ const DailySalesMetricsSchema = new mongoose.Schema({
   },
   gasolineSales: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "GasolineProduct",
-    },
-    {
+      propertyId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Property",
+      },
+      gasType: {
+        type: String,
+        enum: ["Regular", "Midgrade", "Premium", "Diesel", "E85"],
+        required: true,
+      },
       gallonsSold: {
         type: Number,
         required: true,
       },
     },
   ],
-  nonGasolineSales: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "NonGasolineProduct",
-    },
-    {
-      itemsSold: {
-        type: Number,
-        required: true,
-      },
-    },
-  ],
 });
-
-// Total Gallons Sold
-DailySalesMetrics.aggregate([
-  {
-    $match: { propertyId: yourPropertyId, date: yourDate },
-  },
-  {
-    $unwind: "$gasolineSales",
-  },
-  {
-    $group: {
-      _id: "$propertyId",
-      totalGallons: { $sum: "$gasolineSales.gallonsSold" },
-    },
-  },
-]);
-
-// Top 10 Non-Gas Items Sold
-DailySalesMetrics.aggregate([
-  { $match: { propertyId: yourPropertyId } },
-  { $unwind: "$nonGasolineSales" },
-  {
-    $group: {
-      _id: "$nonGasolineSales._id",
-      totalItemsSold: { $sum: "$nonGasolineSales.itemsSold" },
-    },
-  },
-  { $sort: { totalItemsSold: -1 } },
-  { $limit: 10 },
-]);
-
-// Daily Revenue Per Day for the Past 7 Days
-DailySalesMetrics.aggregate([
-  {
-    $match: {
-      propertyId: yourPropertyId,
-      date: { $gte: sevenDaysAgo, $lte: today },
-    },
-  },
-  {
-    $group: {
-      _id: "$date",
-      dailyRevenue: { $sum: "$totalRevenue" },
-    },
-  },
-  { $sort: { _id: 1 } },
-]);
-
-// Total Sold Per Day for the Past 7 Days
-DailySalesMetrics.aggregate([
-  {
-    $match: {
-      propertyId: yourPropertyId,
-      date: { $gte: sevenDaysAgo, $lte: today },
-    },
-  },
-  {
-    $group: {
-      _id: "$date",
-      totalSold: {
-        $sum: { $add: ["$dailyCashPurchases", "$dailyCreditCardPayments"] },
-      },
-    },
-  },
-  { $sort: { _id: 1 } },
-]);
 
 module.exports = mongoose.model("DailySalesMetrics", DailySalesMetricsSchema);

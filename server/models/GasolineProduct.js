@@ -1,5 +1,20 @@
 const mongoose = require("mongoose");
 
+const GasolineProductBatchSchema = new mongoose.Schema({
+  quantityInGallons: {
+    type: Number,
+    required: true,
+  },
+  costPerGallon: {
+    type: Number,
+    required: true,
+  },
+  receivedDate: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
 const GasolineProductSchema = new mongoose.Schema({
   propertyId: {
     type: mongoose.Schema.Types.ObjectId,
@@ -11,18 +26,14 @@ const GasolineProductSchema = new mongoose.Schema({
     enum: ["Regular", "Midgrade", "Premium", "Diesel", "E85"],
     required: true,
   },
-  priceBoughtAt: {
-    type: Number,
-    required: true,
-  },
-  priceSoldAt: {
-    type: Number,
-    required: true,
-  },
-  dailyGallonsSold: {
-    type: Number,
-    required: true,
-  },
+  batches: [GasolineProductBatchSchema],
+});
+
+GasolineProductSchema.pre("save", function (next) {
+  this.batches.sort(
+    (a, b) => new Date(a.receivedDate) - new Date(b.receivedDate)
+  );
+  next();
 });
 
 module.exports = mongoose.model("GasolineProduct", GasolineProductSchema);

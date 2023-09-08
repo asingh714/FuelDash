@@ -7,7 +7,7 @@ const {
   addGasolineProduct,
 } = require("../controllers/gasolineController");
 
-router.route("/").get(authenticate, getGasolineProducts);
-router.route("/").post(authenticate, addGasolineProduct);
+router.route("/:id").get(authenticate, getGasolineProducts);
+router.route("/:id").post(authenticate, addGasolineProduct);
 
 module.exports = router;

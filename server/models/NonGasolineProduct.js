@@ -23,22 +23,6 @@ const NonGasolineProductSchema = new mongoose.Schema({
     ],
     required: true,
   },
-  priceBoughtAt: {
-    type: Number,
-    required: true,
-  },
-  priceSoldAt: {
-    type: Number,
-    required: true,
-  },
-  inventory: {
-    type: Number,
-    required: true,
-  },
-  dailyItemsSold: {
-    type: Number,
-    required: true,
-  },
 });
 
 module.exports = mongoose.model("NonGasolineProduct", NonGasolineProductSchema);
