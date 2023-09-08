@@ -2,6 +2,35 @@ const DailySalesMetrics = require("../models/DailySalesMetrics");
 const GasolineProduct = require("../models/GasolineProduct");
 const { updateGasolineBatches } = require("./gasolineController");
 
+const getAllDailySalesMetrics = async (req, res) => {
+  const propertyId = req.params.id;
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.find({
+      propertyId,
+    });
+
+    res.status(200).json({ dailySalesMetrics });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+const getSingleDailySalesMetrics = async (req, res) => {
+  const propertyId = req.params.id;
+  const salesId = req.params.salesId;
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.findOne({
+      propertyId,
+      _id: salesId,
+    });
+
+    res.status(200).json({ dailySalesMetrics });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const addDailySalesMetrics = async (req, res) => {
   const {
     date,
@@ -53,5 +82,7 @@ const addDailySalesMetrics = async (req, res) => {
 };
 
 module.exports = {
+  getAllDailySalesMetrics,
   addDailySalesMetrics,
+  getSingleDailySalesMetrics,
 };
