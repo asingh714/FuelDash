@@ -31,6 +31,62 @@ const getSingleDailySalesMetrics = async (req, res) => {
   }
 };
 
+const updateSingleDailySalesMetrics = async (req, res) => {
+  const propertyId = req.params.id;
+  const salesId = req.params.salesId;
+
+  const {
+    date,
+    totalRevenue,
+    dailyCreditCardPayments,
+    dailyCashPurchases,
+    gasolineSales,
+  } = req.body;
+
+  if (
+    !totalRevenue ||
+    !dailyCreditCardPayments ||
+    !dailyCashPurchases ||
+    !gasolineSales
+  ) {
+    return res.status(400).json({
+      msg: "Please provide total revenue, daily credit card payments, and daily cash purchases.",
+    });
+  }
+
+  const populatedGasolineSales = gasolineSales.map((sale) => ({
+    ...sale,
+    propertyId,
+  }));
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.findOneAndUpdate(
+      {
+        propertyId,
+        _id: salesId,
+      },
+      {
+        date,
+        totalRevenue,
+        dailyCreditCardPayments,
+        dailyCashPurchases,
+        gasolineSales: populatedGasolineSales,
+      },
+      { new: true }
+    );
+
+    if (!dailySalesMetrics) {
+      return res.status(404).json({
+        msg: `No daily sales metrics found for id ${salesId}`,
+      });
+    }
+
+    res.status(200).json({ dailySalesMetrics });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const addDailySalesMetrics = async (req, res) => {
   const {
     date,
@@ -85,4 +141,5 @@ module.exports = {
   getAllDailySalesMetrics,
   addDailySalesMetrics,
   getSingleDailySalesMetrics,
+  updateSingleDailySalesMetrics,
 };
