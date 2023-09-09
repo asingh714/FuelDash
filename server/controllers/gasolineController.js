@@ -4,7 +4,9 @@ const getGasolineProducts = async (req, res) => {
   const id = req.params.id;
 
   try {
-    const gasolineProducts = await GasolineProduct.find({ propertyId: id });
+    const gasolineProducts = await GasolineProduct.find({
+      propertyId: id,
+    }).sort({ receivedDate: 1 });
     res.status(200).json({ gasolineProducts });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
@@ -26,7 +28,9 @@ const addGasolineProduct = async (req, res) => {
     const newGasolineProduct = new GasolineProduct({
       propertyId: id,
       gasType,
-      batches: [{ quantityInGallons, costPerGallon, receivedDate }],
+      quantityInGallons,
+      costPerGallon,
+      receivedDate,
     });
     await newGasolineProduct.save();
     res.status(201).json({ msg: newGasolineProduct });
@@ -102,54 +106,65 @@ const deleteGasolineProduct = async (req, res) => {
 
 const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
   // Find the GasolineProduct based on propertyId and gasType
-  const gasolineProducts = await GasolineProduct.find({
-    propertyId,
-    gasType,
-  }).sort({ "batches.receivedDate": 1 });
+  console.log(
+    `Received propertyId: ${propertyId}, gasType: ${gasType}, gallonsSold: ${gallonsSold}`
+  );
 
-  if (gasolineProducts.length === 0) {
-    throw new Error(
-      `No GasolineProduct found for propertyId ${propertyId} and gasType ${gasType}`
-    );
-  }
+  try {
+    const gasolineProducts = await GasolineProduct.find({
+      propertyId,
+      gasType,
+    }).sort({ "batches.receivedDate": 1 });
 
-  let remainingGallonsToDeduct = gallonsSold;
-
-  for (const gasolineProduct of gasolineProducts) {
-    for (
-      let i = 0;
-      i < gasolineProduct.batches.length && remainingGallonsToDeduct > 0;
-      i++
-    ) {
-      let batch = gasolineProduct.batches[i];
-
-      if (batch.quantityInGallons >= remainingGallonsToDeduct) {
-        batch.quantityInGallons -= remainingGallonsToDeduct;
-        remainingGallonsToDeduct = 0;
-      } else {
-        remainingGallonsToDeduct -= batch.quantityInGallons;
-        batch.quantityInGallons = 0;
-      }
-
-      if (batch.quantityInGallons === 0) {
-        gasolineProduct.batches.splice(i, 1);
-        i--;
-      }
+    if (gasolineProducts.length === 0) {
+      throw new Error(
+        `No GasolineProduct found for propertyId ${propertyId} and gasType ${gasType}`
+      );
     }
 
-    await gasolineProduct.save();
+    let remainingGallonsToDeduct = gallonsSold;
 
-    if (gasolineProduct.batches.length === 0) {
-      await GasolineProduct.findByIdAndDelete(gasolineProduct._id);
+    for (const gasolineProduct of gasolineProducts) {
+      for (
+        let i = 0;
+        i < gasolineProduct.batches.length && remainingGallonsToDeduct > 0;
+        i++
+      ) {
+        let batch = gasolineProduct.batches[i];
+
+        if (batch.quantityInGallons >= remainingGallonsToDeduct) {
+          batch.quantityInGallons -= remainingGallonsToDeduct;
+          remainingGallonsToDeduct = 0;
+        } else {
+          remainingGallonsToDeduct -= batch.quantityInGallons;
+          batch.quantityInGallons = 0;
+        }
+
+        if (batch.quantityInGallons === 0) {
+          gasolineProduct.batches.splice(i, 1);
+          i--;
+        }
+      }
+
+      await gasolineProduct.save();
+
+      if (gasolineProduct.batches.length === 0) {
+        await GasolineProduct.findByIdAndDelete(gasolineProduct._id);
+      }
+
+      if (remainingGallonsToDeduct <= 0) break;
     }
 
-    if (remainingGallonsToDeduct <= 0) break;
-  }
-
-  if (remainingGallonsToDeduct > 0) {
-    throw new Error(
-      `Not enough inventory for propertyId ${propertyId} and gasType ${gasType}. Remaining: ${remainingGallonsToDeduct}`
+    if (remainingGallonsToDeduct > 0) {
+      throw new Error(
+        `Not enough inventory for propertyId ${propertyId} and gasType ${gasType}. Remaining: ${remainingGallonsToDeduct}`
+      );
+    }
+  } catch (error) {
+    console.error(
+      `An error occurred in updateGasolineBatches: ${error.message}`
     );
+    throw error;
   }
 };
 module.exports = {

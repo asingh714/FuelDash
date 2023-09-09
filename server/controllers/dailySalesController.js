@@ -159,6 +159,7 @@ const addDailySalesMetrics = async (req, res) => {
     dailyCashPurchases,
     gasolineSales: populatedGasolineSales,
   });
+  
   try {
     // Save the record
     await dailySalesMetrics.save();
