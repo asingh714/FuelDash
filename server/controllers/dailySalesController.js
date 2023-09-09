@@ -2,6 +2,11 @@ const DailySalesMetrics = require("../models/DailySalesMetrics");
 const GasolineProduct = require("../models/GasolineProduct");
 const { updateGasolineBatches } = require("./gasolineController");
 
+const {
+  getTotalGallonsSold,
+  getPastSevenDaysRevenue,
+} = require("../dashboardUtils/dashboardUtils");
+
 const getAllDailySalesMetrics = async (req, res) => {
   const propertyId = req.params.id;
 
@@ -24,8 +29,22 @@ const getSingleDailySalesMetrics = async (req, res) => {
       propertyId,
       _id: salesId,
     });
-
-    res.status(200).json({ dailySalesMetrics });
+    const {
+      totalRevenue,
+      dailyCreditCardPayments,
+      dailyCashPurchases,
+      gasolineSales,
+    } = dailySalesMetrics;
+    const totalGallonsSold = await getTotalGallonsSold(
+      propertyId,
+      dailySalesMetrics.date
+    );
+    res.status(200).json({
+      totalRevenue,
+      dailyCreditCardPayments,
+      dailyCashPurchases,
+      totalGallonsSold,
+    });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -152,56 +171,14 @@ const addDailySalesMetrics = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
-const getTotalGallonsSold = async (req, res) => {
-  const propertyId = req.params.id;
-  const { date } = req.body;
 
-  console.log("Received date:", date);
-  console.log("Received propertyId:", propertyId);
 
-  const startOfDay = new Date(date);
-  startOfDay.setUTCHours(0, 0, 0, 0);
 
-  const endOfDay = new Date(date);
-  endOfDay.setUTCHours(23, 59, 59, 999);
-
-  console.log("Searching from:", startOfDay, "to:", endOfDay);
-
-  try {
-    const dailySalesMetrics = await DailySalesMetrics.find({
-      propertyId,
-      date: {
-        $gte: startOfDay,
-        $lte: endOfDay,
-      },
-    });
-
-    console.log("Found records: ", dailySalesMetrics); // Debug log
-
-    let totalGallonsSold = 0;
-    dailySalesMetrics.forEach((sale) => {
-      console.log("Processing sale: ", sale); // Debug log
-
-      if (sale.gasolineSales) {
-        sale.gasolineSales.forEach((gasSale) => {
-          console.log("Adding gallons: ", gasSale.gallonsSold); // Debug log
-          totalGallonsSold += gasSale.gallonsSold;
-        });
-      }
-    });
-
-    console.log("Total Gallons: ", totalGallonsSold); // Debug log
-    res.status(200).json({ totalGallonsSold });
-  } catch (error) {
-    console.error("Error: ", error); // Debug log
-    return res.status(500).json({ msg: error.message });
-  }
-};
 module.exports = {
   getAllDailySalesMetrics,
   getSingleDailySalesMetrics,
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
   addDailySalesMetrics,
-  getTotalGallonsSold,
+
 };

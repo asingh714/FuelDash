@@ -9,13 +9,11 @@ const {
   getSingleDailySalesMetrics,
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
-  getTotalGallonsSold,
+  getSingleDashboardData,
 } = require("../controllers/dailySalesController");
 
 router.route("/:id").get(authenticate, getAllDailySalesMetrics);
-router.route("/:id/totalGallonsSold").get(authenticate, getTotalGallonsSold);
 router.route("/:id/:salesId").get(authenticate, getSingleDailySalesMetrics);
-
 
 router.route("/:id").post(authenticate, addDailySalesMetrics);
 router
