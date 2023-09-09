@@ -39,11 +39,15 @@ const getSingleDailySalesMetrics = async (req, res) => {
       propertyId,
       dailySalesMetrics.date
     );
+
+    const sevenDaysRevenue = await getPastSevenDaysRevenue(propertyId);
+
     res.status(200).json({
       totalRevenue,
       dailyCreditCardPayments,
       dailyCashPurchases,
       totalGallonsSold,
+      sevenDaysRevenue,
     });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
@@ -172,13 +176,10 @@ const addDailySalesMetrics = async (req, res) => {
   }
 };
 
-
-
 module.exports = {
   getAllDailySalesMetrics,
   getSingleDailySalesMetrics,
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
   addDailySalesMetrics,
-
 };
