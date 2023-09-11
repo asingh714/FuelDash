@@ -1,7 +1,7 @@
 const DailySalesMetrics = require("../models/DailySalesMetrics");
 const GasolineProduct = require("../models/GasolineProduct");
 const { updateGasolineBatches } = require("./gasolineController");
-const { updateNonGasolineStocks} = require("./nonGasolineController");
+const { updateNonGasolineStocks } = require("./nonGasolineController");
 
 const {
   getTotalGallonsSold,
@@ -61,7 +61,7 @@ const getSingleDailySalesMetrics = async (req, res) => {
 
 const updateSingleDailySalesMetrics = async (req, res) => {
   const { salesId } = req.params;
-  const updatedFields = req.body; // the updated data
+  const updatedFields = req.body;
 
   try {
     const existingRecord = await DailySalesMetrics.findById(salesId);
@@ -70,7 +70,6 @@ const updateSingleDailySalesMetrics = async (req, res) => {
       return res.status(404).json({ message: "Record not found" });
     }
 
-    // Reverse the original gasoline sales metrics
     for (const sale of existingRecord.gasolineSales) {
       await updateGasolineBatches(
         existingRecord.propertyId,
@@ -79,7 +78,14 @@ const updateSingleDailySalesMetrics = async (req, res) => {
       );
     }
 
-    // Apply the updated gasoline sales metrics
+    for (const sale of existingRecord.nonGasolineSales) {
+      await updateNonGasolineStocks(
+        existingRecord.propertyId,
+        sale.nonGasolineProductId,
+        -sale.quantitySold
+      );
+    }
+
     for (const sale of updatedFields.gasolineSales) {
       await updateGasolineBatches(
         existingRecord.propertyId,
@@ -88,7 +94,14 @@ const updateSingleDailySalesMetrics = async (req, res) => {
       );
     }
 
-    // Update the DailySalesMetrics record
+    for (const sale of updatedFields.nonGasolineSales) {
+      await updateNonGasolineStocks(
+        existingRecord.propertyId,
+        sale.nonGasolineProductId,
+        sale.quantitySold
+      );
+    }
+
     Object.assign(existingRecord, updatedFields);
     await existingRecord.save();
 
@@ -100,7 +113,7 @@ const updateSingleDailySalesMetrics = async (req, res) => {
 };
 
 const deleteSingleDailySalesMetrics = async (req, res) => {
-  const { salesId } = req.params; // id of the DailySalesMetrics record to be deleted
+  const { salesId } = req.params;
 
   try {
     const existingRecord = await DailySalesMetrics.findById(salesId);
@@ -109,7 +122,6 @@ const deleteSingleDailySalesMetrics = async (req, res) => {
       return res.status(404).json({ message: "Record not found" });
     }
 
-    // Reverse the original gasoline sales metrics
     for (const sale of existingRecord.gasolineSales) {
       await updateGasolineBatches(
         existingRecord.propertyId,
@@ -118,8 +130,15 @@ const deleteSingleDailySalesMetrics = async (req, res) => {
       );
     }
 
-    // Delete the record
-    await DailySalesMetrics.findByIdAndDelete(id);
+    for (const sale of existingRecord.nonGasolineSales) {
+      await updateNonGasolineStocks(
+        existingRecord.propertyId,
+        sale.nonGasolineProductId,
+        -sale.quantitySold
+      );
+    }
+
+    await DailySalesMetrics.findByIdAndDelete(salesId);
 
     res.status(200).json({ message: "Record deleted successfully" });
   } catch (err) {
@@ -163,21 +182,19 @@ const addDailySalesMetrics = async (req, res) => {
   });
 
   try {
-    // Save the daily metrics
     await dailySalesMetrics.save();
 
-    // Update the gasoline batches
     for (const sale of gasolineSales) {
       await updateGasolineBatches(propertyId, sale.gasType, sale.gallonsSold);
     }
 
-     for (const sale of nonGasolineSales) {
-       await updateNonGasolineStocks(
-         propertyId,
-         sale.nonGasolineProductId,
-         sale.quantitySold
-       );
-     }
+    for (const sale of nonGasolineSales) {
+      await updateNonGasolineStocks(
+        propertyId,
+        sale.nonGasolineProductId,
+        sale.quantitySold
+      );
+    }
 
     res
       .status(201)
