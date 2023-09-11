@@ -1,11 +1,11 @@
 const GasolineProduct = require("../models/GasolineProduct");
 
 const getGasolineProducts = async (req, res) => {
-  const id = req.params.id;
+  const { propertyId } = req.params;
 
   try {
     const gasolineProducts = await GasolineProduct.find({
-      propertyId: id,
+      propertyId
     }).sort({ receivedDate: 1 });
     res.status(200).json({ gasolineProducts });
   } catch (error) {
@@ -14,7 +14,7 @@ const getGasolineProducts = async (req, res) => {
 };
 
 const addGasolineProduct = async (req, res) => {
-  const id = req.params.id;
+  const { propertyId } = req.params;
 
   const { gasType, quantityInGallons, costPerGallon, receivedDate } = req.body;
 
@@ -26,7 +26,7 @@ const addGasolineProduct = async (req, res) => {
 
   try {
     const newGasolineProduct = new GasolineProduct({
-      propertyId: id,
+      propertyId: 
       gasType,
       quantityInGallons,
       costPerGallon,
@@ -87,16 +87,12 @@ const deleteGasolineProduct = async (req, res) => {
 };
 
 const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
-  // Find the GasolineProduct based on propertyId and gasType
-  console.log(
-    `Received propertyId: ${propertyId}, gasType: ${gasType}, gallonsSold: ${gallonsSold}`
-  );
-
   try {
+    // Find the GasolineProduct based on propertyId and gasType, sorted by receivedDate
     const gasolineProducts = await GasolineProduct.find({
       propertyId,
       gasType,
-    }).sort({ "batches.receivedDate": 1 });
+    }).sort({ receivedDate: 1 });
 
     if (gasolineProducts.length === 0) {
       throw new Error(
@@ -107,32 +103,15 @@ const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
     let remainingGallonsToDeduct = gallonsSold;
 
     for (const gasolineProduct of gasolineProducts) {
-      for (
-        let i = 0;
-        i < gasolineProduct.batches.length && remainingGallonsToDeduct > 0;
-        i++
-      ) {
-        let batch = gasolineProduct.batches[i];
-
-        if (batch.quantityInGallons >= remainingGallonsToDeduct) {
-          batch.quantityInGallons -= remainingGallonsToDeduct;
-          remainingGallonsToDeduct = 0;
-        } else {
-          remainingGallonsToDeduct -= batch.quantityInGallons;
-          batch.quantityInGallons = 0;
-        }
-
-        if (batch.quantityInGallons === 0) {
-          gasolineProduct.batches.splice(i, 1);
-          i--;
-        }
+      if (gasolineProduct.quantityInGallons >= remainingGallonsToDeduct) {
+        gasolineProduct.quantityInGallons -= remainingGallonsToDeduct;
+        remainingGallonsToDeduct = 0;
+      } else {
+        remainingGallonsToDeduct -= gasolineProduct.quantityInGallons;
+        gasolineProduct.quantityInGallons = 0;
       }
 
       await gasolineProduct.save();
-
-      if (gasolineProduct.batches.length === 0) {
-        await GasolineProduct.findByIdAndDelete(gasolineProduct._id);
-      }
 
       if (remainingGallonsToDeduct <= 0) break;
     }
@@ -149,10 +128,11 @@ const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
     throw error;
   }
 };
+
 module.exports = {
   getGasolineProducts,
   addGasolineProduct,
-  updateGasolineBatches,
   deleteGasolineProduct,
   updateGasolineProduct,
+  updateGasolineBatches,
 };

@@ -24,10 +24,6 @@ const DailySalesMetricsSchema = new mongoose.Schema({
   },
   gasolineSales: [
     {
-      propertyId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Property",
-      },
       gasType: {
         type: String,
         enum: ["Regular", "Midgrade", "Premium", "Diesel", "E85"],

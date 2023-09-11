@@ -12,16 +12,20 @@ const {
   getSingleDashboardData,
 } = require("../controllers/dailySalesController");
 
-router.route("/:id").get(authenticate, getAllDailySalesMetrics);
-router.route("/:id/:salesId").get(authenticate, getSingleDailySalesMetrics);
+router.route("/:propertyId").get(authenticate, getAllDailySalesMetrics);
 
-router.route("/:id").post(authenticate, addDailySalesMetrics);
 router
-  .route("/:id/:salesId")
+  .route("/:propertyId/:salesId")
+  .get(authenticate, getSingleDailySalesMetrics);
+
+router.route("/:propertyId").post(authenticate, addDailySalesMetrics);
+
+router
+  .route("/:salesId")
   .patch(authenticate, updateSingleDailySalesMetrics);
 
 router
-  .route("/:id/:salesId")
+  .route("/:salesId")
   .delete(authenticate, deleteSingleDailySalesMetrics);
 
 module.exports = router;

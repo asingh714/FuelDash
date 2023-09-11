@@ -5,10 +5,11 @@ const { updateGasolineBatches } = require("./gasolineController");
 const {
   getTotalGallonsSold,
   getPastSevenDaysRevenue,
+  getPastSevenDaysGallonsSold,
 } = require("../dashboardUtils/dashboardUtils");
 
 const getAllDailySalesMetrics = async (req, res) => {
-  const propertyId = req.params.id;
+  const { propertyId } = req.params;
 
   try {
     const dailySalesMetrics = await DailySalesMetrics.find({
@@ -20,9 +21,9 @@ const getAllDailySalesMetrics = async (req, res) => {
     return res.status(500).json({ msg: error.message });
   }
 };
+
 const getSingleDailySalesMetrics = async (req, res) => {
-  const propertyId = req.params.id;
-  const salesId = req.params.salesId;
+  const { propertyId, salesId } = req.params;
 
   try {
     const dailySalesMetrics = await DailySalesMetrics.findOne({
@@ -41,6 +42,7 @@ const getSingleDailySalesMetrics = async (req, res) => {
     );
 
     const sevenDaysRevenue = await getPastSevenDaysRevenue(propertyId);
+    const sevenDaysTotalGallons = await getPastSevenDaysGallonsSold(propertyId);
 
     res.status(200).json({
       totalRevenue,
@@ -48,6 +50,7 @@ const getSingleDailySalesMetrics = async (req, res) => {
       dailyCashPurchases,
       totalGallonsSold,
       sevenDaysRevenue,
+      sevenDaysTotalGallons,
     });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
@@ -55,74 +58,71 @@ const getSingleDailySalesMetrics = async (req, res) => {
 };
 
 const updateSingleDailySalesMetrics = async (req, res) => {
-  const propertyId = req.params.id;
-  const salesId = req.params.salesId;
-
-  const {
-    date,
-    totalRevenue,
-    dailyCreditCardPayments,
-    dailyCashPurchases,
-    gasolineSales,
-  } = req.body;
-
-  if (
-    !totalRevenue ||
-    !dailyCreditCardPayments ||
-    !dailyCashPurchases ||
-    !gasolineSales
-  ) {
-    return res.status(400).json({
-      msg: "Please provide total revenue, daily credit card payments, and daily cash purchases.",
-    });
-  }
-
-  const populatedGasolineSales = gasolineSales.map((sale) => ({
-    ...sale,
-    propertyId,
-  }));
+  const { salesId } = req.params;
+  const updatedFields = req.body; // the updated data
 
   try {
-    const dailySalesMetrics = await DailySalesMetrics.findOneAndUpdate(
-      {
-        propertyId,
-        _id: salesId,
-      },
-      {
-        date,
-        totalRevenue,
-        dailyCreditCardPayments,
-        dailyCashPurchases,
-        gasolineSales: populatedGasolineSales,
-      },
-      { new: true }
-    );
+    const existingRecord = await DailySalesMetrics.findById(salesId);
 
-    if (!dailySalesMetrics) {
-      return res.status(404).json({
-        msg: `No daily sales metrics found for id ${salesId}`,
-      });
+    if (!existingRecord) {
+      return res.status(404).json({ message: "Record not found" });
     }
 
-    res.status(200).json({ dailySalesMetrics });
-  } catch (error) {
-    return res.status(500).json({ msg: error.message });
+    // Reverse the original gasoline sales metrics
+    for (const sale of existingRecord.gasolineSales) {
+      await updateGasolineBatches(
+        existingRecord.propertyId,
+        sale.gasType,
+        -sale.gallonsSold
+      );
+    }
+
+    // Apply the updated gasoline sales metrics
+    for (const sale of updatedFields.gasolineSales) {
+      await updateGasolineBatches(
+        existingRecord.propertyId,
+        sale.gasType,
+        sale.gallonsSold
+      );
+    }
+
+    // Update the DailySalesMetrics record
+    Object.assign(existingRecord, updatedFields);
+    await existingRecord.save();
+
+    res.status(200).json({ message: "Record updated successfully" });
+  } catch (err) {
+    console.error(`An error occurred: ${err.message}`);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
 const deleteSingleDailySalesMetrics = async (req, res) => {
-  const propertyId = req.params.id;
-  const salesId = req.params.salesId;
+  const { salesId } = req.params; // id of the DailySalesMetrics record to be deleted
 
   try {
-    const dailySalesMetrics = await DailySalesMetrics.findOneAndDelete({
-      propertyId,
-      _id: salesId,
-    });
+    const existingRecord = await DailySalesMetrics.findById(salesId);
 
-    res.status(200).json({ msg: "deleted" });
-  } catch (error) {
-    return res.status(500).json({ msg: error.message });
+    if (!existingRecord) {
+      return res.status(404).json({ message: "Record not found" });
+    }
+
+    // Reverse the original gasoline sales metrics
+    for (const sale of existingRecord.gasolineSales) {
+      await updateGasolineBatches(
+        existingRecord.propertyId,
+        sale.gasType,
+        -sale.gallonsSold
+      );
+    }
+
+    // Delete the record
+    await DailySalesMetrics.findByIdAndDelete(id);
+
+    res.status(200).json({ message: "Record deleted successfully" });
+  } catch (err) {
+    console.error(`An error occurred: ${err.message}`);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
@@ -134,7 +134,8 @@ const addDailySalesMetrics = async (req, res) => {
     dailyCashPurchases,
     gasolineSales,
   } = req.body;
-  const propertyId = req.params.id;
+
+  const { propertyId } = req.params;
 
   if (
     !totalRevenue ||
@@ -143,13 +144,9 @@ const addDailySalesMetrics = async (req, res) => {
     !gasolineSales
   ) {
     return res.status(400).json({
-      msg: "Please provide total revenue, daily credit card payments, and daily cash purchases.",
+      msg: "Please provide total revenue, daily credit card payments, daily cash purchases, and gasoline sales.",
     });
   }
-  const populatedGasolineSales = gasolineSales.map((sale) => ({
-    ...sale,
-    propertyId,
-  }));
 
   const dailySalesMetrics = new DailySalesMetrics({
     propertyId,
@@ -157,22 +154,23 @@ const addDailySalesMetrics = async (req, res) => {
     totalRevenue,
     dailyCreditCardPayments,
     dailyCashPurchases,
-    gasolineSales: populatedGasolineSales,
+    gasolineSales,
   });
-  
+
   try {
-    // Save the record
+    // Save the daily metrics
     await dailySalesMetrics.save();
 
-    // Iterate through each gasoline sale to update inventory
+    // Update the gasoline batches
     for (const sale of gasolineSales) {
       await updateGasolineBatches(propertyId, sale.gasType, sale.gallonsSold);
     }
+
     res
       .status(201)
       .json({ message: "Daily sales metrics added successfully." });
   } catch (err) {
-    console.error("An error occurred:", err);
+    console.error(`An error occurred: ${err.message}`);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
