@@ -5,7 +5,7 @@ const getGasolineProducts = async (req, res) => {
 
   try {
     const gasolineProducts = await GasolineProduct.find({
-      propertyId
+      propertyId,
     }).sort({ receivedDate: 1 });
     res.status(200).json({ gasolineProducts });
   } catch (error) {
@@ -26,7 +26,7 @@ const addGasolineProduct = async (req, res) => {
 
   try {
     const newGasolineProduct = new GasolineProduct({
-      propertyId: 
+      propertyId,
       gasType,
       quantityInGallons,
       costPerGallon,
