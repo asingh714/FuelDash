@@ -88,9 +88,48 @@ const deleteNoneGasolineProduct = async (req, res) => {
   }
 };
 
+const updateNonGasolineStocks = async (
+  propertyId,
+  nonGasolineProductId,
+  quantitySold
+) => {
+  try {
+    // Find the non-gasoline product by its ObjectId and associated propertyId
+    const nonGasolineProduct = await NonGasolineProduct.findOne({
+      _id: nonGasolineProductId,
+      propertyId: propertyId,
+    });
+
+    if (!nonGasolineProduct) {
+      console.log("Non-Gasoline Product not found.");
+      return;
+    }
+
+    // Deduct sold quantity from existing quantity
+    nonGasolineProduct.quantity -= quantitySold;
+
+    // Optionally, you could check for negative stock here
+    if (nonGasolineProduct.quantity < 0) {
+      console.log("Stock quantity cannot be negative.");
+      // Reset to 0 or handle as per your business logic
+      nonGasolineProduct.quantity = 0;
+    }
+
+    // Save the updated quantity back to the database
+    await nonGasolineProduct.save();
+
+    console.log("Non-Gasoline Product stock updated successfully.");
+  } catch (error) {
+    console.error(
+      `An error occurred while updating non-gasoline stocks: ${error.message}`
+    );
+  }
+};
+
 module.exports = {
   getNoneGasolineProducts,
   addNoneGasolineProduct,
   updateNoneGasolineProduct,
   deleteNoneGasolineProduct,
+  updateNonGasolineStocks,
 };

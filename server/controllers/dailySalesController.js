@@ -1,6 +1,7 @@
 const DailySalesMetrics = require("../models/DailySalesMetrics");
 const GasolineProduct = require("../models/GasolineProduct");
 const { updateGasolineBatches } = require("./gasolineController");
+const { updateNonGasolineStocks} = require("./nonGasolineController");
 
 const {
   getTotalGallonsSold,
@@ -30,17 +31,18 @@ const getSingleDailySalesMetrics = async (req, res) => {
       propertyId,
       _id: salesId,
     });
+
     const {
       totalRevenue,
       dailyCreditCardPayments,
       dailyCashPurchases,
       gasolineSales,
     } = dailySalesMetrics;
+
     const totalGallonsSold = await getTotalGallonsSold(
       propertyId,
       dailySalesMetrics.date
     );
-
     const sevenDaysRevenue = await getPastSevenDaysRevenue(propertyId);
     const sevenDaysTotalGallons = await getPastSevenDaysGallonsSold(propertyId);
 
@@ -133,6 +135,7 @@ const addDailySalesMetrics = async (req, res) => {
     dailyCreditCardPayments,
     dailyCashPurchases,
     gasolineSales,
+    nonGasolineSales,
   } = req.body;
 
   const { propertyId } = req.params;
@@ -141,7 +144,8 @@ const addDailySalesMetrics = async (req, res) => {
     !totalRevenue ||
     !dailyCreditCardPayments ||
     !dailyCashPurchases ||
-    !gasolineSales
+    !gasolineSales ||
+    !nonGasolineSales
   ) {
     return res.status(400).json({
       msg: "Please provide total revenue, daily credit card payments, daily cash purchases, and gasoline sales.",
@@ -155,6 +159,7 @@ const addDailySalesMetrics = async (req, res) => {
     dailyCreditCardPayments,
     dailyCashPurchases,
     gasolineSales,
+    nonGasolineSales,
   });
 
   try {
@@ -165,6 +170,14 @@ const addDailySalesMetrics = async (req, res) => {
     for (const sale of gasolineSales) {
       await updateGasolineBatches(propertyId, sale.gasType, sale.gallonsSold);
     }
+
+     for (const sale of nonGasolineSales) {
+       await updateNonGasolineStocks(
+         propertyId,
+         sale.nonGasolineProductId,
+         sale.quantitySold
+       );
+     }
 
     res
       .status(201)

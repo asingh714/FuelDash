@@ -1099,11 +1099,13 @@ const connectDB = async () => {
 
     // Delete all existing records
     await GasolineProduct.deleteMany({});
-    console.log("All old GasolineProduct records deleted.");
+    await NonGasolineProduct.deleteMany({});
+    console.log("All old DB data records deleted.");
 
     // Insert new records
     await GasolineProduct.insertMany(GasolineProducts);
-    console.log("GasolineProduct inserted");
+    await NonGasolineProduct.insertMany(NonGasolineProducts);
+    console.log("DB data inserted");
   } catch (error) {
     console.log(error);
   }

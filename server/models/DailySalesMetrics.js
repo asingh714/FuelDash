@@ -35,6 +35,19 @@ const DailySalesMetricsSchema = new mongoose.Schema({
       },
     },
   ],
+  nonGasolineSales: [
+    {
+      nonGasolineProductId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "NonGasolineProduct",
+        required: true,
+      },
+      quantitySold: {
+        type: Number,
+        required: true,
+      },
+    },
+  ],
 });
 
 module.exports = mongoose.model("DailySalesMetrics", DailySalesMetricsSchema);
