@@ -7,6 +7,7 @@ const {
   getTotalGallonsSold,
   getPastSevenDaysRevenue,
   getPastSevenDaysGallonsSold,
+  getTopNonGasProducts,
 } = require("../dashboardUtils/dashboardUtils");
 
 const getAllDailySalesMetrics = async (req, res) => {
@@ -45,6 +46,9 @@ const getSingleDailySalesMetrics = async (req, res) => {
     );
     const sevenDaysRevenue = await getPastSevenDaysRevenue(propertyId);
     const sevenDaysTotalGallons = await getPastSevenDaysGallonsSold(propertyId);
+    const topNonGasProducts = await getTopNonGasProducts(propertyId);
+
+   
 
     res.status(200).json({
       totalRevenue,
@@ -53,6 +57,7 @@ const getSingleDailySalesMetrics = async (req, res) => {
       totalGallonsSold,
       sevenDaysRevenue,
       sevenDaysTotalGallons,
+      topNonGasProducts,
     });
   } catch (error) {
     return res.status(500).json({ msg: error.message });

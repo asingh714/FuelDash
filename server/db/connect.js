@@ -31,16 +31,16 @@ const connectDB = async () => {
     console.log("Connected to MongoDB...");
 
     // Delete all existing records
-    await GasolineProduct.deleteMany({});
-    await NonGasolineProduct.deleteMany({});
-    await DailySalesMetrics.deleteMany({});
-    console.log("All old DB data records deleted.");
+    // await GasolineProduct.deleteMany({});
+    // await NonGasolineProduct.deleteMany({});
+    // await DailySalesMetrics.deleteMany({});
+    // console.log("All old DB data records deleted.");
 
     // Insert new records
-    await GasolineProduct.insertMany(gasolineProducts);
-    await NonGasolineProduct.insertMany(nonGasolineProducts);
-    await DailySalesMetrics.insertMany(dailySalesMetrics);
-    console.log("DB data inserted");
+    // await GasolineProduct.insertMany(gasolineProducts);
+    // await NonGasolineProduct.insertMany(nonGasolineProducts);
+    // await DailySalesMetrics.insertMany(dailySalesMetrics);
+    // console.log("DB data inserted");
   } catch (error) {
     console.log(error);
   }

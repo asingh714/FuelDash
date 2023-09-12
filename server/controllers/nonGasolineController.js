@@ -127,11 +127,12 @@ const updateNonGasolineStocks = async (
   }
 };
 
+
 module.exports = {
   getNonGasolineProducts,
   addNonGasolineProduct,
   updateNonGasolineProduct,
   deleteNonGasolineProduct,
   updateNonGasolineStocks,
-  getgodmode,
+
 };

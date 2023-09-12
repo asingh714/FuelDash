@@ -1,4 +1,7 @@
 const DailySalesMetrics = require("../models/DailySalesMetrics");
+const NonGasolineProduct = require("../models/NonGasolineProduct");
+const mongoose = require("mongoose");
+const { ObjectId } = mongoose.Types;
 
 const getTotalGallonsSold = async (propertyId, date) => {
   const startOfDay = new Date(date);
@@ -73,7 +76,6 @@ const getPastSevenDaysRevenue = async (propertyId) => {
     return [];
   }
 };
-
 
 const getPastSevenDaysGallonsSold = async (propertyId) => {
   const today = new Date();
@@ -162,9 +164,58 @@ const getPastSevenDaysGallonsSold = async (propertyId) => {
   }
 };
 
+const getTopNonGasProducts = async (propertyId) => {
+  try {
+    const sevenDaysAgo = new Date();
+    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+
+    const result = await DailySalesMetrics.aggregate([
+      {
+        $match: {
+          propertyId: new ObjectId(propertyId),
+          date: { $gte: sevenDaysAgo },
+        },
+      },
+      {
+        $unwind: "$nonGasolineSales",
+      },
+      {
+        $group: {
+          _id: "$nonGasolineSales.nonGasolineProductId",
+          totalQuantitySold: { $sum: "$nonGasolineSales.quantitySold" },
+        },
+      },
+      {
+        $sort: {
+          totalQuantitySold: -1,
+        },
+      },
+      {
+        $limit: 5, // Top 5 products, modify as needed
+      },
+    ]);
+
+    // Populate product names
+    const topNonGasProducts = [];
+    for (const item of result) {
+      const product = await NonGasolineProduct.findById(item._id);
+      topNonGasProducts.push({
+        id: item._id,
+        name: product.name,
+        quantitySold: item.totalQuantitySold,
+      });
+    }
+
+    return topNonGasProducts;
+  } catch (error) {
+    console.error("Error getting top non-gas products:", error);
+    return [];
+  }
+};
 
 module.exports = {
   getTotalGallonsSold,
   getPastSevenDaysRevenue,
   getPastSevenDaysGallonsSold,
+  getTopNonGasProducts,
 };
