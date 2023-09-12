@@ -213,9 +213,68 @@ const getTopNonGasProducts = async (propertyId) => {
   }
 };
 
+const getAllGasProductsForLatestDailySales = async (propertyId) => {
+  try {
+    // Fetch the latest daily sales metrics for the given propertyId
+    const latestDailySalesMetrics = await DailySalesMetrics.findOne({
+      propertyId,
+    })
+      .sort({ date: -1 })
+      .limit(1);
+
+    if (!latestDailySalesMetrics) {
+      return [];
+    }
+
+    const { gasolineSales } = latestDailySalesMetrics;
+
+    // Create an object to aggregate the gallons sold by gasType
+    const gasTypeTotals = {};
+    gasolineSales.forEach((sale) => {
+      if (gasTypeTotals[sale.gasType]) {
+        gasTypeTotals[sale.gasType] += sale.gallonsSold;
+      } else {
+        gasTypeTotals[sale.gasType] = sale.gallonsSold;
+      }
+    });
+
+    // Calculate the total gallons of gas sold for the day
+    const totalGallonsSold = Object.values(gasTypeTotals).reduce(
+      (total, gallons) => total + gallons,
+      0
+    );
+
+    // Create an array with the aggregated data and calculate the percentage of total sales for each gasType
+    const gasProducts = Object.keys(gasTypeTotals).map((gasType) => ({
+      id: gasType, // Note: This is not a MongoDB ObjectId
+      gasType: gasType,
+      percentageOfTotal: (
+        (gasTypeTotals[gasType] / totalGallonsSold) *
+        100
+      ).toFixed(2),
+    }));
+
+    // Sort by percentageOfTotal in descending order, if needed
+    gasProducts.sort(
+      (a, b) =>
+        parseFloat(b.percentageOfTotal) - parseFloat(a.percentageOfTotal)
+    );
+
+    // Return all gas products
+    return gasProducts;
+  } catch (error) {
+    console.error(
+      "Error getting all gas products for latest daily sales:",
+      error
+    );
+    return [];
+  }
+};
+
 module.exports = {
   getTotalGallonsSold,
   getPastSevenDaysRevenue,
   getPastSevenDaysGallonsSold,
   getTopNonGasProducts,
+  getAllGasProductsForLatestDailySales,
 };
