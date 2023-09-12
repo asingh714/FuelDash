@@ -20,4 +20,10 @@ const PropertySchema = new mongoose.Schema({
   },
 });
 
+PropertySchema.pre("remove", async function (next) {
+  await this.model("GasolineProduct").deleteMany({ propertyId: this._id });
+  await this.model("NonGasolineProduct").deleteMany({ propertyId: this._id });
+  await this.model("DailySalesMetrics").deleteMany({ propertyId: this._id });
+});
+
 module.exports = mongoose.model("Property", PropertySchema);

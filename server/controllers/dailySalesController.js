@@ -11,6 +11,8 @@ const {
   getAllGasProductsForLatestDailySales,
 } = require("../dashboardUtils/dashboardUtils");
 
+
+
 const getAllDailySalesMetrics = async (req, res) => {
   const { propertyId } = req.params;
 
