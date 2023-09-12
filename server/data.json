@@ -1,0 +1,6288 @@
+{
+  "Properties": [
+    {
+      "_id": "64ff54a2b485b42210278310",
+      "userId": "64fa33d8ea9e6d85fc86b89f",
+      "name": "Sunrise Gas & Convenience",
+      "address": "123 Sunrise Blvd, Los Angeles, CA 90001"
+    },
+    {
+      "_id": "64ff54aeb485b42210278312",
+      "userId": "64fa33d8ea9e6d85fc86b89f",
+      "name": "Mountainview Fuel Stop",
+      "address": "456 Mountain Dr, San Francisco, CA 94101"
+    },
+    {
+      "_id": "64ff54b8b485b42210278314",
+      "userId": "64fa33d8ea9e6d85fc86b89f",
+      "name": "City Central Gasoline",
+      "address": "789 Central Ave, New York, NY 10001"
+    },
+    {
+      "_id": "64ff54c0b485b42210278316",
+      "userId": "64fa33d8ea9e6d85fc86b89f",
+      "name": "Lakeside Fuels",
+      "address": "101 Lakeside Way, Chicago, IL 60601"
+    },
+    {
+      "_id": "64ff54c8b485b42210278318",
+      "userId": "64fa33d8ea9e6d85fc86b89f",
+      "name": "Highway Oasis",
+      "address": "202 Highway St, Houston, TX 77001"
+    }
+  ],
+  "GasolineProducts": [
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "Regular",
+      "quantityInGallons": 5000,
+      "costPerGallon": 2.5,
+      "receivedDate": "2023-09-03T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "Diesel",
+      "quantityInGallons": 2000,
+      "costPerGallon": 3.0,
+      "receivedDate": "2023-09-04T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3500,
+      "costPerGallon": 2.8,
+      "receivedDate": "2023-09-05T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "Premium",
+      "quantityInGallons": 2500,
+      "costPerGallon": 3.2,
+      "receivedDate": "2023-09-06T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "E85",
+      "quantityInGallons": 1500,
+      "costPerGallon": 2.2,
+      "receivedDate": "2023-09-07T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "Regular",
+      "quantityInGallons": 5200,
+      "costPerGallon": 2.55,
+      "receivedDate": "2023-09-08T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "Diesel",
+      "quantityInGallons": 2100,
+      "costPerGallon": 3.1,
+      "receivedDate": "2023-09-09T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3600,
+      "costPerGallon": 2.9,
+      "receivedDate": "2023-09-10T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "Regular",
+      "quantityInGallons": 4000,
+      "costPerGallon": 2.6,
+      "receivedDate": "2023-09-03T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "Diesel",
+      "quantityInGallons": 2500,
+      "costPerGallon": 2.9,
+      "receivedDate": "2023-09-04T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3000,
+      "costPerGallon": 2.8,
+      "receivedDate": "2023-09-05T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "Premium",
+      "quantityInGallons": 1500,
+      "costPerGallon": 3.1,
+      "receivedDate": "2023-09-06T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "E85",
+      "quantityInGallons": 2000,
+      "costPerGallon": 2.2,
+      "receivedDate": "2023-09-07T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "Regular",
+      "quantityInGallons": 4200,
+      "costPerGallon": 2.5,
+      "receivedDate": "2023-09-08T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "Diesel",
+      "quantityInGallons": 2600,
+      "costPerGallon": 3.0,
+      "receivedDate": "2023-09-09T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "gasType": "Midgrade",
+      "quantityInGallons": 2800,
+      "costPerGallon": 2.7,
+      "receivedDate": "2023-09-10T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "Regular",
+      "quantityInGallons": 4500,
+      "costPerGallon": 2.7,
+      "receivedDate": "2023-09-03T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "Diesel",
+      "quantityInGallons": 2200,
+      "costPerGallon": 3.2,
+      "receivedDate": "2023-09-04T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3100,
+      "costPerGallon": 3.0,
+      "receivedDate": "2023-09-05T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "Premium",
+      "quantityInGallons": 1700,
+      "costPerGallon": 3.5,
+      "receivedDate": "2023-09-06T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "E85",
+      "quantityInGallons": 1800,
+      "costPerGallon": 2.3,
+      "receivedDate": "2023-09-07T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "Regular",
+      "quantityInGallons": 4600,
+      "costPerGallon": 2.8,
+      "receivedDate": "2023-09-08T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "Diesel",
+      "quantityInGallons": 2300,
+      "costPerGallon": 3.1,
+      "receivedDate": "2023-09-09T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3200,
+      "costPerGallon": 2.9,
+      "receivedDate": "2023-09-10T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Regular",
+      "quantityInGallons": 4700,
+      "costPerGallon": 2.6,
+      "receivedDate": "2023-09-03T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Diesel",
+      "quantityInGallons": 2100,
+      "costPerGallon": 3.4,
+      "receivedDate": "2023-09-04T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3000,
+      "costPerGallon": 2.9,
+      "receivedDate": "2023-09-05T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3000,
+      "costPerGallon": 2.9,
+      "receivedDate": "2023-09-06T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Premium",
+      "quantityInGallons": 1600,
+      "costPerGallon": 3.3,
+      "receivedDate": "2023-09-06T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "E85",
+      "quantityInGallons": 1900,
+      "costPerGallon": 2.4,
+      "receivedDate": "2023-09-07T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Regular",
+      "quantityInGallons": 4800,
+      "costPerGallon": 2.7,
+      "receivedDate": "2023-09-08T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Diesel",
+      "quantityInGallons": 2200,
+      "costPerGallon": 3.3,
+      "receivedDate": "2023-09-09T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "gasType": "Midgrade",
+      "quantityInGallons": 3100,
+      "costPerGallon": 3.0,
+      "receivedDate": "2023-09-10T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "Regular",
+      "quantityInGallons": 4600,
+      "costPerGallon": 2.8,
+      "receivedDate": "2023-09-03T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "Diesel",
+      "quantityInGallons": 1800,
+      "costPerGallon": 3.2,
+      "receivedDate": "2023-09-04T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "Midgrade",
+      "quantityInGallons": 2500,
+      "costPerGallon": 3.1,
+      "receivedDate": "2023-09-05T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "Premium",
+      "quantityInGallons": 1700,
+      "costPerGallon": 3.6,
+      "receivedDate": "2023-09-06T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "E85",
+      "quantityInGallons": 2000,
+      "costPerGallon": 2.2,
+      "receivedDate": "2023-09-07T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "Regular",
+      "quantityInGallons": 4300,
+      "costPerGallon": 2.9,
+      "receivedDate": "2023-09-08T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "Diesel",
+      "quantityInGallons": 1900,
+      "costPerGallon": 3.5,
+      "receivedDate": "2023-09-09T20:02:48.710Z"
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "gasType": "Midgrade",
+      "quantityInGallons": 2600,
+      "costPerGallon": 3.2,
+      "receivedDate": "2023-09-10T20:02:48.710Z"
+    }
+  ],
+
+  "NonGasolineProducts": [
+    {
+      "_id": "65008f9b18f19e6c78fcc281",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Coca-Cola",
+      "category": "Beverages",
+      "quantity": 50,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-01T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc282",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Potato Chips",
+      "category": "Snacks",
+      "quantity": 30,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-02T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc283",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Cigarettes",
+      "category": "Tobacco Products",
+      "quantity": 20,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-02T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc284",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Windshield Wiper Fluid",
+      "category": "Automotive Supplies",
+      "quantity": 15,
+      "costPerItem": 3,
+      "receivedDate": "2023-09-03T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc285",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Shampoo",
+      "category": "Health & Beauty",
+      "quantity": 25,
+      "costPerItem": 4,
+      "receivedDate": "2023-09-04T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc286",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Sunglasses",
+      "category": "Travel and Leisure",
+      "quantity": 12,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-04T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc287",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Bread",
+      "category": "Groceries",
+      "quantity": 20,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-05T08:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc29b",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Bread",
+      "category": "Groceries",
+      "quantity": 45,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-05T08:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2af",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Bread",
+      "category": "Groceries",
+      "quantity": 51,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-05T08:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c3",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Bread",
+      "category": "Groceries",
+      "quantity": 61,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-05T08:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d7",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Bread",
+      "category": "Groceries",
+      "quantity": 79,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-05T08:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a9",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Coca-Cola",
+      "category": "Beverages",
+      "quantity": 24,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-06T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2bd",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Coca-Cola",
+      "category": "Beverages",
+      "quantity": 43,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-06T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d1",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Coca-Cola",
+      "category": "Beverages",
+      "quantity": 41,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-06T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc29a",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Sunglasses",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-06T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2ae",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Sunglasses",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-06T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c2",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Sunglasses",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-06T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d6",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Sunglasses",
+      "category": "Travel and Leisure",
+      "quantity": 11,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-06T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc299",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Shampoo",
+      "category": "Health & Beauty",
+      "quantity": 25,
+      "costPerItem": 4,
+      "receivedDate": "2023-09-07T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2ad",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Shampoo",
+      "category": "Health & Beauty",
+      "quantity": 25,
+      "costPerItem": 4,
+      "receivedDate": "2023-09-07T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c1",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Shampoo",
+      "category": "Health & Beauty",
+      "quantity": 25,
+      "costPerItem": 4,
+      "receivedDate": "2023-09-07T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d5",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Shampoo",
+      "category": "Health & Beauty",
+      "quantity": 27,
+      "costPerItem": 4,
+      "receivedDate": "2023-09-07T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc288",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Water Bottle",
+      "category": "Beverages",
+      "quantity": 40,
+      "costPerItem": 1.2,
+      "receivedDate": "2023-09-07T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc29c",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Water Bottle",
+      "category": "Beverages",
+      "quantity": 40,
+      "costPerItem": 1.2,
+      "receivedDate": "2023-09-07T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b0",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Water Bottle",
+      "category": "Beverages",
+      "quantity": 40,
+      "costPerItem": 1.2,
+      "receivedDate": "2023-09-07T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c4",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Water Bottle",
+      "category": "Beverages",
+      "quantity": 33,
+      "costPerItem": 1.2,
+      "receivedDate": "2023-09-07T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d8",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Water Bottle",
+      "category": "Beverages",
+      "quantity": 33,
+      "costPerItem": 1.2,
+      "receivedDate": "2023-09-07T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc289",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Chocolate Bar",
+      "category": "Snacks",
+      "quantity": 25,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-07T12:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc29d",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Chocolate Bar",
+      "category": "Snacks",
+      "quantity": 25,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-07T12:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b1",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Chocolate Bar",
+      "category": "Snacks",
+      "quantity": 25,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-07T12:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c5",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Chocolate Bar",
+      "category": "Snacks",
+      "quantity": 25,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-07T12:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d9",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Chocolate Bar",
+      "category": "Snacks",
+      "quantity": 25,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-07T12:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc28a",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Toothpaste",
+      "category": "Health & Beauty",
+      "quantity": 15,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc298",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Windshield Wiper Fluid",
+      "category": "Automotive Supplies",
+      "quantity": 15,
+      "costPerItem": 3,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc29e",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Toothpaste",
+      "category": "Health & Beauty",
+      "quantity": 20,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2ac",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Windshield Wiper Fluid",
+      "category": "Automotive Supplies",
+      "quantity": 15,
+      "costPerItem": 3,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b2",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Toothpaste",
+      "category": "Health & Beauty",
+      "quantity": 12,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c0",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Windshield Wiper Fluid",
+      "category": "Automotive Supplies",
+      "quantity": 15,
+      "costPerItem": 3,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c6",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Toothpaste",
+      "category": "Health & Beauty",
+      "quantity": 12,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d4",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Windshield Wiper Fluid",
+      "category": "Automotive Supplies",
+      "quantity": 15,
+      "costPerItem": 3,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2da",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Toothpaste",
+      "category": "Health & Beauty",
+      "quantity": 13,
+      "costPerItem": 2.5,
+      "receivedDate": "2023-09-08T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc28b",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Engine Oil",
+      "category": "Automotive Supplies",
+      "quantity": 12,
+      "costPerItem": 8,
+      "receivedDate": "2023-09-08T13:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc29f",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Engine Oil",
+      "category": "Automotive Supplies",
+      "quantity": 12,
+      "costPerItem": 8,
+      "receivedDate": "2023-09-08T13:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b3",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Engine Oil",
+      "category": "Automotive Supplies",
+      "quantity": 12,
+      "costPerItem": 8,
+      "receivedDate": "2023-09-08T13:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c7",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Engine Oil",
+      "category": "Automotive Supplies",
+      "quantity": 12,
+      "costPerItem": 8,
+      "receivedDate": "2023-09-08T13:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2db",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Engine Oil",
+      "category": "Automotive Supplies",
+      "quantity": 15,
+      "costPerItem": 8,
+      "receivedDate": "2023-09-08T13:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2ab",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Cigarettes",
+      "category": "Tobacco Products",
+      "quantity": 30,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-08T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2bf",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Cigarettes",
+      "category": "Tobacco Products",
+      "quantity": 24,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-08T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d3",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Cigarettes",
+      "category": "Tobacco Products",
+      "quantity": 25,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-08T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2aa",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Potato Chips",
+      "category": "Snacks",
+      "quantity": 65,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-09T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2be",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Potato Chips",
+      "category": "Snacks",
+      "quantity": 23,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-09T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d2",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Potato Chips",
+      "category": "Snacks",
+      "quantity": 23,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-09T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc28c",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Magazine",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-09T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a0",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Magazine",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-09T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b4",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Magazine",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-09T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c8",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Magazine",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-09T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2dc",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Magazine",
+      "category": "Travel and Leisure",
+      "quantity": 9,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-09T15:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc297",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Cigarettes",
+      "category": "Tobacco Products",
+      "quantity": 30,
+      "costPerItem": 5,
+      "receivedDate": "2023-09-09T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc28d",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Milk",
+      "category": "Groceries",
+      "quantity": 20,
+      "costPerItem": 2.2,
+      "receivedDate": "2023-09-09T16:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a1",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Milk",
+      "category": "Groceries",
+      "quantity": 20,
+      "costPerItem": 2.2,
+      "receivedDate": "2023-09-09T16:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b5",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Milk",
+      "category": "Groceries",
+      "quantity": 20,
+      "costPerItem": 2.2,
+      "receivedDate": "2023-09-09T16:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2c9",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Milk",
+      "category": "Groceries",
+      "quantity": 20,
+      "costPerItem": 2.2,
+      "receivedDate": "2023-09-09T16:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2dd",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Milk",
+      "category": "Groceries",
+      "quantity": 21,
+      "costPerItem": 2.2,
+      "receivedDate": "2023-09-09T16:30:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc28e",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Soap",
+      "category": "Health & Beauty",
+      "quantity": 30,
+      "costPerItem": 1.3,
+      "receivedDate": "2023-09-10T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a2",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Soap",
+      "category": "Health & Beauty",
+      "quantity": 30,
+      "costPerItem": 1.3,
+      "receivedDate": "2023-09-10T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b6",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Soap",
+      "category": "Health & Beauty",
+      "quantity": 15,
+      "costPerItem": 1.3,
+      "receivedDate": "2023-09-10T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2ca",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Soap",
+      "category": "Health & Beauty",
+      "quantity": 15,
+      "costPerItem": 1.3,
+      "receivedDate": "2023-09-10T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2de",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Soap",
+      "category": "Health & Beauty",
+      "quantity": 15,
+      "costPerItem": 1.3,
+      "receivedDate": "2023-09-10T09:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc28f",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Motorcycle Oil",
+      "category": "Automotive Supplies",
+      "quantity": 7,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-10T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a3",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Motorcycle Oil",
+      "category": "Automotive Supplies",
+      "quantity": 7,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-10T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b7",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Motorcycle Oil",
+      "category": "Automotive Supplies",
+      "quantity": 7,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-10T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2cb",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Motorcycle Oil",
+      "category": "Automotive Supplies",
+      "quantity": 7,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-10T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2df",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Motorcycle Oil",
+      "category": "Automotive Supplies",
+      "quantity": 7,
+      "costPerItem": 10,
+      "receivedDate": "2023-09-10T11:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc296",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Potato Chips",
+      "category": "Snacks",
+      "quantity": 65,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-10T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc290",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Juice Box",
+      "category": "Beverages",
+      "quantity": 35,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-11T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a4",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Juice Box",
+      "category": "Beverages",
+      "quantity": 35,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-11T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b8",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Juice Box",
+      "category": "Beverages",
+      "quantity": 35,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-11T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2cc",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Juice Box",
+      "category": "Beverages",
+      "quantity": 35,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-11T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2e0",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Juice Box",
+      "category": "Beverages",
+      "quantity": 35,
+      "costPerItem": 1,
+      "receivedDate": "2023-09-11T10:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc291",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Beef Jerky",
+      "category": "Snacks",
+      "quantity": 18,
+      "costPerItem": 3.5,
+      "receivedDate": "2023-09-11T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc295",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Coca-Cola",
+      "category": "Beverages",
+      "quantity": 24,
+      "costPerItem": 1.5,
+      "receivedDate": "2023-09-11T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a5",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Beef Jerky",
+      "category": "Snacks",
+      "quantity": 18,
+      "costPerItem": 3.5,
+      "receivedDate": "2023-09-11T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2b9",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Beef Jerky",
+      "category": "Snacks",
+      "quantity": 18,
+      "costPerItem": 3.5,
+      "receivedDate": "2023-09-11T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2cd",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Beef Jerky",
+      "category": "Snacks",
+      "quantity": 18,
+      "costPerItem": 3.5,
+      "receivedDate": "2023-09-11T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2e1",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Beef Jerky",
+      "category": "Snacks",
+      "quantity": 19,
+      "costPerItem": 3.5,
+      "receivedDate": "2023-09-11T12:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc292",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Travel Pillow",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 12,
+      "receivedDate": "2023-09-11T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a6",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Travel Pillow",
+      "category": "Travel and Leisure",
+      "quantity": 10,
+      "costPerItem": 12,
+      "receivedDate": "2023-09-11T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2ba",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Travel Pillow",
+      "category": "Travel and Leisure",
+      "quantity": 21,
+      "costPerItem": 12,
+      "receivedDate": "2023-09-11T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2ce",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Travel Pillow",
+      "category": "Travel and Leisure",
+      "quantity": 21,
+      "costPerItem": 12,
+      "receivedDate": "2023-09-11T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2e2",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Travel Pillow",
+      "category": "Travel and Leisure",
+      "quantity": 21,
+      "costPerItem": 12,
+      "receivedDate": "2023-09-11T14:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc293",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Cheese",
+      "category": "Groceries",
+      "quantity": 15,
+      "costPerItem": 2.8,
+      "receivedDate": "2023-09-11T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a7",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Cheese",
+      "category": "Groceries",
+      "quantity": 15,
+      "costPerItem": 2.8,
+      "receivedDate": "2023-09-11T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2bb",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Cheese",
+      "category": "Groceries",
+      "quantity": 54,
+      "costPerItem": 2.8,
+      "receivedDate": "2023-09-11T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2cf",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Cheese",
+      "category": "Groceries",
+      "quantity": 54,
+      "costPerItem": 2.8,
+      "receivedDate": "2023-09-11T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2e3",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Cheese",
+      "category": "Groceries",
+      "quantity": 55,
+      "costPerItem": 2.8,
+      "receivedDate": "2023-09-11T16:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc294",
+      "propertyId": "64ff54a2b485b42210278310",
+      "name": "Chewing Gum",
+      "category": "Snacks",
+      "quantity": 50,
+      "costPerItem": 0.9,
+      "receivedDate": "2023-09-11T18:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2a8",
+      "propertyId": "64ff54aeb485b42210278312",
+      "name": "Chewing Gum",
+      "category": "Snacks",
+      "quantity": 50,
+      "costPerItem": 0.9,
+      "receivedDate": "2023-09-11T18:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2bc",
+      "propertyId": "64ff54b8b485b42210278314",
+      "name": "Chewing Gum",
+      "category": "Snacks",
+      "quantity": 23,
+      "costPerItem": 0.9,
+      "receivedDate": "2023-09-11T18:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2d0",
+      "propertyId": "64ff54c0b485b42210278316",
+      "name": "Chewing Gum",
+      "category": "Snacks",
+      "quantity": 23,
+      "costPerItem": 0.9,
+      "receivedDate": "2023-09-11T18:00:00.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "65008f9b18f19e6c78fcc2e4",
+      "propertyId": "64ff54c8b485b42210278318",
+      "name": "Chewing Gum",
+      "category": "Snacks",
+      "quantity": 23,
+      "costPerItem": 0.9,
+      "receivedDate": "2023-09-11T18:00:00.000Z",
+      "__v": 0
+    }
+  ],
+  "DailySalesMetrics": [
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-12",
+      "totalRevenue": 8606.85,
+      "dailyCreditCardPayments": 4170.84,
+      "dailyCashPurchases": 4436.01,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 264 },
+        { "gasType": "Diesel", "gallonsSold": 284 },
+        { "gasType": "Midgrade", "gallonsSold": 411 },
+        { "gasType": "Premium", "gallonsSold": 415 },
+        { "gasType": "E85", "gallonsSold": 169 },
+        { "gasType": "Regular", "gallonsSold": 193 },
+        { "gasType": "Diesel", "gallonsSold": 122 },
+        { "gasType": "Midgrade", "gallonsSold": 481 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 17
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-11",
+      "totalRevenue": 8362.3,
+      "dailyCreditCardPayments": 4888.3,
+      "dailyCashPurchases": 3474.0,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 392 },
+        { "gasType": "Diesel", "gallonsSold": 353 },
+        { "gasType": "Midgrade", "gallonsSold": 351 },
+        { "gasType": "Premium", "gallonsSold": 401 },
+        { "gasType": "E85", "gallonsSold": 145 },
+        { "gasType": "Regular", "gallonsSold": 138 },
+        { "gasType": "Diesel", "gallonsSold": 184 },
+        { "gasType": "Midgrade", "gallonsSold": 209 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 12
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-10",
+      "totalRevenue": 8171.25,
+      "dailyCreditCardPayments": 3534.64,
+      "dailyCashPurchases": 4636.61,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 261 },
+        { "gasType": "Diesel", "gallonsSold": 129 },
+        { "gasType": "Midgrade", "gallonsSold": 103 },
+        { "gasType": "Premium", "gallonsSold": 366 },
+        { "gasType": "E85", "gallonsSold": 354 },
+        { "gasType": "Regular", "gallonsSold": 329 },
+        { "gasType": "Diesel", "gallonsSold": 301 },
+        { "gasType": "Midgrade", "gallonsSold": 288 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 10
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-09",
+      "totalRevenue": 8157.4,
+      "dailyCreditCardPayments": 3538.54,
+      "dailyCashPurchases": 4618.86,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 153 },
+        { "gasType": "Diesel", "gallonsSold": 103 },
+        { "gasType": "Midgrade", "gallonsSold": 273 },
+        { "gasType": "Premium", "gallonsSold": 323 },
+        { "gasType": "E85", "gallonsSold": 439 },
+        { "gasType": "Regular", "gallonsSold": 342 },
+        { "gasType": "Diesel", "gallonsSold": 171 },
+        { "gasType": "Midgrade", "gallonsSold": 378 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 4
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-08",
+      "totalRevenue": 9311.25,
+      "dailyCreditCardPayments": 4942.63,
+      "dailyCashPurchases": 4368.62,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 257 },
+        { "gasType": "Diesel", "gallonsSold": 204 },
+        { "gasType": "Midgrade", "gallonsSold": 398 },
+        { "gasType": "Premium", "gallonsSold": 342 },
+        { "gasType": "E85", "gallonsSold": 187 },
+        { "gasType": "Regular", "gallonsSold": 347 },
+        { "gasType": "Diesel", "gallonsSold": 379 },
+        { "gasType": "Midgrade", "gallonsSold": 382 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 36
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-07",
+      "totalRevenue": 7993.15,
+      "dailyCreditCardPayments": 3592.07,
+      "dailyCashPurchases": 4401.08,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 418 },
+        { "gasType": "Diesel", "gallonsSold": 181 },
+        { "gasType": "Midgrade", "gallonsSold": 384 },
+        { "gasType": "Premium", "gallonsSold": 230 },
+        { "gasType": "E85", "gallonsSold": 363 },
+        { "gasType": "Regular", "gallonsSold": 313 },
+        { "gasType": "Diesel", "gallonsSold": 164 },
+        { "gasType": "Midgrade", "gallonsSold": 108 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 8
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-06",
+      "totalRevenue": 8247.3,
+      "dailyCreditCardPayments": 3313.28,
+      "dailyCashPurchases": 4934.02,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 393 },
+        { "gasType": "Diesel", "gallonsSold": 270 },
+        { "gasType": "Midgrade", "gallonsSold": 393 },
+        { "gasType": "Premium", "gallonsSold": 444 },
+        { "gasType": "E85", "gallonsSold": 121 },
+        { "gasType": "Regular", "gallonsSold": 244 },
+        { "gasType": "Diesel", "gallonsSold": 110 },
+        { "gasType": "Midgrade", "gallonsSold": 229 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 11
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-05",
+      "totalRevenue": 7965.85,
+      "dailyCreditCardPayments": 3843.58,
+      "dailyCashPurchases": 4122.27,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 107 },
+        { "gasType": "Diesel", "gallonsSold": 219 },
+        { "gasType": "Midgrade", "gallonsSold": 173 },
+        { "gasType": "Premium", "gallonsSold": 283 },
+        { "gasType": "E85", "gallonsSold": 206 },
+        { "gasType": "Regular", "gallonsSold": 251 },
+        { "gasType": "Diesel", "gallonsSold": 336 },
+        { "gasType": "Midgrade", "gallonsSold": 257 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 1
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-04",
+      "totalRevenue": 7669.5,
+      "dailyCreditCardPayments": 4542.61,
+      "dailyCashPurchases": 3126.89,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 157 },
+        { "gasType": "Diesel", "gallonsSold": 493 },
+        { "gasType": "Midgrade", "gallonsSold": 253 },
+        { "gasType": "Premium", "gallonsSold": 368 },
+        { "gasType": "E85", "gallonsSold": 300 },
+        { "gasType": "Regular", "gallonsSold": 104 },
+        { "gasType": "Diesel", "gallonsSold": 133 },
+        { "gasType": "Midgrade", "gallonsSold": 228 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 27
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54a2b485b42210278310",
+      "date": "2023-09-03",
+      "totalRevenue": 8852.55,
+      "dailyCreditCardPayments": 4854.05,
+      "dailyCashPurchases": 3998.5,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 422 },
+        { "gasType": "Diesel", "gallonsSold": 406 },
+        { "gasType": "Midgrade", "gallonsSold": 481 },
+        { "gasType": "Premium", "gallonsSold": 152 },
+        { "gasType": "E85", "gallonsSold": 185 },
+        { "gasType": "Regular", "gallonsSold": 377 },
+        { "gasType": "Diesel", "gallonsSold": 146 },
+        { "gasType": "Midgrade", "gallonsSold": 237 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc283",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc284",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc285",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc286",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc287",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc288",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc289",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28a",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28b",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28c",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28d",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28e",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc28f",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc290",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc291",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc292",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc293",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc294",
+          "quantitySold": 29
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-12",
+      "totalRevenue": 7340.8,
+      "dailyCreditCardPayments": 3021.55,
+      "dailyCashPurchases": 4319.25,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 177 },
+        { "gasType": "Diesel", "gallonsSold": 209 },
+        { "gasType": "Midgrade", "gallonsSold": 205 },
+        { "gasType": "Premium", "gallonsSold": 233 },
+        { "gasType": "E85", "gallonsSold": 291 },
+        { "gasType": "Regular", "gallonsSold": 379 },
+        { "gasType": "Diesel", "gallonsSold": 373 },
+        { "gasType": "Midgrade", "gallonsSold": 138 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 4
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-11",
+      "totalRevenue": 10062.7,
+      "dailyCreditCardPayments": 5618.26,
+      "dailyCashPurchases": 4444.44,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 329 },
+        { "gasType": "Diesel", "gallonsSold": 109 },
+        { "gasType": "Midgrade", "gallonsSold": 475 },
+        { "gasType": "Premium", "gallonsSold": 264 },
+        { "gasType": "E85", "gallonsSold": 407 },
+        { "gasType": "Regular", "gallonsSold": 417 },
+        { "gasType": "Diesel", "gallonsSold": 273 },
+        { "gasType": "Midgrade", "gallonsSold": 462 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 15
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-10",
+      "totalRevenue": 9152.3,
+      "dailyCreditCardPayments": 4237.64,
+      "dailyCashPurchases": 4914.66,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 119 },
+        { "gasType": "Diesel", "gallonsSold": 402 },
+        { "gasType": "Midgrade", "gallonsSold": 499 },
+        { "gasType": "Premium", "gallonsSold": 272 },
+        { "gasType": "E85", "gallonsSold": 229 },
+        { "gasType": "Regular", "gallonsSold": 468 },
+        { "gasType": "Diesel", "gallonsSold": 330 },
+        { "gasType": "Midgrade", "gallonsSold": 256 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 45
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-09",
+      "totalRevenue": 9376.0,
+      "dailyCreditCardPayments": 3875.19,
+      "dailyCashPurchases": 5500.81,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 247 },
+        { "gasType": "Diesel", "gallonsSold": 203 },
+        { "gasType": "Midgrade", "gallonsSold": 462 },
+        { "gasType": "Premium", "gallonsSold": 355 },
+        { "gasType": "E85", "gallonsSold": 495 },
+        { "gasType": "Regular", "gallonsSold": 318 },
+        { "gasType": "Diesel", "gallonsSold": 104 },
+        { "gasType": "Midgrade", "gallonsSold": 376 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 36
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-08",
+      "totalRevenue": 9760.0,
+      "dailyCreditCardPayments": 5336.81,
+      "dailyCashPurchases": 4423.19,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 132 },
+        { "gasType": "Diesel", "gallonsSold": 475 },
+        { "gasType": "Midgrade", "gallonsSold": 363 },
+        { "gasType": "Premium", "gallonsSold": 419 },
+        { "gasType": "E85", "gallonsSold": 400 },
+        { "gasType": "Regular", "gallonsSold": 379 },
+        { "gasType": "Diesel", "gallonsSold": 498 },
+        { "gasType": "Midgrade", "gallonsSold": 171 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 30
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-07",
+      "totalRevenue": 9065.2,
+      "dailyCreditCardPayments": 5116.94,
+      "dailyCashPurchases": 3948.26,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 196 },
+        { "gasType": "Diesel", "gallonsSold": 430 },
+        { "gasType": "Midgrade", "gallonsSold": 413 },
+        { "gasType": "Premium", "gallonsSold": 485 },
+        { "gasType": "E85", "gallonsSold": 485 },
+        { "gasType": "Regular", "gallonsSold": 169 },
+        { "gasType": "Diesel", "gallonsSold": 183 },
+        { "gasType": "Midgrade", "gallonsSold": 211 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 32
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-06",
+      "totalRevenue": 8946.7,
+      "dailyCreditCardPayments": 4129.7,
+      "dailyCashPurchases": 4817.0,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 159 },
+        { "gasType": "Diesel", "gallonsSold": 213 },
+        { "gasType": "Midgrade", "gallonsSold": 478 },
+        { "gasType": "Premium", "gallonsSold": 329 },
+        { "gasType": "E85", "gallonsSold": 487 },
+        { "gasType": "Regular", "gallonsSold": 138 },
+        { "gasType": "Diesel", "gallonsSold": 410 },
+        { "gasType": "Midgrade", "gallonsSold": 307 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 20
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-05",
+      "totalRevenue": 8304.2,
+      "dailyCreditCardPayments": 3602.23,
+      "dailyCashPurchases": 4701.97,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 153 },
+        { "gasType": "Diesel", "gallonsSold": 414 },
+        { "gasType": "Midgrade", "gallonsSold": 195 },
+        { "gasType": "Premium", "gallonsSold": 101 },
+        { "gasType": "E85", "gallonsSold": 411 },
+        { "gasType": "Regular", "gallonsSold": 373 },
+        { "gasType": "Diesel", "gallonsSold": 353 },
+        { "gasType": "Midgrade", "gallonsSold": 465 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 40
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-04",
+      "totalRevenue": 9027.4,
+      "dailyCreditCardPayments": 4387.88,
+      "dailyCashPurchases": 4639.52,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 324 },
+        { "gasType": "Diesel", "gallonsSold": 472 },
+        { "gasType": "Midgrade", "gallonsSold": 398 },
+        { "gasType": "Premium", "gallonsSold": 238 },
+        { "gasType": "E85", "gallonsSold": 300 },
+        { "gasType": "Regular", "gallonsSold": 108 },
+        { "gasType": "Diesel", "gallonsSold": 451 },
+        { "gasType": "Midgrade", "gallonsSold": 279 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 15
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54aeb485b42210278312",
+      "date": "2023-09-03",
+      "totalRevenue": 7199.2,
+      "dailyCreditCardPayments": 3114.32,
+      "dailyCashPurchases": 4084.88,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 234 },
+        { "gasType": "Diesel", "gallonsSold": 312 },
+        { "gasType": "Midgrade", "gallonsSold": 228 },
+        { "gasType": "Premium", "gallonsSold": 129 },
+        { "gasType": "E85", "gallonsSold": 368 },
+        { "gasType": "Regular", "gallonsSold": 151 },
+        { "gasType": "Diesel", "gallonsSold": 259 },
+        { "gasType": "Midgrade", "gallonsSold": 239 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29b",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29a",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc299",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29c",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29d",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc298",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29e",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc29f",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a0",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc297",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a1",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a2",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a3",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc296",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a4",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc295",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a5",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a6",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a7",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a8",
+          "quantitySold": 19
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-12",
+      "totalRevenue": 8950.2,
+      "dailyCreditCardPayments": 5080.23,
+      "dailyCashPurchases": 3869.97,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 110 },
+        { "gasType": "Diesel", "gallonsSold": 285 },
+        { "gasType": "Midgrade", "gallonsSold": 154 },
+        { "gasType": "Premium", "gallonsSold": 481 },
+        { "gasType": "E85", "gallonsSold": 181 },
+        { "gasType": "Regular", "gallonsSold": 394 },
+        { "gasType": "Diesel", "gallonsSold": 242 },
+        { "gasType": "Midgrade", "gallonsSold": 228 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 8
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-11",
+      "totalRevenue": 7825.1,
+      "dailyCreditCardPayments": 4188.28,
+      "dailyCashPurchases": 3636.82,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 116 },
+        { "gasType": "Diesel", "gallonsSold": 252 },
+        { "gasType": "Midgrade", "gallonsSold": 259 },
+        { "gasType": "Premium", "gallonsSold": 322 },
+        { "gasType": "E85", "gallonsSold": 253 },
+        { "gasType": "Regular", "gallonsSold": 352 },
+        { "gasType": "Diesel", "gallonsSold": 315 },
+        { "gasType": "Midgrade", "gallonsSold": 236 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 32
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-10",
+      "totalRevenue": 11420.9,
+      "dailyCreditCardPayments": 6394.15,
+      "dailyCashPurchases": 5026.75,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 439 },
+        { "gasType": "Diesel", "gallonsSold": 346 },
+        { "gasType": "Midgrade", "gallonsSold": 396 },
+        { "gasType": "Premium", "gallonsSold": 460 },
+        { "gasType": "E85", "gallonsSold": 303 },
+        { "gasType": "Regular", "gallonsSold": 487 },
+        { "gasType": "Diesel", "gallonsSold": 237 },
+        { "gasType": "Midgrade", "gallonsSold": 357 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 32
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-09",
+      "totalRevenue": 9093.2,
+      "dailyCreditCardPayments": 3689.26,
+      "dailyCashPurchases": 5403.94,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 490 },
+        { "gasType": "Diesel", "gallonsSold": 169 },
+        { "gasType": "Midgrade", "gallonsSold": 174 },
+        { "gasType": "Premium", "gallonsSold": 364 },
+        { "gasType": "E85", "gallonsSold": 420 },
+        { "gasType": "Regular", "gallonsSold": 256 },
+        { "gasType": "Diesel", "gallonsSold": 347 },
+        { "gasType": "Midgrade", "gallonsSold": 282 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 47
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-08",
+      "totalRevenue": 9372.4,
+      "dailyCreditCardPayments": 4192.23,
+      "dailyCashPurchases": 5180.17,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 390 },
+        { "gasType": "Diesel", "gallonsSold": 127 },
+        { "gasType": "Midgrade", "gallonsSold": 155 },
+        { "gasType": "Premium", "gallonsSold": 497 },
+        { "gasType": "E85", "gallonsSold": 475 },
+        { "gasType": "Regular", "gallonsSold": 221 },
+        { "gasType": "Diesel", "gallonsSold": 399 },
+        { "gasType": "Midgrade", "gallonsSold": 467 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 46
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-07",
+      "totalRevenue": 8981.5,
+      "dailyCreditCardPayments": 4975.6,
+      "dailyCashPurchases": 4005.9,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 158 },
+        { "gasType": "Diesel", "gallonsSold": 200 },
+        { "gasType": "Midgrade", "gallonsSold": 415 },
+        { "gasType": "Premium", "gallonsSold": 216 },
+        { "gasType": "E85", "gallonsSold": 169 },
+        { "gasType": "Regular", "gallonsSold": 341 },
+        { "gasType": "Diesel", "gallonsSold": 254 },
+        { "gasType": "Midgrade", "gallonsSold": 417 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 31
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-06",
+      "totalRevenue": 11528.8,
+      "dailyCreditCardPayments": 5760.31,
+      "dailyCashPurchases": 5768.49,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 446 },
+        { "gasType": "Diesel", "gallonsSold": 499 },
+        { "gasType": "Midgrade", "gallonsSold": 476 },
+        { "gasType": "Premium", "gallonsSold": 415 },
+        { "gasType": "E85", "gallonsSold": 414 },
+        { "gasType": "Regular", "gallonsSold": 183 },
+        { "gasType": "Diesel", "gallonsSold": 471 },
+        { "gasType": "Midgrade", "gallonsSold": 406 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 20
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-05",
+      "totalRevenue": 10414.9,
+      "dailyCreditCardPayments": 4371.7,
+      "dailyCashPurchases": 6043.2,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 440 },
+        { "gasType": "Diesel", "gallonsSold": 340 },
+        { "gasType": "Midgrade", "gallonsSold": 453 },
+        { "gasType": "Premium", "gallonsSold": 355 },
+        { "gasType": "E85", "gallonsSold": 228 },
+        { "gasType": "Regular", "gallonsSold": 426 },
+        { "gasType": "Diesel", "gallonsSold": 287 },
+        { "gasType": "Midgrade", "gallonsSold": 249 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 45
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-04",
+      "totalRevenue": 8660.5,
+      "dailyCreditCardPayments": 4123.67,
+      "dailyCashPurchases": 4536.83,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 220 },
+        { "gasType": "Diesel", "gallonsSold": 411 },
+        { "gasType": "Midgrade", "gallonsSold": 119 },
+        { "gasType": "Premium", "gallonsSold": 401 },
+        { "gasType": "E85", "gallonsSold": 286 },
+        { "gasType": "Regular", "gallonsSold": 337 },
+        { "gasType": "Diesel", "gallonsSold": 336 },
+        { "gasType": "Midgrade", "gallonsSold": 233 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 39
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54b8b485b42210278314",
+      "date": "2023-09-03",
+      "totalRevenue": 8390.6,
+      "dailyCreditCardPayments": 4063.78,
+      "dailyCashPurchases": 4326.82,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 179 },
+        { "gasType": "Diesel", "gallonsSold": 251 },
+        { "gasType": "Midgrade", "gallonsSold": 201 },
+        { "gasType": "Premium", "gallonsSold": 422 },
+        { "gasType": "E85", "gallonsSold": 463 },
+        { "gasType": "Regular", "gallonsSold": 211 },
+        { "gasType": "Diesel", "gallonsSold": 184 },
+        { "gasType": "Midgrade", "gallonsSold": 345 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2af",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2a9",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ae",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ad",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b0",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b1",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ac",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b2",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b3",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ab",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2aa",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b4",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b5",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b6",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b7",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b8",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2b9",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ba",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bb",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bc",
+          "quantitySold": 7
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-12",
+      "totalRevenue": 9559.9,
+      "dailyCreditCardPayments": 4072.56,
+      "dailyCashPurchases": 5487.34,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 485 },
+        { "gasType": "Diesel", "gallonsSold": 174 },
+        { "gasType": "Midgrade", "gallonsSold": 346 },
+        { "gasType": "Midgrade", "gallonsSold": 355 },
+        { "gasType": "Premium", "gallonsSold": 205 },
+        { "gasType": "E85", "gallonsSold": 127 },
+        { "gasType": "Regular", "gallonsSold": 338 },
+        { "gasType": "Diesel", "gallonsSold": 318 },
+        { "gasType": "Midgrade", "gallonsSold": 266 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 32
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-11",
+      "totalRevenue": 11101.1,
+      "dailyCreditCardPayments": 6083.81,
+      "dailyCashPurchases": 5017.29,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 463 },
+        { "gasType": "Diesel", "gallonsSold": 484 },
+        { "gasType": "Midgrade", "gallonsSold": 453 },
+        { "gasType": "Midgrade", "gallonsSold": 180 },
+        { "gasType": "Premium", "gallonsSold": 497 },
+        { "gasType": "E85", "gallonsSold": 342 },
+        { "gasType": "Regular", "gallonsSold": 263 },
+        { "gasType": "Diesel", "gallonsSold": 203 },
+        { "gasType": "Midgrade", "gallonsSold": 213 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 50
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-10",
+      "totalRevenue": 10603.5,
+      "dailyCreditCardPayments": 4583.01,
+      "dailyCashPurchases": 6020.49,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 440 },
+        { "gasType": "Diesel", "gallonsSold": 470 },
+        { "gasType": "Midgrade", "gallonsSold": 105 },
+        { "gasType": "Midgrade", "gallonsSold": 203 },
+        { "gasType": "Premium", "gallonsSold": 251 },
+        { "gasType": "E85", "gallonsSold": 270 },
+        { "gasType": "Regular", "gallonsSold": 282 },
+        { "gasType": "Diesel", "gallonsSold": 446 },
+        { "gasType": "Midgrade", "gallonsSold": 326 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 16
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-09",
+      "totalRevenue": 9334.0,
+      "dailyCreditCardPayments": 4967.34,
+      "dailyCashPurchases": 4366.66,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 227 },
+        { "gasType": "Diesel", "gallonsSold": 401 },
+        { "gasType": "Midgrade", "gallonsSold": 350 },
+        { "gasType": "Midgrade", "gallonsSold": 303 },
+        { "gasType": "Premium", "gallonsSold": 218 },
+        { "gasType": "E85", "gallonsSold": 116 },
+        { "gasType": "Regular", "gallonsSold": 119 },
+        { "gasType": "Diesel", "gallonsSold": 403 },
+        { "gasType": "Midgrade", "gallonsSold": 445 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 7
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-08",
+      "totalRevenue": 8774.8,
+      "dailyCreditCardPayments": 4478.92,
+      "dailyCashPurchases": 4295.88,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 329 },
+        { "gasType": "Diesel", "gallonsSold": 328 },
+        { "gasType": "Midgrade", "gallonsSold": 394 },
+        { "gasType": "Midgrade", "gallonsSold": 218 },
+        { "gasType": "Premium", "gallonsSold": 104 },
+        { "gasType": "E85", "gallonsSold": 241 },
+        { "gasType": "Regular", "gallonsSold": 333 },
+        { "gasType": "Diesel", "gallonsSold": 230 },
+        { "gasType": "Midgrade", "gallonsSold": 135 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 1
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-07",
+      "totalRevenue": 11944.5,
+      "dailyCreditCardPayments": 5791.19,
+      "dailyCashPurchases": 6153.31,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 362 },
+        { "gasType": "Diesel", "gallonsSold": 280 },
+        { "gasType": "Midgrade", "gallonsSold": 403 },
+        { "gasType": "Midgrade", "gallonsSold": 429 },
+        { "gasType": "Premium", "gallonsSold": 498 },
+        { "gasType": "E85", "gallonsSold": 288 },
+        { "gasType": "Regular", "gallonsSold": 197 },
+        { "gasType": "Diesel", "gallonsSold": 270 },
+        { "gasType": "Midgrade", "gallonsSold": 369 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 28
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-06",
+      "totalRevenue": 7920.3,
+      "dailyCreditCardPayments": 3776.25,
+      "dailyCashPurchases": 4144.05,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 207 },
+        { "gasType": "Diesel", "gallonsSold": 101 },
+        { "gasType": "Midgrade", "gallonsSold": 232 },
+        { "gasType": "Midgrade", "gallonsSold": 127 },
+        { "gasType": "Premium", "gallonsSold": 103 },
+        { "gasType": "E85", "gallonsSold": 212 },
+        { "gasType": "Regular", "gallonsSold": 220 },
+        { "gasType": "Diesel", "gallonsSold": 377 },
+        { "gasType": "Midgrade", "gallonsSold": 387 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 29
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-05",
+      "totalRevenue": 8080.4,
+      "dailyCreditCardPayments": 4667.57,
+      "dailyCashPurchases": 3412.83,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 216 },
+        { "gasType": "Diesel", "gallonsSold": 159 },
+        { "gasType": "Midgrade", "gallonsSold": 465 },
+        { "gasType": "Midgrade", "gallonsSold": 332 },
+        { "gasType": "Premium", "gallonsSold": 142 },
+        { "gasType": "E85", "gallonsSold": 266 },
+        { "gasType": "Regular", "gallonsSold": 144 },
+        { "gasType": "Diesel", "gallonsSold": 219 },
+        { "gasType": "Midgrade", "gallonsSold": 300 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 14
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-04",
+      "totalRevenue": 8822.9,
+      "dailyCreditCardPayments": 4485.77,
+      "dailyCashPurchases": 4337.13,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 198 },
+        { "gasType": "Diesel", "gallonsSold": 378 },
+        { "gasType": "Midgrade", "gallonsSold": 404 },
+        { "gasType": "Midgrade", "gallonsSold": 353 },
+        { "gasType": "Premium", "gallonsSold": 485 },
+        { "gasType": "E85", "gallonsSold": 116 },
+        { "gasType": "Regular", "gallonsSold": 140 },
+        { "gasType": "Diesel", "gallonsSold": 121 },
+        { "gasType": "Midgrade", "gallonsSold": 144 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 13
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c0b485b42210278316",
+      "date": "2023-09-03",
+      "totalRevenue": 9581.5,
+      "dailyCreditCardPayments": 5573.48,
+      "dailyCashPurchases": 4008.02,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 141 },
+        { "gasType": "Diesel", "gallonsSold": 103 },
+        { "gasType": "Midgrade", "gallonsSold": 298 },
+        { "gasType": "Midgrade", "gallonsSold": 419 },
+        { "gasType": "Premium", "gallonsSold": 236 },
+        { "gasType": "E85", "gallonsSold": 333 },
+        { "gasType": "Regular", "gallonsSold": 350 },
+        { "gasType": "Diesel", "gallonsSold": 319 },
+        { "gasType": "Midgrade", "gallonsSold": 304 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c3",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bd",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c2",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c1",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c4",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c5",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c0",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c6",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c7",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2bf",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2be",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c8",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2c9",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ca",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cb",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cc",
+          "quantitySold": 10
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cd",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2ce",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2cf",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d0",
+          "quantitySold": 23
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-12",
+      "totalRevenue": 10263.3,
+      "dailyCreditCardPayments": 5035.11,
+      "dailyCashPurchases": 5228.19,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 484 },
+        { "gasType": "Diesel", "gallonsSold": 148 },
+        { "gasType": "Midgrade", "gallonsSold": 330 },
+        { "gasType": "Premium", "gallonsSold": 307 },
+        { "gasType": "E85", "gallonsSold": 369 },
+        { "gasType": "Regular", "gallonsSold": 318 },
+        { "gasType": "Diesel", "gallonsSold": 304 },
+        { "gasType": "Midgrade", "gallonsSold": 399 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 33
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 39
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 44
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 26
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-11",
+      "totalRevenue": 11998.9,
+      "dailyCreditCardPayments": 7021.15,
+      "dailyCashPurchases": 4977.75,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 223 },
+        { "gasType": "Diesel", "gallonsSold": 437 },
+        { "gasType": "Midgrade", "gallonsSold": 368 },
+        { "gasType": "Premium", "gallonsSold": 322 },
+        { "gasType": "E85", "gallonsSold": 428 },
+        { "gasType": "Regular", "gallonsSold": 492 },
+        { "gasType": "Diesel", "gallonsSold": 398 },
+        { "gasType": "Midgrade", "gallonsSold": 462 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 50
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 2
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 35
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-10",
+      "totalRevenue": 10499.6,
+      "dailyCreditCardPayments": 4905.75,
+      "dailyCashPurchases": 5593.85,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 319 },
+        { "gasType": "Diesel", "gallonsSold": 432 },
+        { "gasType": "Midgrade", "gallonsSold": 391 },
+        { "gasType": "Premium", "gallonsSold": 417 },
+        { "gasType": "E85", "gallonsSold": 292 },
+        { "gasType": "Regular", "gallonsSold": 307 },
+        { "gasType": "Diesel", "gallonsSold": 261 },
+        { "gasType": "Midgrade", "gallonsSold": 394 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 28
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-09",
+      "totalRevenue": 9362.1,
+      "dailyCreditCardPayments": 3850.81,
+      "dailyCashPurchases": 5511.29,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 409 },
+        { "gasType": "Diesel", "gallonsSold": 459 },
+        { "gasType": "Midgrade", "gallonsSold": 192 },
+        { "gasType": "Premium", "gallonsSold": 125 },
+        { "gasType": "E85", "gallonsSold": 489 },
+        { "gasType": "Regular", "gallonsSold": 352 },
+        { "gasType": "Diesel", "gallonsSold": 367 },
+        { "gasType": "Midgrade", "gallonsSold": 331 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 12
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 20
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-08",
+      "totalRevenue": 11149.3,
+      "dailyCreditCardPayments": 5669.1,
+      "dailyCashPurchases": 5480.2,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 342 },
+        { "gasType": "Diesel", "gallonsSold": 448 },
+        { "gasType": "Midgrade", "gallonsSold": 498 },
+        { "gasType": "Premium", "gallonsSold": 234 },
+        { "gasType": "E85", "gallonsSold": 337 },
+        { "gasType": "Regular", "gallonsSold": 497 },
+        { "gasType": "Diesel", "gallonsSold": 218 },
+        { "gasType": "Midgrade", "gallonsSold": 416 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 18
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 27
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 36
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 13
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-07",
+      "totalRevenue": 11895.8,
+      "dailyCreditCardPayments": 6567.95,
+      "dailyCashPurchases": 5327.85,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 489 },
+        { "gasType": "Diesel", "gallonsSold": 481 },
+        { "gasType": "Midgrade", "gallonsSold": 343 },
+        { "gasType": "Premium", "gallonsSold": 227 },
+        { "gasType": "E85", "gallonsSold": 218 },
+        { "gasType": "Regular", "gallonsSold": 459 },
+        { "gasType": "Diesel", "gallonsSold": 340 },
+        { "gasType": "Midgrade", "gallonsSold": 449 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 22
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 27
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-06",
+      "totalRevenue": 10782.8,
+      "dailyCreditCardPayments": 5689.08,
+      "dailyCashPurchases": 5093.72,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 450 },
+        { "gasType": "Diesel", "gallonsSold": 192 },
+        { "gasType": "Midgrade", "gallonsSold": 390 },
+        { "gasType": "Premium", "gallonsSold": 297 },
+        { "gasType": "E85", "gallonsSold": 315 },
+        { "gasType": "Regular", "gallonsSold": 367 },
+        { "gasType": "Diesel", "gallonsSold": 420 },
+        { "gasType": "Midgrade", "gallonsSold": 374 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 38
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 37
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 29
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 26
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 46
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 7
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 8
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 48
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-05",
+      "totalRevenue": 8952.5,
+      "dailyCreditCardPayments": 4329.11,
+      "dailyCashPurchases": 4623.39,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 477 },
+        { "gasType": "Diesel", "gallonsSold": 195 },
+        { "gasType": "Midgrade", "gallonsSold": 148 },
+        { "gasType": "Premium", "gallonsSold": 267 },
+        { "gasType": "E85", "gallonsSold": 483 },
+        { "gasType": "Regular", "gallonsSold": 291 },
+        { "gasType": "Diesel", "gallonsSold": 434 },
+        { "gasType": "Midgrade", "gallonsSold": 136 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 24
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 5
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 6
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 41
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 31
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 39
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-04",
+      "totalRevenue": 8654.9,
+      "dailyCreditCardPayments": 3575.07,
+      "dailyCashPurchases": 5079.83,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 153 },
+        { "gasType": "Diesel", "gallonsSold": 408 },
+        { "gasType": "Midgrade", "gallonsSold": 225 },
+        { "gasType": "Premium", "gallonsSold": 211 },
+        { "gasType": "E85", "gallonsSold": 367 },
+        { "gasType": "Regular", "gallonsSold": 441 },
+        { "gasType": "Diesel", "gallonsSold": 197 },
+        { "gasType": "Midgrade", "gallonsSold": 279 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 9
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 17
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 4
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 15
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 48
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 34
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 21
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 16
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 3
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 28
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 39
+        }
+      ]
+    },
+    {
+      "propertyId": "64ff54c8b485b42210278318",
+      "date": "2023-09-03",
+      "totalRevenue": 10158.9,
+      "dailyCreditCardPayments": 5931.08,
+      "dailyCashPurchases": 4227.82,
+      "gasolineSales": [
+        { "gasType": "Regular", "gallonsSold": 340 },
+        { "gasType": "Diesel", "gallonsSold": 414 },
+        { "gasType": "Midgrade", "gallonsSold": 341 },
+        { "gasType": "Premium", "gallonsSold": 183 },
+        { "gasType": "E85", "gallonsSold": 109 },
+        { "gasType": "Regular", "gallonsSold": 454 },
+        { "gasType": "Diesel", "gallonsSold": 293 },
+        { "gasType": "Midgrade", "gallonsSold": 401 }
+      ],
+      "nonGasolineSales": [
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d7",
+          "quantitySold": 42
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d1",
+          "quantitySold": 49
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d6",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d5",
+          "quantitySold": 14
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d8",
+          "quantitySold": 47
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d9",
+          "quantitySold": 11
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d4",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2da",
+          "quantitySold": 13
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2db",
+          "quantitySold": 23
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d3",
+          "quantitySold": 1
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2d2",
+          "quantitySold": 19
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dc",
+          "quantitySold": 45
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2dd",
+          "quantitySold": 25
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2de",
+          "quantitySold": 32
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2df",
+          "quantitySold": 20
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e0",
+          "quantitySold": 30
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e1",
+          "quantitySold": 35
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e2",
+          "quantitySold": 40
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e3",
+          "quantitySold": 43
+        },
+        {
+          "nonGasolineProductId": "65008f9b18f19e6c78fcc2e4",
+          "quantitySold": 43
+        }
+      ]
+    }
+  ]
+}

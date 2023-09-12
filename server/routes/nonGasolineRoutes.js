@@ -4,15 +4,15 @@ const router = express.Router();
 const { authenticate } = require("../middleware/authentication");
 
 const {
-  getNoneGasolineProducts,
-  addNoneGasolineProduct,
-  updateNoneGasolineProduct,
-  deleteNoneGasolineProduct,
+  getNonGasolineProducts,
+  addNonGasolineProduct,
+  updateNonGasolineProduct,
+  deleteNonGasolineProduct,
 } = require("../controllers/nonGasolineController");
 
-router.route("/:propertyId").get(authenticate, getNoneGasolineProducts);
-router.route("/:propertyId").post(authenticate, addNoneGasolineProduct);
-router.route("/:id").patch(authenticate, updateNoneGasolineProduct);
-router.route("/:id").delete(authenticate, deleteNoneGasolineProduct);
+router.route("/:propertyId").get(authenticate, getNonGasolineProducts);
+router.route("/:propertyId").post(authenticate, addNonGasolineProduct);
+router.route("/:id").patch(authenticate, updateNonGasolineProduct);
+router.route("/:id").delete(authenticate, deleteNonGasolineProduct);
 
 module.exports = router;

@@ -1,19 +1,20 @@
 const NonGasolineProduct = require("../models/NonGasolineProduct");
 
-const getNoneGasolineProducts = async (req, res) => {
+const getNonGasolineProducts = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
-    const noneGasolineProducts = await NonGasolineProduct.find({
+    const nonGasolineProducts = await NonGasolineProduct.find({
       propertyId,
     }).sort({ receivedDate: 1 });
-    res.status(200).json({ noneGasolineProducts });
+    res.status(200).json({ nonGasolineProducts });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
 };
 
-const addNoneGasolineProduct = async (req, res) => {
+
+const addNonGasolineProduct = async (req, res) => {
   const { propertyId } = req.params;
 
   const { name, category, quantity, costPerItem, receivedDate } = req.body;
@@ -25,7 +26,7 @@ const addNoneGasolineProduct = async (req, res) => {
   }
 
   try {
-    const newNoneGasolineProduct = new NonGasolineProduct({
+    const newNonGasolineProduct = new NonGasolineProduct({
       propertyId,
       name,
       category,
@@ -33,54 +34,54 @@ const addNoneGasolineProduct = async (req, res) => {
       costPerItem,
       receivedDate,
     });
-    await newNoneGasolineProduct.save();
-    res.status(201).json({ msg: newNoneGasolineProduct });
+    await newNonGasolineProduct.save();
+    res.status(201).json({ msg: newNonGasolineProduct });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
 };
 
-const updateNoneGasolineProduct = async (req, res) => {
-  const { id } = req.params; // Now we use id to find the noneGasolineProduct
+const updateNonGasolineProduct = async (req, res) => {
+  const { id } = req.params; // Now we use id to find the nonGasolineProduct
   const { costPerItem, quantity, name, category, receivedDate } = req.body;
 
   try {
     // Find the NonGasolineProduct based on _id
-    const noneGasolineProduct = await NonGasolineProduct.findById(id);
+    const nonGasolineProduct = await NonGasolineProduct.findById(id);
 
-    if (!noneGasolineProduct) {
+    if (!nonGasolineProduct) {
       return res.status(404).json({
         msg: `No NonGasolineProduct found for id ${id}`,
       });
     }
 
-    noneGasolineProduct.costPerItem = costPerItem;
-    noneGasolineProduct.quantity = quantity;
-    noneGasolineProduct.name = name;
-    noneGasolineProduct.category = category;
-    noneGasolineProduct.receivedDate = receivedDate;
+    nonGasolineProduct.costPerItem = costPerItem;
+    nonGasolineProduct.quantity = quantity;
+    nonGasolineProduct.name = name;
+    nonGasolineProduct.category = category;
+    nonGasolineProduct.receivedDate = receivedDate;
 
-    await noneGasolineProduct.save();
+    await nonGasolineProduct.save();
 
-    res.status(200).json({ msg: noneGasolineProduct });
+    res.status(200).json({ msg: nonGasolineProduct });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
 };
 
-const deleteNoneGasolineProduct = async (req, res) => {
+const deleteNonGasolineProduct = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const noneGasolineProduct = await NonGasolineProduct.findById(id);
+    const nonGasolineProduct = await NonGasolineProduct.findById(id);
 
-    if (!noneGasolineProduct) {
+    if (!nonGasolineProduct) {
       return res.status(404).json({
         msg: `No NonGasolineProduct found for id ${id}`,
       });
     }
 
-    await noneGasolineProduct.remove();
+    await nonGasolineProduct.remove();
 
     res.status(200).json({ msg: `NonGasolineProduct ${id} deleted.` });
   } catch (error) {
@@ -127,9 +128,10 @@ const updateNonGasolineStocks = async (
 };
 
 module.exports = {
-  getNoneGasolineProducts,
-  addNoneGasolineProduct,
-  updateNoneGasolineProduct,
-  deleteNoneGasolineProduct,
+  getNonGasolineProducts,
+  addNonGasolineProduct,
+  updateNonGasolineProduct,
+  deleteNonGasolineProduct,
   updateNonGasolineStocks,
+  getgodmode,
 };
