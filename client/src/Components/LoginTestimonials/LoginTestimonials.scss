@@ -1,21 +1,54 @@
+@import "../../styles/variables.scss";
+
 .login-testimonial-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
 
+  height: 100%;
 
-  // .circle-container {
-  //   display: flex;
-  //   justify-content: center;
-  //   margin-top: 10px;
+  p {
+    font-size: 1.4rem;
+    color: $gray-500;
+  }
 
-  //   .circle {
-  //     width: 10px;
-  //     height: 10px;
-  //     background-color: black;
-  //     margin: 0 5px;
-  //     border-radius: 50%;
+  img {
+    border-radius: 50%;
+    margin: 2rem 0rem;
+    width: 4rem;
+    height: 4rem;
+  }
 
-  //     &.active {
-  //       background-color: grey;
-  //     }
-  //   }
-  // }
+  span {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .name {
+    font-weight: 600;
+  }
+
+  .company {
+    color: $gray-500;
+  }
+  .location {
+    font-size: 1.2rem;
+    color: $gray-800;
+  }
+
+  .circle-container {
+    display: flex;
+    margin-top: 4rem;
+    .circle {
+      width: 5px;
+      height: 5px;
+      background-color: $gray-300;
+      margin: 0 5px;
+      border-radius: 50%;
+
+      &.active {
+        background-color: $gray-500;
+      }
+    }
+  }
 }

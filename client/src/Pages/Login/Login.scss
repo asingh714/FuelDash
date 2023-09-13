@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
 
-.login-page-container {
+.login-page {
   background-color: $gray-50;
   height: 100vh;
   border-radius: 2rem;
@@ -8,33 +9,45 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 12rem;
+  // padding: 0 8rem;
 
-  .login-page-heading {
-    font-size: 3.5rem;
-    font-weight: 500;
-    align-self: flex-start;
-    color: $gray-800;
-    margin-bottom: 2rem;
-  }
+  .login-page-container {
+    max-width: 70%;
 
-  .login-page-content-container {
-    display: flex;
-
-    .left-container {
-      border-right: 1px solid $gray-300;
-      flex: 2;
-
-      span {
-        color: $gray-500;
-        display: inline-block;
-        max-width: 35rem;
-        font-size: 1.4rem;
-      }
+    .login-page-heading {
+      font-size: 3.5rem;
+      font-weight: 500;
+      align-self: flex-start;
+      color: $gray-800;
+      margin-bottom: 2rem;
     }
 
-    .right-container {
-      flex: 1;
+    .login-page-content-container {
+      display: flex;
+
+      .left-container {
+        border-right: 1px solid $gray-300;
+        flex: 3;
+
+        @include md {
+          border-right: none;
+          flex: 1;
+        }
+
+        span {
+          color: $gray-500;
+          display: inline-block;
+          max-width: 35rem;
+          font-size: 1.4rem;
+        }
+      }
+
+      .right-container {
+        flex: 2;
+        @include md {
+          display: none;
+        }
+      }
     }
   }
 }
