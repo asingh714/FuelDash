@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import validator from "validator";
 
 import "./loginForm.scss";
 
@@ -8,11 +10,13 @@ const LoginForm = () => {
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let isValid = true;
 
-    if (email === "") {
+    if (email === "" || !validator.isEmail(email)) {
       setEmailError(true);
       isValid = false;
     } else {
@@ -39,12 +43,12 @@ const LoginForm = () => {
         name="email"
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Your email"
-        type="email"
+        type="text"
       />
       {emailError && <p className="error-text">Email is required.</p>}
       <label>Password</label>
       <input
-        className={emailError ? "error" : ""}
+        className={passwordError ? "error" : ""}
         name="password"
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Your password"
@@ -53,7 +57,7 @@ const LoginForm = () => {
       {passwordError && <p className="error-text">Password is required.</p>}
       <button type="submit">Login</button>
 
-      <span className="signup-link">
+      <span className="signup-link" onClick={() => navigate("/signup")}>
         Don&apos;t have an account? <span id="darker">Create account →</span>
       </span>
     </form>
