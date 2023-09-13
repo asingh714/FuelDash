@@ -3,13 +3,13 @@
 
 .login-page {
   background-color: $gray-50;
-  height: 100vh;
+  height: calc(100vh - 2rem);
   border-radius: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // padding: 0 8rem;
+  margin: 1rem;
 
   .login-page-container {
     max-width: 70%;

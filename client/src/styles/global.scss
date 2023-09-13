@@ -8,6 +8,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -19,6 +20,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: $slate-800;
 }
 
 img,
@@ -45,9 +47,4 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-.main {
-  background-color: $slate-800;
-  height: 100%;
 }

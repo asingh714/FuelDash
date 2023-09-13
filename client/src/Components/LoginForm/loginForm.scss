@@ -42,6 +42,19 @@
     cursor: pointer;
   }
 
+  .error {
+    border: 1px solid $red-300;
+    background-color: $red-50;
+  }
+
+  .error-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $red-600;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+
   .signup-link {
     margin-top: 5rem;
 
