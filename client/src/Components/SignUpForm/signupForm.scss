@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $zinc-400;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 35rem;
+    margin-bottom: 1.6rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid $gray-300;
+    border-radius: 5px;
+    color: $zinc-400;
+    &:focus {
+      outline: none;
+      border: 1px solid $gray-500;
+    }
+
+    &::placeholder {
+      color: $gray-400;
+    }
+  }
+  .error {
+    border: 1px solid $red-300;
+    background-color: $red-50;
+  }
+
+  .error-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $red-600;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+
+  #terms {
+    font-size: 1.2rem;
+    .agreements {
+      font-weight: 600;
+    }
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    width: 7.2rem;
+    padding: 0.5rem 0rem;
+    border-radius: 1.5rem;
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .signup-link {
+    margin-top: 5rem;
+
+    #darker {
+      color: $gray-600;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: underline;
+      // font-size: 1.2rem;
+    }
+  }
+}
