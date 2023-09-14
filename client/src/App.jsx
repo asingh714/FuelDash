@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home.jsx";
 import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
+import TermsOfUse from "./Pages/TermsOfUse/TermsOfUse.jsx";
 import "./styles/global.scss";
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
         {
           path: "/signup",
           element: <SignUp />,
+        },
+        {
+          path: "/terms-of-use",
+          element: <TermsOfUse />,
         },
       ],
     },
