@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.terms-of-use-page {
+  display: flex;
+  flex-direction: column;
+  color: $neutral-50;
+  padding: 0 3rem;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
+  header {
+    margin-top: 22rem;
+
+    span {
+      font-size: 1.2rem;
+      color: $gray-400;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 4.8rem;
+      font-weight: 400;
+    }
+  }
+
+  .terms-of-use-content {
+    display: flex;
+    margin-top: 10rem;
+
+    nav {
+      flex: 1;
+      // position: sticky;
+      // flex: 0 0 20%;
+      position: sticky;
+      top: 20%;
+      height: 50rem;
+      // top: 0;
+
+      h2 {
+        font-size: 1.2rem;
+        color: $gray-400;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      li {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        padding: 0.5rem 2rem;
+        max-width: 90%;
+
+        &.active {
+          background-color: $slate-900;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    main {
+      // flex: 1;
+      // overflow-y: auto; // Scrollable
+      // height: 100vh; // or whatever height you need
+      flex: 3;
+      // min-height: calc(100vh - 32rem);
+      // height: calc(100vh - 10rem - 22rem);
+
+      section {
+        margin-bottom: 5rem;
+
+        h2 {
+          font-size: 4rem;
+          font-weight: 300;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          color: $gray-400;
+          line-height: 2;
+        }
+
+        li {
+          list-style-type: disc;
+          margin-left: 2rem;
+          color: $gray-400;
+        }
+      }
+    }
+  }
+}
