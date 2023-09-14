@@ -5,6 +5,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
 import TermsOfUse from "./Pages/TermsOfUse/TermsOfUse.jsx";
+
 import "./styles/global.scss";
 
 function App() {
