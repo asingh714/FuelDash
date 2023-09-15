@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import validator from "validator";
 
+import newRequest from "../../utils/newRequest";
 import "./loginForm.scss";
 
 const LoginForm = () => {
@@ -9,34 +10,51 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+  const [error, setError] = useState(null);
 
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    let isValid = true;
+    try {
+      let isValid = true;
 
-    if (email === "" || !validator.isEmail(email)) {
-      setEmailError(true);
-      isValid = false;
-    } else {
-      setEmailError(false);
-    }
+      if (email === "" || !validator.isEmail(email)) {
+        setEmailError(true);
+        isValid = false;
+      } else {
+        setEmailError(false);
+      }
 
-    if (password === "") {
-      setPasswordError(true);
-      isValid = false;
-    } else {
-      setPasswordError(false);
-    }
+      if (password === "") {
+        setPasswordError(true);
+        isValid = false;
+      } else {
+        setPasswordError(false);
+      }
 
-    if (isValid) {
-      // Your login logic here
+      if (isValid) {
+        const res = await newRequest.post("/auth/login", {
+          email,
+          password,
+        });
+        localStorage.setItem("currentUser", JSON.stringify(res.data));
+        navigate("/dashboard");
+      }
+    } catch (error) {
+      setError(error.response.data.msg);
     }
   };
 
   return (
     <form className="login-form" onSubmit={handleSubmit}>
+      {/* include red-icon.svg in error message below*/}
+      {error && (
+        <p className="error-login-text">
+          <img src="/red-icon.svg" alt="" />
+          {error}
+        </p>
+      )}
       <label>Email</label>
       <input
         className={emailError ? "error" : ""}

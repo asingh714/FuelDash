@@ -55,6 +55,24 @@
     margin-bottom: 10px;
   }
 
+  .error-login-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $red-600;
+    background-color: $red-200;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 5px;
+    }
+  }
+
   .signup-link {
     margin-top: 5rem;
 
