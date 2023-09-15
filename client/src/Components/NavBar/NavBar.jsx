@@ -7,6 +7,7 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    console.log("menuOpen:", !menuOpen); // Debug statement
   };
   return (
     <div className="navbar-container">
@@ -17,7 +18,7 @@ const NavBar = () => {
 
       <div className="links-container">
         <div className="resources-container">
-          <span id="resource-link">
+          <span className="resource-link">
             Resources
             <div className="resources-menu">
               <Link to="/about">About</Link>
@@ -27,6 +28,17 @@ const NavBar = () => {
               <Link to="/faqs">FAQs</Link>
             </div>
           </span>
+        </div>
+
+        <div className={`nav-menu ${menuOpen ? "open-menu" : ""}`}>
+          <span className="nav-resource-link">Resources</span>
+          <div className="nav-resources-menu">
+            <Link to="/about">About</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/customers">Customers</Link>
+            <Link to="/faqs">FAQs</Link>
+          </div>
         </div>
         <Link to="/login" id="login-link">
           Login

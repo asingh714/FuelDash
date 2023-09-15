@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem 2rem;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@
       cursor: pointer;
     }
 
-    #resource-link,
+    .resource-link,
     a:not(:last-child) {
       margin-right: 3rem;
       color: $gray-400;
@@ -48,28 +48,7 @@
       @include md {
         display: none;
       }
-      .resources-menu {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 100%;
-
-        padding: 2.5rem;
-        border-radius: 8px;
-        background-color: $gray-900;
-        z-index: 9;
-
-        a {
-          display: block;
-          color: white;
-          padding: 1rem;
-        }
-        a:not(:last-child) {
-          margin-bottom: 1.5rem;
-        }
-      }
-
-      #resource-link {
+      .resource-link {
         padding: 1rem 2rem;
         color: $gray-400;
         z-index: 10;
@@ -90,6 +69,54 @@
             display: block;
           }
         }
+      }
+      .resources-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 2.5rem;
+        border-radius: 8px;
+        background-color: $gray-900;
+        z-index: 9;
+
+        a {
+          display: block;
+          color: white;
+          padding: 1rem;
+        }
+        a:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .nav-menu {
+      display: block;
+      position: absolute;
+      top: -200%; // Move it just below the navbar
+      padding: 3rem;
+      border-radius: 8px;
+      background-color: $gray-900;
+      z-index: 9;
+      width: 50rem;
+      opacity: 0; // Initially make it transparent
+      transform: translateY(-100%); // Initially move it up to hide it
+      transition: all 0.5s ease-in-out;
+
+      .nav-resource-link {
+        color: $gray-400;
+      }
+
+      a {
+        display: block;
+        color: white;
+        margin-top: 1.5rem;
+      }
+
+      &.open-menu {
+        transform: translateY(40%); // Bring it down to its original position
+        opacity: 1; // Make it visible
       }
     }
 
