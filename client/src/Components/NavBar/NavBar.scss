@@ -1,4 +1,6 @@
 @import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
 .navbar-container {
   position: fixed;
   top: 0;
@@ -36,21 +38,25 @@
       cursor: pointer;
     }
 
-    span,
+    #resource-link,
     a:not(:last-child) {
       margin-right: 3rem;
       color: $gray-400;
     }
 
     .resources-container {
+      @include md {
+        display: none;
+      }
       .resources-menu {
         display: none;
         position: absolute;
+        left: 0;
         top: 100%;
 
         padding: 2.5rem;
         border-radius: 8px;
-        background-color: $gray-700;
+        background-color: $gray-900;
         z-index: 9;
 
         a {
@@ -93,6 +99,14 @@
       &:hover {
         color: white;
       }
+
+      @include md {
+        padding: 0.5rem 2rem;
+        border-radius: 2rem;
+        color: $gray-50;
+
+        background-color: $gray-700;
+      }
     }
 
     #signup-link {
@@ -105,6 +119,43 @@
       &:hover {
         color: $gray-200;
         background-color: $gray-800;
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+      border-radius: 2rem;
+      color: white;
+
+      @include md {
+        display: block;
+        background-color: $gray-700;
+        padding: 1rem;
+      }
+
+      .bar {
+        background-color: $gray-50;
+        display: block;
+        width: 1.5rem;
+        height: 0.2rem;
+        transition: all 0.2s ease-in-out;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+      &.open {
+        .bar:nth-child(1) {
+          transform: translateY(3.5px) rotate(45deg);
+        }
+        .bar:nth-child(2) {
+          transform: translateY(-3.5px) rotate(-45deg);
+        }
       }
     }
   }
