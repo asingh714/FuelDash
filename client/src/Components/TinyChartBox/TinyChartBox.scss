@@ -1,0 +1,54 @@
+.tiny-chart-box-container {
+  display: flex;
+  height: 100%;
+
+  .left-tiny-chart-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 3;
+
+    .tiny-chart-box-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      span {
+        font-size: 1.6rem;
+      }
+      img {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(162deg)
+          brightness(101%) contrast(104%);
+      }
+    }
+    a {
+      font-size: 1.4rem;
+    }
+  }
+
+  .right-tiny-chart-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+
+    .chart {
+      width: 100%;
+      height: 50%;
+    }
+    .texts {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      .percentage {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .duration {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

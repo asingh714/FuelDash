@@ -202,6 +202,7 @@ const getTopNonGasProducts = async (propertyId) => {
       topNonGasProducts.push({
         id: item._id,
         name: product.name,
+        price: product.costPerItem, // need to change this.
         quantitySold: item.totalQuantitySold,
       });
     }
