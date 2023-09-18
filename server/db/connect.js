@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const GasolineProduct = require("../models/GasolineProduct");
 const NonGasolineProduct = require("../models/NonGasolineProduct");
 const DailySalesMetrics = require("../models/DailySalesMetrics");
+const { addGasDelivery } = require("./addData.js");
 const fs = require("fs");
 
 const readJSONFile = (filePath) => {
@@ -18,6 +19,7 @@ const readJSONFile = (filePath) => {
 const connectDB = async () => {
   try {
     // Read data from JSON file
+
     const parsedData = await readJSONFile("data.json");
     const gasolineProducts = parsedData.GasolineProducts;
     const nonGasolineProducts = parsedData.NonGasolineProducts;
@@ -36,7 +38,7 @@ const connectDB = async () => {
     // await DailySalesMetrics.deleteMany({});
     // console.log("All old DB data records deleted.");
 
-    // Insert new records
+    // // Insert new records
     // await GasolineProduct.insertMany(gasolineProducts);
     // await NonGasolineProduct.insertMany(nonGasolineProducts);
     // await DailySalesMetrics.insertMany(dailySalesMetrics);

@@ -43,6 +43,8 @@ const getSingleDailySalesMetrics = async (req, res) => {
       gasolineSales,
     } = dailySalesMetrics;
 
+    console.log()
+
     const totalGallonsSold = await getTotalGallonsSold(
       propertyId,
       dailySalesMetrics.date

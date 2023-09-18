@@ -13,14 +13,20 @@ const DailySalesMetricsSchema = new mongoose.Schema({
   totalRevenue: {
     type: Number,
     required: true,
+    set: (v) => Math.round(v * 100),
+    get: (v) => (v / 100).toFixed(2),
   },
   dailyCreditCardPayments: {
     type: Number,
     required: true,
+    set: (v) => Math.round(v * 100),
+    get: (v) => (v / 100).toFixed(2),
   },
   dailyCashPurchases: {
     type: Number,
     required: true,
+    set: (v) => Math.round(v * 100),
+    get: (v) => (v / 100).toFixed(2),
   },
   gasolineSales: [
     {
@@ -32,6 +38,12 @@ const DailySalesMetricsSchema = new mongoose.Schema({
       gallonsSold: {
         type: Number,
         required: true,
+      },
+      priceSoldAt: {
+        type: Number,
+        required: true,
+        set: (v) => Math.round(v * 100),
+        get: (v) => (v / 100).toFixed(2),
       },
     },
   ],
@@ -45,6 +57,12 @@ const DailySalesMetricsSchema = new mongoose.Schema({
       quantitySold: {
         type: Number,
         required: true,
+      },
+      priceSoldAt: {
+        type: Number,
+        required: true,
+        set: (v) => Math.round(v * 100),
+        get: (v) => (v / 100).toFixed(2),
       },
     },
   ],

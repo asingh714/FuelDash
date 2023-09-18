@@ -18,13 +18,13 @@ const GasolineProductSchema = new mongoose.Schema({
   costPerGallon: {
     type: Number,
     required: true,
+    set: (v) => Math.round(v * 100),
+    get: (v) => (v / 100).toFixed(2),
   },
   receivedDate: {
     type: Date,
     default: Date.now,
   },
 });
-
-
 
 module.exports = mongoose.model("GasolineProduct", GasolineProductSchema);
