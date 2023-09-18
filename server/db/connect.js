@@ -32,7 +32,7 @@ const connectDB = async () => {
     });
     console.log("Connected to MongoDB...");
 
-    // Delete all existing records
+    // // Delete all existing records
     // await GasolineProduct.deleteMany({});
     // await NonGasolineProduct.deleteMany({});
     // await DailySalesMetrics.deleteMany({});

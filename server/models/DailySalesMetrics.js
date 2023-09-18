@@ -16,13 +16,13 @@ const DailySalesMetricsSchema = new mongoose.Schema({
     set: (v) => Math.round(v * 100),
     get: (v) => (v / 100).toFixed(2),
   },
-  dailyCreditCardPayments: {
+  dailyCashPayments: {
     type: Number,
     required: true,
     set: (v) => Math.round(v * 100),
     get: (v) => (v / 100).toFixed(2),
   },
-  dailyCashPurchases: {
+  dailyCreditCardPayments: {
     type: Number,
     required: true,
     set: (v) => Math.round(v * 100),

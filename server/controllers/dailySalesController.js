@@ -11,8 +11,6 @@ const {
   getAllGasProductsForLatestDailySales,
 } = require("../dashboardUtils/dashboardUtils");
 
-
-
 const getAllDailySalesMetrics = async (req, res) => {
   const { propertyId } = req.params;
 
@@ -39,11 +37,11 @@ const getSingleDailySalesMetrics = async (req, res) => {
     const {
       totalRevenue,
       dailyCreditCardPayments,
-      dailyCashPurchases,
+      dailyCashPayments,
       gasolineSales,
     } = dailySalesMetrics;
 
-    console.log()
+    console.log();
 
     const totalGallonsSold = await getTotalGallonsSold(
       propertyId,
@@ -57,9 +55,9 @@ const getSingleDailySalesMetrics = async (req, res) => {
     );
 
     res.status(200).json({
-      totalRevenue,
-      dailyCreditCardPayments,
-      dailyCashPurchases,
+      totalRevenue: parseFloat(totalRevenue),
+      dailyCreditCardPayments: parseFloat(dailyCreditCardPayments),
+      dailyCashPayments: parseFloat(dailyCashPayments),
       totalGallonsSold,
       sevenDaysRevenue,
       sevenDaysTotalGallons,
@@ -164,7 +162,7 @@ const addDailySalesMetrics = async (req, res) => {
     date,
     totalRevenue,
     dailyCreditCardPayments,
-    dailyCashPurchases,
+    dailyCashPayments,
     gasolineSales,
     nonGasolineSales,
   } = req.body;
@@ -174,7 +172,7 @@ const addDailySalesMetrics = async (req, res) => {
   if (
     !totalRevenue ||
     !dailyCreditCardPayments ||
-    !dailyCashPurchases ||
+    !dailyCashPayments ||
     !gasolineSales ||
     !nonGasolineSales
   ) {
@@ -188,7 +186,7 @@ const addDailySalesMetrics = async (req, res) => {
     date,
     totalRevenue,
     dailyCreditCardPayments,
-    dailyCashPurchases,
+    dailyCashPayments,
     gasolineSales,
     nonGasolineSales,
   });
