@@ -69,7 +69,7 @@ const getPastSevenDaysRevenue = async (propertyId) => {
       },
     }).sort({ date: 1 }); // Sorting by date in ascending order
 
-    const revenueArray = records.map((record) => record.totalRevenue);
+    const revenueArray = records.map((record) => parseInt(record.totalRevenue));
     return revenueArray;
   } catch (error) {
     console.error("Error fetching past 7 days revenue:", error);
@@ -202,7 +202,7 @@ const getTopNonGasProducts = async (propertyId) => {
       topNonGasProducts.push({
         id: item._id,
         name: product.name,
-        price: product.costPerItem, // need to change this.
+        price: item.priceSoldAt, // need to change this.
         quantitySold: item.totalQuantitySold,
       });
     }
