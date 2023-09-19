@@ -9,6 +9,7 @@ const {
   getPastSevenDaysGallonsSold,
   getTopNonGasProducts,
   getAllGasProductsForLatestDailySales,
+  getPastSevenDaysPaymentTotals,
 } = require("../dashboardUtils/dashboardUtils");
 
 const getAllDailySalesMetrics = async (req, res) => {
@@ -54,6 +55,10 @@ const getSingleDailySalesMetrics = async (req, res) => {
       propertyId
     );
 
+    const sevenDaysPaymentTotals = await getPastSevenDaysPaymentTotals(
+      propertyId
+    );
+
     res.status(200).json({
       totalRevenue: parseFloat(totalRevenue),
       dailyCreditCardPayments: parseFloat(dailyCreditCardPayments),
@@ -61,6 +66,7 @@ const getSingleDailySalesMetrics = async (req, res) => {
       totalGallonsSold,
       sevenDaysRevenue,
       sevenDaysTotalGallons,
+      sevenDaysPaymentTotals,
       topNonGasProducts,
       topGasProducts,
     });

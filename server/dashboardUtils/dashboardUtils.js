@@ -279,10 +279,58 @@ const getAllGasProductsForLatestDailySales = async (propertyId) => {
   }
 };
 
+const getPastSevenDaysPaymentTotals = async (propertyId) => {
+  const today = new Date();
+  const sevenDaysAgo = new Date(today);
+  sevenDaysAgo.setDate(today.getDate() - 7);
+
+  const startOfToday = new Date(
+    Date.UTC(
+      today.getUTCFullYear(),
+      today.getUTCMonth(),
+      today.getUTCDate(),
+      0,
+      0,
+      0
+    )
+  );
+  const startOfSevenDaysAgo = new Date(
+    Date.UTC(
+      sevenDaysAgo.getUTCFullYear(),
+      sevenDaysAgo.getUTCMonth(),
+      sevenDaysAgo.getUTCDate(),
+      0,
+      0,
+      0
+    )
+  );
+
+  try {
+    const records = await DailySalesMetrics.find({
+      propertyId,
+      date: {
+        $gte: startOfSevenDaysAgo,
+        $lt: startOfToday,
+      },
+    }).sort({ date: 1 }); // Sorting by date in ascending order
+
+    const paymentsArray = records.map((record) => ({
+      day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
+      "Total Credit Card Payments": parseFloat(record.dailyCreditCardPayments),
+      "Total Cash Payments": parseFloat(record.dailyCashPayments), // Make sure this matches with your schema, you might have it as `dailyCashPayments`
+    }));
+
+    return paymentsArray;
+  } catch (error) {
+    console.error("Error fetching past 7 days payments:", error);
+    return [];
+  }
+};
 module.exports = {
   getTotalGallonsSold,
   getPastSevenDaysRevenue,
   getPastSevenDaysGallonsSold,
   getTopNonGasProducts,
   getAllGasProductsForLatestDailySales,
+  getPastSevenDaysPaymentTotals,
 };
