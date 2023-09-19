@@ -183,6 +183,7 @@ const getTopNonGasProducts = async (propertyId) => {
         $group: {
           _id: "$nonGasolineSales.nonGasolineProductId",
           totalQuantitySold: { $sum: "$nonGasolineSales.quantitySold" },
+          averagePrice: { $avg: "$nonGasolineSales.priceSoldAt" },
         },
       },
       {
@@ -197,12 +198,13 @@ const getTopNonGasProducts = async (propertyId) => {
 
     // Populate product names
     const topNonGasProducts = [];
+
     for (const item of result) {
       const product = await NonGasolineProduct.findById(item._id);
       topNonGasProducts.push({
         id: item._id,
         name: product.name,
-        price: item.priceSoldAt, // need to change this.
+        price: parseFloat((item.averagePrice / 100).toFixed(2)),
         quantitySold: item.totalQuantitySold,
       });
     }
@@ -239,29 +241,24 @@ const getAllGasProductsForLatestDailySales = async (propertyId) => {
       }
     });
 
-    // Calculate the total gallons of gas sold for the day
     const totalGallonsSold = Object.values(gasTypeTotals).reduce(
       (total, gallons) => total + gallons,
       0
     );
 
-    // Create an array with the aggregated data and calculate the percentage of total sales for each gasType
     const gasProducts = Object.keys(gasTypeTotals).map((gasType) => ({
-      id: gasType, // Note: This is not a MongoDB ObjectId
+      id: gasType,
       gasType: gasType,
-      percentageOfTotal: (
-        (gasTypeTotals[gasType] / totalGallonsSold) *
-        100
-      ).toFixed(2),
+      percentageOfTotal: parseFloat((
+        (gasTypeTotals[gasType] / totalGallonsSold) * 100
+      ).toFixed(2)),
     }));
 
-    // Sort by percentageOfTotal in descending order, if needed
     gasProducts.sort(
       (a, b) =>
         parseFloat(b.percentageOfTotal) - parseFloat(a.percentageOfTotal)
     );
 
-    // Return all gas products
     return gasProducts;
   } catch (error) {
     console.error(

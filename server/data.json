@@ -1482,7 +1482,7 @@
       "name": "Chewing Gum",
       "category": "Snacks",
       "quantity": 23,
-      "costPerItem": 0.9,
+      "costPerItem": 0.90,
       "receivedDate": "2023-09-16T18:00:00.000Z",
       "__v": 0
     },
@@ -1492,7 +1492,7 @@
       "name": "Chewing Gum",
       "category": "Snacks",
       "quantity": 23,
-      "costPerItem": 0.9,
+      "costPerItem": 0.90,
       "receivedDate": "2023-09-16T18:00:00.000Z",
       "__v": 0
     }
@@ -1550,7 +1550,7 @@
         {
           "nonGasolineProductId": "65008f9b18f19e6c78fcc281",
           "quantitySold": 38,
-          "priceSoldAt": 5.9
+          "priceSoldAt": 5.90
         },
         {
           "nonGasolineProductId": "65008f9b18f19e6c78fcc282",
