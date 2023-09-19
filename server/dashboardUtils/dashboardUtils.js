@@ -69,7 +69,10 @@ const getPastSevenDaysRevenue = async (propertyId) => {
       },
     }).sort({ date: 1 }); // Sorting by date in ascending order
 
-    const revenueArray = records.map((record) => parseInt(record.totalRevenue));
+    const revenueArray = records.map((record) => ({
+      day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
+      revenue: parseInt(record.totalRevenue),
+    }));
     return revenueArray;
   } catch (error) {
     console.error("Error fetching past 7 days revenue:", error);
@@ -249,9 +252,9 @@ const getAllGasProductsForLatestDailySales = async (propertyId) => {
     const gasProducts = Object.keys(gasTypeTotals).map((gasType) => ({
       id: gasType,
       gasType: gasType,
-      percentageOfTotal: parseFloat((
-        (gasTypeTotals[gasType] / totalGallonsSold) * 100
-      ).toFixed(2)),
+      percentageOfTotal: parseFloat(
+        ((gasTypeTotals[gasType] / totalGallonsSold) * 100).toFixed(2)
+      ),
     }));
 
     gasProducts.sort(

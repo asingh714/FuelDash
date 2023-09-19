@@ -31,7 +31,7 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/dashboard",
+          path: "/dashboard/:propertyId/:salesId", 
           element: <Dashboard />,
         },
         {

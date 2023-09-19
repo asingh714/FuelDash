@@ -8,99 +8,60 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import "./TinyChartBox.scss";
 
-const data = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "Page C",
-    uv: 2000,
-    pv: 2800,
-    amt: 2290,
-  },
-  {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
-
-const TinyChartBox = (props) => {
+const TinyChartBox = ({ icon, title, total, color, chartData }) => {
   return (
     <div className="tiny-chart-box-container">
-      <div className="left-tiny-chart-box">
-        <div className="tiny-chart-box-title">
-          <img src={props.icon} alt="" />
-          <span>{props.title}</span>
-        </div>
-        <span>$ {props.revenue}</span>
-        <Link style={{ color: props.color }}>View All</Link>
+      <div className="tiny-chart-box-title">
+        <img src={icon} alt="" />
+        <span>{title}</span>
       </div>
 
-      <div className="right-tiny-chart-box">
-        <div className="chart">
-          <ResponsiveContainer width="99%" height="100%">
-            <LineChart data={props.chartData}>
-              <Tooltip
-                contentStyle={{ background: "transparent", border: "none" }}
-                labelStyle={{ display: "none" }}
-                position={{ x: 10, y: 50 }}
-              />
-              <Line
-                type="monotone"
-                dataKey="pv"
-                stroke={props.color}
-                strokeWidth={2}
-                dot={false}
-              />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-        <div className="texts">
-          <span
-            className="percentage"
-            style={{ color: props.revenue < 0 ? "#dc2626" : "#22c55e" }}
-          >
-            45%
-          </span>
-          <span className="duration">this month</span>
-        </div>
+      <div className="chart">
+        <ResponsiveContainer width="99%" height={125}>
+          <LineChart data={chartData}>
+            {/* <YAxis domain={[0, 20000]} />
+             */}
+            <XAxis dataKey="day" />
+            <Tooltip
+              contentStyle={{ background: "transparent", border: "none" }}
+              labelStyle={{ display: "none" }}
+              position={{ x: 10, y: 50 }}
+            />
+            <Line
+              type="monotone"
+              dataKey={total}
+              stroke={color}
+              strokeWidth={2}
+              dot={false}
+            />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+
+      <div className="bottom-tiny-chart-box">
+        <Link style={{ color: color }}>View All</Link>
+        <span>
+          {new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+          }).format(total)}
+        </span>
       </div>
     </div>
   );
+};
+
+TinyChartBox.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  revenue: PropTypes.number.isRequired,
+  color: PropTypes.string.isRequired,
+  chartData: PropTypes.array.isRequired,
 };
 
 export default TinyChartBox;
