@@ -157,7 +157,14 @@ const getPastSevenDaysGallonsSold = async (propertyId) => {
         }
       }
 
-      totalGallonsSoldArray.push(totalGallonsSoldForDay);
+      const dayName = targetDate.toLocaleDateString("en-US", {
+        weekday: "long",
+      }); // Get the day name
+
+      totalGallonsSoldArray.push({
+        "Gallons Sold": totalGallonsSoldForDay,
+        day: dayName,
+      });
     }
 
     return totalGallonsSoldArray;

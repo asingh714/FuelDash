@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 import "./TinyChartBox.scss";
 
-const TinyChartBox = ({ icon, title, total, color, chartData }) => {
+const TinyChartBox = ({ icon, title, total, color, chartData, myDataKey }) => {
   return (
     <div className="tiny-chart-box-container">
       <div className="tiny-chart-box-title">
@@ -34,7 +34,7 @@ const TinyChartBox = ({ icon, title, total, color, chartData }) => {
             />
             <Line
               type="monotone"
-              dataKey={total}
+              dataKey={myDataKey}
               stroke={color}
               strokeWidth={2}
               dot={false}

@@ -42,6 +42,7 @@ const DashboardContainer = () => {
           title="Revenue"
           total={data.totalRevenue}
           chartData={data.sevenDaysRevenue}
+          myDataKey="revenue"
         />
       </div>
       <div className="box box3">
@@ -51,6 +52,7 @@ const DashboardContainer = () => {
           title="Gallons Sold"
           total={data.totalGallonsSold}
           chartData={data.sevenDaysTotalGallons}
+          myDataKey="Gallons Sold"
         />
       </div>
       <div className="box box4">4</div>
