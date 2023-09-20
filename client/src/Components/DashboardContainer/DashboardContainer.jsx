@@ -5,6 +5,7 @@ import newRequest from "../../utils/newRequest";
 import PieChartBox from "../PieChartBox/PieChartBox";
 import TinyChartBox from "../TinyChartBox/TinyChartBox";
 import TopProductSalesBox from "../TopProductSalesBox/TopProductSalesBox";
+import BarChartBox from "../BarChartBox/BarChartBox";
 
 import "./DashboardContainer.scss";
 
@@ -84,8 +85,24 @@ const DashboardContainer = () => {
           myDataKey="Total Cash Payments"
         />
       </div>
-      <div className="box box7">7</div>
-      <div className="box box8">8</div>
+      <div className="box box7">
+        <BarChartBox
+          chartData={data?.sevenDaysRevenue}
+          color="#0d9488"
+          title="7 Day Revenue"
+          bar="revenue"
+          xaxis="day"
+        />
+      </div>
+      <div className="box box8">
+        <BarChartBox
+          chartData={data?.sevenDaysTotalGallons}
+          color="#3b82f6"
+          title="7 Day Gallons Sold"
+          bar="Gallons Sold"
+          xaxis="day"
+        />
+      </div>
     </div>
   );
 };
