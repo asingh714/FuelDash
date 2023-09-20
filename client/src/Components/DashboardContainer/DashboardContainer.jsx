@@ -34,14 +34,16 @@ const DashboardContainer = () => {
   // Render component
   return (
     <div className="dashboard-container">
-      <div className="box box1">{/* <TopProductSalesBox /> */}</div>
+      <div className="box box1">
+        <TopProductSalesBox chartData={data?.topNonGasProducts} />
+      </div>
       <div className="box box2">
         <TinyChartBox
           color="#84cc16"
           icon="/revenue.svg"
           title="Revenue"
-          total={data.totalRevenue}
-          chartData={data.sevenDaysRevenue}
+          total={data?.totalRevenue}
+          chartData={data?.sevenDaysRevenue}
           myDataKey="revenue"
         />
       </div>
@@ -50,8 +52,8 @@ const DashboardContainer = () => {
           color="#3b82f6"
           icon="/gas-station.svg"
           title="Gallons Sold"
-          total={data.totalGallonsSold}
-          chartData={data.sevenDaysTotalGallons}
+          total={data?.totalGallonsSold}
+          chartData={data?.sevenDaysTotalGallons}
           myDataKey="Gallons Sold"
         />
       </div>
@@ -61,8 +63,8 @@ const DashboardContainer = () => {
           color="#7c3aed"
           icon="/credit-card.svg"
           title="Credit Card Payments"
-          total={data.dailyCreditCardPayments}
-          chartData={data.sevenDaysPaymentTotals}
+          total={data?.dailyCreditCardPayments}
+          chartData={data?.sevenDaysPaymentTotals}
           myDataKey="Total Credit Card Payments"
         />
       </div>
@@ -71,8 +73,8 @@ const DashboardContainer = () => {
           color="#0d9488"
           icon="/cash.svg"
           title="Cash Payments"
-          total={data.dailyCashPayments}
-          chartData={data.sevenDaysPaymentTotals}
+          total={data?.dailyCashPayments}
+          chartData={data?.sevenDaysPaymentTotals}
           myDataKey="Total Cash Payments"
         />
       </div>
