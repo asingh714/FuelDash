@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 
 import newRequest from "../../utils/newRequest";
+import PieChartBox from "../PieChartBox/PieChartBox";
 import TinyChartBox from "../TinyChartBox/TinyChartBox";
 import TopProductSalesBox from "../TopProductSalesBox/TopProductSalesBox";
 
@@ -57,7 +58,12 @@ const DashboardContainer = () => {
           myDataKey="Gallons Sold"
         />
       </div>
-      <div className="box box4">4</div>
+      <div className="box box4">
+        <PieChartBox
+          title="Top Selling Gasoline Products"
+          chartData={data?.topGasProducts}
+        />
+      </div>
       <div className="box box5">
         <TinyChartBox
           color="#7c3aed"
