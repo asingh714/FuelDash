@@ -84,23 +84,44 @@ const deleteUser = async (req, res) => {
 };
 
 const becomePaidUser = async (req, res) => {
-  const { userId, name, subscriptionStatus } = req.user;
+  const { userId } = req.user;
 
   try {
-    const paidUser = await User.findOneAndUpdate(
-      { _id: userId },
-      { subscriptionStatus: "Paid" },
+    let user = await User.findById(userId);
+
+    if (!user.stripeCustomerId) {
+      const customer = await stripe.customers.create({
+        email: user.email,
+      });
+      user.stripeCustomerId = customer.id;
+      await user.save();
+    }
+
+    const subscription = await stripe.subscriptions.create({
+      customer: user.stripeCustomerId,
+      items: [{ price: process.env.STRIPE_PRICE_ID }],
+    });
+
+    user = await User.findByIdAndUpdate(
+      userId,
+      {
+        subscriptionStatus: "Paid",
+        stripeSubscriptionId: subscription.id,
+      },
       { new: true, runValidators: true }
     );
 
     const tokenUser = createTokenUser({
       _id: userId,
-      name,
+      name: user.name,
       subscriptionStatus: "Paid",
     });
+
     attachCookiesToResponse({ res, user: tokenUser });
-    res.status(200).json({ user: paidUser });
-  } catch {
+
+    res.status(200).json({ user });
+  } catch (error) {
+    console.error("Error upgrading user to paid plan:", error);
     return res.status(500).json({ msg: error.message });
   }
 };

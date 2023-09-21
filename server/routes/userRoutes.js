@@ -12,6 +12,6 @@ const {
 router.route("/updatePassword").patch(authenticate, updatePassword);
 router.route("/updateUser").patch(authenticate, updateUser);
 router.route("/").delete(authenticate, deleteUser);
-router.route("/becomePaidUser").patch(authenticate, becomePaidUser);
+router.route("/subscribe").patch(authenticate, becomePaidUser);
 
 module.exports = router;
