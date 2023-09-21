@@ -13,7 +13,15 @@ import { Link } from "react-router-dom";
 
 import "./TinyChartBox.scss";
 
-const TinyChartBox = ({ icon, title, total, color, chartData, myDataKey }) => {
+const TinyChartBox = ({
+  icon,
+  title,
+  total,
+  color,
+  chartData,
+  myDataKey,
+  money,
+}) => {
   return (
     <div className="tiny-chart-box-container">
       <div className="tiny-chart-box-title">
@@ -45,12 +53,16 @@ const TinyChartBox = ({ icon, title, total, color, chartData, myDataKey }) => {
 
       <div className="bottom-tiny-chart-box">
         <Link style={{ color: color }}>View All</Link>
-        <span>
-          {new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD",
-          }).format(total)}
-        </span>
+        {money ? (
+          <span>
+            {new Intl.NumberFormat("en-US", {
+              style: "currency",
+              currency: "USD",
+            }).format(total)}
+          </span>
+        ) : (
+          <span>{total}</span>
+        )}
       </div>
     </div>
   );
@@ -63,6 +75,7 @@ TinyChartBox.propTypes = {
   total: PropTypes.number.isRequired,
   color: PropTypes.string.isRequired,
   chartData: PropTypes.array.isRequired,
+  money: PropTypes.bool.isRequired,
 };
 
 export default TinyChartBox;

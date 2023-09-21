@@ -41,6 +41,7 @@ const DashboardContainer = () => {
       </div>
       <div className="box box2">
         <TinyChartBox
+          money={true}
           color="#84cc16"
           icon="/revenue.svg"
           title="Revenue"
@@ -51,6 +52,7 @@ const DashboardContainer = () => {
       </div>
       <div className="box box3">
         <TinyChartBox
+          money={false}
           color="#3b82f6"
           icon="/gas-station.svg"
           title="Gallons Sold"
@@ -67,6 +69,7 @@ const DashboardContainer = () => {
       </div>
       <div className="box box5">
         <TinyChartBox
+          money={true}
           color="#7c3aed"
           icon="/credit-card.svg"
           title="Credit Card Payments"
@@ -77,6 +80,7 @@ const DashboardContainer = () => {
       </div>
       <div className="box box6">
         <TinyChartBox
+          money={true}
           color="#0d9488"
           icon="/cash.svg"
           title="Cash Payments"
