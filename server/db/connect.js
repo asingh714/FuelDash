@@ -1,9 +1,13 @@
+const fs = require("fs");
 const mongoose = require("mongoose");
+
 const GasolineProduct = require("../models/GasolineProduct");
 const NonGasolineProduct = require("../models/NonGasolineProduct");
 const DailySalesMetrics = require("../models/DailySalesMetrics");
-const { addGasDelivery } = require("./addData.js");
-const fs = require("fs");
+const {
+  addDailyGasolineDeliveryForProperties,
+  addDailyNonGasolineDeliveryForProperties,
+} = require("../DummyData/dummyDataHelpers");
 
 const readJSONFile = (filePath) => {
   return new Promise((resolve, reject) => {
@@ -20,6 +24,9 @@ const connectDB = async () => {
   try {
     // Read data from JSON file
     // const parsedData = await readJSONFile("data.json");
+    const propertiesData = await readJSONFile("propertiesData.json");
+    const properties = propertiesData.Properties;
+
     const gasolineData = await readJSONFile("gasolineData.json");
     const gasolineProducts = gasolineData.GasolineProducts;
     const nonGasolineData = await readJSONFile("nonGasolineData.json");
@@ -47,7 +54,11 @@ const connectDB = async () => {
     // await GasolineProduct.insertMany(gasolineProducts);
     // await NonGasolineProduct.insertMany(nonGasolineProducts);
     // await DailySalesMetrics.insertMany(dailySalesMetrics);
-    // console.log("DB data inserted");
+
+    await addDailyGasolineDeliveryForProperties(properties);
+    await addDailyNonGasolineDeliveryForProperties(properties);
+
+    console.log("DB data inserted");
   } catch (error) {
     console.log(error);
   }
