@@ -71,7 +71,7 @@ const getPastSevenDaysRevenue = async (propertyId) => {
 
     const revenueArray = records.map((record) => ({
       day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
-      revenue: parseInt(record.totalRevenue),
+      revenue: parseFloat(record.totalRevenue),
     }));
     return revenueArray;
   } catch (error) {
