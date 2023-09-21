@@ -11,7 +11,7 @@ const getAllRevenueList = async (req, res) => {
         propertyId,
       },
       "totalRevenue date"
-    ); // This projection limits the returned fields to just totalRevenue and date
+    ).sort({ date: -1 });
 
     const revenueList = dailySalesMetrics.map((metric) => ({
       revenue: metric.totalRevenue,

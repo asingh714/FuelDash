@@ -55,11 +55,12 @@ const connectDB = async () => {
     // await GasolineProduct.insertMany(gasolineProducts);
     // await NonGasolineProduct.insertMany(nonGasolineProducts);
     // await DailySalesMetrics.insertMany(dailySalesMetrics);
+    // console.log("DB data inserted");
 
     await addDailyGasolineDeliveryForProperties(properties);
     await addDailyNonGasolineDeliveryForProperties(properties);
     await addDailySalesMetricsForProperties(properties);
-    console.log("DB data inserted");
+    console.log("Daily data inserted");
   } catch (error) {
     console.log(error);
   }
