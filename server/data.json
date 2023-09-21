@@ -1,36 +1,5 @@
 {
-  "Properties": [
-    {
-      "_id": "64ff54a2b485b42210278310",
-      "userId": "64fa33d8ea9e6d85fc86b89f",
-      "name": "Sunrise Gas & Convenience",
-      "address": "123 Sunrise Blvd, Los Angeles, CA 90001"
-    },
-    {
-      "_id": "64ff54aeb485b42210278312",
-      "userId": "64fa33d8ea9e6d85fc86b89f",
-      "name": "Mountainview Fuel Stop",
-      "address": "456 Mountain Dr, San Francisco, CA 94101"
-    },
-    {
-      "_id": "64ff54b8b485b42210278314",
-      "userId": "64fa33d8ea9e6d85fc86b89f",
-      "name": "City Central Gasoline",
-      "address": "789 Central Ave, New York, NY 10001"
-    },
-    {
-      "_id": "64ff54c0b485b42210278316",
-      "userId": "64fa33d8ea9e6d85fc86b89f",
-      "name": "Lakeside Fuels",
-      "address": "101 Lakeside Way, Chicago, IL 60601"
-    },
-    {
-      "_id": "64ff54c8b485b42210278318",
-      "userId": "64fa33d8ea9e6d85fc86b89f",
-      "name": "Highway Oasis",
-      "address": "202 Highway St, Houston, TX 77001"
-    }
-  ],
+
   "GasolineProducts": [
     {
       "propertyId": "64ff54a2b485b42210278310",

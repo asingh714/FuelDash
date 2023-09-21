@@ -49,9 +49,8 @@ const DailySalesMetricsSchema = new mongoose.Schema({
   ],
   nonGasolineSales: [
     {
-      nonGasolineProductId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "NonGasolineProduct",
+      name: {
+        type: String,
         required: true,
       },
       quantitySold: {

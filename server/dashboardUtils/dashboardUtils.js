@@ -191,7 +191,8 @@ const getTopNonGasProducts = async (propertyId) => {
       },
       {
         $group: {
-          _id: "$nonGasolineSales.nonGasolineProductId",
+          _id: "$nonGasolineSales.name",
+
           totalQuantitySold: { $sum: "$nonGasolineSales.quantitySold" },
           averagePrice: { $avg: "$nonGasolineSales.priceSoldAt" },
         },
@@ -202,22 +203,15 @@ const getTopNonGasProducts = async (propertyId) => {
         },
       },
       {
-        $limit: 5, // Top 5 products, modify as needed
+        $limit: 5,
       },
     ]);
 
-    // Populate product names
-    const topNonGasProducts = [];
-
-    for (const item of result) {
-      const product = await NonGasolineProduct.findById(item._id);
-      topNonGasProducts.push({
-        id: item._id,
-        name: product.name,
-        price: parseFloat((item.averagePrice / 100).toFixed(2)),
-        quantitySold: item.totalQuantitySold,
-      });
-    }
+    const topNonGasProducts = result.map((item) => ({
+      name: item._id,
+      price: parseFloat((item.averagePrice / 100).toFixed(2)),
+      quantitySold: item.totalQuantitySold,
+    }));
 
     return topNonGasProducts;
   } catch (error) {

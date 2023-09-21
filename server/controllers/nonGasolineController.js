@@ -13,7 +13,6 @@ const getNonGasolineProducts = async (req, res) => {
   }
 };
 
-
 const addNonGasolineProduct = async (req, res) => {
   const { propertyId } = req.params;
 
@@ -89,15 +88,11 @@ const deleteNonGasolineProduct = async (req, res) => {
   }
 };
 
-const updateNonGasolineStocks = async (
-  propertyId,
-  nonGasolineProductId,
-  quantitySold
-) => {
+const updateNonGasolineStocks = async (propertyId, name, quantitySold) => {
   try {
     // Find the non-gasoline product by its ObjectId and associated propertyId
     const nonGasolineProduct = await NonGasolineProduct.findOne({
-      _id: nonGasolineProductId,
+      name: name,
       propertyId: propertyId,
     });
 
@@ -127,12 +122,10 @@ const updateNonGasolineStocks = async (
   }
 };
 
-
 module.exports = {
   getNonGasolineProducts,
   addNonGasolineProduct,
   updateNonGasolineProduct,
   deleteNonGasolineProduct,
   updateNonGasolineStocks,
-
 };

@@ -19,11 +19,16 @@ const readJSONFile = (filePath) => {
 const connectDB = async () => {
   try {
     // Read data from JSON file
+    // const parsedData = await readJSONFile("data.json");
+    const gasolineData = await readJSONFile("gasolineData.json");
+    const gasolineProducts = gasolineData.GasolineProducts;
+    const nonGasolineData = await readJSONFile("nonGasolineData.json");
+    const nonGasolineProducts = nonGasolineData.NonGasolineProducts;
 
-    const parsedData = await readJSONFile("data.json");
-    const gasolineProducts = parsedData.GasolineProducts;
-    const nonGasolineProducts = parsedData.NonGasolineProducts;
-    const dailySalesMetrics = parsedData.DailySalesMetrics;
+    // const dailySalesMetricsData = await readJSONFile(
+    //   "dailySalesMetricsData.json"
+    // );
+    // const dailySalesMetrics = dailySalesMetricsData.DailySalesMetrics;
 
     // Connect to MongoDB
     await mongoose.connect(process.env.MONGO_URI, {
@@ -32,7 +37,7 @@ const connectDB = async () => {
     });
     console.log("Connected to MongoDB...");
 
-    // // Delete all existing records
+    // Delete all existing records
     // await GasolineProduct.deleteMany({});
     // await NonGasolineProduct.deleteMany({});
     // await DailySalesMetrics.deleteMany({});

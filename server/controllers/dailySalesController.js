@@ -97,7 +97,7 @@ const updateSingleDailySalesMetrics = async (req, res) => {
     for (const sale of existingRecord.nonGasolineSales) {
       await updateNonGasolineStocks(
         existingRecord.propertyId,
-        sale.nonGasolineProductId,
+        sale.name,
         -sale.quantitySold
       );
     }
@@ -113,7 +113,7 @@ const updateSingleDailySalesMetrics = async (req, res) => {
     for (const sale of updatedFields.nonGasolineSales) {
       await updateNonGasolineStocks(
         existingRecord.propertyId,
-        sale.nonGasolineProductId,
+        sale.name,
         sale.quantitySold
       );
     }
@@ -149,7 +149,7 @@ const deleteSingleDailySalesMetrics = async (req, res) => {
     for (const sale of existingRecord.nonGasolineSales) {
       await updateNonGasolineStocks(
         existingRecord.propertyId,
-        sale.nonGasolineProductId,
+        sale.name,
         -sale.quantitySold
       );
     }
@@ -205,11 +205,7 @@ const addDailySalesMetrics = async (req, res) => {
     }
 
     for (const sale of nonGasolineSales) {
-      await updateNonGasolineStocks(
-        propertyId,
-        sale.nonGasolineProductId,
-        sale.quantitySold
-      );
+      await updateNonGasolineStocks(propertyId, sale.name, sale.quantitySold);
     }
 
     res
