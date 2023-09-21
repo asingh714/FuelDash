@@ -7,6 +7,7 @@ const DailySalesMetrics = require("../models/DailySalesMetrics");
 const {
   addDailyGasolineDeliveryForProperties,
   addDailyNonGasolineDeliveryForProperties,
+  addDailySalesMetricsForProperties,
 } = require("../DummyData/dummyDataHelpers");
 
 const readJSONFile = (filePath) => {
@@ -57,7 +58,7 @@ const connectDB = async () => {
 
     await addDailyGasolineDeliveryForProperties(properties);
     await addDailyNonGasolineDeliveryForProperties(properties);
-
+    await addDailySalesMetricsForProperties(properties);
     console.log("DB data inserted");
   } catch (error) {
     console.log(error);

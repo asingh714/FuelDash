@@ -11,6 +11,7 @@ const userRouter = require("./routes/userRoutes");
 const gasolineRouter = require("./routes/gasolineRoutes");
 const nonGasolineRouter = require("./routes/nonGasolineRoutes");
 const dailySalesRouter = require("./routes/dailySalesRoutes");
+const financialTotalRouter = require("./routes/financialTotalRoutes");
 const notFound = require("./middleware/notFound");
 
 const app = express();
@@ -30,6 +31,7 @@ app.use("/api/properties", propertyRouter);
 app.use("/api/gasoline", gasolineRouter);
 app.use("/api/nonGas", nonGasolineRouter);
 app.use("/api/sales", dailySalesRouter);
+app.use("/api/total", financialTotalRouter);
 
 app.use(notFound);
 
