@@ -1,5 +1,7 @@
-const User = require("../models/User");
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const validator = require("validator");
+
+const User = require("../models/User");
 const { createTokenUser, attachCookiesToResponse } = require("../utils");
 
 const updatePassword = async (req, res) => {
