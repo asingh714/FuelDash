@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import "./pieChartBox.scss";
 
 const colors = {
-  Midgrade: "#c084fc",
-  Regular: "#a5b4fc",
-  Premium: "#22d3ee",
-  Diesel: "#fb7185",
-  E85: "#fca5a5",
+  Midgrade: "#84cc16",
+  Regular: "#3b82f6",
+  Premium: "#7c3aed",
+  Diesel: "#0d9488",
+  E85: "#c026d3",
 };
 
 const PieChartBox = ({ title, chartData }) => {

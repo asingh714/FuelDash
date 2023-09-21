@@ -1,13 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if the user is logged in
+    const currentUser = localStorage.getItem("currentUser");
+    if (currentUser) {
+      setIsUserLoggedIn(true);
+    }
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log("menuOpen:", !menuOpen); // Debug statement
   };
   return (
     <div className="navbar-container">
@@ -40,13 +48,20 @@ const NavBar = () => {
             <Link to="/faqs">FAQs</Link>
           </div>
         </div>
-        <Link to="/login" id="login-link">
-          Login
-        </Link>
-        <Link to="/signup" id="signup-link">
-          Start Now →
-        </Link>
-
+        {!isUserLoggedIn ? (
+          <>
+            <Link to="/login" id="login-link">
+              Login
+            </Link>
+            <Link to="/signup" id="signup-link">
+              Start Now →
+            </Link>
+          </>
+        ) : (
+          <Link to="/dashboard" id="dashboard-link">
+            Dashboard
+          </Link>
+        )}
         <div
           className={`hamburger-menu ${menuOpen ? "open" : ""}`}
           onClick={toggleMenu}
