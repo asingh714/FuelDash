@@ -319,8 +319,9 @@ const getPastSevenDaysPaymentTotals = async (propertyId) => {
       },
     }).sort({ date: 1 }); // Sorting by date in ascending order
 
+    // day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
     const paymentsArray = records.map((record) => ({
-      day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
+      day: formatDate(record.date),
       "Total Credit Card": parseFloat(record.dailyCreditCardPayments),
       "Total Cash": parseFloat(record.dailyCashPayments), // Make sure this matches with your schema, you might have it as `dailyCashPayments`
     }));
