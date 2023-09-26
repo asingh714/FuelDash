@@ -91,7 +91,7 @@ function getRandomCategory(product) {
   console.error(
     `No category found for product: ${product}. Defaulting to "Snacks".`
   );
-  return "Snacks"; // Default category
+  return "Snacks";
 }
 
 const addDailyNonGasolineDeliveryForProperties = async (properties) => {
@@ -181,15 +181,15 @@ const addDailySalesMetricsForProperties = async (properties) => {
       for (let j = 0; j < 10; j++) {
         const name = getRandomProduct();
         const quantitySold = parseFloat(getRandomValue(1, 100));
-        const priceSoldAt = parseFloat(getRandomValue(1, 50));
+        const priceSoldAt = parseFloat(getRandomValue(1, 10));
         nonGasolineSalesArray.push({ name, quantitySold, priceSoldAt });
         nonGasolineRevenue += quantitySold * priceSoldAt;
       }
 
       const totalRevenue = gasolineRevenue + nonGasolineRevenue;
 
-      const cashPercentage = getRandomPercentage(); // random percentage for cash
-      const creditCardPercentage = 100 - cashPercentage; // remainder for credit card
+      const cashPercentage = getRandomPercentage();
+      const creditCardPercentage = 100 - cashPercentage;
 
       const dailyCashPayments = totalRevenue * (cashPercentage / 100);
       const dailyCreditCardPayments =

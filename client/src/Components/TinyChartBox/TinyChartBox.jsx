@@ -34,7 +34,7 @@ const TinyChartBox = ({
           <LineChart data={chartData}>
             {/* <YAxis domain={[0, 20000]} />
              */}
-            <XAxis dataKey="day" />
+            <XAxis dataKey="date" />
             <Tooltip
               contentStyle={{ background: "transparent", border: "none" }}
               labelStyle={{ display: "none" }}

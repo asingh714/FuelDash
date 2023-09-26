@@ -3,6 +3,17 @@ const NonGasolineProduct = require("../models/NonGasolineProduct");
 const mongoose = require("mongoose");
 const { ObjectId } = mongoose.Types;
 
+const formatDate = (date) => {
+  const d = new Date(date);
+  let month = "" + (d.getMonth() + 1);
+  let day = "" + d.getDate();
+
+  if (month.length < 2) month = "0" + month;
+  if (day.length < 2) day = "0" + day;
+
+  return [month, day].join("-");
+};
+
 const getTotalGallonsSold = async (propertyId, date) => {
   const startOfDay = new Date(date);
   startOfDay.setUTCHours(0, 0, 0, 0);
@@ -35,45 +46,23 @@ const getTotalGallonsSold = async (propertyId, date) => {
 };
 
 const getPastSevenDaysRevenue = async (propertyId) => {
-  const today = new Date();
-  const sevenDaysAgo = new Date(today);
-  sevenDaysAgo.setDate(today.getDate() - 7);
-
-  const startOfToday = new Date(
-    Date.UTC(
-      today.getUTCFullYear(),
-      today.getUTCMonth(),
-      today.getUTCDate(),
-      0,
-      0,
-      0
-    )
-  );
-  const startOfSevenDaysAgo = new Date(
-    Date.UTC(
-      sevenDaysAgo.getUTCFullYear(),
-      sevenDaysAgo.getUTCMonth(),
-      sevenDaysAgo.getUTCDate(),
-      0,
-      0,
-      0
-    )
-  );
-
   try {
-    const records = await DailySalesMetrics.find({
-      propertyId,
-      date: {
-        $gte: startOfSevenDaysAgo,
-        $lt: startOfToday,
+    const dailySalesMetrics = await DailySalesMetrics.find(
+      {
+        propertyId,
       },
-    }).sort({ date: 1 }); // Sorting by date in ascending order
+      "totalRevenue date"
+    )
+      .sort({ date: -1 })
+      .limit(7);
 
-    const revenueArray = records.map((record) => ({
-      day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
-      revenue: parseFloat(record.totalRevenue),
+    const revenueList = dailySalesMetrics.map((metric) => ({
+      id: metric._id,
+      revenue: parseFloat(metric.totalRevenue),
+      date: formatDate(metric.date),
     }));
-    return revenueArray;
+
+    return revenueList;
   } catch (error) {
     console.error("Error fetching past 7 days revenue:", error);
     return [];
