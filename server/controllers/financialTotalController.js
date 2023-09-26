@@ -36,14 +36,14 @@ const getGasolineSalesList = async (req, res) => {
       },
       {
         $project: {
-          date: 1, // Retain the date field
+          date: 1, 
           totalGallonsSold: {
             $sum: "$gasolineSales.gallonsSold", // Calculate the total gallons sold for each day
           },
         },
       },
       {
-        $sort: { date: -1 }, // Sort the results in descending order based on date
+        $sort: { date: -1 }, 
       },
     ]);
 
