@@ -21,6 +21,7 @@ const TinyChartBox = ({
   chartData,
   myDataKey,
   money,
+  lineDataKey,
 }) => {
   return (
     <div className="tiny-chart-box-container">
@@ -34,7 +35,7 @@ const TinyChartBox = ({
           <LineChart data={chartData}>
             {/* <YAxis domain={[0, 20000]} />
              */}
-            <XAxis dataKey="date" />
+            <XAxis dataKey={lineDataKey} />
             <Tooltip
               contentStyle={{ background: "transparent", border: "none" }}
               labelStyle={{ display: "none" }}
@@ -76,6 +77,7 @@ TinyChartBox.propTypes = {
   color: PropTypes.string.isRequired,
   chartData: PropTypes.array.isRequired,
   money: PropTypes.bool.isRequired,
+  lineDataKey: PropTypes.string.isRequired,
 };
 
 export default TinyChartBox;

@@ -48,6 +48,7 @@ const DashboardContainer = () => {
           total={data?.totalRevenue}
           chartData={data?.sevenDaysRevenue}
           myDataKey="revenue"
+          lineDataKey="date"
         />
       </div>
       <div className="box box3">
@@ -59,6 +60,7 @@ const DashboardContainer = () => {
           total={data?.totalGallonsSold}
           chartData={data?.sevenDaysTotalGallons}
           myDataKey="Gallons Sold"
+          lineDataKey="day"
         />
       </div>
       <div className="box box4">
@@ -76,6 +78,7 @@ const DashboardContainer = () => {
           total={data?.dailyCreditCardPayments}
           chartData={data?.sevenDaysPaymentTotals}
           myDataKey="Total Credit Card Payments"
+          lineDataKey="day"
         />
       </div>
       <div className="box box6">
@@ -87,6 +90,7 @@ const DashboardContainer = () => {
           total={data?.dailyCashPayments}
           chartData={data?.sevenDaysPaymentTotals}
           myDataKey="Total Cash Payments"
+          lineDataKey="day"
         />
       </div>
       <div className="box box7">

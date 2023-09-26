@@ -42,6 +42,8 @@ const getTotalGallonsSold = async (propertyId, date) => {
       }
     });
 
+    totalGallonsSold = parseFloat(totalGallonsSold.toFixed(2));
+
     return totalGallonsSold;
   } catch (error) {
     console.log(error);
@@ -75,18 +77,8 @@ const getPastSevenDaysRevenue = async (propertyId) => {
 const getPastSevenDaysGallonsSold = async (propertyId) => {
   const today = new Date();
   const sevenDaysAgo = new Date(today);
-  sevenDaysAgo.setDate(today.getDate() - 7);
+  sevenDaysAgo.setDate(today.getDate() - 6); // Adjusting to -6 to include today in the 7-day range
 
-  const startOfToday = new Date(
-    Date.UTC(
-      today.getUTCFullYear(),
-      today.getUTCMonth(),
-      today.getUTCDate(),
-      0,
-      0,
-      0
-    )
-  );
   const startOfSevenDaysAgo = new Date(
     Date.UTC(
       sevenDaysAgo.getUTCFullYear(),
@@ -98,12 +90,24 @@ const getPastSevenDaysGallonsSold = async (propertyId) => {
     )
   );
 
+  const endOfToday = new Date(
+    Date.UTC(
+      today.getUTCFullYear(),
+      today.getUTCMonth(),
+      today.getUTCDate(),
+      23,
+      59,
+      59,
+      999
+    )
+  ); // Setting the end of today as the upper limit of the date range
+
   try {
     const records = await DailySalesMetrics.find({
       propertyId,
       date: {
         $gte: startOfSevenDaysAgo,
-        $lt: startOfToday,
+        $lte: endOfToday, // Using $lte instead of $lt to include the entire day
       },
     }).sort({ date: 1 });
 
@@ -111,7 +115,7 @@ const getPastSevenDaysGallonsSold = async (propertyId) => {
 
     for (
       let d = new Date(startOfSevenDaysAgo);
-      d < startOfToday;
+      d <= endOfToday;
       d.setDate(d.getDate() + 1)
     ) {
       const targetDate = new Date(d);
@@ -149,9 +153,12 @@ const getPastSevenDaysGallonsSold = async (propertyId) => {
         }
       }
 
+      totalGallonsSoldForDay = parseFloat(totalGallonsSoldForDay.toFixed(2)); // Fix precision
+
       const dayName = targetDate.toLocaleDateString("en-US", {
         weekday: "long",
-      }); // Get the day name
+        timeZone: "UTC",
+      }); // Get the day name in UTC
 
       totalGallonsSoldArray.push({
         "Gallons Sold": totalGallonsSoldForDay,
