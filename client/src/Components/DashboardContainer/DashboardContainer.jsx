@@ -47,7 +47,7 @@ const DashboardContainer = () => {
           title="Revenue"
           total={data?.totalRevenue}
           chartData={data?.sevenDaysRevenue}
-          myDataKey="revenue"
+          myDataKey="Revenue"
           lineDataKey="date"
         />
       </div>
@@ -72,24 +72,24 @@ const DashboardContainer = () => {
       <div className="box box5">
         <TinyChartBox
           money={true}
-          color="#7c3aed"
-          icon="/credit-card.svg"
-          title="Credit Card Payments"
-          total={data?.dailyCreditCardPayments}
-          chartData={data?.sevenDaysPaymentTotals}
-          myDataKey="Total Credit Card Payments"
-          lineDataKey="day"
-        />
-      </div>
-      <div className="box box6">
-        <TinyChartBox
-          money={true}
           color="#0d9488"
           icon="/cash.svg"
           title="Cash Payments"
           total={data?.dailyCashPayments}
           chartData={data?.sevenDaysPaymentTotals}
           myDataKey="Total Cash Payments"
+          lineDataKey="day"
+        />
+      </div>
+      <div className="box box6">
+        <TinyChartBox
+          money={true}
+          color="#7c3aed"
+          icon="/credit-card.svg"
+          title="Credit Card Payments"
+          total={data?.dailyCreditCardPayments}
+          chartData={data?.sevenDaysPaymentTotals}
+          myDataKey="Total Credit Card Payments"
           lineDataKey="day"
         />
       </div>

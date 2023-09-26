@@ -63,7 +63,7 @@ const getPastSevenDaysRevenue = async (propertyId) => {
 
     const revenueList = dailySalesMetrics.map((metric) => ({
       id: metric._id,
-      revenue: parseFloat(metric.totalRevenue),
+      Revenue: parseFloat(metric.totalRevenue),
       date: formatDate(metric.date),
     }));
 
