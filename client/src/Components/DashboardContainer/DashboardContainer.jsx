@@ -77,7 +77,7 @@ const DashboardContainer = () => {
           title="Cash Payments"
           total={data?.dailyCashPayments}
           chartData={data?.sevenDaysPaymentTotals}
-          myDataKey="Total Cash Payments"
+          myDataKey="Total Cash"
           lineDataKey="day"
         />
       </div>
@@ -89,7 +89,7 @@ const DashboardContainer = () => {
           title="Credit Card Payments"
           total={data?.dailyCreditCardPayments}
           chartData={data?.sevenDaysPaymentTotals}
-          myDataKey="Total Credit Card Payments"
+          myDataKey="Total Credit Card"
           lineDataKey="day"
         />
       </div>

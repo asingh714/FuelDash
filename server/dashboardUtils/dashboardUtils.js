@@ -298,19 +298,31 @@ const getPastSevenDaysPaymentTotals = async (propertyId) => {
     )
   );
 
+  const endOfToday = new Date(
+    Date.UTC(
+      today.getUTCFullYear(),
+      today.getUTCMonth(),
+      today.getUTCDate(),
+      23,
+      59,
+      59,
+      999
+    )
+  ); // Set the end of today for the date range
+
   try {
     const records = await DailySalesMetrics.find({
       propertyId,
       date: {
         $gte: startOfSevenDaysAgo,
-        $lt: startOfToday,
+        $lte: endOfToday, // Updated to $lte to include today's data
       },
     }).sort({ date: 1 }); // Sorting by date in ascending order
 
     const paymentsArray = records.map((record) => ({
       day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
-      "Total Credit Card Payments": parseFloat(record.dailyCreditCardPayments),
-      "Total Cash Payments": parseFloat(record.dailyCashPayments), // Make sure this matches with your schema, you might have it as `dailyCashPayments`
+      "Total Credit Card": parseFloat(record.dailyCreditCardPayments),
+      "Total Cash": parseFloat(record.dailyCashPayments), // Make sure this matches with your schema, you might have it as `dailyCashPayments`
     }));
 
     return paymentsArray;
@@ -319,6 +331,7 @@ const getPastSevenDaysPaymentTotals = async (propertyId) => {
     return [];
   }
 };
+
 module.exports = {
   getTotalGallonsSold,
   getPastSevenDaysRevenue,
