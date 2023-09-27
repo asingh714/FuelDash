@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 
 import newRequest from "../../utils/newRequest";
 import SimpleLineChart from "../../Components/SimpleLineChart/SimpleLineChart";
+import DataTable from "../../Components/DataTable/DataTable";
+
 import "./DetailedReports.scss";
 
 const dataInfo = {
@@ -52,6 +54,7 @@ const DetailedReports = () => {
         dataKey={dataInfo[detailedPage].dataName}
         color={dataInfo[detailedPage].color}
       />
+      <DataTable />
     </div>
   );
 };
