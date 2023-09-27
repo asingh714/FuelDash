@@ -69,15 +69,15 @@ const getAllCashList = async (req, res) => {
         propertyId,
       },
       "dailyCashPayments date"
-    ).sort({ date: -1 });
+    ).sort({ date: 1 });
 
     const cashList = dailySalesMetrics.map((metric) => ({
       id: metric._id,
-      cashTotal: parseFloat(metric.dailyCashPayments),
-      date: metric.date,
+      Cash: parseFloat(metric.dailyCashPayments),
+      Date: formatDate(metric.date),
     }));
 
-    res.status(200).json({ results });
+    res.status(200).json({ results: cashList });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -92,15 +92,15 @@ const getAllCreditCardList = async (req, res) => {
         propertyId,
       },
       "dailyCreditCardPayments date"
-    ).sort({ date: -1 });
+    ).sort({ date: 1 });
 
     const creditCardList = dailySalesMetrics.map((metric) => ({
       id: metric._id,
-      creditCardTotal: parseFloat(metric.dailyCreditCardPayments),
-      date: metric.date,
+      "Credit Card": parseFloat(metric.dailyCreditCardPayments),
+      Date: formatDate(metric.date),
     }));
 
-    res.status(200).json({ results });
+    res.status(200).json({ results: creditCardList });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }

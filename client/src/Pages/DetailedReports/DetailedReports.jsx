@@ -8,6 +8,8 @@ import "./DetailedReports.scss";
 const dataKey = {
   revenue: "Revenue",
   gallons: "Gallons",
+  cash: "Cash",
+  credit: "Credit Card",
 };
 
 const DetailedReports = () => {
@@ -45,7 +47,6 @@ const DetailedReports = () => {
         xaxis="Date"
         dataKey={dataKey[detailedPage]}
       />
-      ;
     </div>
   );
 };
