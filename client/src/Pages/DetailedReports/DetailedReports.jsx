@@ -5,11 +5,15 @@ import newRequest from "../../utils/newRequest";
 import SimpleLineChart from "../../Components/SimpleLineChart/SimpleLineChart";
 import "./DetailedReports.scss";
 
-const dataKey = {
-  revenue: { dataName: "Revenue", color: "#84cc16" },
-  gallons: { dataName: "Gallons", color: "#3b82f6" },
-  cash: { dataName: "Cash", color: "#0d9488" },
-  credit: { dataName: "Credit Card", color: "#7c3aed" },
+const dataInfo = {
+  revenue: { dataName: "Revenue", color: "#84cc16", title: "Revenue" },
+  gallons: { dataName: "Gallons", color: "#3b82f6", title: "Gallons Sold" },
+  cash: { dataName: "Cash", color: "#0d9488", title: "Cash Payments" },
+  credit: {
+    dataName: "Credit Card",
+    color: "#7c3aed",
+    title: "Credit Card Payments",
+  },
 };
 
 const DetailedReports = () => {
@@ -24,7 +28,6 @@ const DetailedReports = () => {
       if (!response.data) {
         throw new Error("No data returned");
       }
-      console.log(response.data);
       return response.data;
     }
   );
@@ -42,11 +45,12 @@ const DetailedReports = () => {
 
   return (
     <div className="detail-report-container">
+      <h2>{dataInfo[detailedPage].title}</h2>
       <SimpleLineChart
         data={data?.results}
         xaxis="Date"
-        dataKey={dataKey[detailedPage].dataName}
-        color={dataKey[detailedPage].color}
+        dataKey={dataInfo[detailedPage].dataName}
+        color={dataInfo[detailedPage].color}
       />
     </div>
   );
