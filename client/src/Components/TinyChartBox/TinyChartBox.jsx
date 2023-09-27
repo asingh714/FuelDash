@@ -23,6 +23,7 @@ const TinyChartBox = ({
   myDataKey,
   money,
   lineDataKey,
+  detailedPage,
 }) => {
   const { propertyId } = useParams();
 
@@ -56,7 +57,10 @@ const TinyChartBox = ({
       </div>
 
       <div className="bottom-tiny-chart-box">
-        <Link style={{ color: color }} to={`/dashboard/${propertyId}/revenue`}>
+        <Link
+          style={{ color: color }}
+          to={`/dashboard/${propertyId}/details/${detailedPage}`}
+        >
           View All
         </Link>
         {money ? (
@@ -83,6 +87,7 @@ TinyChartBox.propTypes = {
   chartData: PropTypes.array.isRequired,
   money: PropTypes.bool.isRequired,
   lineDataKey: PropTypes.string.isRequired,
+  detailedPage: PropTypes.string.isRequired,
 };
 
 export default TinyChartBox;
