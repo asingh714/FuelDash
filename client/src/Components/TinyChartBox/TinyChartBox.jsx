@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import "./TinyChartBox.scss";
 
@@ -23,6 +24,8 @@ const TinyChartBox = ({
   money,
   lineDataKey,
 }) => {
+  const { propertyId } = useParams();
+
   return (
     <div className="tiny-chart-box-container">
       <div className="tiny-chart-box-title">
@@ -53,7 +56,9 @@ const TinyChartBox = ({
       </div>
 
       <div className="bottom-tiny-chart-box">
-        <Link style={{ color: color }}>View All</Link>
+        <Link style={{ color: color }} to={`/dashboard/${propertyId}/revenue`}>
+          View All
+        </Link>
         {money ? (
           <span>
             {new Intl.NumberFormat("en-US", {
