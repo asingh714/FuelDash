@@ -5,6 +5,11 @@ import newRequest from "../../utils/newRequest";
 import SimpleLineChart from "../../Components/SimpleLineChart/SimpleLineChart";
 import "./DetailedReports.scss";
 
+const dataKey = {
+  revenue: "Revenue",
+  gallons: "Gallons",
+};
+
 const DetailedReports = () => {
   const { propertyId, detailedPage } = useParams();
   const { isLoading, error, data } = useQuery(
@@ -33,14 +38,14 @@ const DetailedReports = () => {
     return <div>Loading...</div>;
   }
 
-  const formattedData = data?.revenueList?.map((item) => ({
-    ...item,
-    day: item.date.slice(0, 10), // This will give you a string in the format "YYYY-MM-DD"
-  }));
-
   return (
     <div className="detail-report-container">
-      <SimpleLineChart data={formattedData} dataKey={detailedPage} />;
+      <SimpleLineChart
+        data={data?.results}
+        xaxis="Date"
+        dataKey={dataKey[detailedPage]}
+      />
+      ;
     </div>
   );
 };

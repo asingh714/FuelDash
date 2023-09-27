@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { ObjectId } = mongoose.Types;
+const formatDate = require("../utils/formatDate");
 
 const DailySalesMetrics = require("../models/DailySalesMetrics");
 
@@ -12,15 +13,15 @@ const getAllRevenueList = async (req, res) => {
         propertyId,
       },
       "totalRevenue date"
-    ).sort({ date: -1 });
+    ).sort({ date: 1 });
 
     const revenueList = dailySalesMetrics.map((metric) => ({
       id: metric._id,
-      revenue: parseFloat(metric.totalRevenue),
-      date: metric.date,
+      Revenue: parseFloat(metric.totalRevenue),
+      Date: formatDate(metric.date),
     }));
 
-    res.status(200).json({ revenueList });
+    res.status(200).json({ results: revenueList });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -36,18 +37,24 @@ const getGasolineSalesList = async (req, res) => {
       },
       {
         $project: {
-          date: 1, 
-          totalGallonsSold: {
+          date: 1,
+          Gallons: {
             $sum: "$gasolineSales.gallonsSold", // Calculate the total gallons sold for each day
           },
         },
       },
       {
-        $sort: { date: -1 }, 
+        $sort: { date: 1 },
       },
     ]);
 
-    res.status(200).json({ results });
+    const formattedResults = results.map((result) => ({
+      id: result._id,
+      Gallons: parseFloat(result.Gallons),
+      Date: formatDate(result.date),
+    }));
+
+    res.status(200).json({ results: formattedResults });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -70,7 +77,7 @@ const getAllCashList = async (req, res) => {
       date: metric.date,
     }));
 
-    res.status(200).json({ cashList });
+    res.status(200).json({ results });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -93,7 +100,7 @@ const getAllCreditCardList = async (req, res) => {
       date: metric.date,
     }));
 
-    res.status(200).json({ creditCardList });
+    res.status(200).json({ results });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
