@@ -18,14 +18,24 @@ const dataInfo = {
   },
 };
 
+const columns = [
+  {
+    header: "Date",
+    accessorKey: "Date",
+  },
+  {
+    header: "Revenue",
+    accessorKey: "Revenue",
+  },
+];
+
 const DetailedReports = () => {
   const { propertyId, detailedPage } = useParams();
   const { isLoading, error, data } = useQuery(
     [propertyId, detailedPage],
     async () => {
-      // http://localhost:5000/api/total/64ff54a2b485b42210278310/revenue
       const response = await newRequest.get(
-        `/total/${propertyId}/${detailedPage}`
+        `/total/${propertyId}/${detailedPage}/reverse`
       );
       if (!response.data) {
         throw new Error("No data returned");
@@ -54,7 +64,7 @@ const DetailedReports = () => {
         dataKey={dataInfo[detailedPage].dataName}
         color={dataInfo[detailedPage].color}
       />
-      <DataTable />
+      <DataTable tableData={data?.results} columns={columns} />
     </div>
   );
 };

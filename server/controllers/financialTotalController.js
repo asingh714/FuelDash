@@ -27,6 +27,29 @@ const getAllRevenueList = async (req, res) => {
   }
 };
 
+const getAllRevenueListReverse = async (req, res) => {
+  const { propertyId } = req.params;
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.find(
+      {
+        propertyId,
+      },
+      "totalRevenue date"
+    ).sort({ date: -1 });
+
+    const revenueList = dailySalesMetrics.map((metric) => ({
+      id: metric._id,
+      Revenue: parseFloat(metric.totalRevenue),
+      Date: formatDate(metric.date),
+    }));
+
+    res.status(200).json({ results: revenueList });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const getGasolineSalesList = async (req, res) => {
   const { propertyId } = req.params;
 
@@ -108,6 +131,7 @@ const getAllCreditCardList = async (req, res) => {
 
 module.exports = {
   getAllRevenueList,
+  getAllRevenueListReverse,
   getGasolineSalesList,
   getAllCashList,
   getAllCreditCardList,
