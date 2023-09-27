@@ -6,10 +6,10 @@ import SimpleLineChart from "../../Components/SimpleLineChart/SimpleLineChart";
 import "./DetailedReports.scss";
 
 const dataKey = {
-  revenue: "Revenue",
-  gallons: "Gallons",
-  cash: "Cash",
-  credit: "Credit Card",
+  revenue: { dataName: "Revenue", color: "#84cc16" },
+  gallons: { dataName: "Gallons", color: "#3b82f6" },
+  cash: { dataName: "Cash", color: "#0d9488" },
+  credit: { dataName: "Credit Card", color: "#7c3aed" },
 };
 
 const DetailedReports = () => {
@@ -45,7 +45,8 @@ const DetailedReports = () => {
       <SimpleLineChart
         data={data?.results}
         xaxis="Date"
-        dataKey={dataKey[detailedPage]}
+        dataKey={dataKey[detailedPage].dataName}
+        color={dataKey[detailedPage].color}
       />
     </div>
   );

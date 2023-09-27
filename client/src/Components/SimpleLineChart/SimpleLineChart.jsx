@@ -57,7 +57,7 @@ const dummmy = [
   },
 ];
 
-const SimpleLineChart = ({ data, dataKey, xaxis }) => {
+const SimpleLineChart = ({ data, dataKey, xaxis, color }) => {
   return (
     <div className="simple-line-chart-box-container">
       <h2>yo</h2>
@@ -83,7 +83,7 @@ const SimpleLineChart = ({ data, dataKey, xaxis }) => {
             <Line
               type="monotone"
               dataKey={dataKey}
-              stroke="#8884d8"
+              stroke={color}
               dot={false}
             />
           </LineChart>
@@ -103,6 +103,7 @@ SimpleLineChart.propTypes = {
   ).isRequired,
   dataKey: PropTypes.string.isRequired,
   xaxis: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default SimpleLineChart;
