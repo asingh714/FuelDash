@@ -16,9 +16,10 @@ const TopProductSalesBox = ({ chartData }) => {
               className="product-image"
             />
             <div className="name-price-container">
-              <div className="product-name">{product.name}</div>
+              <span className="product-name">{product.name}</span>
+              <span className="product-price">${product.price}</span>
             </div>
-            <div className="product-sales">{product.quantitySold}</div>
+            <span className="product-sales">{product.quantitySold}</span>
           </div>
         ))}
       </div>
