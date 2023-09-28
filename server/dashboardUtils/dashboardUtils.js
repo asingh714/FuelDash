@@ -179,9 +179,15 @@ const getTopNonGasProducts = async (propertyId) => {
       {
         $group: {
           _id: "$nonGasolineSales.name",
-
           totalQuantitySold: { $sum: "$nonGasolineSales.quantitySold" },
           averagePrice: { $avg: "$nonGasolineSales.priceSoldAt" },
+        },
+      },
+      {
+        $project: {
+          _id: 1,
+          totalQuantitySold: { $toInt: "$totalQuantitySold" }, // convert to integer here
+          averagePrice: 1,
         },
       },
       {
