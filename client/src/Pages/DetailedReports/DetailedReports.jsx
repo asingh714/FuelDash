@@ -32,12 +32,12 @@ const columns = [
 
 const DetailedReports = () => {
   const { propertyId, detailedPage } = useParams();
-  const { isLoading, error, data } = useQuery(
-    [propertyId, detailedPage],
+  const query1 = useQuery(
+    [`${propertyId}-${detailedPage}-query1`, propertyId, detailedPage],
     async () => {
       const response = await newRequest.get(
         `/total/${propertyId}/${detailedPage}`
-      ); // TODO: Change to correct endpoint
+      );
       if (!response.data) {
         throw new Error("No data returned");
       }
@@ -45,15 +45,31 @@ const DetailedReports = () => {
     }
   );
 
-  // Handle potential errors
-  if (error) {
-    console.error(error);
-    return <div>Error loading data</div>;
+  const query2 = useQuery(
+    [`${propertyId}-${detailedPage}-query2`, propertyId, detailedPage],
+    async () => {
+      const response = await newRequest.get(
+        `/total/${propertyId}/${detailedPage}/reverse`
+      );
+      if (!response.data) {
+        throw new Error("No data returned");
+      }
+      return response.data;
+    }
+  );
+
+  if (query1.isLoading || query2.isLoading) {
+    return <div>Loading...</div>;
   }
 
-  // Handle loading state
-  if (isLoading) {
-    return <div>Loading...</div>;
+  if (query1.error) {
+    console.error(query1.error);
+    return <div>Error loading data for query 1</div>;
+  }
+
+  if (query2.error) {
+    console.error(query2.error);
+    return <div>Error loading data for query 2</div>;
   }
 
   return (
@@ -62,14 +78,14 @@ const DetailedReports = () => {
       <div className="detail-report-container">
         <h2>{dataInfo[detailedPage].title}</h2>
         <SimpleLineChart
-          data={data?.results}
+          data={query1.data?.results}
           xaxis="Date"
           dataKey={dataInfo[detailedPage].dataName}
           color={dataInfo[detailedPage].color}
           className="chart"
         />
         <DataTable
-          tableData={data?.results}
+          tableData={query2.data?.results}
           columns={columns}
           className="table"
         />

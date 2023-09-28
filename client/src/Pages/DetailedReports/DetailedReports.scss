@@ -15,8 +15,9 @@
 
     .chart,
     .table {
-      flex: 1;
-      // height: 100%;
+      // flex-grow: 1;
+      border: 1px solid pink;
+      height: 100%;
       // width: 100%;
     }
   }
