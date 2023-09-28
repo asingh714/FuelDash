@@ -73,6 +73,7 @@ const Profile = () => {
             />
           </div>
         </div>
+        <span>Subscription Status: {data?.subscriptionStatus}</span>
         <hr />
         <div className="button-container">
           <button onClick={() => setPasswordModalOpen(true)}>
@@ -90,7 +91,6 @@ const Profile = () => {
         </div>
         {data?.subscriptionStatus === "Free" && <button>Subscribe</button>}
         {isPasswordModalOpen && <Modal message="Change password" />}
-        <p>Subscription Status: {data?.subscriptionStatus}</p>
       </div>
     </div>
   );
