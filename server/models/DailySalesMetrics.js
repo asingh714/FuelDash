@@ -9,6 +9,7 @@ const DailySalesMetricsSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now,
+    required: true,
   },
   totalRevenue: {
     type: Number,
@@ -66,5 +67,7 @@ const DailySalesMetricsSchema = new mongoose.Schema({
     },
   ],
 });
+
+DailySalesMetricsSchema.index({ propertyId: 1, date: 1 }, { unique: true });
 
 module.exports = mongoose.model("DailySalesMetrics", DailySalesMetricsSchema);

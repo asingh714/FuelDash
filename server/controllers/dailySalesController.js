@@ -187,17 +187,27 @@ const addDailySalesMetrics = async (req, res) => {
     });
   }
 
-  const dailySalesMetrics = new DailySalesMetrics({
-    propertyId,
-    date,
-    totalRevenue,
-    dailyCreditCardPayments,
-    dailyCashPayments,
-    gasolineSales,
-    nonGasolineSales,
-  });
-
   try {
+    const existingEntry = await DailySalesMetrics.findOne({
+      propertyId,
+      date,
+    });
+    if (existingEntry) {
+      return res.status(400).json({
+        message: "A daily sales metric for this date already exists.",
+      });
+    }
+
+    const dailySalesMetrics = new DailySalesMetrics({
+      propertyId,
+      date,
+      totalRevenue,
+      dailyCreditCardPayments,
+      dailyCashPayments,
+      gasolineSales,
+      nonGasolineSales,
+    });
+
     await dailySalesMetrics.save();
 
     for (const sale of gasolineSales) {
@@ -207,6 +217,16 @@ const addDailySalesMetrics = async (req, res) => {
     for (const sale of nonGasolineSales) {
       await updateNonGasolineStocks(propertyId, sale.name, sale.quantitySold);
     }
+
+    // Process updates in parallel
+    // await Promise.all([
+    //   ...gasolineSales.map((sale) =>
+    //     updateGasolineBatches(propertyId, sale.gasType, sale.gallonsSold)
+    //   ),
+    //   ...nonGasolineSales.map((sale) =>
+    //     updateNonGasolineStocks(propertyId, sale.name, sale.quantitySold)
+    //   ),
+    // ]);
 
     res
       .status(201)

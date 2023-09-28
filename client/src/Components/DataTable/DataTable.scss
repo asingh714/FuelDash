@@ -12,7 +12,7 @@
   .filter-input {
     font-size: 1.2rem;
     font-weight: 600;
-    max-width: 35rem;
+    max-width: 20rem;
     margin-bottom: 1.6rem;
     padding: 0.75rem 1rem;
     border: 1px solid $gray-300;
@@ -30,6 +30,15 @@
   }
 
   .table-container {
+    th {
+      border: 1px solid $gray-400;
+      padding: 1rem;
+    }
+    td {
+      border: 1px solid $gray-400;
+      text-align: center;
+      padding: 0.5rem;
+    }
   }
 
   .button-container {
