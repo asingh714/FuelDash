@@ -7,6 +7,7 @@ import Login from "./Pages/Login/Login.jsx";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
 import TermsOfUse from "./Pages/TermsOfUse/TermsOfUse.jsx";
 import DetailedReports from "./Pages/DetailedReports/DetailedReports.jsx";
+import Profile from "./Pages/Profile/Profile.jsx";
 
 import "./styles/global.scss";
 
@@ -30,6 +31,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
         },
 
         {

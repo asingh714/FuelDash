@@ -4,6 +4,28 @@ const validator = require("validator");
 const User = require("../models/User");
 const { createTokenUser, attachCookiesToResponse } = require("../utils");
 
+const getUserProfile = async (req, res) => {
+  const userId = req.user.userId;
+
+  try {
+    const user = await User.findOne({ _id: userId });
+
+    if (!user) {
+      return res.status(404).json({ msg: "User not found" });
+    }
+
+    res
+      .status(200)
+      .json({
+        name: user.name,
+        email: user.email,
+        subscriptionStatus: user.subscriptionStatus,
+      });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const updatePassword = async (req, res) => {
   const userId = req.user.userId;
 
@@ -127,6 +149,7 @@ const becomePaidUser = async (req, res) => {
 };
 
 module.exports = {
+  getUserProfile,
   updatePassword,
   updateUser,
   deleteUser,
