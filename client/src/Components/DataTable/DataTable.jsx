@@ -36,6 +36,7 @@ const DataTable = ({ tableData, columns }) => {
         type="text"
         value={filtering}
         onChange={(e) => setFiltering(e.target.value)}
+        className="filter-input"
       />
 
       <table className="table-container">
@@ -78,7 +79,7 @@ const DataTable = ({ tableData, columns }) => {
           ))}
         </tbody>
       </table>
-      <div>
+      <div className="button-container">
         <button onClick={() => table.setPageIndex(0)}>First page</button>
         <button
           disabled={!table.getCanPreviousPage()}

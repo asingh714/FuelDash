@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
 import SimpleLineChart from "../../Components/SimpleLineChart/SimpleLineChart";
 import DataTable from "../../Components/DataTable/DataTable";
+import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 
 import "./DetailedReports.scss";
 
@@ -35,8 +36,8 @@ const DetailedReports = () => {
     [propertyId, detailedPage],
     async () => {
       const response = await newRequest.get(
-        `/total/${propertyId}/${detailedPage}/reverse`
-      );
+        `/total/${propertyId}/${detailedPage}`
+      ); // TODO: Change to correct endpoint
       if (!response.data) {
         throw new Error("No data returned");
       }
@@ -56,15 +57,23 @@ const DetailedReports = () => {
   }
 
   return (
-    <div className="detail-report-container">
-      <h2>{dataInfo[detailedPage].title}</h2>
-      <SimpleLineChart
-        data={data?.results}
-        xaxis="Date"
-        dataKey={dataInfo[detailedPage].dataName}
-        color={dataInfo[detailedPage].color}
-      />
-      <DataTable tableData={data?.results} columns={columns} />
+    <div className="detail-report-page-container">
+      <DashboardMenu />
+      <div className="detail-report-container">
+        <h2>{dataInfo[detailedPage].title}</h2>
+        <SimpleLineChart
+          data={data?.results}
+          xaxis="Date"
+          dataKey={dataInfo[detailedPage].dataName}
+          color={dataInfo[detailedPage].color}
+          className="chart"
+        />
+        <DataTable
+          tableData={data?.results}
+          columns={columns}
+          className="table"
+        />
+      </div>
     </div>
   );
 };

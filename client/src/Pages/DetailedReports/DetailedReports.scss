@@ -1,9 +1,23 @@
-.detail-report-container {
+.detail-report-page-container {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
 
-  h2 {
-    color: white;
+  .detail-report-container {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    padding: 10rem;
+    width: 100%;
+
+    h2 {
+      color: white;
+      margin-bottom: 5rem;
+    }
+
+    .chart,
+    .table {
+      flex: 1;
+      // height: 100%;
+      // width: 100%;
+    }
   }
 }
