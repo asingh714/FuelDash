@@ -15,6 +15,8 @@ const DataTable = ({ tableData, columns }) => {
   const [sorting, setSorting] = useState([]);
   const [filtering, setFiltering] = useState("");
 
+  console.log(tableData);
+
   const table = useReactTable({
     data: tableData,
     columns,

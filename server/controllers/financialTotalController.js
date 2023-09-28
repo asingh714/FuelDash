@@ -4,7 +4,7 @@ const formatDate = require("../utils/formatDate");
 
 const DailySalesMetrics = require("../models/DailySalesMetrics");
 
-const getAllRevenueList = async (req, res) => {
+const getAllRevenueListAscending = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -27,7 +27,7 @@ const getAllRevenueList = async (req, res) => {
   }
 };
 
-const getAllRevenueListReverse = async (req, res) => {
+const getAllRevenueListDescending = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -50,7 +50,7 @@ const getAllRevenueListReverse = async (req, res) => {
   }
 };
 
-const getGasolineSalesList = async (req, res) => {
+const getGasolineSalesListAscending = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -83,7 +83,7 @@ const getGasolineSalesList = async (req, res) => {
   }
 };
 
-const getGasolineSalesListReverse = async (req, res) => {
+const getGasolineSalesListDescending = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -100,7 +100,7 @@ const getGasolineSalesListReverse = async (req, res) => {
         },
       },
       {
-        $sort: { date: 1 },
+        $sort: { date: -1 },
       },
     ]);
 
@@ -116,7 +116,7 @@ const getGasolineSalesListReverse = async (req, res) => {
   }
 };
 
-const getAllCashList = async (req, res) => {
+const getAllCashListAscending = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -139,7 +139,30 @@ const getAllCashList = async (req, res) => {
   }
 };
 
-const getAllCreditCardList = async (req, res) => {
+const getAllCashListDescending = async (req, res) => {
+  const { propertyId } = req.params;
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.find(
+      {
+        propertyId,
+      },
+      "dailyCashPayments date"
+    ).sort({ date: -1 });
+
+    const cashList = dailySalesMetrics.map((metric) => ({
+      id: metric._id,
+      Cash: parseFloat(metric.dailyCashPayments),
+      Date: formatDate(metric.date),
+    }));
+
+    res.status(200).json({ results: cashList });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
+const getAllCreditCardListAscending = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -162,11 +185,36 @@ const getAllCreditCardList = async (req, res) => {
   }
 };
 
+const getAllCreditCardListDescending = async (req, res) => {
+  const { propertyId } = req.params;
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.find(
+      {
+        propertyId,
+      },
+      "dailyCreditCardPayments date"
+    ).sort({ date: -1 });
+
+    const creditCardList = dailySalesMetrics.map((metric) => ({
+      id: metric._id,
+      "Credit Card": parseFloat(metric.dailyCreditCardPayments),
+      Date: formatDate(metric.date),
+    }));
+
+    res.status(200).json({ results: creditCardList });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 module.exports = {
-  getAllRevenueList,
-  getAllRevenueListReverse,
-  getGasolineSalesList,
-  getGasolineSalesListReverse,
-  getAllCashList,
-  getAllCreditCardList,
+  getAllRevenueListAscending,
+  getAllRevenueListDescending,
+  getGasolineSalesListAscending,
+  getGasolineSalesListDescending,
+  getAllCashListAscending,
+  getAllCashListDescending,
+  getAllCreditCardListAscending,
+  getAllCreditCardListDescending,
 };

@@ -9,26 +9,67 @@ import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import "./DetailedReports.scss";
 
 const dataInfo = {
-  revenue: { dataName: "Revenue", color: "#84cc16", title: "Revenue" },
-  gallons: { dataName: "Gallons", color: "#3b82f6", title: "Gallons Sold" },
-  cash: { dataName: "Cash", color: "#0d9488", title: "Cash Payments" },
+  revenue: {
+    dataName: "Revenue",
+    color: "#84cc16",
+    title: "Revenue",
+    columns: [
+      {
+        header: "Date",
+        accessorKey: "Date",
+      },
+      {
+        header: "Revenue",
+        accessorKey: "Revenue",
+      },
+    ],
+  },
+  gallons: {
+    dataName: "Gallons",
+    color: "#3b82f6",
+    title: "Gallons Sold",
+    columns: [
+      {
+        header: "Date",
+        accessorKey: "Date",
+      },
+      {
+        header: "Gallons",
+        accessorKey: "Gallons",
+      },
+    ],
+  },
+  cash: {
+    dataName: "Cash",
+    color: "#0d9488",
+    title: "Cash Payments",
+    columns: [
+      {
+        header: "Date",
+        accessorKey: "Date",
+      },
+      {
+        header: "Cash",
+        accessorKey: "Cash",
+      },
+    ],
+  },
   credit: {
     dataName: "Credit Card",
     color: "#7c3aed",
     title: "Credit Card Payments",
+    columns: [
+      {
+        header: "Date",
+        accessorKey: "Date",
+      },
+      {
+        header: "Credit Card",
+        accessorKey: "Credit Card",
+      },
+    ],
   },
 };
-
-const columns = [
-  {
-    header: "Date",
-    accessorKey: "Date",
-  },
-  {
-    header: "Revenue",
-    accessorKey: "Revenue",
-  },
-];
 
 const DetailedReports = () => {
   const { propertyId, detailedPage } = useParams();
@@ -36,7 +77,7 @@ const DetailedReports = () => {
     [`${propertyId}-${detailedPage}-query1`, propertyId, detailedPage],
     async () => {
       const response = await newRequest.get(
-        `/total/${propertyId}/${detailedPage}`
+        `/total/${propertyId}/${detailedPage}/ascending`
       );
       if (!response.data) {
         throw new Error("No data returned");
@@ -49,7 +90,7 @@ const DetailedReports = () => {
     [`${propertyId}-${detailedPage}-query2`, propertyId, detailedPage],
     async () => {
       const response = await newRequest.get(
-        `/total/${propertyId}/${detailedPage}/reverse`
+        `/total/${propertyId}/${detailedPage}/descending`
       );
       if (!response.data) {
         throw new Error("No data returned");
@@ -84,11 +125,11 @@ const DetailedReports = () => {
           color={dataInfo[detailedPage].color}
           className="chart"
         />
-        {/* <DataTable
+        <DataTable
           tableData={query2.data?.results}
-          columns={columns}
+          columns={dataInfo[detailedPage].columns}
           className="table"
-        /> */}
+        />
       </div>
     </div>
   );

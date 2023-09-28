@@ -3,25 +3,43 @@ const router = express.Router();
 
 const { authenticate } = require("../middleware/authentication");
 const {
-  getAllRevenueList,
-  getAllRevenueListReverse,
-  getGasolineSalesList,
-  getGasolineSalesListReverse,
-  getAllCashList,
-  getAllCreditCardList,
+  getAllRevenueListAscending,
+  getAllRevenueListDescending,
+  getGasolineSalesListAscending,
+  getGasolineSalesListDescending,
+  getAllCashListAscending,
+  getAllCashListDescending,
+  getAllCreditCardListAscending,
+  getAllCreditCardListDescending,
 } = require("../controllers/financialTotalController");
 
-router.route("/:propertyId/revenue").get(authenticate, getAllRevenueList);
 router
-  .route("/:propertyId/revenue/reverse")
-  .get(authenticate, getAllRevenueListReverse);
-
-router.route("/:propertyId/gallons").get(authenticate, getGasolineSalesList);
+  .route("/:propertyId/revenue/ascending")
+  .get(authenticate, getAllRevenueListAscending);
 router
-  .route("/:propertyId/gallons/reverse")
-  .get(authenticate, getGasolineSalesListReverse);
+  .route("/:propertyId/revenue/descending")
+  .get(authenticate, getAllRevenueListDescending);
 
-router.route("/:propertyId/cash").get(authenticate, getAllCashList);
-router.route("/:propertyId/credit").get(authenticate, getAllCreditCardList);
+router
+  .route("/:propertyId/gallons/ascending")
+  .get(authenticate, getGasolineSalesListAscending);
+
+router
+  .route("/:propertyId/gallons/descending")
+  .get(authenticate, getGasolineSalesListDescending);
+
+router
+  .route("/:propertyId/cash/ascending")
+  .get(authenticate, getAllCashListAscending);
+router
+  .route("/:propertyId/cash/descending")
+  .get(authenticate, getAllCashListDescending);
+
+router
+  .route("/:propertyId/credit/ascending")
+  .get(authenticate, getAllCreditCardListAscending);
+router
+  .route("/:propertyId/credit/descending")
+  .get(authenticate, getAllCreditCardListDescending);
 
 module.exports = router;
