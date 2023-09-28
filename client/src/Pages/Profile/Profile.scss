@@ -49,18 +49,35 @@
           padding: 0.75rem 1rem;
         }
       }
-
-      button {
-        padding: 10px 20px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2rem;
+      .button {
+        width: 15rem;
+        padding: 0.75rem 0rem;
         border-radius: 5px;
-        border: none;
-        background-color: #008cba;
-        color: #fff;
+        font-size: 1.4rem;
         cursor: pointer;
+        font-weight: 600;
+        color: #fff;
+        border: 0;
+        text-align: center;
 
         &:disabled {
           background-color: #666;
         }
+      }
+
+      .pw-button {
+        background-color: $indigo-500;
+      }
+      .delete-button {
+        background-color: $red-600;
+      }
+      .update-button {
+        background-color: $violet-500;
       }
     }
   }

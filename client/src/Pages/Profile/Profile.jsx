@@ -76,18 +76,25 @@ const Profile = () => {
         <span>Subscription Status: {data?.subscriptionStatus}</span>
         <hr />
         <div className="button-container">
-          <button onClick={() => setPasswordModalOpen(true)}>
-            Change Password
-          </button>
-          <button onClick={() => setDeleteModalOpen(true)}>
+          <div
+            onClick={() => setDeleteModalOpen(true)}
+            className="button delete-button"
+          >
             Delete Account
-          </button>
-          <button
+          </div>
+          <div
+            onClick={() => setPasswordModalOpen(true)}
+            className="button pw-button"
+          >
+            Change Password
+          </div>
+          <div
             onClick={() => setUpdateModalOpen(true)}
+            className="button update-button"
             // disabled={name === data.name && email === data.email}
           >
             Update User Info
-          </button>
+          </div>
         </div>
         {data?.subscriptionStatus === "Free" && <button>Subscribe</button>}
         {isPasswordModalOpen && <Modal message="Change password" />}
