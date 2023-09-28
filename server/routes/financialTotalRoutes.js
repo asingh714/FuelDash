@@ -6,6 +6,7 @@ const {
   getAllRevenueList,
   getAllRevenueListReverse,
   getGasolineSalesList,
+  getGasolineSalesListReverse,
   getAllCashList,
   getAllCreditCardList,
 } = require("../controllers/financialTotalController");
@@ -16,6 +17,10 @@ router
   .get(authenticate, getAllRevenueListReverse);
 
 router.route("/:propertyId/gallons").get(authenticate, getGasolineSalesList);
+router
+  .route("/:propertyId/gallons/reverse")
+  .get(authenticate, getGasolineSalesListReverse);
+
 router.route("/:propertyId/cash").get(authenticate, getAllCashList);
 router.route("/:propertyId/credit").get(authenticate, getAllCreditCardList);
 

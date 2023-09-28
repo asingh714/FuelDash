@@ -83,6 +83,39 @@ const getGasolineSalesList = async (req, res) => {
   }
 };
 
+const getGasolineSalesListReverse = async (req, res) => {
+  const { propertyId } = req.params;
+
+  try {
+    const results = await DailySalesMetrics.aggregate([
+      {
+        $match: { propertyId: new ObjectId(propertyId) }, // Filter by propertyId
+      },
+      {
+        $project: {
+          date: 1,
+          Gallons: {
+            $sum: "$gasolineSales.gallonsSold", // Calculate the total gallons sold for each day
+          },
+        },
+      },
+      {
+        $sort: { date: 1 },
+      },
+    ]);
+
+    const formattedResults = results.map((result) => ({
+      id: result._id,
+      Gallons: parseFloat(result.Gallons),
+      Date: formatDate(result.date),
+    }));
+
+    res.status(200).json({ results: formattedResults });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const getAllCashList = async (req, res) => {
   const { propertyId } = req.params;
 
@@ -133,6 +166,7 @@ module.exports = {
   getAllRevenueList,
   getAllRevenueListReverse,
   getGasolineSalesList,
+  getGasolineSalesListReverse,
   getAllCashList,
   getAllCreditCardList,
 };

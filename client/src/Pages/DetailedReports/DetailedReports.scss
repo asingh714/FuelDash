@@ -4,7 +4,7 @@
   .detail-report-container {
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: 175vh;
     padding: 10rem;
     width: 100%;
 
@@ -15,8 +15,7 @@
 
     .chart,
     .table {
-      // flex-grow: 1;
-      border: 1px solid pink;
+      flex-grow: 1;
       height: 100%;
       // width: 100%;
     }

@@ -84,11 +84,11 @@ const DetailedReports = () => {
           color={dataInfo[detailedPage].color}
           className="chart"
         />
-        <DataTable
+        {/* <DataTable
           tableData={query2.data?.results}
           columns={columns}
           className="table"
-        />
+        /> */}
       </div>
     </div>
   );
