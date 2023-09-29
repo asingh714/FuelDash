@@ -65,7 +65,7 @@
       margin-bottom: 5rem;
     }
     .update-button:disabled {
-      background-color: grey;
+      background-color: $gray-500;
       cursor: not-allowed;
     }
 

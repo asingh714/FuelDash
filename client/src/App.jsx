@@ -8,6 +8,7 @@ import SignUp from "./Pages/SignUp/SignUp.jsx";
 import TermsOfUse from "./Pages/TermsOfUse/TermsOfUse.jsx";
 import DetailedReports from "./Pages/DetailedReports/DetailedReports.jsx";
 import Profile from "./Pages/Profile/Profile.jsx";
+import Properties from "./Pages/Properties/Properties.jsx";
 
 import "./styles/global.scss";
 
@@ -36,7 +37,10 @@ function App() {
           path: "/profile",
           element: <Profile />,
         },
-
+        {
+          path: "/properties",
+          element: <Properties />,
+        },
         {
           path: "/dashboard/:propertyId/:salesId",
           element: <Dashboard />,

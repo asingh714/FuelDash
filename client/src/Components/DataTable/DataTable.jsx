@@ -81,24 +81,26 @@ const DataTable = ({ tableData, columns }) => {
           ))}
         </tbody>
       </table>
-      <div className="button-container">
-        <button onClick={() => table.setPageIndex(0)}>First page</button>
-        <button
-          disabled={!table.getCanPreviousPage()}
-          onClick={() => table.previousPage()}
-        >
-          Previous page
-        </button>
-        <button
-          disabled={!table.getCanNextPage()}
-          onClick={() => table.nextPage()}
-        >
-          Next page
-        </button>
-        <button onClick={() => table.setPageIndex(table.getPageCount() - 1)}>
-          Last page
-        </button>
-      </div>
+      {tableData.length > 10 && (
+        <div className="button-container">
+          <button onClick={() => table.setPageIndex(0)}>First page</button>
+          <button
+            disabled={!table.getCanPreviousPage()}
+            onClick={() => table.previousPage()}
+          >
+            Previous page
+          </button>
+          <button
+            disabled={!table.getCanNextPage()}
+            onClick={() => table.nextPage()}
+          >
+            Next page
+          </button>
+          <button onClick={() => table.setPageIndex(table.getPageCount() - 1)}>
+            Last page
+          </button>
+        </div>
+      )}
     </div>
   );
 };
