@@ -65,7 +65,16 @@ const Properties = () => {
       <DashboardMenu />
       <div className="properties-container">
         <hr />
-        <h4>Your Properties</h4>
+        <div className="properties-header">
+          <div className="properties-text-container">
+            <h4>Your Properties</h4>
+            <span>
+              A list of all the properties in your account including their name,
+              and address.
+            </span>
+          </div>
+          <div className="add-prop-btn">Add Properties</div>
+        </div>
         {data && data.properties ? (
           <DataTable
             tableData={data.properties}
