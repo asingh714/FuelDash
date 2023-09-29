@@ -10,20 +10,21 @@ const Profile = () => {
   const [isPasswordModalOpen, setPasswordModalOpen] = useState(false);
   const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
   const [modalType, setModalType] = useState(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
 
   const { loading, error, data } = useQuery([], async () => {
     const response = await newRequest.get(`/user`);
     if (!response.data) {
       throw new Error("No profile returned");
     }
-    console.log(response.data);
+    setFormData({
+      name: response.data.name,
+      email: response.data.email,
+    });
     return response.data;
-  });
-
-  // State for form inputs
-  const [formData, setFormData] = useState({
-    name: data?.name,
-    email: data?.email,
   });
 
   const handleChange = (e) => {
@@ -71,6 +72,14 @@ const Profile = () => {
             />
           </div>
         </div>
+        <button
+          className="button update-button"
+          disabled={
+            formData.name === data?.name && formData.email === data?.email
+          }
+        >
+          Update User Info
+        </button>
         <span>Subscription Status: {data?.subscriptionStatus}</span>
         <hr />
         <div className="button-container">
@@ -91,14 +100,6 @@ const Profile = () => {
             className="button pw-button"
           >
             Change Password
-          </div>
-          <div
-            className="button update-button"
-            disabled={
-              formData.name === data?.name && formData.email === data?.email
-            }
-          >
-            Update User Info
           </div>
         </div>
         {data?.subscriptionStatus === "Free" && <button>Subscribe</button>}

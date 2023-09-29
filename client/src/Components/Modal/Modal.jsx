@@ -4,7 +4,7 @@ import "./Modal.scss";
 
 const Modal = ({ type, onClose }) => {
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay" onClick={onClose}>
       <div className="modal-container">
         {type === "password" && (
           <form action="">
