@@ -10,11 +10,11 @@ const createJWT = ({ payload }) => {
 const attachCookiesToResponse = ({ res, user }) => {
   const token = createJWT({ payload: user });
 
-  const oneDay = 1000 * 60 * 60 * 24;
+  const sevenDays = 1000 * 60 * 60 * 24 * 7;
 
   res.cookie("token", token, {
     httpOnly: true,
-    expires: new Date(Date.now() + oneDay),
+    expires: new Date(Date.now() + sevenDays),
     secure: process.env.NODE_ENV,
     signed: true,
   });

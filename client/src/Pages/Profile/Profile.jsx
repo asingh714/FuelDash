@@ -9,7 +9,7 @@ import "./Profile.scss";
 const Profile = () => {
   const [isPasswordModalOpen, setPasswordModalOpen] = useState(false);
   const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
-  const [isUpdateModalOpen, setUpdateModalOpen] = useState(false);
+  const [modalType, setModalType] = useState(null);
 
   const { loading, error, data } = useQuery([], async () => {
     const response = await newRequest.get(`/user`);
@@ -24,8 +24,6 @@ const Profile = () => {
   const [formData, setFormData] = useState({
     name: data?.name,
     email: data?.email,
-    password: "",
-    newPassword: "",
   });
 
   const handleChange = (e) => {
@@ -77,28 +75,43 @@ const Profile = () => {
         <hr />
         <div className="button-container">
           <div
-            onClick={() => setDeleteModalOpen(true)}
+            onClick={() => {
+              setModalType("delete");
+              setDeleteModalOpen(true);
+            }}
             className="button delete-button"
           >
             Delete Account
           </div>
           <div
-            onClick={() => setPasswordModalOpen(true)}
+            onClick={() => {
+              setModalType("password");
+              setPasswordModalOpen(true);
+            }}
             className="button pw-button"
           >
             Change Password
           </div>
           <div
-            onClick={() => setUpdateModalOpen(true)}
             className="button update-button"
-            // disabled={name === data.name && email === data.email}
+            disabled={
+              formData.name === data?.name && formData.email === data?.email
+            }
           >
             Update User Info
           </div>
         </div>
         {data?.subscriptionStatus === "Free" && <button>Subscribe</button>}
-        {isPasswordModalOpen && <Modal message="Change password" />}
       </div>
+      {(isPasswordModalOpen || isDeleteModalOpen) && (
+        <Modal
+          type={modalType}
+          onClose={() => {
+            setPasswordModalOpen(false);
+            setDeleteModalOpen(false);
+          }}
+        />
+      )}
     </div>
   );
 };
