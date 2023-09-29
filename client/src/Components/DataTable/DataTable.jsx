@@ -82,7 +82,7 @@ const DataTable = ({ tableData, columns }) => {
           ))}
         </tbody>
       </table>
-      {tableData.length > 10 && (
+      {tableData?.length > 10 && (
         <div className="button-container">
           <button onClick={() => table.setPageIndex(0)}>First page</button>
           <button
