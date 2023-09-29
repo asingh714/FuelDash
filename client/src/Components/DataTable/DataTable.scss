@@ -31,14 +31,16 @@
 
   .table-container {
     th {
-      border-bottom: 1px solid $gray-500;
-      padding: 1rem;
+      border-bottom: 1px solid $gray-600;
+      padding: 1.5rem 0;
+
       text-align: left;
+      font-weight: 800;
     }
     td {
-      border-bottom: 1px solid $gray-600;
+      border-bottom: 1px solid $gray-700;
       text-align: left;
-      padding: 0.5rem;
+      padding: 1.5rem 0;
     }
   }
 

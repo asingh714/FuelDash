@@ -27,10 +27,17 @@ const Properties = () => {
       header: "",
       accessorKey: "actions",
       cell: ({ row }) => (
-        <>
-          <div onClick={() => handleEdit(row.original)}>Edit</div>
-          <div onClick={() => handleDelete(row.original)}>Delete</div>
-        </>
+        <div className="btn-container">
+          <div className="edit-btn" onClick={() => handleEdit(row.original)}>
+            Edit
+          </div>
+          <div
+            className="delete-btn"
+            onClick={() => handleDelete(row.original)}
+          >
+            Delete
+          </div>
+        </div>
       ),
     },
   ];
