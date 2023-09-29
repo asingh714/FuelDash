@@ -39,6 +39,7 @@ const DataTable = ({ tableData, columns }) => {
         value={filtering}
         onChange={(e) => setFiltering(e.target.value)}
         className="filter-input"
+        placeholder="Search"
       />
 
       <table className="table-container">

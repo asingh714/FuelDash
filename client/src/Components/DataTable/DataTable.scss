@@ -7,7 +7,7 @@
 
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  padding: 5rem 0;
 
   .filter-input {
     font-size: 1.2rem;
@@ -31,12 +31,13 @@
 
   .table-container {
     th {
-      border: 1px solid $gray-400;
+      border-bottom: 1px solid $gray-500;
       padding: 1rem;
+      text-align: left;
     }
     td {
-      border: 1px solid $gray-400;
-      text-align: center;
+      border-bottom: 1px solid $gray-600;
+      text-align: left;
       padding: 0.5rem;
     }
   }
