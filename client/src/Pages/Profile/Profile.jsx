@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import newRequest from "../../utils/newRequest";
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
-import Modal from "../../Components/Modal/Modal";
+import ProfileModal from "../../Components/ProfileModal/ProfileModal";
 import "./Profile.scss";
 
 const Profile = () => {
@@ -105,7 +105,7 @@ const Profile = () => {
         {data?.subscriptionStatus === "Free" && <button>Subscribe</button>}
       </div>
       {(isPasswordModalOpen || isDeleteModalOpen) && (
-        <Modal
+        <ProfileModal
           type={modalType}
           onClose={() => {
             setPasswordModalOpen(false);

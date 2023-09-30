@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-import "./Modal.scss";
+import "./ProfileModal.scss";
 
-const Modal = ({ type, onClose }) => {
+const ProfileModal = ({ type, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-container">
@@ -52,9 +52,9 @@ const Modal = ({ type, onClose }) => {
     </div>
   );
 };
-Modal.propTypes = {
+ProfileModal.propTypes = {
   type: PropTypes.string,
   onClose: PropTypes.func.isRequired,
 };
 
-export default Modal;
+export default ProfileModal;

@@ -1,11 +1,18 @@
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import DataTable from "../../Components/DataTable/DataTable";
+import PropertyModal from "../../Components/PropertiesModal";
 import newRequest from "../../utils/newRequest";
 import "./Properties.scss";
 
 const Properties = () => {
+  const [isAddModalOpen, setAddModalOpen] = useState(false);
+  const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
+  const [isEditModalOpen, setEditModalOpen] = useState(false);
+  const [modalType, setModalType] = useState(null);
+
   const { loading, error, data } = useQuery(["properties"], async () => {
     const response = await newRequest.get(`/properties`);
     if (!response.data) {
@@ -83,6 +90,16 @@ const Properties = () => {
           />
         ) : null}
       </div>
+      {(isAddModalOpen || isDeleteModalOpen || isEditModalOpen) && (
+        <PropertyModal
+          type={modalType}
+          onClose={() => {
+            setAddModalOpen(false);
+            setDeleteModalOpen(false);
+            setEditModalOpen(false);
+          }}
+        />
+      )}
     </div>
   );
 };
