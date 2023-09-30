@@ -1,11 +1,25 @@
 import PropTypes from "prop-types";
 
-import "./ProfileModal.scss";
+import "./Modal.scss";
 
-const ProfileModal = ({ type, onClose }) => {
+const Modal = ({ type, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-container">
+        {type === "addProperty" && (
+          <form action="">
+            <div className="modal-input-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name of your property"
+                // HERE
+              />
+            </div>
+          </form>
+        )}
         {type === "password" && (
           <form action="">
             {/* <div className="modal-input-container"> */}
@@ -52,9 +66,9 @@ const ProfileModal = ({ type, onClose }) => {
     </div>
   );
 };
-ProfileModal.propTypes = {
+Modal.propTypes = {
   type: PropTypes.string,
   onClose: PropTypes.func.isRequired,
 };
 
-export default ProfileModal;
+export default Modal;

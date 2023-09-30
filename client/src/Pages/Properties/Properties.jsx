@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import DataTable from "../../Components/DataTable/DataTable";
-import PropertyModal from "../../Components/PropertiesModal";
+import Modal from "../../Components/Modal";
 import newRequest from "../../utils/newRequest";
 import "./Properties.scss";
 
@@ -35,12 +35,21 @@ const Properties = () => {
       accessorKey: "actions",
       cell: ({ row }) => (
         <div className="btn-container">
-          <div className="edit-btn" onClick={() => handleEdit(row.original)}>
+          <div
+            className="edit-btn"
+            onClick={() => {
+              setModalType("editProperty");
+              setEditModalOpen(true);
+            }}
+          >
             Edit
           </div>
           <div
             className="delete-btn"
-            onClick={() => handleDelete(row.original)}
+            onClick={() => {
+              setModalType("deleteProperty");
+              setDeleteModalOpen(true);
+            }}
           >
             Delete
           </div>
@@ -80,7 +89,15 @@ const Properties = () => {
               and address.
             </span>
           </div>
-          <div className="add-prop-btn">Add Properties</div>
+          <div
+            className="add-prop-btn"
+            onClick={() => {
+              setModalType("addProperty");
+              setAddModalOpen(true);
+            }}
+          >
+            Add Properties
+          </div>
         </div>
         {data && data.properties ? (
           <DataTable
@@ -91,7 +108,7 @@ const Properties = () => {
         ) : null}
       </div>
       {(isAddModalOpen || isDeleteModalOpen || isEditModalOpen) && (
-        <PropertyModal
+        <Modal
           type={modalType}
           onClose={() => {
             setAddModalOpen(false);
