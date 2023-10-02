@@ -6,10 +6,10 @@ import "./Welcome.scss";
 
 const Welcome = () => {
   const navigate = useNavigate();
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const currentUserName = currentUser?.name;
 
   useEffect(() => {
-    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
     if (!currentUser) {
       navigate("/login");
     }
@@ -17,7 +17,9 @@ const Welcome = () => {
 
   return (
     <div className="welcome-container">
-      <h1 className="welcome-header fade-in">Welcome to FuelDash.</h1>
+      <h1 className="welcome-header fade-in">
+        Welcome to FuelDash, {currentUserName}
+      </h1>
       <p className="welcome-text">
         Congratulations on taking a decisive step towards transforming the way
         you manage your gas station business. FuelDash Inc. is dedicated to

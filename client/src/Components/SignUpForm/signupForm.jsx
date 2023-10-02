@@ -55,6 +55,7 @@ const SignupForm = () => {
           localStorage.setItem("currentUser", JSON.stringify(res.data));
           navigate("/welcome");
         } catch (error) {
+          console.log("err", error);
           setError(error.response.data.msg);
         }
         setLoading(false);
@@ -91,7 +92,7 @@ const SignupForm = () => {
         type="password"
       />
       {passwordError && <p className="error-text">Password is required.</p>}
-
+      {error && <p className="error-text">{error}</p>}
       <span id="terms">
         By clicking the button below, I agree to FuelDash&apos;s{" "}
         <Link className="agreements" to="/terms-of-use" target="_blank">
@@ -109,13 +110,13 @@ const SignupForm = () => {
           ariaLabel="three-dots-loading"
           visible={true}
           wrapperStyle={{
-            "background-color": "black",
+            backgroundColor: "black",
             width: "7.2rem",
             padding: "0.5rem 0rem",
-            "border-radius": "1.5rem",
+            borderRadius: "1.5rem",
             display: "flex",
-            "justify-content": "center",
-            "margin-top": "2.5rem",
+            justifyContent: "center",
+            marginTop: "2.5rem",
           }}
         />
       ) : (
