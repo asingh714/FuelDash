@@ -3,9 +3,12 @@ import PropTypes from "prop-types";
 import "./Modal.scss";
 
 const Modal = ({ type, onClose }) => {
+  const handleContainerClick = (e) => {
+    e.stopPropagation();
+  };
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-container">
+      <div className="modal-container" onClick={handleContainerClick}>
         {type === "addProperty" && (
           <form action="">
             <div className="modal-input-group">
@@ -15,6 +18,29 @@ const Modal = ({ type, onClose }) => {
                 name="name"
                 id="name"
                 placeholder="Name of your property"
+              />
+            </div>
+            <div className="modal-input-group">
+              <label htmlFor="address">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Address"
+              />
+            </div>
+          </form>
+        )}
+
+        {type === "editProperty" && (
+          <form action="">
+            <div className="modal-input-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Edit the name of your property"
               />
             </div>
             <div className="modal-input-group">
@@ -56,6 +82,9 @@ const Modal = ({ type, onClose }) => {
             {/* </div> */}
           </form>
         )}
+        {type === "deleteProperty" && (
+          <span>Are you sure you want to delete this property?</span>
+        )}
         {type === "delete" && (
           <span>Are you sure you want to delete your account?</span>
         )}
@@ -66,10 +95,13 @@ const Modal = ({ type, onClose }) => {
           {type === "addProperty" && (
             <div className="modal-button confirm-button">Add Property</div>
           )}
+          {type === "editProperty" && (
+            <div className="modal-button confirm-button">Save Changes</div>
+          )}
           {type === "password" && (
             <div className="modal-button confirm-button">Confirm</div>
           )}
-          {type === "delete" && (
+          {(type === "delete" || type === "deleteProperty") && (
             <div className="modal-button delete-button">Delete</div>
           )}
         </div>
