@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import validator from "validator";
+import { ThreeDots } from "react-loader-spinner";
 
+import newRequest from "../../utils/newRequest";
 import "./signupForm.scss";
 
 const SignupForm = () => {
@@ -11,6 +13,8 @@ const SignupForm = () => {
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -40,7 +44,21 @@ const SignupForm = () => {
     }
 
     if (isValid) {
-      // Your signup logic here
+      setLoading(true);
+      setTimeout(async () => {
+        try {
+          const res = await newRequest.post("/auth/register", {
+            name,
+            email,
+            password,
+          });
+          localStorage.setItem("currentUser", JSON.stringify(res.data));
+          navigate("/"); // HERE
+        } catch (error) {
+          setError(error.response.data.msg);
+        }
+        setLoading(false);
+      }, 2000);
     }
   };
 
@@ -82,8 +100,27 @@ const SignupForm = () => {
         and Privacy Policy, and acknowledge receipt of the Equal Credit
         Opportunity Act Notice.
       </span>
-
-      <button type="submit">Continue</button>
+      {loading ? (
+        <ThreeDots
+          height="20"
+          width="30"
+          radius="10"
+          color="#fff"
+          ariaLabel="three-dots-loading"
+          visible={true}
+          wrapperStyle={{
+            "background-color": "black",
+            width: "7.2rem",
+            padding: "0.5rem 0rem",
+            "border-radius": "1.5rem",
+            display: "flex",
+            "justify-content": "center",
+            "margin-top": "2.5rem",
+          }}
+        />
+      ) : (
+        <button type="submit">Continue</button>
+      )}
 
       <span className="signup-link">
         Already registered?{" "}

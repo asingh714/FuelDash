@@ -17,20 +17,38 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
   const delayedLogin = async () => {
-    setLoading(true);
-    setTimeout(async () => {
-      try {
-        const res = await newRequest.post("/auth/login", {
-          email,
-          password,
-        });
-        localStorage.setItem("currentUser", JSON.stringify(res.data));
-        navigate("/dashboard");
-      } catch (error) {
-        setError(error.response.data.msg);
-      }
-      setLoading(false);
-    }, 2000);
+    let isValid = true;
+
+    if (email === "" || !validator.isEmail(email)) {
+      setEmailError(true);
+      isValid = false;
+    } else {
+      setEmailError(false);
+    }
+
+    if (password === "") {
+      setPasswordError(true);
+      isValid = false;
+    } else {
+      setPasswordError(false);
+    }
+
+    if (isValid) {
+      setLoading(true);
+      setTimeout(async () => {
+        try {
+          const res = await newRequest.post("/auth/login", {
+            email,
+            password,
+          });
+          localStorage.setItem("currentUser", JSON.stringify(res.data));
+          navigate("/dashboard");
+        } catch (error) {
+          setError(error.response.data.msg);
+        }
+        setLoading(false);
+      }, 2000);
+    }
   };
 
   const handleSubmit = (e) => {
