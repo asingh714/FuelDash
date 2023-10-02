@@ -15,7 +15,15 @@ const Modal = ({ type, onClose }) => {
                 name="name"
                 id="name"
                 placeholder="Name of your property"
-                // HERE
+              />
+            </div>
+            <div className="modal-input-group">
+              <label htmlFor="address">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Address"
               />
             </div>
           </form>
@@ -55,6 +63,9 @@ const Modal = ({ type, onClose }) => {
           <div className="modal-button" onClick={onClose}>
             Cancel
           </div>
+          {type === "addProperty" && (
+            <div className="modal-button confirm-button">Add Property</div>
+          )}
           {type === "password" && (
             <div className="modal-button confirm-button">Confirm</div>
           )}

@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import DataTable from "../../Components/DataTable/DataTable";
-import Modal from "../../Components/Modal";
+import Modal from "../../Components/Modal/Modal";
 import newRequest from "../../utils/newRequest";
 import "./Properties.scss";
 
