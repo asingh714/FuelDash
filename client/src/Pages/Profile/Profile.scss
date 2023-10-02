@@ -64,6 +64,7 @@
       text-align: center;
       margin-bottom: 5rem;
     }
+
     .update-button:disabled {
       background-color: $gray-500;
       cursor: not-allowed;
@@ -77,6 +78,7 @@
       display: flex;
       justify-content: flex-end;
       gap: 2rem;
+
       .button {
         width: 15rem;
         padding: 0.75rem 0rem;
@@ -102,6 +104,10 @@
       }
 
       .update-button:not(:disabled) {
+        background-color: $violet-500;
+      }
+
+      .logout-button {
         background-color: $violet-500;
       }
     }

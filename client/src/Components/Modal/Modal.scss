@@ -65,7 +65,8 @@
       .delete-button {
         background-color: $red-600;
       }
-      .confirm-button {
+      .confirm-button,
+      .logout-button {
         background-color: $indigo-500;
       }
     }

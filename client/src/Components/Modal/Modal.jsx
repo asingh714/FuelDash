@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import "./Modal.scss";
 
-const Modal = ({ type, onClose }) => {
+const Modal = ({ type, onClose, onConfirm }) => {
   const handleContainerClick = (e) => {
     e.stopPropagation();
   };
@@ -88,6 +88,8 @@ const Modal = ({ type, onClose }) => {
         {type === "delete" && (
           <span>Are you sure you want to delete your account?</span>
         )}
+
+        {type === "logout" && <span>Are you sure you want to log out?</span>}
         <div className="modal-button-container">
           <div className="modal-button" onClick={onClose}>
             Cancel
@@ -104,6 +106,11 @@ const Modal = ({ type, onClose }) => {
           {(type === "delete" || type === "deleteProperty") && (
             <div className="modal-button delete-button">Delete</div>
           )}
+          {type === "logout" && (
+            <div className="modal-button logout-button" onClick={onConfirm}>
+              Log out
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -112,6 +119,7 @@ const Modal = ({ type, onClose }) => {
 Modal.propTypes = {
   type: PropTypes.string,
   onClose: PropTypes.func.isRequired,
+  onConfirm: PropTypes.func.isRequired,
 };
 
 export default Modal;
