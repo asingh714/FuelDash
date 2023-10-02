@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -6,8 +6,10 @@ import "./Welcome.scss";
 
 const Welcome = () => {
   const navigate = useNavigate();
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  const currentUserName = currentUser?.name;
+  const [currentUser, setCurrentUser] = useState(
+    () => JSON.parse(localStorage.getItem("currentUser")) || ""
+  );
+  const currentUserName = currentUser?.user.name;
 
   useEffect(() => {
     if (!currentUser) {
@@ -18,7 +20,7 @@ const Welcome = () => {
   return (
     <div className="welcome-container">
       <h1 className="welcome-header fade-in">
-        Welcome to FuelDash, {currentUserName}
+        Welcome to FuelDash, {currentUserName}.
       </h1>
       <p className="welcome-text">
         Congratulations on taking a decisive step towards transforming the way
