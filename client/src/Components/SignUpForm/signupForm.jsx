@@ -53,7 +53,7 @@ const SignupForm = () => {
             password,
           });
           localStorage.setItem("currentUser", JSON.stringify(res.data));
-          navigate("/"); // HERE
+          navigate("/welcome");
         } catch (error) {
           setError(error.response.data.msg);
         }

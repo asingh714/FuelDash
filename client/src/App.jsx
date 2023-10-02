@@ -9,6 +9,7 @@ import TermsOfUse from "./Pages/TermsOfUse/TermsOfUse.jsx";
 import DetailedReports from "./Pages/DetailedReports/DetailedReports.jsx";
 import Profile from "./Pages/Profile/Profile.jsx";
 import Properties from "./Pages/Properties/Properties.jsx";
+import Welcome from "./Pages/Welcome/Welcome.jsx";
 
 import "./styles/global.scss";
 
@@ -56,6 +57,10 @@ function App() {
         {
           path: "/signup",
           element: <SignUp />,
+        },
+        {
+          path: "/welcome",
+          element: <Welcome />,
         },
         {
           path: "/terms-of-use",

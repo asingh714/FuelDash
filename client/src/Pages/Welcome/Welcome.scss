@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+.welcome-container {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(at 50% 90%, $slate-800, $slate-950);
+
+  .welcome-header {
+    font-size: 4rem;
+    color: $gray-200;
+    margin-bottom: 4rem;
+  }
+
+  .fade-in {
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+  .welcome-text {
+    width: 60%;
+    line-height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    color: $gray-400;
+    margin-bottom: 5rem;
+  }
+
+  .welcome-btn {
+    width: 15rem;
+    padding: 0.75rem 0rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: $slate-800;
+    border: 0;
+    text-align: center;
+    background-color: white;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
