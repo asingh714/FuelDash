@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import validator from "validator";
+import { ThreeDots } from "react-loader-spinner";
 
 import newRequest from "../../utils/newRequest";
 import "./loginForm.scss";
@@ -11,39 +12,30 @@ const LoginForm = () => {
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      let isValid = true;
-
-      if (email === "" || !validator.isEmail(email)) {
-        setEmailError(true);
-        isValid = false;
-      } else {
-        setEmailError(false);
-      }
-
-      if (password === "") {
-        setPasswordError(true);
-        isValid = false;
-      } else {
-        setPasswordError(false);
-      }
-
-      if (isValid) {
+  const delayedLogin = async () => {
+    setLoading(true);
+    setTimeout(async () => {
+      try {
         const res = await newRequest.post("/auth/login", {
           email,
           password,
         });
         localStorage.setItem("currentUser", JSON.stringify(res.data));
         navigate("/dashboard");
+      } catch (error) {
+        setError(error.response.data.msg);
       }
-    } catch (error) {
-      setError(error.response.data.msg);
-    }
+      setLoading(false);
+    }, 2000);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    delayedLogin();
   };
 
   return (
@@ -73,7 +65,27 @@ const LoginForm = () => {
         type="password"
       />
       {passwordError && <p className="error-text">Password is required.</p>}
-      <button type="submit">Login</button>
+      {loading ? (
+        <ThreeDots
+          height="20"
+          width="30"
+          radius="10"
+          color="#fff"
+          ariaLabel="three-dots-loading"
+          visible={true}
+          wrapperStyle={{
+            "background-color": "black",
+            width: "7.2rem",
+            padding: "0.5rem 0rem",
+            "border-radius": "1.5rem",
+            display: "flex",
+            "justify-content": "center",
+            "margin-top": "2.5rem",
+          }}
+        />
+      ) : (
+        <button type="submit">Log in</button>
+      )}
 
       <span className="signup-link" onClick={() => navigate("/signup")}>
         Don&apos;t have an account? <span id="darker">Create account →</span>
