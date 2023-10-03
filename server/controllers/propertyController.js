@@ -61,8 +61,8 @@ const addProperty = async (req, res) => {
 
 const updateProperty = async (req, res) => {
   const userId = req.user.userId;
-  // const {} = req.params;
-  const { name, address, id: propertyId } = req.body;
+  const { id: propertyId } = req.params;
+  const { name, address } = req.body;
 
   if (!name || !address) {
     return res.status(400).json({ msg: "Please provide name and address" });

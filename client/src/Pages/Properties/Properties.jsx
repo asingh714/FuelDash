@@ -32,7 +32,17 @@ const Properties = () => {
   );
 
   const editPropertyMutation = useMutation(
-    (property) => newRequest.patch("/properties", property),
+    (property) =>
+      newRequest.patch(`/properties/${selectedProperty.id}`, property),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("properties");
+      },
+    }
+  );
+
+  const deletePropertyMutation = useMutation(
+    (property) => newRequest.delete(`/properties/${selectedProperty.id}`),
     {
       onSuccess: () => {
         queryClient.invalidateQueries("properties");
@@ -87,14 +97,13 @@ const Properties = () => {
     },
   ];
 
-  const handleModalConfirm = (name, address, propertyId) => {
+  const handleModalConfirm = (name, address) => {
     if (modalType === "addProperty") {
       addPropertyMutation.mutate({ name, address });
     } else if (modalType === "editProperty") {
-      console.log("selectedProperty", typeof selectedProperty);
       editPropertyMutation.mutate({ name, address, id: selectedProperty.id });
     } else if (modalType === "deleteProperty") {
-      // Add your delete logic here...
+      deletePropertyMutation.mutate({ name, address, id: selectedProperty.id });
     }
   };
 

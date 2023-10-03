@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import "./Modal.scss";
@@ -9,6 +9,16 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  useEffect(() => {
+    if (type === "editProperty" && property) {
+      setName(property.name || "");
+      setAddress(property.address || "");
+    } else if (type === "addProperty") {
+      setName("");
+      setAddress("");
+    }
+  }, [type, property]);
+
   const handleContainerClick = (e) => {
     e.stopPropagation();
   };
@@ -16,11 +26,14 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
   const handleSubmit = () => {
     if (type === "addProperty") {
       onConfirm(name, address);
-    } else if (type === "deleteProperty" || type === "editProperty") {
-      console.log("HERe", name, address, property.id);
+    } else if (type === "editProperty") {
       onConfirm(name, address, property.id);
+    } else if (type === "deleteProperty") {
+      onConfirm(property.id);
     }
     onClose();
+    setName("");
+    setAddress("");
   };
 
   return (
@@ -130,8 +143,10 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
           {type === "password" && (
             <div className="modal-button confirm-button">Confirm</div>
           )}
-          {(type === "delete" || type === "deleteProperty") && (
-            <div className="modal-button delete-button">Delete</div>
+          {type === "deleteProperty" && (
+            <div className="modal-button delete-button" onClick={handleSubmit}>
+              Delete
+            </div>
           )}
           {type === "logout" && (
             <div className="modal-button logout-button" onClick={onConfirm}>
