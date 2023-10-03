@@ -14,13 +14,11 @@ const getUserProfile = async (req, res) => {
       return res.status(404).json({ msg: "User not found" });
     }
 
-    res
-      .status(200)
-      .json({
-        name: user.name,
-        email: user.email,
-        subscriptionStatus: user.subscriptionStatus,
-      });
+    res.status(200).json({
+      name: user.name,
+      email: user.email,
+      subscriptionStatus: user.subscriptionStatus,
+    });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -94,13 +92,19 @@ const updateUser = async (req, res) => {
 };
 
 const deleteUser = async (req, res) => {
-  const userId = req.user.userId;
+  const { userId } = req.params;
 
   try {
     const user = await User.findOne({ _id: userId });
-    await user.remove();
+
+    if (!user) {
+      return res.status(404).json({ msg: "User not found" });
+    }
+
+    await User.deleteOne({ _id: userId });
+
     res.status(200).json({ msg: "User deleted" });
-  } catch {
+  } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
 };

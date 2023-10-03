@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 import "./Modal.scss";
 
-const Modal = ({ type, property, onClose, onConfirm }) => {
+const Modal = ({ type, property, onClose, onConfirm, user }) => {
   const [name, setName] = useState(property?.name || "");
   const [address, setAddress] = useState(property?.address || "");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
 
   useEffect(() => {
     if (type === "editProperty" && property) {
@@ -30,10 +30,18 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
       onConfirm(name, address, property.id);
     } else if (type === "deleteProperty") {
       onConfirm(property.id);
+    } else if (type === "changePassword") {
+      onConfirm(currentPassword, newPassword);
+    } else if (type === "deleteUser") {
+      onConfirm(user.id);
+    } else if (type === "logout") {
+      onConfirm();
     }
     onClose();
     setName("");
     setAddress("");
+    setCurrentPassword("");
+    setNewPassword("");
   };
 
   return (
@@ -92,28 +100,27 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
             </div>
           </form>
         )}
-        {type === "password" && (
+        {type === "changePassword" && (
           <form action="">
             <div className="modal-input-group">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="currentPassword">Current Password</label>
               <input
                 type="password"
-                id="password"
-                name="password"
-                placeholder="Must be at least 6 characters."
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                id="currentPassword"
+                name="currentPassword"
+                value={currentPassword}
+                onChange={(e) => setCurrentPassword(e.target.value)}
               />
             </div>
             <div className="modal-input-group">
-              <label htmlFor="confirmPassword">Confirm Password</label>
+              <label htmlFor="newPassword">New Password</label>
               <input
                 type="password"
-                id="confirmPassword"
-                name="confirmPassword"
+                id="newPassword"
+                name="newPassword"
                 placeholder="Must be at least 6 characters."
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
               />
             </div>
           </form>
@@ -121,7 +128,7 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
         {type === "deleteProperty" && (
           <span>Are you sure you want to delete this property?</span>
         )}
-        {type === "delete" && (
+        {type === "deleteUser" && (
           <span>Are you sure you want to delete your account?</span>
         )}
 
@@ -140,16 +147,25 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
               Save Changes
             </div>
           )}
-          {type === "password" && (
-            <div className="modal-button confirm-button">Confirm</div>
+          {type === "changePassword" && (
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Confirm
+            </div>
           )}
           {type === "deleteProperty" && (
             <div className="modal-button delete-button" onClick={handleSubmit}>
               Delete
             </div>
           )}
+
+          {type === "deleteUser" && (
+            <div className="modal-button delete-button" onClick={handleSubmit}>
+              Delete
+            </div>
+          )}
+
           {type === "logout" && (
-            <div className="modal-button logout-button" onClick={onConfirm}>
+            <div className="modal-button logout-button" onClick={handleSubmit}>
               Log out
             </div>
           )}
@@ -163,6 +179,7 @@ Modal.propTypes = {
   property: PropTypes.object,
   onClose: PropTypes.func.isRequired,
   onConfirm: PropTypes.func.isRequired,
+  user: PropTypes.object,
 };
 
 export default Modal;

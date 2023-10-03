@@ -13,7 +13,7 @@ const {
 router.route("/").get(authenticate, getUserProfile);
 router.route("/updatePassword").patch(authenticate, updatePassword);
 router.route("/updateUser").patch(authenticate, updateUser);
-router.route("/").delete(authenticate, deleteUser);
 router.route("/subscribe").patch(authenticate, becomePaidUser);
+router.route("/:userId").delete(authenticate, deleteUser);
 
 module.exports = router;

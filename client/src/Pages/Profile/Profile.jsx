@@ -9,9 +9,7 @@ import Notification from "../../Components/Notification/Notification";
 import "./Profile.scss";
 
 const Profile = () => {
-  const [isPasswordModalOpen, setPasswordModalOpen] = useState(false);
-  const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
-  const [isLogoutModalOpen, setLogoutModalOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -21,6 +19,10 @@ const Profile = () => {
     message: "",
     type: "success",
   });
+
+  const [currentUser, setCurrentUser] = useState(
+    () => JSON.parse(localStorage.getItem("currentUser")) || ""
+  );
 
   const navigate = useNavigate();
 
@@ -47,6 +49,30 @@ const Profile = () => {
       }
     } catch (error) {
       console.error("An error occurred while logging out:", error);
+    }
+  };
+  const handlePasswordChange = async (currentPassword, newPassword) => {
+    try {
+      const response = await newRequest.patch("/user/updatePassword", {
+        currentPassword,
+        newPassword,
+      });
+      if (response.status === 200) {
+        setNotification({
+          message: "User password updated successfully!",
+          type: "success",
+        });
+      } else {
+        setNotification({
+          message: "Error updating user info.",
+          type: "error",
+        });
+      }
+    } catch (error) {
+      setNotification({
+        message: "An error occurred. Please try again.",
+        type: "error",
+      });
     }
   };
 
@@ -78,6 +104,45 @@ const Profile = () => {
         message: "An error occurred. Please try again.",
         type: "error",
       });
+    }
+  };
+
+  const handleDeleteUser = async () => {
+    try {
+      const response = await newRequest.delete(
+        `/user/${currentUser.user.userId}`
+      );
+      if (response.status === 200) {
+        setNotification({
+          message: "User deleted successfully.",
+          type: "success",
+        });
+
+        localStorage.removeItem("currentUser");
+        setTimeout(() => {
+          navigate("/login");
+        }, 2000);
+      } else {
+        setNotification({
+          message: "Error deleting user info.",
+          type: "error",
+        });
+      }
+    } catch (error) {
+      setNotification({
+        message: "An error occurred. Please try again.",
+        type: "error",
+      });
+    }
+  };
+
+  const handleModalConfirm = (currentPassword, newPassword) => {
+    if (modalType === "logout") {
+      handleLogout();
+    } else if (modalType === "changePassword") {
+      handlePasswordChange(currentPassword, newPassword);
+    } else if (modalType === "deleteUser") {
+      handleDeleteUser();
     }
   };
 
@@ -140,8 +205,8 @@ const Profile = () => {
           )}
           <div
             onClick={() => {
-              setModalType("delete");
-              setDeleteModalOpen(true);
+              setModalType("deleteUser");
+              setModalOpen(true);
             }}
             className="button delete-button"
           >
@@ -149,8 +214,8 @@ const Profile = () => {
           </div>
           <div
             onClick={() => {
-              setModalType("password");
-              setPasswordModalOpen(true);
+              setModalType("changePassword");
+              setModalOpen(true);
             }}
             className="button pw-button"
           >
@@ -160,7 +225,7 @@ const Profile = () => {
           <div
             onClick={() => {
               setModalType("logout");
-              setLogoutModalOpen(true);
+              setModalOpen(true);
             }}
             className="button logout-button"
           >
@@ -168,15 +233,14 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      {(isPasswordModalOpen || isDeleteModalOpen || isLogoutModalOpen) && (
+      {isModalOpen && (
         <Modal
           type={modalType}
+          user={currentUser}
           onClose={() => {
-            setPasswordModalOpen(false);
-            setDeleteModalOpen(false);
-            setLogoutModalOpen(false);
+            setModalOpen(false);
           }}
-          onConfirm={handleLogout}
+          onConfirm={handleModalConfirm}
         />
       )}
     </div>

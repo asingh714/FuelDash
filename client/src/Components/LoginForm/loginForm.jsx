@@ -92,13 +92,13 @@ const LoginForm = () => {
           ariaLabel="three-dots-loading"
           visible={true}
           wrapperStyle={{
-            "background-color": "black",
+            backgroundColor: "black",
             width: "7.2rem",
             padding: "0.5rem 0rem",
-            "border-radius": "1.5rem",
+            borderRadius: "1.5rem",
             display: "flex",
-            "justify-content": "center",
-            "margin-top": "2.5rem",
+            justifyContent: "center",
+            marginTop: "2.5rem",
           }}
         />
       ) : (
