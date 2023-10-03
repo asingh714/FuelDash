@@ -1,10 +1,36 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 
+import newRequest from "../../utils/newRequest";
 import "./Modal.scss";
 
 const Modal = ({ type, onClose, onConfirm }) => {
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const handleContainerClick = (e) => {
     e.stopPropagation();
+  };
+
+  const handleSubmit = async () => {
+    if (type === "addProperty") {
+      await newRequest.post("/properties", {
+        name,
+        address,
+      });
+    }
+    if (type === "editProperty") {
+      await newRequest.patch("/properties", {
+        name,
+        address,
+      });
+    }
+    if (type === "deleteProperty") {
+      await newRequest.delete("/properties"); // need id
+    }
+    onClose();
   };
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -18,6 +44,8 @@ const Modal = ({ type, onClose, onConfirm }) => {
                 name="name"
                 id="name"
                 placeholder="Name of your property"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="modal-input-group">
@@ -27,6 +55,8 @@ const Modal = ({ type, onClose, onConfirm }) => {
                 name="address"
                 id="address"
                 placeholder="Address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
               />
             </div>
           </form>
@@ -41,6 +71,8 @@ const Modal = ({ type, onClose, onConfirm }) => {
                 name="name"
                 id="name"
                 placeholder="Edit the name of your property"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="modal-input-group">
@@ -50,13 +82,14 @@ const Modal = ({ type, onClose, onConfirm }) => {
                 name="address"
                 id="address"
                 placeholder="Address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
               />
             </div>
           </form>
         )}
         {type === "password" && (
           <form action="">
-            {/* <div className="modal-input-container"> */}
             <div className="modal-input-group">
               <label htmlFor="password">Password</label>
               <input
@@ -64,8 +97,8 @@ const Modal = ({ type, onClose, onConfirm }) => {
                 id="password"
                 name="password"
                 placeholder="Must be at least 6 characters."
-                // value={formData.name}
-                // onChange={handleChange}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="modal-input-group">
@@ -75,11 +108,10 @@ const Modal = ({ type, onClose, onConfirm }) => {
                 id="confirmPassword"
                 name="confirmPassword"
                 placeholder="Must be at least 6 characters."
-                // value={formData.email}
-                // onChange={handleChange}
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
               />
             </div>
-            {/* </div> */}
           </form>
         )}
         {type === "deleteProperty" && (
@@ -95,7 +127,9 @@ const Modal = ({ type, onClose, onConfirm }) => {
             Cancel
           </div>
           {type === "addProperty" && (
-            <div className="modal-button confirm-button">Add Property</div>
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Add Property
+            </div>
           )}
           {type === "editProperty" && (
             <div className="modal-button confirm-button">Save Changes</div>

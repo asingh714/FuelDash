@@ -58,14 +58,27 @@ const Properties = () => {
     },
   ];
 
-  const handleEdit = (property) => {
-    // Implement your edit logic here
-    console.log("Edit:", property);
-  };
+  const handleModalConfirm = async () => {
+    switch (modalType) {
+      case "addProperty":
+        await newRequest.post("/properties", {
+          name,
+          address,
+        });
+        break;
 
-  const handleDelete = (property) => {
-    // Implement your delete logic here
-    console.log("Delete:", property);
+        await newRequest.patch("/properties", {
+          name,
+          address,
+        });
+        break;
+      case "deleteProperty":
+        // Your logic for deleting a property
+        await newRequest.delete("/properties");
+        break;
+      default:
+        console.error("Unknown modal type:", modalType);
+    }
   };
 
   if (loading) {
@@ -115,6 +128,7 @@ const Properties = () => {
             setDeleteModalOpen(false);
             setEditModalOpen(false);
           }}
+          onConfirm={handleModalConfirm}
         />
       )}
     </div>
