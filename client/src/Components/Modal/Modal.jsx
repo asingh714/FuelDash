@@ -14,10 +14,11 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
   };
 
   const handleSubmit = () => {
-    if (type === "addProperty" || type === "editProperty") {
+    if (type === "addProperty") {
       onConfirm(name, address);
-    } else if (type === "deleteProperty") {
-      onConfirm(); // Or pass the id if needed
+    } else if (type === "deleteProperty" || type === "editProperty") {
+      console.log("HERe", name, address, property.id);
+      onConfirm(name, address, property.id);
     }
     onClose();
   };
@@ -122,7 +123,9 @@ const Modal = ({ type, property, onClose, onConfirm }) => {
             </div>
           )}
           {type === "editProperty" && (
-            <div className="modal-button confirm-button">Save Changes</div>
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Save Changes
+            </div>
           )}
           {type === "password" && (
             <div className="modal-button confirm-button">Confirm</div>

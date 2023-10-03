@@ -31,6 +31,15 @@ const Properties = () => {
     }
   );
 
+  const editPropertyMutation = useMutation(
+    (property) => newRequest.patch("/properties", property),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("properties");
+      },
+    }
+  );
+
   const columns = [
     {
       header: "Name",
@@ -48,7 +57,11 @@ const Properties = () => {
           <div
             className="edit-btn"
             onClick={() => {
-              setSelectedProperty(row);
+              setSelectedProperty({
+                name: row.original.name,
+                address: row.original.address,
+                id: row.original._id,
+              });
               setModalType("editProperty");
               setModalOpen(true);
             }}
@@ -58,7 +71,11 @@ const Properties = () => {
           <div
             className="delete-btn"
             onClick={() => {
-              setSelectedProperty(row);
+              setSelectedProperty({
+                name: row.original.name,
+                address: row.original.address,
+                id: row.original._id,
+              });
               setModalType("deleteProperty");
               setModalOpen(true);
             }}
@@ -70,11 +87,12 @@ const Properties = () => {
     },
   ];
 
-  const handleModalConfirm = (name, address) => {
+  const handleModalConfirm = (name, address, propertyId) => {
     if (modalType === "addProperty") {
       addPropertyMutation.mutate({ name, address });
     } else if (modalType === "editProperty") {
-      // Add your edit logic here...
+      console.log("selectedProperty", typeof selectedProperty);
+      editPropertyMutation.mutate({ name, address, id: selectedProperty.id });
     } else if (modalType === "deleteProperty") {
       // Add your delete logic here...
     }
