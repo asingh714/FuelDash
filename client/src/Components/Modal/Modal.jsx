@@ -1,12 +1,11 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-import newRequest from "../../utils/newRequest";
 import "./Modal.scss";
 
-const Modal = ({ type, onClose, onConfirm }) => {
-  const [name, setName] = useState("");
-  const [address, setAddress] = useState("");
+const Modal = ({ type, property, onClose, onConfirm }) => {
+  const [name, setName] = useState(property?.name || "");
+  const [address, setAddress] = useState(property?.address || "");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -14,24 +13,15 @@ const Modal = ({ type, onClose, onConfirm }) => {
     e.stopPropagation();
   };
 
-  const handleSubmit = async () => {
-    if (type === "addProperty") {
-      await newRequest.post("/properties", {
-        name,
-        address,
-      });
-    }
-    if (type === "editProperty") {
-      await newRequest.patch("/properties", {
-        name,
-        address,
-      });
-    }
-    if (type === "deleteProperty") {
-      await newRequest.delete("/properties"); // need id
+  const handleSubmit = () => {
+    if (type === "addProperty" || type === "editProperty") {
+      onConfirm(name, address);
+    } else if (type === "deleteProperty") {
+      onConfirm(); // Or pass the id if needed
     }
     onClose();
   };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-container" onClick={handleContainerClick}>
@@ -152,6 +142,7 @@ const Modal = ({ type, onClose, onConfirm }) => {
 };
 Modal.propTypes = {
   type: PropTypes.string,
+  property: PropTypes.object,
   onClose: PropTypes.func.isRequired,
   onConfirm: PropTypes.func.isRequired,
 };

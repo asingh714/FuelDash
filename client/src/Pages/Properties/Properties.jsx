@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import DataTable from "../../Components/DataTable/DataTable";
@@ -8,10 +8,11 @@ import newRequest from "../../utils/newRequest";
 import "./Properties.scss";
 
 const Properties = () => {
-  const [isAddModalOpen, setAddModalOpen] = useState(false);
-  const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
-  const [isEditModalOpen, setEditModalOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState(null);
+  const [selectedProperty, setSelectedProperty] = useState(null);
+
+  const queryClient = useQueryClient();
 
   const { loading, error, data } = useQuery(["properties"], async () => {
     const response = await newRequest.get(`/properties`);
@@ -20,6 +21,15 @@ const Properties = () => {
     }
     return response.data;
   });
+
+  const addPropertyMutation = useMutation(
+    (property) => newRequest.post("/properties", property),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("properties");
+      },
+    }
+  );
 
   const columns = [
     {
@@ -38,8 +48,9 @@ const Properties = () => {
           <div
             className="edit-btn"
             onClick={() => {
+              setSelectedProperty(row);
               setModalType("editProperty");
-              setEditModalOpen(true);
+              setModalOpen(true);
             }}
           >
             Edit
@@ -47,8 +58,9 @@ const Properties = () => {
           <div
             className="delete-btn"
             onClick={() => {
+              setSelectedProperty(row);
               setModalType("deleteProperty");
-              setDeleteModalOpen(true);
+              setModalOpen(true);
             }}
           >
             Delete
@@ -58,26 +70,13 @@ const Properties = () => {
     },
   ];
 
-  const handleModalConfirm = async () => {
-    switch (modalType) {
-      case "addProperty":
-        await newRequest.post("/properties", {
-          name,
-          address,
-        });
-        break;
-
-        await newRequest.patch("/properties", {
-          name,
-          address,
-        });
-        break;
-      case "deleteProperty":
-        // Your logic for deleting a property
-        await newRequest.delete("/properties");
-        break;
-      default:
-        console.error("Unknown modal type:", modalType);
+  const handleModalConfirm = (name, address) => {
+    if (modalType === "addProperty") {
+      addPropertyMutation.mutate({ name, address });
+    } else if (modalType === "editProperty") {
+      // Add your edit logic here...
+    } else if (modalType === "deleteProperty") {
+      // Add your delete logic here...
     }
   };
 
@@ -106,7 +105,7 @@ const Properties = () => {
             className="add-prop-btn"
             onClick={() => {
               setModalType("addProperty");
-              setAddModalOpen(true);
+              setModalOpen(true);
             }}
           >
             Add Properties
@@ -120,14 +119,11 @@ const Properties = () => {
           />
         ) : null}
       </div>
-      {(isAddModalOpen || isDeleteModalOpen || isEditModalOpen) && (
+      {isModalOpen && (
         <Modal
           type={modalType}
-          onClose={() => {
-            setAddModalOpen(false);
-            setDeleteModalOpen(false);
-            setEditModalOpen(false);
-          }}
+          property={selectedProperty}
+          onClose={() => setModalOpen(false)}
           onConfirm={handleModalConfirm}
         />
       )}
