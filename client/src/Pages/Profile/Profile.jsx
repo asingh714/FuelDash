@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import Modal from "../../Components/Modal/Modal";
+import Notification from "../../Components/Notification/Notification";
 import "./Profile.scss";
 
 const Profile = () => {
@@ -15,6 +16,10 @@ const Profile = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+  });
+  const [notification, setNotification] = useState({
+    message: "",
+    type: "success",
   });
 
   const navigate = useNavigate();
@@ -53,9 +58,27 @@ const Profile = () => {
     });
   };
 
-  const handleUpdateUser = (e) => {
+  const handleUpdateUser = async (e) => {
     e.preventDefault();
-    newRequest.patch(`/user/updateUser`, formData);
+    try {
+      const response = await newRequest.patch(`/user/updateUser`, formData);
+      if (response.status === 200) {
+        setNotification({
+          message: "User info updated successfully!",
+          type: "success",
+        });
+      } else {
+        setNotification({
+          message: "Error updating user info.",
+          type: "error",
+        });
+      }
+    } catch (error) {
+      setNotification({
+        message: "An error occurred. Please try again.",
+        type: "error",
+      });
+    }
   };
 
   if (loading) return <p>Loading...</p>;
@@ -65,6 +88,13 @@ const Profile = () => {
     <div className="profile-page-container">
       <DashboardMenu />
       <div className="profile-container">
+        {notification.message && (
+          <Notification
+            message={notification.message}
+            type={notification.type}
+            onClose={() => setNotification({ message: "" })}
+          />
+        )}
         <hr />
         <h4>Personal Information</h4>
         <span>This information will not be displayed publicly.</span>
