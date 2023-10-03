@@ -53,9 +53,9 @@ const Profile = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleUpdateUser = (e) => {
     e.preventDefault();
-    // Implement update logic
+    newRequest.patch(`/user/updateUser`, formData);
   };
 
   if (loading) return <p>Loading...</p>;
@@ -96,6 +96,7 @@ const Profile = () => {
           disabled={
             formData.name === data?.name && formData.email === data?.email
           }
+          onClick={handleUpdateUser}
         >
           Update User Info
         </button>
@@ -104,6 +105,9 @@ const Profile = () => {
 
         <hr />
         <div className="button-container">
+          {data?.subscriptionStatus === "Free" && (
+            <div className="button subscribe-button ">Subscribe</div>
+          )}
           <div
             onClick={() => {
               setModalType("delete");
@@ -133,7 +137,6 @@ const Profile = () => {
             Logout
           </div>
         </div>
-        {data?.subscriptionStatus === "Free" && <button>Subscribe</button>}
       </div>
       {(isPasswordModalOpen || isDeleteModalOpen || isLogoutModalOpen) && (
         <Modal
