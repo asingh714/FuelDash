@@ -4,7 +4,7 @@ import "./Dropdown.scss";
 
 const Dropdown = ({ options, onChange, value, labelField, valueField }) => {
   return (
-    <div className="dropdown">
+    <div className="select-dropdown">
       <select value={value} onChange={onChange}>
         {options.map((option) => (
           <option key={option[valueField]} value={option[valueField]}>
@@ -16,7 +16,6 @@ const Dropdown = ({ options, onChange, value, labelField, valueField }) => {
   );
 };
 
-// fill in propTypes
 Dropdown.propTypes = {
   options: PropTypes.arrayOf(PropTypes.object),
   onChange: PropTypes.func,

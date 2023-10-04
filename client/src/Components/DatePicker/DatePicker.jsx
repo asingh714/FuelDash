@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
 
+import "./DatePicker.scss";
+
 const DateSelector = ({ currentDate, propertyId }) => {
   const navigate = useNavigate();
   const [selectedDate, setSelectedDate] = useState(new Date(currentDate));

@@ -1,3 +1,49 @@
-.dropdown {
-  color: white;
+@import "../../styles/variables.scss";
+
+/* Dark styling for the Dropdown component */
+
+.select-dropdown {
+  position: relative;
+  background-color: $slate-900;
+  border: 1px solid $gray-700;
+  border-radius: 5px;
+  overflow: hidden;
+
+  select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 1rem 3rem 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $gray-300;
+    appearance: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    option {
+      color: $gray-300;
+      background-color: $slate-950;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $gray-700;
+        color: $gray-100;
+      }
+    }
+  }
+
+  &::after {
+    content: "▼";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $gray-400;
+    pointer-events: none;
+  }
 }
