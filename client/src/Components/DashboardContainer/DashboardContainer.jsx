@@ -34,9 +34,8 @@ const DashboardContainer = () => {
   // Render component
   return (
     <div className="dashboard-whole-container">
-      <div>
+      <div className="dashboard-menu-container">
         <PropertyDropDown currentDate={date} />
-        <h2>hi</h2>
       </div>
       <div className="dashboard-container">
         <div className="box box1">
