@@ -10,17 +10,14 @@ import BarChartBox from "../BarChartBox/BarChartBox";
 import "./DashboardContainer.scss";
 
 const DashboardContainer = () => {
-  const { propertyId, salesId } = useParams();
-  const { isLoading, error, data } = useQuery(
-    [propertyId, salesId],
-    async () => {
-      const response = await newRequest.get(`/sales/${propertyId}/${salesId}`);
-      if (!response.data) {
-        throw new Error("No data returned");
-      }
-      return response.data;
+  const { propertyId, date } = useParams();
+  const { isLoading, error, data } = useQuery([propertyId, date], async () => {
+    const response = await newRequest.get(`/sales/${propertyId}/${date}`);
+    if (!response.data) {
+      throw new Error("No data returned");
     }
-  );
+    return response.data;
+  });
 
   // Handle potential errors
   if (error) {
