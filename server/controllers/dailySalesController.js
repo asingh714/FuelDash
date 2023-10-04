@@ -79,9 +79,9 @@ const getSingleDailySalesMetrics = async (req, res) => {
       totalGallonsSold,
       sevenDaysRevenue,
       sevenDaysTotalGallons,
-      sevenDaysPaymentTotals,
       topNonGasProducts,
       topGasProducts,
+      sevenDaysPaymentTotals,
     });
   } catch (error) {
     return res.status(500).json({ msg: error.message });

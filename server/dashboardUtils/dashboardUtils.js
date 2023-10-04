@@ -38,11 +38,19 @@ const getTotalGallonsSold = async (propertyId, date) => {
   }
 };
 
-const getPastSevenDaysRevenue = async (propertyId) => {
+const getPastSevenDaysRevenue = async (propertyId, date) => {
+  const today = new Date(date);
+  const sevenDaysAgo = new Date(today);
+  sevenDaysAgo.setDate(today.getDate() - 7);
+
   try {
     const dailySalesMetrics = await DailySalesMetrics.find(
       {
         propertyId,
+        date: {
+          $gte: sevenDaysAgo,
+          $lte: today,
+        },
       },
       "totalRevenue date"
     )
@@ -62,16 +70,16 @@ const getPastSevenDaysRevenue = async (propertyId) => {
   }
 };
 
-const getPastSevenDaysGallonsSold = async (propertyId) => {
-  const today = new Date();
-  const sevenDaysAgo = new Date(today);
-  sevenDaysAgo.setDate(today.getDate() - 6); // Adjusting to -6 to include today in the 7-day range
+const getPastSevenDaysGallonsSold = async (propertyId, date) => {
+  const endDate = new Date(date);
+  const startDate = new Date(endDate);
+  startDate.setDate(endDate.getDate() - 6);
 
   const startOfSevenDaysAgo = new Date(
     Date.UTC(
-      sevenDaysAgo.getUTCFullYear(),
-      sevenDaysAgo.getUTCMonth(),
-      sevenDaysAgo.getUTCDate(),
+      startDate.getUTCFullYear(),
+      startDate.getUTCMonth(),
+      startDate.getUTCDate(),
       0,
       0,
       0
@@ -80,9 +88,9 @@ const getPastSevenDaysGallonsSold = async (propertyId) => {
 
   const endOfToday = new Date(
     Date.UTC(
-      today.getUTCFullYear(),
-      today.getUTCMonth(),
-      today.getUTCDate(),
+      endDate.getUTCFullYear(),
+      endDate.getUTCMonth(),
+      endDate.getUTCDate(),
       23,
       59,
       59,
@@ -161,7 +169,11 @@ const getPastSevenDaysGallonsSold = async (propertyId) => {
   }
 };
 
-const getTopNonGasProducts = async (propertyId) => {
+const getTopNonGasProducts = async (propertyId, date) => {
+  const today = new Date(date);
+  const sevenDaysAgo = new Date(today);
+  sevenDaysAgo.setDate(today.getDate() - 7);
+
   try {
     const sevenDaysAgo = new Date();
     sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
@@ -170,7 +182,7 @@ const getTopNonGasProducts = async (propertyId) => {
       {
         $match: {
           propertyId: new ObjectId(propertyId),
-          date: { $gte: sevenDaysAgo },
+          date: { $gte: sevenDaysAgo, $lte: today },
         },
       },
       {
@@ -213,11 +225,12 @@ const getTopNonGasProducts = async (propertyId) => {
   }
 };
 
-const getAllGasProductsForLatestDailySales = async (propertyId) => {
+const getAllGasProductsForLatestDailySales = async (propertyId, date) => {
   try {
     // Fetch the latest daily sales metrics for the given propertyId
     const latestDailySalesMetrics = await DailySalesMetrics.findOne({
       propertyId,
+      date: { $lte: new Date(date) },
     })
       .sort({ date: -1 })
       .limit(1);
@@ -266,54 +279,43 @@ const getAllGasProductsForLatestDailySales = async (propertyId) => {
   }
 };
 
-const getPastSevenDaysPaymentTotals = async (propertyId) => {
-  const today = new Date();
-  const sevenDaysAgo = new Date(today);
-  sevenDaysAgo.setDate(today.getDate() - 7);
+const getPastSevenDaysPaymentTotals = async (propertyId, date) => {
+  const endDate = new Date(date);
+  const startDate = new Date(endDate);
+  startDate.setDate(endDate.getDate() - 7);
 
-  const startOfToday = new Date(
+  const startOfStartDate = new Date(
     Date.UTC(
-      today.getUTCFullYear(),
-      today.getUTCMonth(),
-      today.getUTCDate(),
-      0,
-      0,
-      0
-    )
-  );
-  const startOfSevenDaysAgo = new Date(
-    Date.UTC(
-      sevenDaysAgo.getUTCFullYear(),
-      sevenDaysAgo.getUTCMonth(),
-      sevenDaysAgo.getUTCDate(),
+      startDate.getUTCFullYear(),
+      startDate.getUTCMonth(),
+      startDate.getUTCDate(),
       0,
       0,
       0
     )
   );
 
-  const endOfToday = new Date(
+  const endOfEndDate = new Date(
     Date.UTC(
-      today.getUTCFullYear(),
-      today.getUTCMonth(),
-      today.getUTCDate(),
+      endDate.getUTCFullYear(),
+      endDate.getUTCMonth(),
+      endDate.getUTCDate(),
       23,
       59,
       59,
       999
     )
-  ); // Set the end of today for the date range
+  );
 
   try {
     const records = await DailySalesMetrics.find({
       propertyId,
       date: {
-        $gte: startOfSevenDaysAgo,
-        $lte: endOfToday, // Updated to $lte to include today's data
+        $gte: startOfStartDate,
+        $lte: endOfEndDate,
       },
     }).sort({ date: 1 }); // Sorting by date in ascending order
 
-    // day: record.date.toISOString().slice(0, 10), // Converts date to "YYYY-MM-DD" format
     const paymentsArray = records.map((record) => ({
       day: formatDate(record.date),
       "Total Credit Card": parseFloat(record.dailyCreditCardPayments),
