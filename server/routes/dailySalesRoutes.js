@@ -15,17 +15,13 @@ const {
 router.route("/:propertyId").get(authenticate, getAllDailySalesMetrics);
 
 router
-  .route("/:propertyId/:salesId")
+  .route("/:propertyId/:date")
   .get(authenticate, getSingleDailySalesMetrics);
 
 router.route("/:propertyId").post(authenticate, addDailySalesMetrics);
 
-router
-  .route("/:salesId")
-  .patch(authenticate, updateSingleDailySalesMetrics);
+router.route("/:salesId").patch(authenticate, updateSingleDailySalesMetrics);
 
-router
-  .route("/:salesId")
-  .delete(authenticate, deleteSingleDailySalesMetrics);
+router.route("/:salesId").delete(authenticate, deleteSingleDailySalesMetrics);
 
 module.exports = router;

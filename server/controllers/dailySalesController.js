@@ -27,14 +27,24 @@ const getAllDailySalesMetrics = async (req, res) => {
 };
 
 const getSingleDailySalesMetrics = async (req, res) => {
-  const { propertyId, salesId } = req.params;
+  const { propertyId } = req.params;
+  const date = new Date(req.params.date);
+  console.log(date);
 
   try {
     const dailySalesMetrics = await DailySalesMetrics.findOne({
       propertyId,
-      _id: salesId,
+      date: {
+        $gte: new Date(date.setHours(0, 0, 0, 0)), // Set the date to the start of the day
+        $lte: new Date(date.setHours(23, 59, 59, 999)), // Set the date to the end of the day
+      },
     });
 
+    if (!dailySalesMetrics) {
+      return res.status(404).json({
+        msg: "No daily sales metrics found for the specified date.",
+      });
+    }
     const {
       totalRevenue,
       dailyCreditCardPayments,
@@ -42,21 +52,24 @@ const getSingleDailySalesMetrics = async (req, res) => {
       gasolineSales,
     } = dailySalesMetrics;
 
-    console.log();
-
     const totalGallonsSold = await getTotalGallonsSold(
       propertyId,
       dailySalesMetrics.date
     );
-    const sevenDaysRevenue = await getPastSevenDaysRevenue(propertyId);
-    const sevenDaysTotalGallons = await getPastSevenDaysGallonsSold(propertyId);
-    const topNonGasProducts = await getTopNonGasProducts(propertyId);
+    const sevenDaysRevenue = await getPastSevenDaysRevenue(propertyId, date);
+    const sevenDaysTotalGallons = await getPastSevenDaysGallonsSold(
+      propertyId,
+      date
+    );
+    const topNonGasProducts = await getTopNonGasProducts(propertyId, date);
     const topGasProducts = await getAllGasProductsForLatestDailySales(
-      propertyId
+      propertyId,
+      date
     );
 
     const sevenDaysPaymentTotals = await getPastSevenDaysPaymentTotals(
-      propertyId
+      propertyId,
+      date
     );
 
     res.status(200).json({

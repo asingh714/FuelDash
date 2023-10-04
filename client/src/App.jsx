@@ -43,7 +43,8 @@ function App() {
           element: <Properties />,
         },
         {
-          path: "/dashboard/:propertyId/:salesId",
+          path: "/dashboard/:propertyId/:date",
+          // path: "/dashboard",
           element: <Dashboard />,
         },
         {
