@@ -7,6 +7,7 @@ import TinyChartBox from "../TinyChartBox/TinyChartBox";
 import TopProductSalesBox from "../TopProductSalesBox/TopProductSalesBox";
 import BarChartBox from "../BarChartBox/BarChartBox";
 import PropertyDropDown from "../PropertyDropdown/PropertyDropdown";
+import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
 
@@ -36,6 +37,7 @@ const DashboardContainer = () => {
     <div className="dashboard-whole-container">
       <div className="dashboard-menu-container">
         <PropertyDropDown currentDate={date} />
+        <DateSelector currentDate={date} propertyId={propertyId} />
       </div>
       <div className="dashboard-container">
         <div className="box box1">

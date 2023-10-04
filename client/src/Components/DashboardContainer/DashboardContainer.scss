@@ -3,15 +3,17 @@
 .dashboard-whole-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid pink;
   flex: 1;
 
   .dashboard-menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border-bottom: 2px solid $gray-600;
   }
 
   .dashboard-container {
     flex: 1;
-    border: 1px solid red;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
