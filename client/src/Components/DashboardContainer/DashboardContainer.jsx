@@ -1,17 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import newRequest from "../../utils/newRequest";
 import PieChartBox from "../PieChartBox/PieChartBox";
 import TinyChartBox from "../TinyChartBox/TinyChartBox";
 import TopProductSalesBox from "../TopProductSalesBox/TopProductSalesBox";
 import BarChartBox from "../BarChartBox/BarChartBox";
-import PropertyDropDown from "../PropertyDropdown/PropertyDropdown";
+import PropertyDropdown from "../PropertyDropdown/PropertyDropdown";
 import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
 
 const DashboardContainer = () => {
+  const navigate = useNavigate();
   const { propertyId, date } = useParams();
   const { isLoading, error, data } = useQuery([propertyId, date], async () => {
     const response = await newRequest.get(`/sales/${propertyId}/${date}`);
@@ -29,11 +30,15 @@ const DashboardContainer = () => {
     return <div>Loading...</div>;
   }
 
+  const handlePropertyChange = (selectedPropertyId) => {
+    navigate(`/dashboard/${selectedPropertyId}/${date}`);
+  };
+
   return (
     <div className="dashboard-whole-container">
       <div className="dashboard-menu-container">
         <DateSelector currentDate={date} propertyId={propertyId} />
-        <PropertyDropDown currentDate={date} />
+        <PropertyDropdown onPropertyChange={handlePropertyChange} />
       </div>
       <div className="dashboard-container">
         <div className="box box1">

@@ -10,6 +10,7 @@ import DetailedReports from "./Pages/DetailedReports/DetailedReports.jsx";
 import Profile from "./Pages/Profile/Profile.jsx";
 import Properties from "./Pages/Properties/Properties.jsx";
 import Welcome from "./Pages/Welcome/Welcome.jsx";
+import Products from "./Pages/Products/Products.jsx";
 
 import "./styles/global.scss";
 
@@ -41,6 +42,10 @@ function App() {
         {
           path: "/properties",
           element: <Properties />,
+        },
+        {
+          path: "/products",
+          element: <Products />,
         },
         {
           path: "/dashboard/:propertyId/:date",

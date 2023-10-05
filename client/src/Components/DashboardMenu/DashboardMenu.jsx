@@ -16,6 +16,10 @@ const DashboardMenu = () => {
         <img src="/gas-station.svg" alt="logo" className="gas-logo" />
         Properties
       </Link>
+      <Link to="/products">
+        <img src="/basket.svg" alt="logo" className="gas-logo" />
+        Products
+      </Link>
     </div>
   );
 };
