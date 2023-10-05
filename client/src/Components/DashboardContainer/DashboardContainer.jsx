@@ -27,6 +27,7 @@ const DashboardContainer = () => {
       if (!response.data) {
         throw new Error("No data returned");
       }
+      console.log(response.data);
       return response.data;
     }
   );

@@ -25,16 +25,16 @@ const BarChartBox = ({ title, chartData, color, bar, xaxis }) => {
 };
 
 BarChartBox.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   chartData: PropTypes.arrayOf(
     PropTypes.shape({
-      day: PropTypes.string.isRequired,
-      revenue: PropTypes.number.isRequired,
+      day: PropTypes.string,
+      revenue: PropTypes.number,
     })
-  ).isRequired,
-  color: PropTypes.string.isRequired,
-  bar: PropTypes.string.isRequired,
-  xaxis: PropTypes.string.isRequired,
+  ),
+  color: PropTypes.string,
+  bar: PropTypes.string,
+  xaxis: PropTypes.string,
 };
 
 export default BarChartBox;

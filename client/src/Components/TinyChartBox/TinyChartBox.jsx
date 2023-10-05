@@ -79,15 +79,15 @@ const TinyChartBox = ({
 };
 
 TinyChartBox.propTypes = {
-  icon: PropTypes.string.isRequired,
-  myDataKey: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  total: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired,
-  chartData: PropTypes.array.isRequired,
-  money: PropTypes.bool.isRequired,
-  lineDataKey: PropTypes.string.isRequired,
-  detailedPage: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  myDataKey: PropTypes.string,
+  title: PropTypes.string,
+  total: PropTypes.number,
+  color: PropTypes.string,
+  chartData: PropTypes.array,
+  money: PropTypes.bool,
+  lineDataKey: PropTypes.string,
+  detailedPage: PropTypes.string,
 };
 
 export default TinyChartBox;

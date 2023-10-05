@@ -54,14 +54,14 @@ const PieChartBox = ({ title, chartData }) => {
 };
 
 PieChartBox.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   chartData: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
-      color: PropTypes.string.isRequired,
+      name: PropTypes.string,
+      value: PropTypes.number,
+      color: PropTypes.string,
     })
-  ).isRequired,
+  ),
 };
 
 export default PieChartBox;
