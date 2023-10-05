@@ -12,7 +12,6 @@ const DateSelector = ({ currentDate, propertyId }) => {
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
-    console.log(selectedDate);
     navigate(`/dashboard/${propertyId}/${date.toISOString().split("T")[0]}`);
   };
 

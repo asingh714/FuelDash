@@ -20,24 +20,20 @@ const DashboardContainer = () => {
     }
     return response.data;
   });
-
-  // Handle potential errors
   if (error) {
     console.error(error);
     return <div>Error loading data</div>;
   }
 
-  // Handle loading state
   if (isLoading) {
     return <div>Loading...</div>;
   }
 
-  // Render component
   return (
     <div className="dashboard-whole-container">
       <div className="dashboard-menu-container">
-        <PropertyDropDown currentDate={date} />
         <DateSelector currentDate={date} propertyId={propertyId} />
+        <PropertyDropDown currentDate={date} />
       </div>
       <div className="dashboard-container">
         <div className="box box1">
