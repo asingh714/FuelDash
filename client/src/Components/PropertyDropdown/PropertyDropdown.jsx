@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 
 import PropTypes from "prop-types";
@@ -6,7 +6,11 @@ import PropTypes from "prop-types";
 import newRequest from "../../utils/newRequest";
 import Dropdown from "../Dropdown/Dropdown";
 import "./PropertyDropdown.scss";
-const PropertyDropdown = ({ onPropertyChange, defaultSelected }) => {
+const PropertyDropdown = ({
+  onPropertiesFetched = () => {},
+  onPropertyChange,
+  defaultSelected,
+}) => {
   const [currentUser, setCurrentUser] = useState(
     () => JSON.parse(localStorage.getItem("currentUser")) || ""
   );
@@ -25,15 +29,19 @@ const PropertyDropdown = ({ onPropertyChange, defaultSelected }) => {
     }
   );
 
-  if (isLoading) return "Loading...";
-  if (error) return "Error loading properties";
+  // Notify parent of fetched properties
+  useEffect(() => {
+    if (data) {
+      onPropertiesFetched(data);
+    }
+  }, [data, onPropertiesFetched]);
 
   const handleChange = (e) => {
-    const selectedPropertyId = e.target.value;
-    if (onPropertyChange) {
-      onPropertyChange(selectedPropertyId); // Calling the provided callback
-    }
+    onPropertyChange(e.target.value);
   };
+
+  if (isLoading) return "Loading...";
+  if (error) return "Error loading properties";
 
   return (
     <Dropdown
@@ -49,6 +57,7 @@ const PropertyDropdown = ({ onPropertyChange, defaultSelected }) => {
 PropertyDropdown.propTypes = {
   onPropertyChange: PropTypes.func,
   defaultSelected: PropTypes.string,
+  onPropertiesFetched: PropTypes.func,
 };
 
 export default PropertyDropdown;

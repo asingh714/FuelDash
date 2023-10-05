@@ -8,109 +8,200 @@ import "./Products.scss";
 
 const Products = () => {
   const [selectedProperty, setSelectedProperty] = useState(null);
-  const [allProperties, setAllProperties] = useState([]);
 
-  const { data, isLoading, error } = useQuery(
-    ["properties"],
+  const handlePropertyChange = (propertyId) => {
+    setSelectedProperty(propertyId);
+  };
+
+  const {
+    data: gasData,
+    isLoading: isGasDataLoading,
+    error: gasDataError,
+  } = useQuery(
+    ["gasoline", selectedProperty],
     async () => {
-      if (!selectedProperty) return null; // Don't fetch if no property is selected
+      if (!selectedProperty) return null;
       const response = await newRequest.get(`/gasoline/${selectedProperty}`);
       if (!response.data) {
         throw new Error("No data returned");
       }
-      console.log(response.data);
       return response.data;
     },
     {
-      enabled: !!selectedProperty, // Only run the query if a property is selected
+      enabled: !!selectedProperty,
     }
   );
 
-  useEffect(() => {
-    if (!isLoading && data) {
-      setAllProperties(data);
-      setSelectedProperty(data[0]?._id);
+  const {
+    data: nonGasData,
+    isLoading: isNonGasDataLoading,
+    error: nonGasDataError,
+  } = useQuery(
+    ["nonGas", selectedProperty],
+    async () => {
+      if (!selectedProperty) return null;
+      const response = await newRequest.get(`/nonGas/${selectedProperty}`);
+      if (!response.data) {
+        throw new Error("No data returned");
+      }
+      return response.data;
+    },
+    {
+      enabled: !!selectedProperty,
     }
-  }, [data, isLoading]);
+  );
 
-  const columns = [
-    {
-      header: "Gas Type",
-      accessorKey: "gasType",
-    },
-    {
-      header: "Quantity",
-      accessorKey: "quantityInGallons",
-    },
-    {
-      header: "Cost Per Gallons",
-      accessorKey: "costPerGallon",
-    },
-    {
-      header: "Date",
-      accessorKey: "receivedDate",
-    },
-    {
-      header: "",
-      accessorKey: "actions",
-      // cell: ({ row }) => (
-      //   <div className="btn-container">
-      //     <div
-      //       className="edit-btn"
-      //       onClick={() => {
-      //         setSelectedProperty({
-      //           name: row.original.name,
-      //           address: row.original.address,
-      //           id: row.original._id,
-      //         });
-      //         setModalType("editProperty");
-      //         setModalOpen(true);
-      //       }}
-      //     >
-      //       Edit
-      //     </div>
-      //     <div
-      //       className="delete-btn"
-      //       onClick={() => {
-      //         setSelectedProperty({
-      //           name: row.original.name,
-      //           address: row.original.address,
-      //           id: row.original._id,
-      //         });
-      //         setModalType("deleteProperty");
-      //         setModalOpen(true);
-      //       }}
-      //     >
-      //       Delete
-      //     </div>
-      //   </div>
-      // ),
-    },
-  ];
+  const columns = {
+    gasProducts: [
+      {
+        header: "Gas Type",
+        accessorKey: "gasType",
+      },
+      {
+        header: "Quantity",
+        accessorKey: "quantityInGallons",
+      },
+      {
+        header: "Cost Per Gallons",
+        accessorKey: "costPerGallon",
+      },
+      {
+        header: "Date",
+        accessorKey: "receivedDate",
+      },
+      {
+        header: "",
+        accessorKey: "actions",
+        // cell: ({ row }) => (
+        //   <div className="btn-container">
+        //     <div
+        //       className="edit-btn"
+        //       onClick={() => {
+        //         setSelectedProperty({
+        //           name: row.original.name,
+        //           address: row.original.address,
+        //           id: row.original._id,
+        //         });
+        //         setModalType("editProperty");
+        //         setModalOpen(true);
+        //       }}
+        //     >
+        //       Edit
+        //     </div>
+        //     <div
+        //       className="delete-btn"
+        //       onClick={() => {
+        //         setSelectedProperty({
+        //           name: row.original.name,
+        //           address: row.original.address,
+        //           id: row.original._id,
+        //         });
+        //         setModalType("deleteProperty");
+        //         setModalOpen(true);
+        //       }}
+        //     >
+        //       Delete
+        //     </div>
+        //   </div>
+        // ),
+      },
+    ],
+    nonGasProducts: [
+      {
+        header: "Name",
+        accessorKey: "name",
+      },
+      {
+        header: "Category",
+        accessorKey: "category",
+      },
+      {
+        header: "Quantity",
+        accessorKey: "quantity",
+      },
+      {
+        header: "Cost Per Item",
+        accessorKey: "costPerItem",
+      },
+      {
+        header: "Date",
+        accessorKey: "receivedDate",
+      },
+      {
+        header: "",
+        accessorKey: "actions",
+        // cell: ({ row }) => (
+        //   <div className="btn-container">
+        //     <div
+        //       className="edit-btn"
+        //       onClick={() => {
+        //         setSelectedProperty({
+        //           name: row.original.name,
+        //           address: row.original.address,
+        //           id: row.original._id,
+        //         });
+        //         setModalType("editProperty");
+        //         setModalOpen(true);
+        //       }}
+        //     >
+        //       Edit
+        //     </div>
+        //     <div
+        //       className="delete-btn"
+        //       onClick={() => {
+        //         setSelectedProperty({
+        //           name: row.original.name,
+        //           address: row.original.address,
+        //           id: row.original._id,
+        //         });
+        //         setModalType("deleteProperty");
+        //         setModalOpen(true);
+        //       }}
+        //     >
+        //       Delete
+        //     </div>
+        //   </div>
+        // ),
+      },
+    ],
+  };
 
   return (
     <div>
       <PropertyDropdown
-        onPropertyChange={setSelectedProperty}
+        onPropertiesFetched={(properties) => {
+          if (properties?.length > 0 && !selectedProperty) {
+            setSelectedProperty(properties[0]._id);
+          }
+        }}
+        onPropertyChange={handlePropertyChange}
         defaultSelected={selectedProperty}
       />
-      {isLoading && <div>Loading products...</div>}
-      {error && <div>Error loading products</div>}
-      {data && (
+      {isGasDataLoading && isNonGasDataLoading && (
+        <div>Loading products...</div>
+      )}
+      {gasDataError && nonGasDataError && <div>Error loading products</div>}
+      {gasData && (
         <div>
           <div>
             <h3>Gas Products</h3>
-            {data && data.gasolineProducts ? (
+            {gasData && gasData.gasolineProducts ? (
               <DataTable
-                tableData={data.gasolineProducts}
-                columns={columns}
+                tableData={gasData.gasolineProducts}
+                columns={columns.gasProducts}
                 className="properties-table"
               />
             ) : null}
           </div>
           <div>
             <h3>Non-Gas Products</h3>
-            {/* <Table products={products.nonGas} /> */}
+            {nonGasData && nonGasData.nonGasolineProducts ? (
+              <DataTable
+                tableData={nonGasData.nonGasolineProducts}
+                columns={columns.nonGasProducts}
+                className="properties-table"
+              />
+            ) : null}
           </div>
         </div>
       )}
