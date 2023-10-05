@@ -12,7 +12,7 @@ import DateSelector from "../DatePicker/DatePicker";
 import "./DashboardContainer.scss";
 
 const DashboardContainer = () => {
-  const [propertyId, setPropertyId] = useState(null);
+  const [propertyId, setPropertyId] = useState(undefined);
   const [selectedDate, setSelectedDate] = useState(
     new Date().toISOString().split("T")[0]
   );
@@ -27,7 +27,6 @@ const DashboardContainer = () => {
       if (!response.data) {
         throw new Error("No data returned");
       }
-      console.log(response.data);
       return response.data;
     }
   );

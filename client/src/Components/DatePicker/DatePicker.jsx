@@ -7,11 +7,20 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./DatePicker.scss";
 
 const DateSelector = ({ currentDate, onDateChange }) => {
-  const [selectedDate, setSelectedDate] = useState(new Date(currentDate));
+  const [year, month, day] = currentDate
+    .split("-")
+    .map((str) => parseInt(str, 10));
+  // Note: JavaScript month is 0-indexed
+  const localDate = new Date(year, month - 1, day);
+
+  const [selectedDate, setSelectedDate] = useState(localDate);
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
-    onDateChange(date.toISOString().split("T")[0]);
+    const formattedDate = `${date.getFullYear()}-${String(
+      date.getMonth() + 1
+    ).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+    onDateChange(formattedDate);
   };
 
   return (

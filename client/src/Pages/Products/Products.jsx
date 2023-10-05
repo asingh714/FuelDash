@@ -8,7 +8,7 @@ import newRequest from "../../utils/newRequest";
 import "./Products.scss";
 
 const Products = () => {
-  const [selectedProperty, setSelectedProperty] = useState(null);
+  const [selectedProperty, setSelectedProperty] = useState(undefined); // null
 
   const handlePropertyChange = (propertyId) => {
     setSelectedProperty(propertyId);

@@ -10,7 +10,7 @@ import "./Properties.scss";
 const Properties = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState(null);
-  const [selectedProperty, setSelectedProperty] = useState(null);
+  const [selectedProperty, setSelectedProperty] = useState(undefined);
 
   const queryClient = useQueryClient();
 

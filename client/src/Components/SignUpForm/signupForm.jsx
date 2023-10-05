@@ -55,7 +55,6 @@ const SignupForm = () => {
           localStorage.setItem("currentUser", JSON.stringify(res.data));
           navigate("/welcome");
         } catch (error) {
-          console.log("err", error);
           setError(error.response.data.msg);
         }
         setLoading(false);
