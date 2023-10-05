@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 
+import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import PropertyDropdown from "../../Components/PropertyDropdown/PropertyDropdown";
 import DataTable from "../../Components/DataTable/DataTable";
 import newRequest from "../../utils/newRequest";
@@ -167,44 +168,48 @@ const Products = () => {
   };
 
   return (
-    <div>
-      <PropertyDropdown
-        onPropertiesFetched={(properties) => {
-          if (properties?.length > 0 && !selectedProperty) {
-            setSelectedProperty(properties[0]._id);
-          }
-        }}
-        onPropertyChange={handlePropertyChange}
-        defaultSelected={selectedProperty}
-      />
-      {isGasDataLoading && isNonGasDataLoading && (
-        <div>Loading products...</div>
-      )}
-      {gasDataError && nonGasDataError && <div>Error loading products</div>}
-      {gasData && (
-        <div>
-          <div>
-            <h3>Gas Products</h3>
-            {gasData && gasData.gasolineProducts ? (
-              <DataTable
-                tableData={gasData.gasolineProducts}
-                columns={columns.gasProducts}
-                className="properties-table"
-              />
-            ) : null}
+    <div className="products-page-container">
+      <DashboardMenu />
+      <div className="products-container">
+        <hr />
+        <PropertyDropdown
+          onPropertiesFetched={(properties) => {
+            if (properties?.length > 0 && !selectedProperty) {
+              setSelectedProperty(properties[0]._id);
+            }
+          }}
+          onPropertyChange={handlePropertyChange}
+          defaultSelected={selectedProperty}
+        />
+        {isGasDataLoading && isNonGasDataLoading && (
+          <div>Loading products...</div>
+        )}
+        {gasDataError && nonGasDataError && <div>Error loading products</div>}
+        {gasData && (
+          <div className="products-table-container">
+            <div>
+              <h3>Gas Products</h3>
+              {gasData && gasData.gasolineProducts ? (
+                <DataTable
+                  tableData={gasData.gasolineProducts}
+                  columns={columns.gasProducts}
+                  className="properties-table"
+                />
+              ) : null}
+            </div>
+            <div>
+              <h3>Non-Gas Products</h3>
+              {nonGasData && nonGasData.nonGasolineProducts ? (
+                <DataTable
+                  tableData={nonGasData.nonGasolineProducts}
+                  columns={columns.nonGasProducts}
+                  className="properties-table"
+                />
+              ) : null}
+            </div>
           </div>
-          <div>
-            <h3>Non-Gas Products</h3>
-            {nonGasData && nonGasData.nonGasolineProducts ? (
-              <DataTable
-                tableData={nonGasData.nonGasolineProducts}
-                columns={columns.nonGasProducts}
-                className="properties-table"
-              />
-            ) : null}
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

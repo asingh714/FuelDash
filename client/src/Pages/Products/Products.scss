@@ -1,3 +1,21 @@
-div {
-  color: white;
+@import "../../styles/variables.scss";
+
+.products-page-container {
+  display: flex;
+  color: #fff;
+  min-height: 100vh;
+
+  .products-container {
+    flex: 1;
+    padding: 5rem;
+
+    hr {
+      border: 1px solid $gray-700;
+      margin: 5rem 0;
+    }
+
+    .products-table-container {
+      margin: 5rem 0;
+    }
+  }
 }
