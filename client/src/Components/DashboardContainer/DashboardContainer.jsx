@@ -1,5 +1,5 @@
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useParams, useNavigate } from "react-router-dom";
 
 import newRequest from "../../utils/newRequest";
 import PieChartBox from "../PieChartBox/PieChartBox";
@@ -12,15 +12,25 @@ import DateSelector from "../DatePicker/DatePicker";
 import "./DashboardContainer.scss";
 
 const DashboardContainer = () => {
-  const navigate = useNavigate();
-  const { propertyId, date } = useParams();
-  const { isLoading, error, data } = useQuery([propertyId, date], async () => {
-    const response = await newRequest.get(`/sales/${propertyId}/${date}`);
-    if (!response.data) {
-      throw new Error("No data returned");
+  const [propertyId, setPropertyId] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(
+    new Date().toISOString().split("T")[0]
+  );
+
+  const { isLoading, error, data } = useQuery(
+    [propertyId, selectedDate],
+    async () => {
+      if (!propertyId) return null;
+      const response = await newRequest.get(
+        `/sales/${propertyId}/${selectedDate}`
+      );
+      if (!response.data) {
+        throw new Error("No data returned");
+      }
+      return response.data;
     }
-    return response.data;
-  });
+  );
+
   if (error) {
     console.error(error);
     return <div>Error loading data</div>;
@@ -30,15 +40,22 @@ const DashboardContainer = () => {
     return <div>Loading...</div>;
   }
 
-  const handlePropertyChange = (selectedPropertyId) => {
-    navigate(`/dashboard/${selectedPropertyId}/${date}`);
-  };
-
   return (
     <div className="dashboard-whole-container">
       <div className="dashboard-menu-container">
-        <DateSelector currentDate={date} propertyId={propertyId} />
-        <PropertyDropdown onPropertyChange={handlePropertyChange} />
+        <DateSelector
+          currentDate={selectedDate}
+          onDateChange={setSelectedDate}
+        />
+        <PropertyDropdown
+          onPropertiesFetched={(properties) => {
+            if (properties?.length > 0 && !propertyId) {
+              setPropertyId(properties[0]._id);
+            }
+          }}
+          onPropertyChange={setPropertyId}
+          defaultSelected={propertyId}
+        />
       </div>
       <div className="dashboard-container">
         <div className="box box1">
@@ -124,5 +141,4 @@ const DashboardContainer = () => {
     </div>
   );
 };
-
 export default DashboardContainer;

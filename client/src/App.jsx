@@ -48,8 +48,7 @@ function App() {
           element: <Products />,
         },
         {
-          path: "/dashboard/:propertyId/:date",
-          // path: "/dashboard",
+          path: "/dashboard",
           element: <Dashboard />,
         },
         {

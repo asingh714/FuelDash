@@ -1,18 +1,17 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
+
 import "react-datepicker/dist/react-datepicker.css";
 
 import "./DatePicker.scss";
 
-const DateSelector = ({ currentDate, propertyId }) => {
-  const navigate = useNavigate();
+const DateSelector = ({ currentDate, onDateChange }) => {
   const [selectedDate, setSelectedDate] = useState(new Date(currentDate));
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
-    navigate(`/dashboard/${propertyId}/${date.toISOString().split("T")[0]}`);
+    onDateChange(date.toISOString().split("T")[0]);
   };
 
   return (
@@ -25,8 +24,8 @@ const DateSelector = ({ currentDate, propertyId }) => {
 };
 
 DateSelector.propTypes = {
-  currentDate: PropTypes.string,
-  propertyId: PropTypes.string,
+  currentDate: PropTypes.string.isRequired,
+  onDateChange: PropTypes.func.isRequired,
 };
 
 export default DateSelector;
