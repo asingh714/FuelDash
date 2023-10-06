@@ -23,6 +23,13 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
     costPerItem: product?.costPerItem || "",
     receivedDate: product?.receivedDate || getCurrentLocalDate(),
   });
+
+  const [gasProduct, setGasProduct] = useState({
+    gasType: product?.gasType || "",
+    quantityInGallons: product?.quantityInGallons || "",
+    costPerGallon: product?.costPerGallon || "",
+    receivedDate: product?.receivedDate || getCurrentLocalDate(),
+  });
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
@@ -44,6 +51,15 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
         category: product.category,
         quantity: product.quantity,
         costPerItem: product.costPerItem,
+        receivedDate: product.receivedDate,
+      });
+    }
+    if (type === "editGasProduct" || (type === "deleteGasProduct" && product)) {
+      setGasProduct({
+        id: product._id,
+        gasType: product.gasType,
+        quantityInGallons: product.quantityInGallons,
+        costPerGallon: product.costPerGallon,
         receivedDate: product.receivedDate,
       });
     }
@@ -70,6 +86,10 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
       onConfirm(nonGasProduct);
     } else if (type === "deleteNonGasProduct") {
       onConfirm(nonGasProduct);
+    } else if (type === "addGasProduct" || type === "editGasProduct") {
+      onConfirm(gasProduct);
+    } else if (type === "deleteGasProduct") {
+      onConfirm(gasProduct);
     }
     onClose();
     setName("");
@@ -81,6 +101,12 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
       category: product?.category || "",
       quantity: product?.quantity || "",
       costPerItem: product?.costPerItem || "",
+      receivedDate: product?.receivedDate || getCurrentLocalDate(),
+    });
+    setGasProduct({
+      gasType: product?.gasType || "",
+      quantityInGallons: product?.quantityInGallons || "",
+      costPerGallon: product?.costPerGallon || "",
       receivedDate: product?.receivedDate || getCurrentLocalDate(),
     });
   };
@@ -178,6 +204,74 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
           </form>
         ) : null}
 
+        {type === "editGasProduct" || type === "addGasProduct" ? (
+          <form>
+            {/* Gas Type */}
+            <div className="modal-input-group">
+              <label htmlFor="gasType">Gas Type</label>
+              <select
+                id="gasType"
+                value={gasProduct.gasType}
+                onChange={(e) =>
+                  setGasProduct({ ...gasProduct, gasType: e.target.value })
+                }
+              >
+                <option value="">Select a gas type</option>
+                {["Regular", "Midgrade", "Premium", "Diesel", "E85"].map(
+                  (gasType) => (
+                    <option key={gasType} value={gasType}>
+                      {gasType}
+                    </option>
+                  )
+                )}
+              </select>
+            </div>
+
+            {/* Quantity */}
+            <div className="modal-input-group">
+              <label htmlFor="gasQuantity">Quantity</label>
+              <input
+                type="number"
+                id="gasQuantity"
+                value={gasProduct.quantityInGallons}
+                onChange={(e) =>
+                  setGasProduct({
+                    ...gasProduct,
+                    quantityInGallons: e.target.value,
+                  })
+                }
+              />
+            </div>
+
+            {/* Cost Per Gallon */}
+            <div className="modal-input-group">
+              <label htmlFor="gasCost">Cost Per Gallon</label>
+              <input
+                type="text"
+                id="gasCost"
+                value={gasProduct.costPerGallon}
+                onChange={(e) =>
+                  setGasProduct({
+                    ...gasProduct,
+                    costPerGallon: e.target.value,
+                  })
+                }
+              />
+            </div>
+
+            {/* Received Date */}
+            <div className="modal-input-group">
+              <label>Received Date</label>
+              <DateSelector
+                currentDate={gasProduct.receivedDate}
+                onDateChange={(date) =>
+                  setGasProduct({ ...gasProduct, receivedDate: date })
+                }
+              />
+            </div>
+          </form>
+        ) : null}
+
         {type === "addProperty" && (
           <form action="">
             <div className="modal-input-group">
@@ -266,6 +360,10 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
           <span>Are you sure you want to delete your account?</span>
         )}
 
+        {type === "deleteGasProduct" && (
+          <span>Are you sure you want to delete your account?</span>
+        )}
+
         {type === "logout" && <span>Are you sure you want to log out?</span>}
         <div className="modal-button-container">
           <div className="modal-button" onClick={onClose}>
@@ -298,6 +396,12 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
             </div>
           )}
 
+          {type === "deleteGasProduct" && (
+            <div className="modal-button delete-button" onClick={handleSubmit}>
+              Delete
+            </div>
+          )}
+
           {type === "deleteUser" && (
             <div className="modal-button delete-button" onClick={handleSubmit}>
               Delete
@@ -314,6 +418,16 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
             </div>
           )}
           {type === "editNonGasProduct" && (
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Edit Product
+            </div>
+          )}
+          {type === "addGasProduct" && (
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Add Product
+            </div>
+          )}
+          {type === "editGasProduct" && (
             <div className="modal-button confirm-button" onClick={handleSubmit}>
               Edit Product
             </div>

@@ -86,14 +86,48 @@ const Products = () => {
     }
   );
 
+  const addGasProductMutation = useMutation(
+    (nonGasProduct) =>
+      newRequest.post(`/gasoline/${selectedProperty}`, nonGasProduct),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("gasoline");
+      },
+    }
+  );
+
+  const updateGasProductMutation = useMutation(
+    (updatedProduct) =>
+      newRequest.patch(`/gasoline/${updatedProduct.id}`, updatedProduct),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("gasoline");
+      },
+    }
+  );
+
+  const deleteGasProductMutation = useMutation(
+    (productId) => newRequest.delete(`/gasoline/${productId}`),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("gasoline");
+      },
+    }
+  );
+
   const handleModalConfirm = (product) => {
     if (modalType === "addNonGasProduct") {
       addNonGasProductMutation.mutate(product);
     } else if (modalType === "editNonGasProduct") {
       updateNonGasProductMutation.mutate(product);
     } else if (modalType === "deleteNonGasProduct") {
-      console.log("product", product);
       deleteNonGasProductMutation.mutate(product.id);
+    } else if (modalType === "addGasProduct") {
+      addGasProductMutation.mutate(product);
+    } else if (modalType === "editGasProduct") {
+      updateGasProductMutation.mutate(product);
+    } else if (modalType === "deleteGasProduct") {
+      deleteGasProductMutation.mutate(product.id);
     }
   };
 
@@ -118,38 +152,30 @@ const Products = () => {
       {
         header: "",
         accessorKey: "actions",
-        // cell: ({ row }) => (
-        //   <div className="btn-container">
-        //     <div
-        //       className="edit-btn"
-        //       onClick={() => {
-        //         setSelectedProduct({
-        //           name: row.original.name,
-        //           address: row.original.address,
-        //           id: row.original._id,
-        //         });
-        //         setModalType("editProperty");
-        //         setModalOpen(true);
-        //       }}
-        //     >
-        //       Edit
-        //     </div>
-        //     <div
-        //       className="delete-btn"
-        //       onClick={() => {
-        //         setSelectedProduct({
-        //           name: row.original.name,
-        //           address: row.original.address,
-        //           id: row.original._id,
-        //         });
-        //         setModalType("deleteProperty");
-        //         setModalOpen(true);
-        //       }}
-        //     >
-        //       Delete
-        //     </div>
-        //   </div>
-        // ),
+        cell: ({ row }) => (
+          <div className="btn-container">
+            <div
+              className="edit-btn"
+              onClick={() => {
+                setSelectedProduct(row.original);
+                setModalType("editGasProduct");
+                setModalOpen(true);
+              }}
+            >
+              Edit
+            </div>
+            <div
+              className="delete-btn"
+              onClick={() => {
+                setSelectedProduct(row.original);
+                setModalType("deleteGasProduct");
+                setModalOpen(true);
+              }}
+            >
+              Delete
+            </div>
+          </div>
+        ),
       },
     ],
     nonGasProducts: [
@@ -226,6 +252,15 @@ const Products = () => {
           <div className="products-table-container">
             <div>
               <h3>Gas Products</h3>
+              <div
+                className="add-btn"
+                onClick={() => {
+                  setModalType("addGasProduct");
+                  setModalOpen(true);
+                }}
+              >
+                Add None Gas Product
+              </div>
               {gasData && gasData.gasolineProducts ? (
                 <DataTable
                   tableData={gasData.gasolineProducts}
