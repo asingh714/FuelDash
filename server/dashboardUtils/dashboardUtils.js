@@ -175,9 +175,6 @@ const getTopNonGasProducts = async (propertyId, date) => {
   sevenDaysAgo.setDate(today.getDate() - 7);
 
   try {
-    const sevenDaysAgo = new Date();
-    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-
     const result = await DailySalesMetrics.aggregate([
       {
         $match: {
@@ -221,7 +218,7 @@ const getTopNonGasProducts = async (propertyId, date) => {
     return topNonGasProducts;
   } catch (error) {
     console.error("Error getting top non-gas products:", error);
-    return [];
+    // return [];
   }
 };
 

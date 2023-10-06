@@ -11,11 +11,18 @@ import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
 
+const getCurrentLocalDate = () => {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+};
+
 const DashboardContainer = () => {
   const [propertyId, setPropertyId] = useState(undefined);
-  const [selectedDate, setSelectedDate] = useState(
-    new Date().toISOString().split("T")[0]
-  );
+  const [selectedDate, setSelectedDate] = useState(getCurrentLocalDate());
+
 
   const { isLoading, error, data } = useQuery(
     [propertyId, selectedDate],
@@ -27,6 +34,7 @@ const DashboardContainer = () => {
       if (!response.data) {
         throw new Error("No data returned");
       }
+      console.log(response.data);
       return response.data;
     }
   );
