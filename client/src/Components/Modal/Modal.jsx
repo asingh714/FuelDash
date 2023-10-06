@@ -25,7 +25,6 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
   });
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
-  console.log(nonGasProduct);
 
   useEffect(() => {
     if (type === "editProperty" && property) {
@@ -37,6 +36,7 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
     }
     if (type === "editNonGasProduct" && product) {
       setNonGasProduct({
+        id: product._id,
         name: product.name,
         category: product.category,
         quantity: product.quantity,
@@ -46,7 +46,7 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
     } else if (type === "addNonGasProduct") {
       // setNonGasProduct({ ...nonGasProduct });
     }
-  }, [type, property, product, nonGasProduct]);
+  }, [type, property, product]);
 
   const handleContainerClick = (e) => {
     e.stopPropagation();

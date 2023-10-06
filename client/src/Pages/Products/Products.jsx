@@ -14,7 +14,6 @@ const Products = () => {
   const [selectedProperty, setSelectedProperty] = useState(undefined); // null
   const [selectedProduct, setSelectedProduct] = useState(undefined); // null
   const queryClient = useQueryClient();
-  console.log(selectedProperty);
 
   const handlePropertyChange = (propertyId) => {
     setSelectedProperty(propertyId);
@@ -68,19 +67,33 @@ const Products = () => {
     }
   );
 
+  const updateNonGasProductMutation = useMutation(
+    (updatedProduct) =>
+      newRequest.patch(`/nonGas/${updatedProduct.id}`, updatedProduct),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("nonGas");
+      },
+    }
+  );
+
+  const deleteNonGasProductMutation = useMutation(
+    (productId) => newRequest.delete(`/nonGas/${productId}`),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("nonGas");
+      },
+    }
+  );
+
   const handleModalConfirm = (product) => {
     if (modalType === "addNonGasProduct") {
-      addNonGasProductMutation.mutate({
-        ...product,
-      });
+      addNonGasProductMutation.mutate(product);
+    } else if (modalType === "editNonGasProduct") {
+      console.log("product", product);
+      updateNonGasProductMutation.mutate(product);
     } else if (modalType === "deleteNonGasProduct") {
-      // editPropertyMutation.mutate({ name, address, id: selectedProperty.id });
-    } else if (modalType === "deleteProperty") {
-      // deletePropertyMutation.mutate({
-      //   name,
-      //   address,
-      //   id: selectedProperty.id,
-      // });
+      deleteNonGasProductMutation.mutate(selectedProduct.id);
     }
   };
 
@@ -168,14 +181,7 @@ const Products = () => {
             <div
               className="edit-btn"
               onClick={() => {
-                setSelectedProduct({
-                  id: row.original._id,
-                  costPerItem: row.original.costPerItem,
-                  quantity: row.original.quantity,
-                  name: row.original.name,
-                  category: row.original.category,
-                  receivedDate: row.original.receivedDate,
-                });
+                setSelectedProduct(row.original);
                 setModalType("editNonGasProduct");
                 setModalOpen(true);
               }}
@@ -185,11 +191,7 @@ const Products = () => {
             <div
               className="delete-btn"
               onClick={() => {
-                setSelectedProduct({
-                  // id: row.original._id,
-                  // name: row.original.name,
-                  // address: row.original.address,
-                });
+                setSelectedProduct(row.original);
                 setModalType("deleteNonGasProduct");
                 setModalOpen(true);
               }}

@@ -41,7 +41,7 @@ const addNonGasolineProduct = async (req, res) => {
 };
 
 const updateNonGasolineProduct = async (req, res) => {
-  const { id } = req.body;
+  const { id } = req.params;
   const { costPerItem, quantity, name, category, receivedDate } = req.body;
 
   try {
