@@ -90,10 +90,10 @@ const Products = () => {
     if (modalType === "addNonGasProduct") {
       addNonGasProductMutation.mutate(product);
     } else if (modalType === "editNonGasProduct") {
-      console.log("product", product);
       updateNonGasProductMutation.mutate(product);
     } else if (modalType === "deleteNonGasProduct") {
-      deleteNonGasProductMutation.mutate(selectedProduct.id);
+      console.log("product", product);
+      deleteNonGasProductMutation.mutate(product.id);
     }
   };
 

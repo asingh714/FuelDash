@@ -34,7 +34,10 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
       setName("");
       setAddress("");
     }
-    if (type === "editNonGasProduct" && product) {
+    if (
+      type === "editNonGasProduct" ||
+      (type === "deleteNonGasProduct" && product)
+    ) {
       setNonGasProduct({
         id: product._id,
         name: product.name,
@@ -43,8 +46,6 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
         costPerItem: product.costPerItem,
         receivedDate: product.receivedDate,
       });
-    } else if (type === "addNonGasProduct") {
-      // setNonGasProduct({ ...nonGasProduct });
     }
   }, [type, property, product]);
 
@@ -66,6 +67,8 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
     } else if (type === "logout") {
       onConfirm();
     } else if (type === "addNonGasProduct" || type === "editNonGasProduct") {
+      onConfirm(nonGasProduct);
+    } else if (type === "deleteNonGasProduct") {
       onConfirm(nonGasProduct);
     }
     onClose();
@@ -259,6 +262,9 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
         {type === "deleteUser" && (
           <span>Are you sure you want to delete your account?</span>
         )}
+        {type === "deleteNonGasProduct" && (
+          <span>Are you sure you want to delete your account?</span>
+        )}
 
         {type === "logout" && <span>Are you sure you want to log out?</span>}
         <div className="modal-button-container">
@@ -286,24 +292,27 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
             </div>
           )}
 
-          {type === "deleteUser" && (
+          {type === "deleteNonGasProduct" && (
             <div className="modal-button delete-button" onClick={handleSubmit}>
               Delete
             </div>
           )}
 
+          {type === "deleteUser" && (
+            <div className="modal-button delete-button" onClick={handleSubmit}>
+              Delete
+            </div>
+          )}
           {type === "logout" && (
             <div className="modal-button logout-button" onClick={handleSubmit}>
               Log out
             </div>
           )}
-
           {type === "addNonGasProduct" && (
             <div className="modal-button confirm-button" onClick={handleSubmit}>
               Add Product
             </div>
           )}
-
           {type === "editNonGasProduct" && (
             <div className="modal-button confirm-button" onClick={handleSubmit}>
               Edit Product

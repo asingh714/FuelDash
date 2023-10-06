@@ -78,7 +78,9 @@ const deleteGasolineProduct = async (req, res) => {
         msg: `No GasolineProduct found for id ${id}`,
       });
     }
-    const deletedGasolineProduct = await GasolineProduct.findByIdAndDelete(id);
+    const deletedGasolineProduct = await gasolineProduct.deleteOne({
+      _id: id,
+    });
     res.status(200).json({ deleted: deletedGasolineProduct });
   } catch (error) {
     console.error("An error occurred:", error);

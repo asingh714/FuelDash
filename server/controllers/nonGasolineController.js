@@ -80,7 +80,7 @@ const deleteNonGasolineProduct = async (req, res) => {
       });
     }
 
-    await nonGasolineProduct.remove();
+    await nonGasolineProduct.deleteOne({ _id: id });
 
     res.status(200).json({ msg: `NonGasolineProduct ${id} deleted.` });
   } catch (error) {
