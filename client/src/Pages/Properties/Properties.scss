@@ -28,31 +28,9 @@
         }
       }
 
-      .add-prop-btn {
-        padding: 0.75rem 2rem;
-        border-radius: 5px;
-        font-size: 1.4rem;
-        cursor: pointer;
-        font-weight: 600;
-        color: #fff;
-        border: 0;
-        text-align: center;
-        background-color: $indigo-500;
-      }
+     
     }
   }
 
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    .edit-btn {
-      cursor: pointer;
-      color: $indigo-500;
-    }
-    .delete-btn {
-      cursor: pointer;
-      color: $red-600;
-    }
-  }
+
 }

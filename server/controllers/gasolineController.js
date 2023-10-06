@@ -6,7 +6,7 @@ const getGasolineProducts = async (req, res) => {
   try {
     const gasolineProducts = await GasolineProduct.find({
       propertyId,
-    }).sort({ receivedDate: 1 });
+    }).sort({ receivedDate: -1 });
     res.status(200).json({ gasolineProducts });
   } catch (error) {
     return res.status(500).json({ msg: error.message });

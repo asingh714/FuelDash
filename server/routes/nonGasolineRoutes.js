@@ -12,7 +12,7 @@ const {
 
 router.route("/:propertyId").get(authenticate, getNonGasolineProducts);
 router.route("/:propertyId").post(authenticate, addNonGasolineProduct);
-router.route("/:id").patch(authenticate, updateNonGasolineProduct);
-router.route("/:id").delete(authenticate, deleteNonGasolineProduct);
+router.route("/").patch(authenticate, updateNonGasolineProduct);
+router.route("/").delete(authenticate, deleteNonGasolineProduct);
 
 module.exports = router;

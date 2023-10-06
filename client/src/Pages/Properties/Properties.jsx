@@ -129,7 +129,7 @@ const Properties = () => {
             </span>
           </div>
           <div
-            className="add-prop-btn"
+            className="add-btn"
             onClick={() => {
               setModalType("addProperty");
               setModalOpen(true);

@@ -10,7 +10,6 @@ const DateSelector = ({ currentDate, onDateChange }) => {
   const [year, month, day] = currentDate
     .split("-")
     .map((str) => parseInt(str, 10));
-  // Note: JavaScript month is 0-indexed
   const localDate = new Date(year, month - 1, day);
 
   const [selectedDate, setSelectedDate] = useState(localDate);

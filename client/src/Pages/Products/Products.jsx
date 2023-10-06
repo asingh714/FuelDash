@@ -1,14 +1,20 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import PropertyDropdown from "../../Components/PropertyDropdown/PropertyDropdown";
 import DataTable from "../../Components/DataTable/DataTable";
+import Modal from "../../Components/Modal/Modal";
 import newRequest from "../../utils/newRequest";
 import "./Products.scss";
 
 const Products = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalType, setModalType] = useState(null);
   const [selectedProperty, setSelectedProperty] = useState(undefined); // null
+  const [selectedProduct, setSelectedProduct] = useState(undefined); // null
+  const queryClient = useQueryClient();
+  console.log(selectedProperty);
 
   const handlePropertyChange = (propertyId) => {
     setSelectedProperty(propertyId);
@@ -52,6 +58,32 @@ const Products = () => {
     }
   );
 
+  const addNonGasProductMutation = useMutation(
+    (nonGasProduct) =>
+      newRequest.post(`/nonGas/${selectedProperty}`, nonGasProduct),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("nonGas");
+      },
+    }
+  );
+
+  const handleModalConfirm = (product) => {
+    if (modalType === "addNonGasProduct") {
+      addNonGasProductMutation.mutate({
+        ...product,
+      });
+    } else if (modalType === "deleteNonGasProduct") {
+      // editPropertyMutation.mutate({ name, address, id: selectedProperty.id });
+    } else if (modalType === "deleteProperty") {
+      // deletePropertyMutation.mutate({
+      //   name,
+      //   address,
+      //   id: selectedProperty.id,
+      // });
+    }
+  };
+
   const columns = {
     gasProducts: [
       {
@@ -78,7 +110,7 @@ const Products = () => {
         //     <div
         //       className="edit-btn"
         //       onClick={() => {
-        //         setSelectedProperty({
+        //         setSelectedProduct({
         //           name: row.original.name,
         //           address: row.original.address,
         //           id: row.original._id,
@@ -92,7 +124,7 @@ const Products = () => {
         //     <div
         //       className="delete-btn"
         //       onClick={() => {
-        //         setSelectedProperty({
+        //         setSelectedProduct({
         //           name: row.original.name,
         //           address: row.original.address,
         //           id: row.original._id,
@@ -131,38 +163,41 @@ const Products = () => {
       {
         header: "",
         accessorKey: "actions",
-        // cell: ({ row }) => (
-        //   <div className="btn-container">
-        //     <div
-        //       className="edit-btn"
-        //       onClick={() => {
-        //         setSelectedProperty({
-        //           name: row.original.name,
-        //           address: row.original.address,
-        //           id: row.original._id,
-        //         });
-        //         setModalType("editProperty");
-        //         setModalOpen(true);
-        //       }}
-        //     >
-        //       Edit
-        //     </div>
-        //     <div
-        //       className="delete-btn"
-        //       onClick={() => {
-        //         setSelectedProperty({
-        //           name: row.original.name,
-        //           address: row.original.address,
-        //           id: row.original._id,
-        //         });
-        //         setModalType("deleteProperty");
-        //         setModalOpen(true);
-        //       }}
-        //     >
-        //       Delete
-        //     </div>
-        //   </div>
-        // ),
+        cell: ({ row }) => (
+          <div className="btn-container">
+            <div
+              className="edit-btn"
+              onClick={() => {
+                setSelectedProduct({
+                  id: row.original._id,
+                  costPerItem: row.original.costPerItem,
+                  quantity: row.original.quantity,
+                  name: row.original.name,
+                  category: row.original.category,
+                  receivedDate: row.original.receivedDate,
+                });
+                setModalType("editNonGasProduct");
+                setModalOpen(true);
+              }}
+            >
+              Edit
+            </div>
+            <div
+              className="delete-btn"
+              onClick={() => {
+                setSelectedProduct({
+                  // id: row.original._id,
+                  // name: row.original.name,
+                  // address: row.original.address,
+                });
+                setModalType("deleteNonGasProduct");
+                setModalOpen(true);
+              }}
+            >
+              Delete
+            </div>
+          </div>
+        ),
       },
     ],
   };
@@ -199,6 +234,15 @@ const Products = () => {
             </div>
             <div>
               <h3>Non-Gas Products</h3>
+              <div
+                className="add-btn"
+                onClick={() => {
+                  setModalType("addNonGasProduct");
+                  setModalOpen(true);
+                }}
+              >
+                Add None Gas Product
+              </div>
               {nonGasData && nonGasData.nonGasolineProducts ? (
                 <DataTable
                   tableData={nonGasData.nonGasolineProducts}
@@ -210,6 +254,14 @@ const Products = () => {
           </div>
         )}
       </div>
+      {isModalOpen && (
+        <Modal
+          type={modalType}
+          product={selectedProduct}
+          onClose={() => setModalOpen(false)}
+          onConfirm={handleModalConfirm}
+        />
+      )}
     </div>
   );
 };
