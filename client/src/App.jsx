@@ -11,6 +11,7 @@ import Profile from "./Pages/Profile/Profile.jsx";
 import Properties from "./Pages/Properties/Properties.jsx";
 import Welcome from "./Pages/Welcome/Welcome.jsx";
 import Products from "./Pages/Products/Products.jsx";
+import NotFound from "./Pages/NotFound/NotFound.jsx";
 
 import "./styles/global.scss";
 
@@ -70,6 +71,10 @@ function App() {
         {
           path: "/terms-of-use",
           element: <TermsOfUse />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },
