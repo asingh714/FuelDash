@@ -82,6 +82,8 @@ const DetailedReports = () => {
       if (!response.data) {
         throw new Error("No data returned");
       }
+      console.log(query1.data?.results);
+
       return response.data;
     }
   );

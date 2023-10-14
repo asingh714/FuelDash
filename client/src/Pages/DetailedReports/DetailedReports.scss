@@ -4,7 +4,7 @@
   .detail-report-container {
     display: flex;
     flex-direction: column;
-    height: 175vh;
+    // height: 175vh;
     padding: 10rem;
     width: 100%;
 
@@ -12,12 +12,11 @@
       color: white;
       margin-bottom: 5rem;
     }
+    .chart {
+      min-height: 100vh;
+    }
 
-    .chart,
     .table {
-      flex-grow: 1;
-      height: 100%;
-      // width: 100%;
     }
   }
 }

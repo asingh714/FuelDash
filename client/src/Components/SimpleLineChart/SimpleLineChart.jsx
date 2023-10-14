@@ -12,13 +12,17 @@ import PropTypes from "prop-types";
 
 import "./SimpleLineChart.scss";
 const SimpleLineChart = ({ data, dataKey, xaxis, color }) => {
+  console.log(data);
+  console.log(dataKey);
+  console.log(xaxis);
+  console.log(color);
   return (
     <div className="simple-line-chart-box-container">
       <div className="chart">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="99%" height="100%">
           <LineChart
-            width={500}
-            height={300}
+            // width={500}
+            // height={3000}
             data={data}
             margin={{
               top: 5,
@@ -30,15 +34,11 @@ const SimpleLineChart = ({ data, dataKey, xaxis, color }) => {
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey={xaxis} />
             <YAxis />
+
             <Tooltip />
             <Legend />
 
-            <Line
-              type="monotone"
-              dataKey={dataKey}
-              stroke={color}
-              dot={false}
-            />
+            <Line type="linear" dataKey={dataKey} stroke={color} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
