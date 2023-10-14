@@ -23,7 +23,6 @@ const DashboardContainer = () => {
   const [propertyId, setPropertyId] = useState(undefined);
   const [selectedDate, setSelectedDate] = useState(getCurrentLocalDate());
 
-
   const { isLoading, error, data } = useQuery(
     [propertyId, selectedDate],
     async () => {
@@ -80,6 +79,7 @@ const DashboardContainer = () => {
             myDataKey="Revenue"
             lineDataKey="date"
             detailedPage="revenue"
+            propertyId={propertyId}
           />
         </div>
         <div className="box box3">
@@ -93,6 +93,7 @@ const DashboardContainer = () => {
             myDataKey="Gallons Sold"
             lineDataKey="day"
             detailedPage="gallons"
+            propertyId={propertyId}
           />
         </div>
         <div className="box box4">
@@ -112,6 +113,7 @@ const DashboardContainer = () => {
             myDataKey="Total Cash"
             lineDataKey="day"
             detailedPage="cash"
+            propertyId={propertyId}
           />
         </div>
         <div className="box box6">
@@ -125,6 +127,7 @@ const DashboardContainer = () => {
             myDataKey="Total Credit Card"
             lineDataKey="day"
             detailedPage="credit"
+            propertyId={propertyId}
           />
         </div>
         <div className="box box7">

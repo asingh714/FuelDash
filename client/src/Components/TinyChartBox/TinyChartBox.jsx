@@ -24,9 +24,8 @@ const TinyChartBox = ({
   money,
   lineDataKey,
   detailedPage,
+  propertyId,
 }) => {
-  const { propertyId } = useParams();
-
   return (
     <div className="tiny-chart-box-container">
       <div className="tiny-chart-box-title">
@@ -88,6 +87,7 @@ TinyChartBox.propTypes = {
   money: PropTypes.bool,
   lineDataKey: PropTypes.string,
   detailedPage: PropTypes.string,
+  propertyId: PropTypes.string,
 };
 
 export default TinyChartBox;
