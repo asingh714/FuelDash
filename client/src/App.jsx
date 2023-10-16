@@ -12,6 +12,7 @@ import Properties from "./Pages/Properties/Properties.jsx";
 import Welcome from "./Pages/Welcome/Welcome.jsx";
 import Products from "./Pages/Products/Products.jsx";
 import NotFound from "./Pages/NotFound/NotFound.jsx";
+import SalesReports from "./Pages/SalesReports/SalesReports.jsx";
 
 import "./styles/global.scss";
 
@@ -71,6 +72,10 @@ function App() {
         {
           path: "/terms-of-use",
           element: <TermsOfUse />,
+        },
+        {
+          path: "/sales-reports",
+          element: <SalesReports />,
         },
         {
           path: "*",

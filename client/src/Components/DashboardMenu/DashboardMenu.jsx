@@ -20,6 +20,10 @@ const DashboardMenu = () => {
         <img src="/basket.svg" alt="logo" className="gas-logo" />
         Products
       </Link>
+      <Link to="/sales-reports">
+        <img src="/basket.svg" alt="logo" className="gas-logo" />
+        Sales Reports
+      </Link>
     </div>
   );
 };
