@@ -90,6 +90,21 @@ const SalesReports = () => {
     },
   ];
 
+  const nonGasolineSalesColumns = [
+    {
+      header: "Name",
+      accessorKey: "name",
+    },
+    {
+      header: "Quantity Sold",
+      accessorKey: "quantitySold",
+    },
+    {
+      header: "Price Sold At",
+      accessorKey: "priceSoldAt",
+    },
+  ];
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -122,10 +137,19 @@ const SalesReports = () => {
               // console.log("row", row);
               if (expandedRows[row._id]) {
                 return (
-                  <DataTable
-                    tableData={row.gasolineSales} // Assuming each row has a "gasolineSales" field
-                    columns={gasolineColumns}
-                  />
+                  <>
+                    <DataTable
+                      tableData={row.gasolineSales} // Assuming each row has a "gasolineSales" field
+                      columns={gasolineColumns}
+                      subTable={true}
+                    />
+
+                    <DataTable
+                      tableData={row.nonGasolineSales} // Assuming each row has a "gasolineSales" field
+                      columns={nonGasolineSalesColumns}
+                      subTable={true} // HERE
+                    />
+                  </>
                 );
               }
               return null; // This is important to return null when no expansion is required.

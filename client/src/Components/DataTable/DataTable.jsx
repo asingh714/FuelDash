@@ -78,7 +78,6 @@ const DataTable = ({ tableData, columns, expandedContent }) => {
                   </td>
                 ))}
               </tr>
-              {/* Rendering expanded content below each row */}
               {expandedContent && (
                 <tr key={`expanded-${rowIndex}`}>
                   <td colSpan={columns.length}>
