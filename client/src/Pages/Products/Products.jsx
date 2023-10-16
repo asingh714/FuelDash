@@ -265,6 +265,8 @@ const Products = () => {
                 <DataTable
                   tableData={gasData.gasolineProducts}
                   columns={columns.gasProducts}
+                  subTable={true}
+
                   // className="properties-table"
                 />
               ) : null}
@@ -284,6 +286,8 @@ const Products = () => {
                 <DataTable
                   tableData={nonGasData.nonGasolineProducts}
                   columns={columns.nonGasProducts}
+                  subTable={true}
+
                   // className="properties-table"
                 />
               ) : null}

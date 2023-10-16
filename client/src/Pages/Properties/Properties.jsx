@@ -142,6 +142,8 @@ const Properties = () => {
           <DataTable
             tableData={data.properties}
             columns={columns}
+            subTable={true}
+
             // className="properties-table"
           />
         ) : null}

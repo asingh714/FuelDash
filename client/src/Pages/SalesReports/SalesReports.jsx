@@ -132,6 +132,7 @@ const SalesReports = () => {
           <DataTable
             tableData={data.dailySalesMetrics}
             columns={columns}
+            subTable={true}
             // Add expanded content rendering
             expandedContent={(row) => {
               // console.log("row", row);
@@ -141,13 +142,13 @@ const SalesReports = () => {
                     <DataTable
                       tableData={row.gasolineSales} // Assuming each row has a "gasolineSales" field
                       columns={gasolineColumns}
-                      subTable={true}
+                      subTable={false}
                     />
 
                     <DataTable
                       tableData={row.nonGasolineSales} // Assuming each row has a "gasolineSales" field
                       columns={nonGasolineSalesColumns}
-                      subTable={true} // HERE
+                      subTable={false} // HERE
                     />
                   </>
                 );

@@ -42,17 +42,6 @@
       text-align: left;
       padding: 1.5rem 0;
     }
-
-    tr[role="expanded-content"] {
-      background-color: $gray-800; /* Adjust this to a suitable shade that fits your design */
-      td {
-        padding: 1rem;
-      }
-    }
-
-    tr + tr[role="expanded-content"] td {
-      border-top: none; /* Remove top border for expanded content when it directly follows a main row */
-    }
   }
 
   .button-container {

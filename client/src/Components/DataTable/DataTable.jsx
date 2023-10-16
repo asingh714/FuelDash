@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 
 import "./DataTable.scss";
 
-const DataTable = ({ tableData, columns, expandedContent }) => {
+const DataTable = ({ tableData, columns, expandedContent, subTable }) => {
   const [sorting, setSorting] = useState([]);
   const [filtering, setFiltering] = useState("");
 
@@ -32,13 +32,15 @@ const DataTable = ({ tableData, columns, expandedContent }) => {
 
   return (
     <div className="table-component-container">
-      <input
-        type="text"
-        value={filtering}
-        onChange={(e) => setFiltering(e.target.value)}
-        className="filter-input"
-        placeholder="Search"
-      />
+      {subTable && (
+        <input
+          type="text"
+          value={filtering}
+          onChange={(e) => setFiltering(e.target.value)}
+          className="filter-input"
+          placeholder="Search"
+        />
+      )}
 
       <table className="table-container">
         <thead>
@@ -89,7 +91,7 @@ const DataTable = ({ tableData, columns, expandedContent }) => {
           ))}
         </tbody>
       </table>
-      {tableData?.length > 10 && (
+      {subTable && tableData?.length > 10 && (
         <div className="button-container">
           <button onClick={() => table.setPageIndex(0)}>First page</button>
           <button
@@ -117,6 +119,7 @@ DataTable.propTypes = {
   tableData: PropTypes.arrayOf(PropTypes.object).isRequired,
   columns: PropTypes.arrayOf(PropTypes.object).isRequired,
   expandedContent: PropTypes.func,
+  subTable: PropTypes.bool,
 };
 
 export default DataTable;
