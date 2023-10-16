@@ -142,7 +142,7 @@ const Properties = () => {
           <DataTable
             tableData={data.properties}
             columns={columns}
-            className="properties-table"
+            // className="properties-table"
           />
         ) : null}
       </div>

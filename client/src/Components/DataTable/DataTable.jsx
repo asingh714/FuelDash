@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 
 import "./DataTable.scss";
 
-const DataTable = ({ tableData, columns }) => {
+const DataTable = ({ tableData, columns, expandedContent }) => {
   const [sorting, setSorting] = useState([]);
   const [filtering, setFiltering] = useState("");
 
@@ -69,14 +69,24 @@ const DataTable = ({ tableData, columns }) => {
         </thead>
 
         <tbody>
-          {table.getRowModel().rows.map((row) => (
-            <tr key={row.id}>
-              {row.getVisibleCells().map((cell) => (
-                <td key={cell.id}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
-            </tr>
+          {table.getRowModel().rows.map((row, rowIndex) => (
+            <>
+              <tr key={row.id}>
+                {row.getVisibleCells().map((cell) => (
+                  <td key={cell.id}>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                ))}
+              </tr>
+              {/* Rendering expanded content below each row */}
+              {expandedContent && (
+                <tr key={`expanded-${rowIndex}`}>
+                  <td colSpan={columns.length}>
+                    {expandedContent(row.original)}
+                  </td>
+                </tr>
+              )}
+            </>
           ))}
         </tbody>
       </table>
@@ -107,6 +117,7 @@ const DataTable = ({ tableData, columns }) => {
 DataTable.propTypes = {
   tableData: PropTypes.arrayOf(PropTypes.object).isRequired,
   columns: PropTypes.arrayOf(PropTypes.object).isRequired,
+  expandedContent: PropTypes.func,
 };
 
 export default DataTable;

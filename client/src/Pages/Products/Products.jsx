@@ -265,7 +265,7 @@ const Products = () => {
                 <DataTable
                   tableData={gasData.gasolineProducts}
                   columns={columns.gasProducts}
-                  className="properties-table"
+                  // className="properties-table"
                 />
               ) : null}
             </div>
@@ -284,7 +284,7 @@ const Products = () => {
                 <DataTable
                   tableData={nonGasData.nonGasolineProducts}
                   columns={columns.nonGasProducts}
-                  className="properties-table"
+                  // className="properties-table"
                 />
               ) : null}
             </div>

@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.sales-report-page-container {
+  display: flex;
+  color: #fff;
+  min-height: 100vh;
+
+  .sales-report-container {
+    flex: 1;
+    padding: 10rem;
+
+    hr {
+      border: 1px solid $gray-700;
+      margin: 5rem 0;
+    }
+
+    .sales-table-container {
+      margin: 5rem 0;
+    }
+  }
+}
