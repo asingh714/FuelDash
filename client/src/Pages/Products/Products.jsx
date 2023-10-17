@@ -265,7 +265,7 @@ const Products = () => {
                 <DataTable
                   tableData={gasData.gasolineProducts}
                   columns={columns.gasProducts}
-                  subTable={true}
+                  mainTable={true}
 
                   // className="properties-table"
                 />
@@ -286,7 +286,7 @@ const Products = () => {
                 <DataTable
                   tableData={nonGasData.nonGasolineProducts}
                   columns={columns.nonGasProducts}
-                  subTable={true}
+                  mainTable={true}
 
                   // className="properties-table"
                 />

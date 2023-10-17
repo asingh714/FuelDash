@@ -132,28 +132,26 @@ const SalesReports = () => {
           <DataTable
             tableData={data.dailySalesMetrics}
             columns={columns}
-            subTable={true}
-            // Add expanded content rendering
+            mainTable={true}
             expandedContent={(row) => {
-              // console.log("row", row);
               if (expandedRows[row._id]) {
                 return (
                   <>
                     <DataTable
-                      tableData={row.gasolineSales} // Assuming each row has a "gasolineSales" field
+                      tableData={row.gasolineSales}
                       columns={gasolineColumns}
-                      subTable={false}
+                      mainTable={false}
                     />
 
                     <DataTable
-                      tableData={row.nonGasolineSales} // Assuming each row has a "gasolineSales" field
+                      tableData={row.nonGasolineSales}
                       columns={nonGasolineSalesColumns}
-                      subTable={false} // HERE
+                      mainTable={false}
                     />
                   </>
                 );
               }
-              return null; // This is important to return null when no expansion is required.
+              return null;
             }}
           />
         )}

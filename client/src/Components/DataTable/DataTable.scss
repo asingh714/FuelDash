@@ -83,3 +83,15 @@
   height: 2.5rem;
   text-align: center;
 }
+
+.table-component-container.sub-table {
+  background-color: $gray-900;
+  border: 1px solid $gray-700;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+
+  .table-container {
+    width: 80%;
+    margin: auto;
+  }
+}

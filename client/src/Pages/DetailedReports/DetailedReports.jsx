@@ -131,7 +131,7 @@ const DetailedReports = () => {
           tableData={query2.data?.results}
           columns={dataInfo[detailedPage].columns}
           className="table"
-          subTable={true}
+          mainTable={true}
         />
       </div>
     </div>
