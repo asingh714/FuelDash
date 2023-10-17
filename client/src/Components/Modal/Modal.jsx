@@ -38,6 +38,18 @@ const Modal = ({
     costPerGallon: product?.costPerGallon || "",
     receivedDate: product?.receivedDate || getCurrentLocalDate(),
   });
+
+  const [salesReportData, setSalesReportData] = useState({
+    date: salesReport?.date || "",
+    totalRevenue: salesReport?.totalRevenue || "",
+    dailyCashPayments: salesReport?.dailyCashPayments || "",
+    dailyCreditCardPayments: salesReport?.dailyCreditCardPayments || "",
+    gasolineSales: salesReport?.gasolineSales || [],
+    nonGasolineSales: salesReport?.nonGasolineSales || [],
+  });
+
+  console.log("salesReportData", salesReportData);
+
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
@@ -71,7 +83,22 @@ const Modal = ({
         receivedDate: product.receivedDate,
       });
     }
-  }, [type, property, product]);
+
+    if (
+      type === "editSalesReport" ||
+      (type === "deleteSalesReport" && salesReport)
+    ) {
+      setSalesReportData({
+        id: salesReport._id,
+        date: salesReport.date,
+        totalRevenue: salesReport.totalRevenue,
+        dailyCashPayments: salesReport.dailyCashPayments,
+        dailyCreditCardPayments: salesReport.dailyCreditCardPayments,
+        gasolineSales: salesReport.gasolineSales,
+        nonGasolineSales: salesReport.nonGasolineSales,
+      });
+    }
+  }, [type, property, product, salesReport]);
 
   const handleContainerClick = (e) => {
     e.stopPropagation();
@@ -121,7 +148,116 @@ const Modal = ({
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-container" onClick={handleContainerClick}>
+      <div
+        className={`modal-container ${
+          type === "editSalesReport" ? "wide" : ""
+        } `}
+        onClick={handleContainerClick}
+      >
+        {type === "editSalesReport" ? (
+          <form>
+            {/* Date */}
+            <div className="modal-input-group">
+              <label>Date</label>
+              <DateSelector
+                currentDate={salesReportData.date}
+                onDateChange={(date) =>
+                  setSalesReportData({ ...salesReportData, date: date })
+                }
+              />
+            </div>
+            {/* Total Revenue */}
+            <div className="modal-input-group">
+              <label htmlFor="totalRevenue">Total Revenue</label>
+              <input
+                type="text"
+                id="totalRevenue"
+                value={salesReportData.totalRevenue}
+                onChange={(e) =>
+                  setSalesReportData({
+                    ...salesReportData,
+                    totalRevenue: e.target.value,
+                  })
+                }
+              />
+            </div>
+            {/* Cash Payments */}
+            <div className="modal-input-group">
+              <label htmlFor="cashPayments">Cash Payments</label>
+              <input
+                type="text"
+                id="cashPayments"
+                value={salesReportData.dailyCashPayments}
+                onChange={(e) =>
+                  setSalesReportData({
+                    ...salesReportData,
+                    dailyCashPayments: e.target.value,
+                  })
+                }
+              />
+            </div>
+            {/* Credit Card Payments */}
+            <div className="modal-input-group">
+              <label htmlFor="creditCardPayments">Credit Card Payments</label>
+              <input
+                type="text"
+                id="creditCardPayments"
+                value={salesReportData.dailyCreditCardPayments}
+                onChange={(e) =>
+                  setSalesReportData({
+                    ...salesReportData,
+                    dailyCreditCardPayments: e.target.value,
+                  })
+                }
+              />
+            </div>
+            {/* Gasoline Sales */}
+            <h4>Gasoline Sales:</h4>
+            {salesReportData?.gasolineSales?.map((gasolineSale) => (
+              <div className="modal-input-group" key={gasolineSale._id}>
+                <label htmlFor={`gasType-${gasolineSale._id}`}>Gas Type</label>
+                <select
+                  id={`gasType-${gasolineSale._id}`}
+                  value={gasolineSale.gasType}
+                  onChange={(e) =>
+                    // You might need to modify this logic based on your state management strategy.
+                    setGasProduct({ ...gasProduct, gasType: e.target.value })
+                  }
+                >
+                  <option value="">Select a gas type</option>
+                  {["Regular", "Midgrade", "Premium", "Diesel", "E85"].map(
+                    (gasType) => (
+                      <option key={gasType} value={gasType}>
+                        {gasType}
+                      </option>
+                    )
+                  )}
+                </select>
+
+                <label htmlFor={`gallonsSold-${gasolineSale._id}`}>
+                  Gallons Sold
+                </label>
+                <input
+                  id={`gallonsSold-${gasolineSale._id}`}
+                  type="number"
+                  value={gasolineSale.gallonsSold}
+                  readOnly
+                />
+
+                <label htmlFor={`priceSoldAt-${gasolineSale._id}`}>
+                  Price Sold At
+                </label>
+                <input
+                  id={`priceSoldAt-${gasolineSale._id}`}
+                  type="number"
+                  value={gasolineSale.priceSoldAt}
+                  readOnly
+                />
+              </div>
+            ))}
+          </form>
+        ) : null}
+
         {type === "editNonGasProduct" || type === "addNonGasProduct" ? (
           <form>
             {/* Name */}
@@ -333,8 +469,6 @@ const Modal = ({
             </div>
           </form>
         )}
-
-        
 
         {type === "changePassword" && (
           <form action="">
