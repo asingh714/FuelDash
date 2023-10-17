@@ -5,10 +5,14 @@ import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import PropertyDropdown from "../../Components/PropertyDropdown/PropertyDropdown";
 import DataTable from "../../Components/DataTable/DataTable";
 import newRequest from "../../utils/newRequest";
+import Modal from "../../Components/Modal/Modal";
 
 import "./SalesReports.scss";
 
 const SalesReports = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalType, setModalType] = useState(null);
+  const [selectedSalesReport, setSelectedSalesReport] = useState(undefined);
   const [selectedProperty, setSelectedProperty] = useState(undefined); // null
   const [expandedRows, setExpandedRows] = useState({});
 
@@ -33,6 +37,10 @@ const SalesReports = () => {
     setSelectedProperty(propertyId);
   };
 
+  const handleModalConfirm = (salesReport) => {
+    console.log(salesReport);
+  };
+
   const toggleRowExpansion = (rowId) => {
     console.log("rowId", rowId); // undefined
     setExpandedRows((prevState) => ({
@@ -51,16 +59,55 @@ const SalesReports = () => {
       accessorKey: "totalRevenue",
     },
     {
-      header: "Daily Cash Payments",
+      header: "Cash Payments",
       accessorKey: "dailyCashPayments",
     },
     {
-      header: "Daily Credit Card Payments",
+      header: "Credit Card Payments",
       accessorKey: "dailyCreditCardPayments",
     },
     {
       header: "",
       accessorKey: "actions",
+      cell: ({ row }) => (
+        <div className="btn-container">
+          <div
+            className="edit-btn"
+            onClick={() => {
+              // setSelectedProperty({
+              //   name: row.original.name,
+              //   address: row.original.address,
+              //   id: row.original._id,
+              // });
+              console.log(row.original);
+              setSelectedSalesReport(row.original);
+              setModalType("editSalesReport");
+              setModalOpen(true);
+            }}
+          >
+            Edit
+          </div>
+          <div
+            className="delete-btn"
+            onClick={() => {
+              // setSelectedProperty({
+              //   name: row.original.name,
+              //   address: row.original.address,
+              //   id: row.original._id,
+              // });
+              setSelectedSalesReport(row.original);
+              setModalType("deleteSalesReport");
+              setModalOpen(true);
+            }}
+          >
+            Delete
+          </div>
+        </div>
+      ),
+    },
+    {
+      header: "",
+      accessorKey: "accordionAction",
       cell: (cell) => {
         const rowId = cell.row.original._id;
         return (
@@ -156,6 +203,14 @@ const SalesReports = () => {
           />
         )}
       </div>
+      {isModalOpen && (
+        <Modal
+          type={modalType}
+          salesReport={selectedSalesReport}
+          onClose={() => setModalOpen(false)}
+          onConfirm={handleModalConfirm}
+        />
+      )}
     </div>
   );
 };

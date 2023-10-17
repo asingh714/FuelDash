@@ -13,7 +13,15 @@ const getCurrentLocalDate = () => {
   return `${year}-${month}-${day}`;
 };
 
-const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
+const Modal = ({
+  type,
+  property,
+  onClose,
+  onConfirm,
+  user,
+  product,
+  salesReport,
+}) => {
   const [name, setName] = useState(property?.name || "");
   const [address, setAddress] = useState(property?.address || "");
   const [nonGasProduct, setNonGasProduct] = useState({
@@ -325,6 +333,9 @@ const Modal = ({ type, property, onClose, onConfirm, user, product }) => {
             </div>
           </form>
         )}
+
+        
+
         {type === "changePassword" && (
           <form action="">
             <div className="modal-input-group">
@@ -444,6 +455,7 @@ Modal.propTypes = {
   onConfirm: PropTypes.func.isRequired,
   user: PropTypes.object,
   product: PropTypes.object,
+  salesReport: PropTypes.object,
 };
 
 export default Modal;

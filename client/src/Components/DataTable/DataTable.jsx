@@ -73,24 +73,22 @@ const DataTable = ({ tableData, columns, expandedContent, mainTable }) => {
         </thead>
 
         <tbody>
-          {table.getRowModel().rows.map((row, rowIndex) => (
-            <>
-              <tr key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </td>
-                ))}
+          {table.getRowModel().rows.flatMap((row, rowIndex) => [
+            <tr key={row.id}>
+              {row.getVisibleCells().map((cell) => (
+                <td key={cell.id}>
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </td>
+              ))}
+            </tr>,
+            expandedContent && (
+              <tr key={`expanded-${rowIndex}`}>
+                <td colSpan={columns.length}>
+                  {expandedContent(row.original)}
+                </td>
               </tr>
-              {expandedContent && (
-                <tr key={`expanded-${rowIndex}`}>
-                  <td colSpan={columns.length}>
-                    {expandedContent(row.original)}
-                  </td>
-                </tr>
-              )}
-            </>
-          ))}
+            ),
+          ])}
         </tbody>
       </table>
       {mainTable && tableData?.length > 10 && (
