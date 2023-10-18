@@ -48,8 +48,6 @@ const Modal = ({
     nonGasolineSales: salesReport?.nonGasolineSales || [],
   });
 
-  console.log("salesReportData", salesReportData);
-
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
@@ -155,61 +153,68 @@ const Modal = ({
         onClick={handleContainerClick}
       >
         {type === "editSalesReport" ? (
-          <form>
-            {/* Date */}
-            <div className="modal-input-group">
-              <label>Date</label>
-              <DateSelector
-                currentDate={salesReportData.date}
-                onDateChange={(date) =>
-                  setSalesReportData({ ...salesReportData, date: date })
-                }
-              />
+          <form className="wide-form">
+            <h3>Edit Sales Report</h3>
+
+            <div className="row">
+              {/* Date */}
+              <div className="modal-input-group">
+                <label>Date</label>
+                <DateSelector
+                  currentDate={salesReportData.date}
+                  onDateChange={(date) =>
+                    setSalesReportData({ ...salesReportData, date: date })
+                  }
+                />
+              </div>
+              {/* Total Revenue */}
+              <div className="modal-input-group">
+                <label htmlFor="totalRevenue">Total Revenue</label>
+                <input
+                  type="text"
+                  id="totalRevenue"
+                  value={salesReportData.totalRevenue}
+                  onChange={(e) =>
+                    setSalesReportData({
+                      ...salesReportData,
+                      totalRevenue: e.target.value,
+                    })
+                  }
+                />
+              </div>
             </div>
-            {/* Total Revenue */}
-            <div className="modal-input-group">
-              <label htmlFor="totalRevenue">Total Revenue</label>
-              <input
-                type="text"
-                id="totalRevenue"
-                value={salesReportData.totalRevenue}
-                onChange={(e) =>
-                  setSalesReportData({
-                    ...salesReportData,
-                    totalRevenue: e.target.value,
-                  })
-                }
-              />
-            </div>
-            {/* Cash Payments */}
-            <div className="modal-input-group">
-              <label htmlFor="cashPayments">Cash Payments</label>
-              <input
-                type="text"
-                id="cashPayments"
-                value={salesReportData.dailyCashPayments}
-                onChange={(e) =>
-                  setSalesReportData({
-                    ...salesReportData,
-                    dailyCashPayments: e.target.value,
-                  })
-                }
-              />
-            </div>
-            {/* Credit Card Payments */}
-            <div className="modal-input-group">
-              <label htmlFor="creditCardPayments">Credit Card Payments</label>
-              <input
-                type="text"
-                id="creditCardPayments"
-                value={salesReportData.dailyCreditCardPayments}
-                onChange={(e) =>
-                  setSalesReportData({
-                    ...salesReportData,
-                    dailyCreditCardPayments: e.target.value,
-                  })
-                }
-              />
+
+            <div className="row">
+              {/* Cash Payments */}
+              <div className="modal-input-group">
+                <label htmlFor="cashPayments">Cash Payments</label>
+                <input
+                  type="text"
+                  id="cashPayments"
+                  value={salesReportData.dailyCashPayments}
+                  onChange={(e) =>
+                    setSalesReportData({
+                      ...salesReportData,
+                      dailyCashPayments: e.target.value,
+                    })
+                  }
+                />
+              </div>
+              {/* Credit Card Payments */}
+              <div className="modal-input-group">
+                <label htmlFor="creditCardPayments">Credit Card Payments</label>
+                <input
+                  type="text"
+                  id="creditCardPayments"
+                  value={salesReportData.dailyCreditCardPayments}
+                  onChange={(e) =>
+                    setSalesReportData({
+                      ...salesReportData,
+                      dailyCreditCardPayments: e.target.value,
+                    })
+                  }
+                />
+              </div>
             </div>
             {/* Gasoline Sales */}
             <h4>Gasoline Sales:</h4>
@@ -234,24 +239,50 @@ const Modal = ({
                   )}
                 </select>
 
-                <label htmlFor={`gallonsSold-${gasolineSale._id}`}>
-                  Gallons Sold
+                <div className="row">
+                  <label htmlFor={`gallonsSold-${gasolineSale._id}`}>
+                    Gallons Sold
+                  </label>
+                  <input
+                    id={`gallonsSold-${gasolineSale._id}`}
+                    type="number"
+                    value={gasolineSale.gallonsSold}
+                  />
+
+                  <label htmlFor={`priceSoldAt-${gasolineSale._id}`}>
+                    Price Sold At
+                  </label>
+                  <input
+                    id={`priceSoldAt-${gasolineSale._id}`}
+                    type="number"
+                    value={gasolineSale.priceSoldAt}
+                  />
+                </div>
+              </div>
+            ))}
+            {salesReportData?.nonGasolineSales?.map((nonGasolineSale) => (
+              <div className="modal-input-group" key={nonGasolineSale._id}>
+                <label htmlFor={`name-${nonGasolineSale._id}`}>Name</label>
+                <input
+                  id={`name-${nonGasolineSale._id}`}
+                  type="text"
+                  value={nonGasolineSale.name}
+                />
+                <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
+                  Quantity Sold
                 </label>
                 <input
-                  id={`gallonsSold-${gasolineSale._id}`}
+                  id={`quantitySold-${nonGasolineSale._id}`}
                   type="number"
-                  value={gasolineSale.gallonsSold}
-                  readOnly
+                  value={nonGasolineSale.quantitySold}
                 />
-
-                <label htmlFor={`priceSoldAt-${gasolineSale._id}`}>
+                <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
                   Price Sold At
                 </label>
                 <input
-                  id={`priceSoldAt-${gasolineSale._id}`}
+                  id={`priceSoldAt-${nonGasolineSale._id}`}
                   type="number"
-                  value={gasolineSale.priceSoldAt}
-                  readOnly
+                  value={nonGasolineSale.priceSoldAt}
                 />
               </div>
             ))}

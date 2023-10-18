@@ -73,14 +73,26 @@
   }
 
   .wide {
-    background-color: $slate-800;
+    background-color: $slate-950;
     color: $gray-300;
     border: 1px solid $gray-700;
-    padding: 3rem;
+    padding: 5rem 0;
     border-radius: 8px;
     width: 90%;
-    max-width: 100%;
     position: relative;
     z-index: 15;
+    top: 0;
+    overflow-y: auto;
+    max-height: 80vh;
+
+    .wide-form {
+      width: 50%;
+      margin: 0 auto;
+
+      .row {
+        display: flex;
+        margin-top: 2rem;
+      }
+    }
   }
 }
