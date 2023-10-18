@@ -227,6 +227,8 @@ const Modal = ({
                 />
               </div>
             </div>
+
+            <hr />
             {/* Gasoline Sales */}
             <h4>Gasoline Sales:</h4>
             {salesReportData?.gasolineSales?.map((gasolineSale) => (
@@ -259,50 +261,57 @@ const Modal = ({
                 </select>
 
                 <div className="row">
-                  <label htmlFor={`gallonsSold-${gasolineSale._id}`}>
-                    Gallons Sold
-                  </label>
-                  <input
-                    id={`gallonsSold-${gasolineSale._id}`}
-                    type="number"
-                    value={gasolineSale.gallonsSold}
-                    onChange={(e) => {
-                      const updatedGasolineSales =
-                        salesReportData.gasolineSales.map((sale) =>
-                          sale._id === gasolineSale._id
-                            ? { ...sale, gallonsSold: e.target.value }
-                            : sale
-                        );
-                      setSalesReportData({
-                        ...salesReportData,
-                        gasolineSales: updatedGasolineSales,
-                      });
-                    }}
-                  />
-
-                  <label htmlFor={`priceSoldAt-${gasolineSale._id}`}>
-                    Price Sold At
-                  </label>
-                  <input
-                    id={`priceSoldAt-${gasolineSale._id}`}
-                    type="number"
-                    value={gasolineSale.priceSoldAt}
-                    onChange={(e) => {
-                      const updatedGasolineSales =
-                        salesReportData.gasolineSales.map((sale) =>
-                          sale._id === gasolineSale._id
-                            ? { ...sale, priceSoldAt: e.target.value }
-                            : sale
-                        );
-                      setSalesReportData({
-                        ...salesReportData,
-                        gasolineSales: updatedGasolineSales,
-                      });
-                    }}
-                  />
+                  <div className="modal-input-group">
+                    <label htmlFor={`gallonsSold-${gasolineSale._id}`}>
+                      Gallons Sold
+                    </label>
+                    <input
+                      id={`gallonsSold-${gasolineSale._id}`}
+                      type="number"
+                      value={gasolineSale.gallonsSold}
+                      onChange={(e) => {
+                        const updatedGasolineSales =
+                          salesReportData.gasolineSales.map((sale) =>
+                            sale._id === gasolineSale._id
+                              ? { ...sale, gallonsSold: e.target.value }
+                              : sale
+                          );
+                        setSalesReportData({
+                          ...salesReportData,
+                          gasolineSales: updatedGasolineSales,
+                        });
+                      }}
+                    />
+                  </div>
+                  <div className="modal-input-group">
+                    <label htmlFor={`priceSoldAt-${gasolineSale._id}`}>
+                      Price Sold At
+                    </label>
+                    <input
+                      id={`priceSoldAt-${gasolineSale._id}`}
+                      type="number"
+                      value={gasolineSale.priceSoldAt}
+                      onChange={(e) => {
+                        const updatedGasolineSales =
+                          salesReportData.gasolineSales.map((sale) =>
+                            sale._id === gasolineSale._id
+                              ? { ...sale, priceSoldAt: e.target.value }
+                              : sale
+                          );
+                        setSalesReportData({
+                          ...salesReportData,
+                          gasolineSales: updatedGasolineSales,
+                        });
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             ))}
+
+            <hr />
+            <h4>Non Gasoline Sales:</h4>
+
             {salesReportData?.nonGasolineSales?.map((nonGasolineSale) => (
               <div className="modal-input-group" key={nonGasolineSale._id}>
                 <label htmlFor={`name-${nonGasolineSale._id}`}>Name</label>
@@ -323,46 +332,53 @@ const Modal = ({
                     });
                   }}
                 />
-                <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
-                  Quantity Sold
-                </label>
-                <input
-                  id={`quantitySold-${nonGasolineSale._id}`}
-                  type="number"
-                  value={nonGasolineSale.quantitySold}
-                  onChange={(e) => {
-                    const updatedNonGasolineSales =
-                      salesReportData.nonGasolineSales.map((sale) =>
-                        sale._id === nonGasolineSale._id
-                          ? { ...sale, quantitySold: e.target.value }
-                          : sale
-                      );
-                    setSalesReportData({
-                      ...salesReportData,
-                      nonGasolineSales: updatedNonGasolineSales,
-                    });
-                  }}
-                />
-                <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
-                  Price Sold At
-                </label>
-                <input
-                  id={`priceSoldAt-${nonGasolineSale._id}`}
-                  type="number"
-                  value={nonGasolineSale.priceSoldAt}
-                  onChange={(e) => {
-                    const updatedNonGasolineSales =
-                      salesReportData.nonGasolineSales.map((sale) =>
-                        sale._id === nonGasolineSale._id
-                          ? { ...sale, priceSoldAt: e.target.value }
-                          : sale
-                      );
-                    setSalesReportData({
-                      ...salesReportData,
-                      nonGasolineSales: updatedNonGasolineSales,
-                    });
-                  }}
-                />
+                <div className="row">
+                  <div className="modal-input-group">
+                    <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
+                      Quantity Sold
+                    </label>
+                    <input
+                      id={`quantitySold-${nonGasolineSale._id}`}
+                      type="number"
+                      value={nonGasolineSale.quantitySold}
+                      onChange={(e) => {
+                        const updatedNonGasolineSales =
+                          salesReportData.nonGasolineSales.map((sale) =>
+                            sale._id === nonGasolineSale._id
+                              ? { ...sale, quantitySold: e.target.value }
+                              : sale
+                          );
+                        setSalesReportData({
+                          ...salesReportData,
+                          nonGasolineSales: updatedNonGasolineSales,
+                        });
+                      }}
+                    />
+                  </div>
+
+                  <div className="modal-input-group">
+                    <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
+                      Price Sold At
+                    </label>
+                    <input
+                      id={`priceSoldAt-${nonGasolineSale._id}`}
+                      type="number"
+                      value={nonGasolineSale.priceSoldAt}
+                      onChange={(e) => {
+                        const updatedNonGasolineSales =
+                          salesReportData.nonGasolineSales.map((sale) =>
+                            sale._id === nonGasolineSale._id
+                              ? { ...sale, priceSoldAt: e.target.value }
+                              : sale
+                          );
+                        setSalesReportData({
+                          ...salesReportData,
+                          nonGasolineSales: updatedNonGasolineSales,
+                        });
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             ))}
           </form>

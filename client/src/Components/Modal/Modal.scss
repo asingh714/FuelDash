@@ -85,13 +85,47 @@
     overflow-y: auto;
     max-height: 80vh;
 
+    hr {
+      border: 1px solid $gray-700;
+      margin: 5rem 0;
+    }
+
     .wide-form {
       width: 50%;
       margin: 0 auto;
 
+      h4 {
+        margin-bottom: 2rem;
+      }
+
       .row {
         display: flex;
+        justify-content: space-between;
         margin-top: 2rem;
+        // border: 1px solid red;
+
+        .modal-input-group {
+          width: 100%;
+          margin-bottom: 2rem;
+
+          label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: $gray-400;
+            font-weight: 600;
+          }
+
+          input {
+            font-size: 1.2rem;
+            font-weight: 600;
+            max-width: 20rem;
+            border-radius: 5px;
+            background-color: $slate-900;
+            color: $gray-300;
+            border: 1px solid $gray-700;
+            padding: 0.75rem 1rem;
+          }
+        }
       }
     }
   }
