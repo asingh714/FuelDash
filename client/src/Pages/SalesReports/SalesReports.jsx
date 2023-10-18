@@ -54,12 +54,24 @@ const SalesReports = () => {
       },
     }
   );
+
+  const deleteSalesReportMutation = useMutation(
+    (id) => newRequest.delete(`/sales/${id}`),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("sales");
+      },
+    }
+  );
   const handleModalConfirm = (salesReport) => {
     if (modalType === "editSalesReport") {
       updateSalesReportMutation.mutate(salesReport);
     }
     if (modalType === "addSalesReport") {
       addSalesReportMutation.mutate(salesReport);
+    }
+    if (modalType === "deleteSalesReport") {
+      deleteSalesReportMutation.mutate(salesReport);
     }
   };
 
@@ -101,7 +113,6 @@ const SalesReports = () => {
               //   address: row.original.address,
               //   id: row.original._id,
               // });
-              console.log(row.original);
               setSelectedSalesReport(row.original);
               setModalType("editSalesReport");
               setModalOpen(true);

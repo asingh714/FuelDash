@@ -138,6 +138,8 @@ const Modal = ({
       onConfirm(salesReportData);
     } else if (type === "addSalesReport") {
       onConfirm(salesReportData);
+    } else if (type === "deleteSalesReport") {
+      onConfirm(salesReportData.id);
     }
     onClose();
     setName("");
@@ -716,6 +718,10 @@ const Modal = ({
           <span>Are you sure you want to delete this product?</span>
         )}
 
+        {type === "deleteSalesReport" && (
+          <span>Are you sure you want to delete this sales report?</span>
+        )}
+
         {/* BUTTONS */}
 
         <div className="modal-button-container">
@@ -795,6 +801,12 @@ const Modal = ({
           {type === "addSalesReport" && (
             <div className="modal-button confirm-button" onClick={handleSubmit}>
               Add Sales Report
+            </div>
+          )}
+
+          {type === "deleteSalesReport" && (
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Delete Sales Report
             </div>
           )}
         </div>
