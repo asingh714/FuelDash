@@ -173,18 +173,40 @@ const Modal = ({
     });
   };
 
+  const addGasolineSale = () => {
+    setSalesReportData((prevState) => ({
+      ...prevState,
+      gasolineSales: [
+        ...prevState.gasolineSales,
+        { gasType: "", gallonsSold: 0, priceSoldAt: 0 },
+      ],
+    }));
+  };
+
+  const addNonGasolineSale = () => {
+    setSalesReportData((prevState) => ({
+      ...prevState,
+      nonGasolineSales: [
+        ...prevState.nonGasolineSales,
+        { name: "", quantitySold: 0, priceSoldAt: 0 },
+      ],
+    }));
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div
         className={`modal-container ${
-          type === "editSalesReport" ? "wide" : ""
+          type === "editSalesReport" || type === "addSalesReport" ? "wide" : ""
         } `}
         onClick={handleContainerClick}
       >
         {/* EDIT SALES REPORT  */}
         {type === "editSalesReport" || type === "addSalesReport" ? (
           <form className="wide-form">
-            <h3>Edit Sales Report</h3>
+            <h3>{`${
+              type === "editSalesReport" ? "Edit" : "Add"
+            } Sales Report`}</h3>
 
             <div className="row">
               <div className="modal-input-group">
@@ -325,6 +347,9 @@ const Modal = ({
                 </div>
               </div>
             ))}
+            <div className="add-btn" onClick={addGasolineSale}>
+              Add Gasoline Sale
+            </div>
 
             <hr />
             <h4>Non Gasoline Sales:</h4>
@@ -398,6 +423,10 @@ const Modal = ({
                 </div>
               </div>
             ))}
+
+            <div className="add-btn" onClick={addNonGasolineSale}>
+              Add Non Gasoline Sale
+            </div>
           </form>
         ) : null}
 

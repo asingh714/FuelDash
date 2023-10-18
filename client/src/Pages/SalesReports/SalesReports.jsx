@@ -62,7 +62,6 @@ const SalesReports = () => {
     if (modalType === "addSalesReport") {
       addSalesReportMutation.mutate(salesReport);
     }
-    
   };
 
   const toggleRowExpansion = (rowId) => {
@@ -198,6 +197,16 @@ const SalesReports = () => {
           onPropertyChange={handlePropertyChange}
           defaultSelected={selectedProperty}
         />
+
+        <div
+          className="add-btn"
+          onClick={() => {
+            setModalType("addSalesReport");
+            setModalOpen(true);
+          }}
+        >
+          Add Sales Report
+        </div>
 
         {data && (
           <DataTable
