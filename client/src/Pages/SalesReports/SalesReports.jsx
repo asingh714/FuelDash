@@ -47,8 +47,7 @@ const SalesReports = () => {
   );
 
   const addSalesReportMutation = useMutation(
-    (salesReport) =>
-      newRequest.post(`/sales/${selectedProperty.id}`, salesReport),
+    (salesReport) => newRequest.post(`/sales/${selectedProperty}`, salesReport),
     {
       onSuccess: () => {
         queryClient.invalidateQueries("sales");

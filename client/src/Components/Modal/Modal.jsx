@@ -219,7 +219,7 @@ const Modal = ({
         } `}
         onClick={handleContainerClick}
       >
-        {/* EDIT SALES REPORT  */}
+        {/* EDIT AND ADD SALES REPORT  */}
         {type === "editSalesReport" || type === "addSalesReport" ? (
           <form className="wide-form">
             <h3>{`${
@@ -363,17 +363,21 @@ const Modal = ({
                     />
                   </div>
                 </div>
-                <div
-                  className="delete-btn"
-                  onClick={() => removeGasolineSale(index)}
-                >
-                  Remove
-                </div>
+                {type === "addSalesReport" && (
+                  <div
+                    className="delete-btn"
+                    onClick={() => removeGasolineSale(index)}
+                  >
+                    Remove
+                  </div>
+                )}
               </div>
             ))}
-            <div className="add-btn" onClick={addGasolineSale}>
-              Add Gasoline Sale
-            </div>
+            {type === "addSalesReport" && (
+              <div className="add-btn" onClick={addGasolineSale}>
+                Add Gasoline Sale
+              </div>
+            )}
 
             <hr />
             <h4>Non Gasoline Sales:</h4>
@@ -446,19 +450,23 @@ const Modal = ({
                       />
                     </div>
                   </div>
-                  <div
-                    className="delete-btn"
-                    onClick={() => removeNonGasolineSale(index)}
-                  >
-                    Remove
-                  </div>
+                  {type === "addSalesReport" && (
+                    <div
+                      className="delete-btn"
+                      onClick={() => removeNonGasolineSale(index)}
+                    >
+                      Remove
+                    </div>
+                  )}
                 </div>
               )
             )}
 
-            <div className="add-btn" onClick={addNonGasolineSale}>
-              Add Non Gasoline Sale
-            </div>
+            {type === "addSalesReport" && (
+              <div className="add-btn" onClick={addNonGasolineSale}>
+                Add Non Gasoline Sale
+              </div>
+            )}
           </form>
         ) : null}
 
