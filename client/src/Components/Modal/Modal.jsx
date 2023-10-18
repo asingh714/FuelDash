@@ -193,6 +193,24 @@ const Modal = ({
     }));
   };
 
+  const removeGasolineSale = (index) => {
+    const newGasolineSales = [...salesReportData.gasolineSales];
+    newGasolineSales.splice(index, 1);
+    setSalesReportData({
+      ...salesReportData,
+      gasolineSales: newGasolineSales,
+    });
+  };
+
+  const removeNonGasolineSale = (index) => {
+    const newNonGasolineSales = [...salesReportData.nonGasolineSales];
+    newNonGasolineSales.splice(index, 1);
+    setSalesReportData({
+      ...salesReportData,
+      nonGasolineSales: newNonGasolineSales,
+    });
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div
@@ -270,7 +288,7 @@ const Modal = ({
             <hr />
 
             <h4>Gasoline Sales:</h4>
-            {salesReportData?.gasolineSales?.map((gasolineSale) => (
+            {salesReportData?.gasolineSales?.map((gasolineSale, index) => (
               <div className="modal-input-group" key={gasolineSale._id}>
                 <label htmlFor={`gasType-${gasolineSale._id}`}>Gas Type</label>
                 <select
@@ -345,6 +363,12 @@ const Modal = ({
                     />
                   </div>
                 </div>
+                <div
+                  className="delete-btn"
+                  onClick={() => removeGasolineSale(index)}
+                >
+                  Remove
+                </div>
               </div>
             ))}
             <div className="add-btn" onClick={addGasolineSale}>
@@ -354,75 +378,83 @@ const Modal = ({
             <hr />
             <h4>Non Gasoline Sales:</h4>
 
-            {salesReportData?.nonGasolineSales?.map((nonGasolineSale) => (
-              <div className="modal-input-group" key={nonGasolineSale._id}>
-                <label htmlFor={`name-${nonGasolineSale._id}`}>Name</label>
-                <input
-                  id={`name-${nonGasolineSale._id}`}
-                  type="text"
-                  value={nonGasolineSale.name}
-                  onChange={(e) => {
-                    const updatedNonGasolineSales =
-                      salesReportData.nonGasolineSales.map((sale) =>
-                        sale._id === nonGasolineSale._id
-                          ? { ...sale, name: e.target.value }
-                          : sale
-                      );
-                    setSalesReportData({
-                      ...salesReportData,
-                      nonGasolineSales: updatedNonGasolineSales,
-                    });
-                  }}
-                />
-                <div className="row">
-                  <div className="modal-input-group">
-                    <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
-                      Quantity Sold
-                    </label>
-                    <input
-                      id={`quantitySold-${nonGasolineSale._id}`}
-                      type="number"
-                      value={nonGasolineSale.quantitySold}
-                      onChange={(e) => {
-                        const updatedNonGasolineSales =
-                          salesReportData.nonGasolineSales.map((sale) =>
-                            sale._id === nonGasolineSale._id
-                              ? { ...sale, quantitySold: e.target.value }
-                              : sale
-                          );
-                        setSalesReportData({
-                          ...salesReportData,
-                          nonGasolineSales: updatedNonGasolineSales,
-                        });
-                      }}
-                    />
-                  </div>
+            {salesReportData?.nonGasolineSales?.map(
+              (nonGasolineSale, index) => (
+                <div className="modal-input-group" key={nonGasolineSale._id}>
+                  <label htmlFor={`name-${nonGasolineSale._id}`}>Name</label>
+                  <input
+                    id={`name-${nonGasolineSale._id}`}
+                    type="text"
+                    value={nonGasolineSale.name}
+                    onChange={(e) => {
+                      const updatedNonGasolineSales =
+                        salesReportData.nonGasolineSales.map((sale) =>
+                          sale._id === nonGasolineSale._id
+                            ? { ...sale, name: e.target.value }
+                            : sale
+                        );
+                      setSalesReportData({
+                        ...salesReportData,
+                        nonGasolineSales: updatedNonGasolineSales,
+                      });
+                    }}
+                  />
+                  <div className="row">
+                    <div className="modal-input-group">
+                      <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
+                        Quantity Sold
+                      </label>
+                      <input
+                        id={`quantitySold-${nonGasolineSale._id}`}
+                        type="number"
+                        value={nonGasolineSale.quantitySold}
+                        onChange={(e) => {
+                          const updatedNonGasolineSales =
+                            salesReportData.nonGasolineSales.map((sale) =>
+                              sale._id === nonGasolineSale._id
+                                ? { ...sale, quantitySold: e.target.value }
+                                : sale
+                            );
+                          setSalesReportData({
+                            ...salesReportData,
+                            nonGasolineSales: updatedNonGasolineSales,
+                          });
+                        }}
+                      />
+                    </div>
 
-                  <div className="modal-input-group">
-                    <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
-                      Price Sold At
-                    </label>
-                    <input
-                      id={`priceSoldAt-${nonGasolineSale._id}`}
-                      type="number"
-                      value={nonGasolineSale.priceSoldAt}
-                      onChange={(e) => {
-                        const updatedNonGasolineSales =
-                          salesReportData.nonGasolineSales.map((sale) =>
-                            sale._id === nonGasolineSale._id
-                              ? { ...sale, priceSoldAt: e.target.value }
-                              : sale
-                          );
-                        setSalesReportData({
-                          ...salesReportData,
-                          nonGasolineSales: updatedNonGasolineSales,
-                        });
-                      }}
-                    />
+                    <div className="modal-input-group">
+                      <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
+                        Price Sold At
+                      </label>
+                      <input
+                        id={`priceSoldAt-${nonGasolineSale._id}`}
+                        type="number"
+                        value={nonGasolineSale.priceSoldAt}
+                        onChange={(e) => {
+                          const updatedNonGasolineSales =
+                            salesReportData.nonGasolineSales.map((sale) =>
+                              sale._id === nonGasolineSale._id
+                                ? { ...sale, priceSoldAt: e.target.value }
+                                : sale
+                            );
+                          setSalesReportData({
+                            ...salesReportData,
+                            nonGasolineSales: updatedNonGasolineSales,
+                          });
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="delete-btn"
+                    onClick={() => removeNonGasolineSale(index)}
+                  >
+                    Remove
                   </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
 
             <div className="add-btn" onClick={addNonGasolineSale}>
               Add Non Gasoline Sale
