@@ -15,8 +15,7 @@ const SalesReports = () => {
   const [selectedSalesReport, setSelectedSalesReport] = useState(undefined);
   const [selectedProperty, setSelectedProperty] = useState(undefined); // null
   const [expandedRows, setExpandedRows] = useState({});
-
-  // console.log("expandedRows", expandedRows);
+  const queryClient = useQueryClient();
 
   const { data, error, loading } = useQuery(
     ["sales", selectedProperty],
@@ -37,8 +36,33 @@ const SalesReports = () => {
     setSelectedProperty(propertyId);
   };
 
+  const updateSalesReportMutation = useMutation(
+    (updatedSalesReport) =>
+      newRequest.patch(`/sales/${updatedSalesReport.id}`, updatedSalesReport),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("sales");
+      },
+    }
+  );
+
+  const addSalesReportMutation = useMutation(
+    (salesReport) =>
+      newRequest.post(`/sales/${selectedProperty.id}`, salesReport),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("sales");
+      },
+    }
+  );
   const handleModalConfirm = (salesReport) => {
-    console.log(salesReport);
+    if (modalType === "editSalesReport") {
+      updateSalesReportMutation.mutate(salesReport);
+    }
+    if (modalType === "addSalesReport") {
+      addSalesReportMutation.mutate(salesReport);
+    }
+    
   };
 
   const toggleRowExpansion = (rowId) => {

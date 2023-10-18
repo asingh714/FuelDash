@@ -134,6 +134,10 @@ const Modal = ({
       onConfirm(gasProduct);
     } else if (type === "deleteGasProduct") {
       onConfirm(gasProduct);
+    } else if (type === "editSalesReport") {
+      onConfirm(salesReportData);
+    } else if (type === "addSalesReport") {
+      onConfirm(salesReportData);
     }
     onClose();
     setName("");
@@ -153,6 +157,20 @@ const Modal = ({
       costPerGallon: product?.costPerGallon || "",
       receivedDate: product?.receivedDate || getCurrentLocalDate(),
     });
+
+    setSalesReportData({
+      id: salesReport?._id || 0,
+      date: salesReport?.date || getCurrentLocalDate(),
+      totalRevenue: salesReport?.totalRevenue || 0,
+      dailyCashPayments: salesReport?.dailyCashPayments || 0,
+      dailyCreditCardPayments: salesReport?.dailyCreditCardPayments || 0,
+      gasolineSales: salesReport?.gasolineSales || [
+        { gasType: "", gallonsSold: 0, priceSoldAt: 0 },
+      ],
+      nonGasolineSales: salesReport?.nonGasolineSales || [
+        { name: "", quantitySold: 0, priceSoldAt: 0 },
+      ],
+    });
   };
 
   return (
@@ -163,12 +181,12 @@ const Modal = ({
         } `}
         onClick={handleContainerClick}
       >
-        {type === "editSalesReport" ? (
+        {/* EDIT SALES REPORT  */}
+        {type === "editSalesReport" || type === "addSalesReport" ? (
           <form className="wide-form">
             <h3>Edit Sales Report</h3>
 
             <div className="row">
-              {/* Date */}
               <div className="modal-input-group">
                 <label>Date</label>
                 <DateSelector
@@ -178,7 +196,7 @@ const Modal = ({
                   }
                 />
               </div>
-              {/* Total Revenue */}
+
               <div className="modal-input-group">
                 <label htmlFor="totalRevenue">Total Revenue</label>
                 <input
@@ -196,7 +214,6 @@ const Modal = ({
             </div>
 
             <div className="row">
-              {/* Cash Payments */}
               <div className="modal-input-group">
                 <label htmlFor="cashPayments">Cash Payments</label>
                 <input
@@ -211,7 +228,7 @@ const Modal = ({
                   }
                 />
               </div>
-              {/* Credit Card Payments */}
+
               <div className="modal-input-group">
                 <label htmlFor="creditCardPayments">Credit Card Payments</label>
                 <input
@@ -229,7 +246,7 @@ const Modal = ({
             </div>
 
             <hr />
-            {/* Gasoline Sales */}
+
             <h4>Gasoline Sales:</h4>
             {salesReportData?.gasolineSales?.map((gasolineSale) => (
               <div className="modal-input-group" key={gasolineSale._id}>
@@ -386,7 +403,6 @@ const Modal = ({
 
         {type === "editNonGasProduct" || type === "addNonGasProduct" ? (
           <form>
-            {/* Name */}
             <div className="modal-input-group">
               <label htmlFor="productName">Name</label>
               <input
@@ -399,7 +415,6 @@ const Modal = ({
               />
             </div>
 
-            {/* Category */}
             <div className="modal-input-group">
               <label htmlFor="productCategory">Category</label>
               <select
@@ -429,7 +444,6 @@ const Modal = ({
               </select>
             </div>
 
-            {/* Quantity */}
             <div className="modal-input-group">
               <label htmlFor="productQuantity">Quantity</label>
               <input
@@ -445,7 +459,6 @@ const Modal = ({
               />
             </div>
 
-            {/* Cost Per Item */}
             <div className="modal-input-group">
               <label htmlFor="productCost">Cost Per Item</label>
               <input
@@ -461,7 +474,6 @@ const Modal = ({
               />
             </div>
 
-            {/* Received Date */}
             <div className="modal-input-group">
               <label>Received Date</label>
               <DateSelector
@@ -476,7 +488,6 @@ const Modal = ({
 
         {type === "editGasProduct" || type === "addGasProduct" ? (
           <form>
-            {/* Gas Type */}
             <div className="modal-input-group">
               <label htmlFor="gasType">Gas Type</label>
               <select
@@ -497,7 +508,6 @@ const Modal = ({
               </select>
             </div>
 
-            {/* Quantity */}
             <div className="modal-input-group">
               <label htmlFor="gasQuantity">Quantity</label>
               <input
@@ -513,7 +523,6 @@ const Modal = ({
               />
             </div>
 
-            {/* Cost Per Gallon */}
             <div className="modal-input-group">
               <label htmlFor="gasCost">Cost Per Gallon</label>
               <input
@@ -529,7 +538,6 @@ const Modal = ({
               />
             </div>
 
-            {/* Received Date */}
             <div className="modal-input-group">
               <label>Received Date</label>
               <DateSelector
@@ -623,6 +631,8 @@ const Modal = ({
         )}
 
         {/* MODAL MESSAGES */}
+        {type === "logout" && <span>Are you sure you want to log out?</span>}
+
         {type === "deleteProperty" && (
           <span>Are you sure you want to delete this property?</span>
         )}
@@ -639,7 +649,6 @@ const Modal = ({
 
         {/* BUTTONS */}
 
-        {type === "logout" && <span>Are you sure you want to log out?</span>}
         <div className="modal-button-container">
           <div className="modal-button" onClick={onClose}>
             Cancel
@@ -705,6 +714,18 @@ const Modal = ({
           {type === "editGasProduct" && (
             <div className="modal-button confirm-button" onClick={handleSubmit}>
               Edit Product
+            </div>
+          )}
+
+          {type === "editSalesReport" && (
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Edit Sales Report
+            </div>
+          )}
+
+          {type === "addSalesReport" && (
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Add Sales Report
             </div>
           )}
         </div>
