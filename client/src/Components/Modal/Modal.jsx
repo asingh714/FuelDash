@@ -40,12 +40,17 @@ const Modal = ({
   });
 
   const [salesReportData, setSalesReportData] = useState({
-    date: salesReport?.date || "",
-    totalRevenue: salesReport?.totalRevenue || "",
-    dailyCashPayments: salesReport?.dailyCashPayments || "",
-    dailyCreditCardPayments: salesReport?.dailyCreditCardPayments || "",
-    gasolineSales: salesReport?.gasolineSales || [],
-    nonGasolineSales: salesReport?.nonGasolineSales || [],
+    id: salesReport?._id || 0,
+    date: salesReport?.date || getCurrentLocalDate(),
+    totalRevenue: salesReport?.totalRevenue || 0,
+    dailyCashPayments: salesReport?.dailyCashPayments || 0,
+    dailyCreditCardPayments: salesReport?.dailyCreditCardPayments || 0,
+    gasolineSales: salesReport?.gasolineSales || [
+      { gasType: "", gallonsSold: 0, priceSoldAt: 0 },
+    ],
+    nonGasolineSales: salesReport?.nonGasolineSales || [
+      { name: "", quantitySold: 0, priceSoldAt: 0 },
+    ],
   });
 
   const [currentPassword, setCurrentPassword] = useState("");
@@ -92,8 +97,14 @@ const Modal = ({
         totalRevenue: salesReport.totalRevenue,
         dailyCashPayments: salesReport.dailyCashPayments,
         dailyCreditCardPayments: salesReport.dailyCreditCardPayments,
-        gasolineSales: salesReport.gasolineSales,
-        nonGasolineSales: salesReport.nonGasolineSales,
+        gasolineSales:
+          salesReport.gasolineSales?.length > 0
+            ? salesReport.gasolineSales
+            : [{ gasType: "", gallonsSold: 0, priceSoldAt: 0 }],
+        nonGasolineSales:
+          salesReport.nonGasolineSales?.length > 0
+            ? salesReport.nonGasolineSales
+            : [{ name: "", quantitySold: 0, priceSoldAt: 0 }],
       });
     }
   }, [type, property, product, salesReport]);
@@ -224,10 +235,18 @@ const Modal = ({
                 <select
                   id={`gasType-${gasolineSale._id}`}
                   value={gasolineSale.gasType}
-                  onChange={(e) =>
-                    // You might need to modify this logic based on your state management strategy.
-                    setGasProduct({ ...gasProduct, gasType: e.target.value })
-                  }
+                  onChange={(e) => {
+                    const updatedGasolineSales =
+                      salesReportData.gasolineSales.map((sale) =>
+                        sale._id === gasolineSale._id
+                          ? { ...sale, gasType: e.target.value }
+                          : sale
+                      );
+                    setSalesReportData({
+                      ...salesReportData,
+                      gasolineSales: updatedGasolineSales,
+                    });
+                  }}
                 >
                   <option value="">Select a gas type</option>
                   {["Regular", "Midgrade", "Premium", "Diesel", "E85"].map(
@@ -247,6 +266,18 @@ const Modal = ({
                     id={`gallonsSold-${gasolineSale._id}`}
                     type="number"
                     value={gasolineSale.gallonsSold}
+                    onChange={(e) => {
+                      const updatedGasolineSales =
+                        salesReportData.gasolineSales.map((sale) =>
+                          sale._id === gasolineSale._id
+                            ? { ...sale, gallonsSold: e.target.value }
+                            : sale
+                        );
+                      setSalesReportData({
+                        ...salesReportData,
+                        gasolineSales: updatedGasolineSales,
+                      });
+                    }}
                   />
 
                   <label htmlFor={`priceSoldAt-${gasolineSale._id}`}>
@@ -256,6 +287,18 @@ const Modal = ({
                     id={`priceSoldAt-${gasolineSale._id}`}
                     type="number"
                     value={gasolineSale.priceSoldAt}
+                    onChange={(e) => {
+                      const updatedGasolineSales =
+                        salesReportData.gasolineSales.map((sale) =>
+                          sale._id === gasolineSale._id
+                            ? { ...sale, priceSoldAt: e.target.value }
+                            : sale
+                        );
+                      setSalesReportData({
+                        ...salesReportData,
+                        gasolineSales: updatedGasolineSales,
+                      });
+                    }}
                   />
                 </div>
               </div>
@@ -267,6 +310,18 @@ const Modal = ({
                   id={`name-${nonGasolineSale._id}`}
                   type="text"
                   value={nonGasolineSale.name}
+                  onChange={(e) => {
+                    const updatedNonGasolineSales =
+                      salesReportData.nonGasolineSales.map((sale) =>
+                        sale._id === nonGasolineSale._id
+                          ? { ...sale, name: e.target.value }
+                          : sale
+                      );
+                    setSalesReportData({
+                      ...salesReportData,
+                      nonGasolineSales: updatedNonGasolineSales,
+                    });
+                  }}
                 />
                 <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
                   Quantity Sold
@@ -275,6 +330,18 @@ const Modal = ({
                   id={`quantitySold-${nonGasolineSale._id}`}
                   type="number"
                   value={nonGasolineSale.quantitySold}
+                  onChange={(e) => {
+                    const updatedNonGasolineSales =
+                      salesReportData.nonGasolineSales.map((sale) =>
+                        sale._id === nonGasolineSale._id
+                          ? { ...sale, quantitySold: e.target.value }
+                          : sale
+                      );
+                    setSalesReportData({
+                      ...salesReportData,
+                      nonGasolineSales: updatedNonGasolineSales,
+                    });
+                  }}
                 />
                 <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
                   Price Sold At
@@ -283,6 +350,18 @@ const Modal = ({
                   id={`priceSoldAt-${nonGasolineSale._id}`}
                   type="number"
                   value={nonGasolineSale.priceSoldAt}
+                  onChange={(e) => {
+                    const updatedNonGasolineSales =
+                      salesReportData.nonGasolineSales.map((sale) =>
+                        sale._id === nonGasolineSale._id
+                          ? { ...sale, priceSoldAt: e.target.value }
+                          : sale
+                      );
+                    setSalesReportData({
+                      ...salesReportData,
+                      nonGasolineSales: updatedNonGasolineSales,
+                    });
+                  }}
                 />
               </div>
             ))}
@@ -526,6 +605,8 @@ const Modal = ({
             </div>
           </form>
         )}
+
+        {/* MODAL MESSAGES */}
         {type === "deleteProperty" && (
           <span>Are you sure you want to delete this property?</span>
         )}
@@ -533,12 +614,14 @@ const Modal = ({
           <span>Are you sure you want to delete your account?</span>
         )}
         {type === "deleteNonGasProduct" && (
-          <span>Are you sure you want to delete your account?</span>
+          <span>Are you sure you want to delete this product?</span>
         )}
 
         {type === "deleteGasProduct" && (
-          <span>Are you sure you want to delete your account?</span>
+          <span>Are you sure you want to delete this product?</span>
         )}
+
+        {/* BUTTONS */}
 
         {type === "logout" && <span>Are you sure you want to log out?</span>}
         <div className="modal-button-container">
