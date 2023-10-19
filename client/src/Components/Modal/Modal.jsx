@@ -122,12 +122,28 @@ const Modal = ({
     });
   }
 
-  function handleFocus(e) {
+  function handleGasFocus(e) {
     e.target.value = gasProduct.costPerGallon;
   }
 
-  function handleBlur(e) {
+  function handleGasBlur(e) {
     e.target.value = toDisplayFormat(gasProduct.costPerGallon);
+  }
+
+  function handleNonCostChange(e) {
+    const value = e.target.value.replace(/\D/g, "");
+    setNonGasProduct({
+      ...nonGasProduct,
+      costPerItem: value,
+    });
+  }
+
+  function handleNonGasFocus(e) {
+    e.target.value = nonGasProduct.costPerItem;
+  }
+
+  function handleNonGasBlur(e) {
+    e.target.value = toDisplayFormat(nonGasProduct.costPerItem);
   }
 
   const handleSubmit = () => {
@@ -144,7 +160,10 @@ const Modal = ({
     } else if (type === "logout") {
       onConfirm();
     } else if (type === "addNonGasProduct" || type === "editNonGasProduct") {
-      onConfirm(nonGasProduct);
+      onConfirm({
+        ...nonGasProduct,
+        costPerItem: toBackendFormat(nonGasProduct.costPerItem),
+      });
     } else if (type === "deleteNonGasProduct") {
       onConfirm(nonGasProduct);
     } else if (type === "addGasProduct" || type === "editGasProduct") {
@@ -152,8 +171,6 @@ const Modal = ({
         ...gasProduct,
         costPerGallon: toBackendFormat(gasProduct.costPerGallon),
       });
-      console.log("1", gasProduct.costPerGallon);
-      console.log("2", toBackendFormat(gasProduct.costPerGallon));
     } else if (type === "deleteGasProduct") {
       onConfirm(gasProduct);
     } else if (type === "editSalesReport") {
@@ -557,13 +574,10 @@ const Modal = ({
               <input
                 type="text"
                 id="productCost"
-                value={nonGasProduct.costPerItem}
-                onChange={(e) =>
-                  setNonGasProduct({
-                    ...nonGasProduct,
-                    costPerItem: e.target.value,
-                  })
-                }
+                value={toDisplayFormat(nonGasProduct.costPerItem)}
+                onChange={handleNonCostChange}
+                onFocus={handleNonGasFocus}
+                onBlur={handleNonGasBlur}
               />
             </div>
 
@@ -623,8 +637,8 @@ const Modal = ({
                 id="gasCost"
                 value={toDisplayFormat(gasProduct.costPerGallon)}
                 onChange={handleGasCostChange}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
+                onFocus={handleGasFocus}
+                onBlur={handleGasBlur}
               />
             </div>
 

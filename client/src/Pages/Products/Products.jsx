@@ -265,7 +265,7 @@ const Products = () => {
                   setModalOpen(true);
                 }}
               >
-                Add None Gas Product
+                Add Gas Product
               </div>
               {gasData && gasData.gasolineProducts ? (
                 <DataTable
@@ -286,7 +286,7 @@ const Products = () => {
                   setModalOpen(true);
                 }}
               >
-                Add None Gas Product
+                Add Non Gas Product
               </div>
               {nonGasData && nonGasData.nonGasolineProducts ? (
                 <DataTable

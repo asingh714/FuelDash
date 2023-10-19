@@ -30,8 +30,6 @@ const NonGasolineProductSchema = new mongoose.Schema({
   costPerItem: {
     type: Number,
     required: true,
-    set: (v) => Math.round(v * 100),
-    get: (v) => (v / 100).toFixed(2),
   },
   receivedDate: {
     type: Date,
@@ -40,4 +38,3 @@ const NonGasolineProductSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("NonGasolineProduct", NonGasolineProductSchema);
-
