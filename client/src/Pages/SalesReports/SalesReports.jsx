@@ -6,6 +6,8 @@ import PropertyDropdown from "../../Components/PropertyDropdown/PropertyDropdown
 import DataTable from "../../Components/DataTable/DataTable";
 import newRequest from "../../utils/newRequest";
 import Modal from "../../Components/Modal/Modal";
+import { formatCurrency } from "../../utils/formatCurrency";
+import formatDate from "../../utils/formatDate";
 
 import "./SalesReports.scss";
 
@@ -87,18 +89,23 @@ const SalesReports = () => {
     {
       header: "Date",
       accessorKey: "date",
+      cell: ({ row }) => formatDate(row.original.date),
     },
     {
       header: "Revenue",
       accessorKey: "totalRevenue",
+      cell: ({ row }) => formatCurrency(row.original.totalRevenue / 100),
     },
     {
       header: "Cash Payments",
       accessorKey: "dailyCashPayments",
+      cell: ({ row }) => formatCurrency(row.original.dailyCashPayments / 100),
     },
     {
       header: "Credit Card Payments",
       accessorKey: "dailyCreditCardPayments",
+      cell: ({ row }) =>
+        formatCurrency(row.original.dailyCreditCardPayments / 100),
     },
     {
       header: "",

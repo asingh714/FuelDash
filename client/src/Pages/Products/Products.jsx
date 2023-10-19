@@ -6,7 +6,7 @@ import PropertyDropdown from "../../Components/PropertyDropdown/PropertyDropdown
 import DataTable from "../../Components/DataTable/DataTable";
 import Modal from "../../Components/Modal/Modal";
 import newRequest from "../../utils/newRequest";
-import formatCurrency from "../../utils/formatCurrency";
+import { formatCurrency } from "../../utils/formatCurrency";
 import formatDate from "../../utils/formatDate";
 import "./Products.scss";
 
@@ -146,7 +146,7 @@ const Products = () => {
       {
         header: "Cost Per Gallons",
         accessorKey: "costPerGallon",
-        cell: ({ row }) => formatCurrency(row.original.costPerGallon),
+        cell: ({ row }) => formatCurrency(row.original.costPerGallon / 100),
       },
       {
         header: "Date",
@@ -198,7 +198,7 @@ const Products = () => {
       {
         header: "Cost Per Item",
         accessorKey: "costPerItem",
-        cell: ({ row }) => formatCurrency(row.original.costPerItem),
+        cell: ({ row }) => formatCurrency(row.original.costPerItem / 100),
       },
       {
         header: "Date",

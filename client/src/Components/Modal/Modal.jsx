@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import DateSelector from "../DatePicker/DatePicker";
+import { toDisplayFormat, toBackendFormat } from "../../utils/formatCurrency";
 
 import "./Modal.scss";
 
@@ -27,15 +28,15 @@ const Modal = ({
   const [nonGasProduct, setNonGasProduct] = useState({
     name: product?.name || "",
     category: product?.category || "",
-    quantity: product?.quantity || "",
-    costPerItem: product?.costPerItem || "",
+    quantity: product?.quantity || 0,
+    costPerItem: product?.costPerItem || 0,
     receivedDate: product?.receivedDate || getCurrentLocalDate(),
   });
 
   const [gasProduct, setGasProduct] = useState({
     gasType: product?.gasType || "",
-    quantityInGallons: product?.quantityInGallons || "",
-    costPerGallon: product?.costPerGallon || "",
+    quantityInGallons: product?.quantityInGallons || 0,
+    costPerGallon: product?.costPerGallon || 0,
     receivedDate: product?.receivedDate || getCurrentLocalDate(),
   });
 
@@ -113,6 +114,22 @@ const Modal = ({
     e.stopPropagation();
   };
 
+  function handleGasCostChange(e) {
+    const value = e.target.value.replace(/\D/g, "");
+    setGasProduct({
+      ...gasProduct,
+      costPerGallon: value,
+    });
+  }
+
+  function handleFocus(e) {
+    e.target.value = gasProduct.costPerGallon;
+  }
+
+  function handleBlur(e) {
+    e.target.value = toDisplayFormat(gasProduct.costPerGallon);
+  }
+
   const handleSubmit = () => {
     if (type === "addProperty") {
       onConfirm(name, address);
@@ -131,7 +148,12 @@ const Modal = ({
     } else if (type === "deleteNonGasProduct") {
       onConfirm(nonGasProduct);
     } else if (type === "addGasProduct" || type === "editGasProduct") {
-      onConfirm(gasProduct);
+      onConfirm({
+        ...gasProduct,
+        costPerGallon: toBackendFormat(gasProduct.costPerGallon),
+      });
+      console.log("1", gasProduct.costPerGallon);
+      console.log("2", toBackendFormat(gasProduct.costPerGallon));
     } else if (type === "deleteGasProduct") {
       onConfirm(gasProduct);
     } else if (type === "editSalesReport") {
@@ -149,14 +171,14 @@ const Modal = ({
     setNonGasProduct({
       name: product?.name || "",
       category: product?.category || "",
-      quantity: product?.quantity || "",
-      costPerItem: product?.costPerItem || "",
+      quantity: product?.quantity || 0,
+      costPerItem: product?.costPerItem || 0,
       receivedDate: product?.receivedDate || getCurrentLocalDate(),
     });
     setGasProduct({
       gasType: product?.gasType || "",
-      quantityInGallons: product?.quantityInGallons || "",
-      costPerGallon: product?.costPerGallon || "",
+      quantityInGallons: product?.quantityInGallons || 0,
+      costPerGallon: toDisplayFormat(product.costPerGallon),
       receivedDate: product?.receivedDate || getCurrentLocalDate(),
     });
 
@@ -580,7 +602,7 @@ const Modal = ({
             </div>
 
             <div className="modal-input-group">
-              <label htmlFor="gasQuantity">Quantity</label>
+              <label htmlFor="gasQuantity">Quantity (Gallons)</label>
               <input
                 type="number"
                 id="gasQuantity"
@@ -599,13 +621,10 @@ const Modal = ({
               <input
                 type="text"
                 id="gasCost"
-                value={gasProduct.costPerGallon}
-                onChange={(e) =>
-                  setGasProduct({
-                    ...gasProduct,
-                    costPerGallon: e.target.value,
-                  })
-                }
+                value={toDisplayFormat(gasProduct.costPerGallon)}
+                onChange={handleGasCostChange}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
 

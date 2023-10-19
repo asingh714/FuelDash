@@ -5,4 +5,11 @@ const formatCurrency = (value) => {
   }).format(value);
 };
 
-export default formatCurrency;
+function toDisplayFormat(value) {
+  return `$${(parseInt(value, 10) / 100).toFixed(2)}`;
+}
+function toBackendFormat(value) {
+  return parseInt(value, 10);
+}
+
+export { formatCurrency, toDisplayFormat, toBackendFormat };
