@@ -6,6 +6,8 @@ import PropertyDropdown from "../../Components/PropertyDropdown/PropertyDropdown
 import DataTable from "../../Components/DataTable/DataTable";
 import Modal from "../../Components/Modal/Modal";
 import newRequest from "../../utils/newRequest";
+import formatCurrency from "../../utils/formatCurrency";
+import formatDate from "../../utils/formatDate";
 import "./Products.scss";
 
 const Products = () => {
@@ -144,10 +146,12 @@ const Products = () => {
       {
         header: "Cost Per Gallons",
         accessorKey: "costPerGallon",
+        cell: ({ row }) => formatCurrency(row.original.costPerGallon),
       },
       {
         header: "Date",
         accessorKey: "receivedDate",
+        cell: ({ row }) => formatDate(row.original.receivedDate),
       },
       {
         header: "",
@@ -194,10 +198,12 @@ const Products = () => {
       {
         header: "Cost Per Item",
         accessorKey: "costPerItem",
+        cell: ({ row }) => formatCurrency(row.original.costPerItem),
       },
       {
         header: "Date",
         accessorKey: "receivedDate",
+        cell: ({ row }) => formatDate(row.original.receivedDate),
       },
       {
         header: "",
