@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import DateSelector from "../DatePicker/DatePicker";
 import LogoutModal from "./LogoutModal/LogoutModal";
 import ChangePasswordModal from "./ChangePasswordModal/ChangePasswordModal";
-import AddPropertyModal from "./AddPropertyModal/AddPropertyModal";
+import PropertyModal from "./PropertyModal/PropertyModal";
 import { toDisplayFormat, toBackendFormat } from "../../utils/formatCurrency";
 
 import "./Modal.scss";
@@ -26,8 +26,6 @@ const Modal = ({
   product,
   salesReport,
 }) => {
-  const [name, setName] = useState(property?.name || "");
-  const [address, setAddress] = useState(property?.address || "");
   const [nonGasProduct, setNonGasProduct] = useState({
     name: product?.name || "",
     category: product?.category || "",
@@ -58,13 +56,6 @@ const Modal = ({
   });
 
   useEffect(() => {
-    if (type === "editProperty" && property) {
-      setName(property.name || "");
-      setAddress(property.address || "");
-    } else if (type === "addProperty") {
-      setName("");
-      setAddress("");
-    }
     if (
       type === "editNonGasProduct" ||
       (type === "deleteNonGasProduct" && product)
@@ -147,13 +138,7 @@ const Modal = ({
   }
 
   const handleSubmit = () => {
-    if (type === "addProperty") {
-      onConfirm(name, address);
-    } else if (type === "editProperty") {
-      onConfirm(name, address, property.id);
-    } else if (type === "deleteProperty") {
-      onConfirm(property.id);
-    } else if (type === "deleteUser") {
+    if (type === "deleteUser") {
       onConfirm(user.id);
     } else if (type === "addNonGasProduct" || type === "editNonGasProduct") {
       onConfirm({
@@ -177,8 +162,6 @@ const Modal = ({
       onConfirm(salesReportData.id);
     }
     onClose();
-    setName("");
-    setAddress("");
 
     setNonGasProduct({
       name: product?.name || "",
@@ -294,9 +277,30 @@ const Modal = ({
     return <ChangePasswordModal onClose={onClose} onConfirm={onConfirm} />;
   }
 
-  if (type === "addProperty") {
-    return <AddPropertyModal onClose={onClose} onConfirm={onConfirm} />;
+  if (
+    type === "addProperty" ||
+    type === "editProperty" ||
+    type === "deleteProperty"
+  ) {
+    return (
+      <PropertyModal
+        type={type}
+        property={property}
+        onClose={onClose}
+        onConfirm={onConfirm}
+      />
+    );
   }
+
+  console.log("Modal props:", {
+    type,
+    property,
+    onClose,
+    onConfirm,
+    user,
+    product,
+    salesReport,
+  });
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -725,63 +729,6 @@ const Modal = ({
           </form>
         ) : null}
 
-        {type === "addProperty" && (
-          <form action="">
-            <div className="modal-input-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name of your property"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className="modal-input-group">
-              <label htmlFor="address">Address</label>
-              <input
-                type="text"
-                name="address"
-                id="address"
-                placeholder="Address"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-              />
-            </div>
-          </form>
-        )}
-
-        {type === "editProperty" && (
-          <form action="">
-            <div className="modal-input-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Edit the name of your property"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className="modal-input-group">
-              <label htmlFor="address">Address</label>
-              <input
-                type="text"
-                name="address"
-                id="address"
-                placeholder="Address"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-              />
-            </div>
-          </form>
-        )}
-
-        {type === "deleteProperty" && (
-          <span>Are you sure you want to delete this property?</span>
-        )}
         {type === "deleteUser" && (
           <span>Are you sure you want to delete your account?</span>
         )}
@@ -803,22 +750,6 @@ const Modal = ({
           <div className="modal-button" onClick={onClose}>
             Cancel
           </div>
-          {type === "addProperty" && (
-            <div className="modal-button confirm-button" onClick={handleSubmit}>
-              Add Property
-            </div>
-          )}
-          {type === "editProperty" && (
-            <div className="modal-button confirm-button" onClick={handleSubmit}>
-              Save Changes
-            </div>
-          )}
-
-          {type === "deleteProperty" && (
-            <div className="modal-button delete-button" onClick={handleSubmit}>
-              Delete
-            </div>
-          )}
 
           {type === "deleteNonGasProduct" && (
             <div className="modal-button delete-button" onClick={handleSubmit}>

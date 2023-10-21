@@ -12,6 +12,7 @@ const ChangePasswordModal = ({ onClose, onConfirm }) => {
     setCurrentPassword("");
     setNewPassword("");
   };
+  
 
   return (
     <div className="modal-overlay" onClick={onClose}>
