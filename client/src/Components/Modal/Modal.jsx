@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import DateSelector from "../DatePicker/DatePicker";
+import LogoutModal from "./LogoutModal/LogoutModal";
 import { toDisplayFormat, toBackendFormat } from "../../utils/formatCurrency";
 
 import "./Modal.scss";
@@ -252,6 +253,49 @@ const Modal = ({
     });
   };
 
+  function handleMoneyChange(e, field) {
+    const valueInCents = toBackendFormat(e.target.value);
+    setSalesReportData((prev) => ({
+      ...prev,
+      [field]: valueInCents,
+    }));
+  }
+
+  function handleMoneyFocus(e, value) {
+    e.target.value = value.toString(); // display the value in cents on focus
+  }
+
+  function handleMoneyBlur(e, field) {
+    const valueInDollars = toDisplayFormat(e.target.value);
+    e.target.value = valueInDollars; // display the value in dollars on blur
+  }
+
+  function handleNestedMoneyChange(e, arrayField, index, field) {
+    const valueInCents = toBackendFormat(e.target.value);
+    const updatedArray = salesReportData[arrayField].map((item, idx) =>
+      idx === index ? { ...item, [field]: valueInCents } : item
+    );
+    setSalesReportData((prev) => ({
+      ...prev,
+      [arrayField]: updatedArray,
+    }));
+  }
+
+  function handleNestedMoneyFocus(e, arrayField, index, field) {
+    e.target.value = salesReportData[arrayField][index][field].toString(); // display the value in cents on focus
+  }
+
+  function handleNestedMoneyBlur(e, arrayField, index, field) {
+    const valueInDollars = toDisplayFormat(
+      salesReportData[arrayField][index][field]
+    );
+    e.target.value = valueInDollars; // display the value in dollars on blur
+  }
+
+  if (type === "logout") {
+    return <LogoutModal onClose={onClose} onConfirm={onConfirm} />;
+  }
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div
@@ -283,13 +327,12 @@ const Modal = ({
                 <input
                   type="text"
                   id="totalRevenue"
-                  value={salesReportData.totalRevenue}
-                  onChange={(e) =>
-                    setSalesReportData({
-                      ...salesReportData,
-                      totalRevenue: e.target.value,
-                    })
+                  value={toDisplayFormat(salesReportData.totalRevenue)}
+                  onChange={(e) => handleMoneyChange(e, "totalRevenue")}
+                  onFocus={(e) =>
+                    handleMoneyFocus(e, salesReportData.totalRevenue)
                   }
+                  onBlur={(e) => handleMoneyBlur(e, "totalRevenue")}
                 />
               </div>
             </div>
@@ -300,13 +343,12 @@ const Modal = ({
                 <input
                   type="text"
                   id="cashPayments"
-                  value={salesReportData.dailyCashPayments}
-                  onChange={(e) =>
-                    setSalesReportData({
-                      ...salesReportData,
-                      dailyCashPayments: e.target.value,
-                    })
+                  value={toDisplayFormat(salesReportData.dailyCashPayments)}
+                  onChange={(e) => handleMoneyChange(e, "dailyCashPayments")}
+                  onFocus={(e) =>
+                    handleMoneyFocus(e, salesReportData.dailyCashPayments)
                   }
+                  onBlur={(e) => handleMoneyBlur(e, "dailyCashPayments")}
                 />
               </div>
 
@@ -315,13 +357,16 @@ const Modal = ({
                 <input
                   type="text"
                   id="creditCardPayments"
-                  value={salesReportData.dailyCreditCardPayments}
+                  value={toDisplayFormat(
+                    salesReportData.dailyCreditCardPayments
+                  )}
                   onChange={(e) =>
-                    setSalesReportData({
-                      ...salesReportData,
-                      dailyCreditCardPayments: e.target.value,
-                    })
+                    handleMoneyChange(e, "dailyCreditCardPayments")
                   }
+                  onFocus={(e) =>
+                    handleMoneyFocus(e, salesReportData.dailyCreditCardPayments)
+                  }
+                  onBlur={(e) => handleMoneyBlur(e, "dailyCreditCardPayments")}
                 />
               </div>
             </div>
@@ -387,20 +432,32 @@ const Modal = ({
                     </label>
                     <input
                       id={`priceSoldAt-${gasolineSale._id}`}
-                      type="number"
-                      value={gasolineSale.priceSoldAt}
-                      onChange={(e) => {
-                        const updatedGasolineSales =
-                          salesReportData.gasolineSales.map((sale) =>
-                            sale._id === gasolineSale._id
-                              ? { ...sale, priceSoldAt: e.target.value }
-                              : sale
-                          );
-                        setSalesReportData({
-                          ...salesReportData,
-                          gasolineSales: updatedGasolineSales,
-                        });
-                      }}
+                      type="text"
+                      value={toDisplayFormat(gasolineSale.priceSoldAt)}
+                      onChange={(e) =>
+                        handleNestedMoneyChange(
+                          e,
+                          "gasolineSales",
+                          index,
+                          "priceSoldAt"
+                        )
+                      }
+                      onFocus={(e) =>
+                        handleNestedMoneyFocus(
+                          e,
+                          "gasolineSales",
+                          index,
+                          "priceSoldAt"
+                        )
+                      }
+                      onBlur={(e) =>
+                        handleNestedMoneyBlur(
+                          e,
+                          "gasolineSales",
+                          index,
+                          "priceSoldAt"
+                        )
+                      }
                     />
                   </div>
                 </div>
@@ -474,20 +531,32 @@ const Modal = ({
                       </label>
                       <input
                         id={`priceSoldAt-${nonGasolineSale._id}`}
-                        type="number"
-                        value={nonGasolineSale.priceSoldAt}
-                        onChange={(e) => {
-                          const updatedNonGasolineSales =
-                            salesReportData.nonGasolineSales.map((sale) =>
-                              sale._id === nonGasolineSale._id
-                                ? { ...sale, priceSoldAt: e.target.value }
-                                : sale
-                            );
-                          setSalesReportData({
-                            ...salesReportData,
-                            nonGasolineSales: updatedNonGasolineSales,
-                          });
-                        }}
+                        type="text"
+                        value={toDisplayFormat(nonGasolineSale.priceSoldAt)}
+                        onChange={(e) =>
+                          handleNestedMoneyChange(
+                            e,
+                            "nonGasolineSales",
+                            index,
+                            "priceSoldAt"
+                          )
+                        }
+                        onFocus={(e) =>
+                          handleNestedMoneyFocus(
+                            e,
+                            "nonGasolineSales",
+                            index,
+                            "priceSoldAt"
+                          )
+                        }
+                        onBlur={(e) =>
+                          handleNestedMoneyBlur(
+                            e,
+                            "nonGasolineSales",
+                            index,
+                            "priceSoldAt"
+                          )
+                        }
                       />
                     </div>
                   </div>
@@ -734,9 +803,6 @@ const Modal = ({
           </form>
         )}
 
-        {/* MODAL MESSAGES */}
-        {type === "logout" && <span>Are you sure you want to log out?</span>}
-
         {type === "deleteProperty" && (
           <span>Are you sure you want to delete this property?</span>
         )}
@@ -799,11 +865,7 @@ const Modal = ({
               Delete
             </div>
           )}
-          {type === "logout" && (
-            <div className="modal-button logout-button" onClick={handleSubmit}>
-              Log out
-            </div>
-          )}
+
           {type === "addNonGasProduct" && (
             <div className="modal-button confirm-button" onClick={handleSubmit}>
               Add Product
