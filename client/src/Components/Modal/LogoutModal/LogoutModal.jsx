@@ -5,7 +5,7 @@ const LogoutModal = ({ onClose, onConfirm }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-container">
-        <span>Are you sure you want to log out?</span>
+        <h4>Are you sure you want to log out?</h4>
         <div className="modal-button-container">
           <div className="modal-button" onClick={onClose}>
             Cancel

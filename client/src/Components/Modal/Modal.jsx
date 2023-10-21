@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import DateSelector from "../DatePicker/DatePicker";
 import LogoutModal from "./LogoutModal/LogoutModal";
+import ChangePasswordModal from "./ChangePasswordModal/ChangePasswordModal";
+import AddPropertyModal from "./AddPropertyModal/AddPropertyModal";
 import { toDisplayFormat, toBackendFormat } from "../../utils/formatCurrency";
 
 import "./Modal.scss";
@@ -54,9 +56,6 @@ const Modal = ({
       { name: "", quantitySold: 0, priceSoldAt: 0 },
     ],
   });
-
-  const [currentPassword, setCurrentPassword] = useState("");
-  const [newPassword, setNewPassword] = useState("");
 
   useEffect(() => {
     if (type === "editProperty" && property) {
@@ -154,12 +153,8 @@ const Modal = ({
       onConfirm(name, address, property.id);
     } else if (type === "deleteProperty") {
       onConfirm(property.id);
-    } else if (type === "changePassword") {
-      onConfirm(currentPassword, newPassword);
     } else if (type === "deleteUser") {
       onConfirm(user.id);
-    } else if (type === "logout") {
-      onConfirm();
     } else if (type === "addNonGasProduct" || type === "editNonGasProduct") {
       onConfirm({
         ...nonGasProduct,
@@ -184,8 +179,7 @@ const Modal = ({
     onClose();
     setName("");
     setAddress("");
-    setCurrentPassword("");
-    setNewPassword("");
+
     setNonGasProduct({
       name: product?.name || "",
       category: product?.category || "",
@@ -294,6 +288,14 @@ const Modal = ({
 
   if (type === "logout") {
     return <LogoutModal onClose={onClose} onConfirm={onConfirm} />;
+  }
+
+  if (type === "changePassword") {
+    return <ChangePasswordModal onClose={onClose} onConfirm={onConfirm} />;
+  }
+
+  if (type === "addProperty") {
+    return <AddPropertyModal onClose={onClose} onConfirm={onConfirm} />;
   }
 
   return (
@@ -777,32 +779,6 @@ const Modal = ({
           </form>
         )}
 
-        {type === "changePassword" && (
-          <form action="">
-            <div className="modal-input-group">
-              <label htmlFor="currentPassword">Current Password</label>
-              <input
-                type="password"
-                id="currentPassword"
-                name="currentPassword"
-                value={currentPassword}
-                onChange={(e) => setCurrentPassword(e.target.value)}
-              />
-            </div>
-            <div className="modal-input-group">
-              <label htmlFor="newPassword">New Password</label>
-              <input
-                type="password"
-                id="newPassword"
-                name="newPassword"
-                placeholder="Must be at least 6 characters."
-                value={newPassword}
-                onChange={(e) => setNewPassword(e.target.value)}
-              />
-            </div>
-          </form>
-        )}
-
         {type === "deleteProperty" && (
           <span>Are you sure you want to delete this property?</span>
         )}
@@ -837,11 +813,7 @@ const Modal = ({
               Save Changes
             </div>
           )}
-          {type === "changePassword" && (
-            <div className="modal-button confirm-button" onClick={handleSubmit}>
-              Confirm
-            </div>
-          )}
+
           {type === "deleteProperty" && (
             <div className="modal-button delete-button" onClick={handleSubmit}>
               Delete
