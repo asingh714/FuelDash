@@ -18,7 +18,7 @@ const getAllDailySalesMetrics = async (req, res) => {
   try {
     const dailySalesMetrics = await DailySalesMetrics.find({
       propertyId,
-    });
+    }).sort({ date: -1 });
 
     res.status(200).json({ dailySalesMetrics });
   } catch (error) {

@@ -5,17 +5,10 @@ import DateSelector from "../DatePicker/DatePicker";
 import LogoutModal from "./LogoutModal/LogoutModal";
 import ChangePasswordModal from "./ChangePasswordModal/ChangePasswordModal";
 import PropertyModal from "./PropertyModal/PropertyModal";
+import getCurrentLocalDate from "../../utils/getCurrentLocalDate";
 import { toDisplayFormat, toBackendFormat } from "../../utils/formatCurrency";
 
 import "./Modal.scss";
-
-const getCurrentLocalDate = () => {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, "0");
-  const day = String(now.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-};
 
 const Modal = ({
   type,
