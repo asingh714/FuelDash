@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import "../Modal.scss";
 
+import "../Modal.scss";
+import {
+  toDisplayFormat,
+  toBackendFormat,
+} from "../../../utils/formatCurrency";
 import getCurrentLocalDate from "../../../utils/getCurrentLocalDate";
+import DateSelector from "../../DatePicker/DatePicker";
 
 const GasProductModal = ({ type, product, onClose, onConfirm }) => {
   const initializeState = (type, product) => {
-    if (type === "editGasProduct" && product) {
+    if ((type === "editGasProduct" || type === "deleteGasProduct") && product) {
       return {
+        id: product._id,
         gasType: product.gasType,
         quantityInGallons: product.quantityInGallons,
         costPerGallon: product.costPerGallon,
@@ -33,6 +39,19 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const handleGasCostChange = (e) => {
+    const value = e.target.value.replace(/\D/g, "");
+    setFormData({ ...formData, costPerGallon: value });
+  };
+
+  const handleGasFocus = (e) => {
+    e.target.value = formData.costPerGallon;
+  };
+
+  const handleGasBlur = (e) => {
+    e.target.value = toDisplayFormat(formData.costPerGallon);
   };
 
   const validateForm = () => {
@@ -66,23 +85,13 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
       return;
     }
 
-    if (type === "editGasProduct") {
-      onConfirm(
-        formData.gasType,
-        formData.quantityInGallons,
-        formData.costPerGallon,
-        formData.receivedDate,
-        product.id
-      );
-    } else if (type === "addGasProduct") {
-      onConfirm(
-        formData.gasType,
-        formData.quantityInGallons,
-        formData.costPerGallon,
-        formData.receivedDate
-      );
+    if (type === "editGasProduct" || type === "addGasProduct") {
+      onConfirm({
+        ...formData,
+        costPerGallon: toBackendFormat(formData.costPerGallon),
+      });
     } else if (type === "deleteGasProduct") {
-      onConfirm(product.id);
+      onConfirm(formData);
     }
     handleClose();
   };
@@ -102,14 +111,21 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
           <form>
             <div className="modal-input-group">
               <label htmlFor="gasType">Gas Type</label>
-              <input
-                type="text"
-                name="gasType"
+              <select
                 id="gasType"
-                placeholder="Gas Type"
                 value={formData.gasType}
                 onChange={handleInputChange}
-              />
+                name="gasType"
+              >
+                <option value="">Select a gas type</option>
+                {["Regular", "Midgrade", "Premium", "Diesel", "E85"].map(
+                  (gasType) => (
+                    <option key={gasType} value={gasType}>
+                      {gasType}
+                    </option>
+                  )
+                )}
+              </select>
               {errors.gasType && <p className="error-text">{errors.gasType}</p>}
             </div>
             <div className="modal-input-group">
@@ -129,12 +145,13 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
             <div className="modal-input-group">
               <label htmlFor="costPerGallon">Cost Per Gallon</label>
               <input
-                type="number"
+                type="text"
                 name="costPerGallon"
                 id="costPerGallon"
-                placeholder="Cost per Gallon"
-                value={formData.costPerGallon}
-                onChange={handleInputChange}
+                value={toDisplayFormat(formData.costPerGallon)}
+                onChange={handleGasCostChange}
+                onFocus={handleGasFocus}
+                onBlur={handleGasBlur}
               />
               {errors.costPerGallon && (
                 <p className="error-text">{errors.costPerGallon}</p>
@@ -142,12 +159,14 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
             </div>
             <div className="modal-input-group">
               <label htmlFor="receivedDate">Received Date</label>
-              <input
-                type="date"
-                name="receivedDate"
-                id="receivedDate"
-                value={formData.receivedDate}
-                onChange={handleInputChange}
+              <DateSelector
+                currentDate={formData.receivedDate}
+                onDateChange={(date) =>
+                  setFormData((prevState) => ({
+                    ...prevState,
+                    receivedDate: date,
+                  }))
+                }
               />
               {errors.receivedDate && (
                 <p className="error-text">{errors.receivedDate}</p>

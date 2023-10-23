@@ -69,7 +69,7 @@ const updateGasolineProduct = async (req, res) => {
 
 const deleteGasolineProduct = async (req, res) => {
   const { id } = req.params;
-
+  console.log("id", id);
   try {
     const gasolineProduct = await GasolineProduct.findById(id);
 

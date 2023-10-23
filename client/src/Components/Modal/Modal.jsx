@@ -5,10 +5,12 @@ import DateSelector from "../DatePicker/DatePicker";
 import LogoutModal from "./LogoutModal/LogoutModal";
 import ChangePasswordModal from "./ChangePasswordModal/ChangePasswordModal";
 import PropertyModal from "./PropertyModal/PropertyModal";
+import GasProductModal from "./GasProductModal/GasProductModal";
 import getCurrentLocalDate from "../../utils/getCurrentLocalDate";
 import { toDisplayFormat, toBackendFormat } from "../../utils/formatCurrency";
 
 import "./Modal.scss";
+import NonGasProductModal from "./NonGasProductModal/NonGasProductModal";
 
 const Modal = ({
   type,
@@ -19,20 +21,13 @@ const Modal = ({
   product,
   salesReport,
 }) => {
-  const [nonGasProduct, setNonGasProduct] = useState({
-    name: product?.name || "",
-    category: product?.category || "",
-    quantity: product?.quantity || 0,
-    costPerItem: product?.costPerItem || 0,
-    receivedDate: product?.receivedDate || getCurrentLocalDate(),
-  });
-
-  const [gasProduct, setGasProduct] = useState({
-    gasType: product?.gasType || "",
-    quantityInGallons: product?.quantityInGallons || 0,
-    costPerGallon: product?.costPerGallon || 0,
-    receivedDate: product?.receivedDate || getCurrentLocalDate(),
-  });
+  // const [nonGasProduct, setNonGasProduct] = useState({
+  //   name: product?.name || "",
+  //   category: product?.category || "",
+  //   quantity: product?.quantity || 0,
+  //   costPerItem: product?.costPerItem || 0,
+  //   receivedDate: product?.receivedDate || getCurrentLocalDate(),
+  // });
 
   const [salesReportData, setSalesReportData] = useState({
     id: salesReport?._id || 0,
@@ -49,28 +44,19 @@ const Modal = ({
   });
 
   useEffect(() => {
-    if (
-      type === "editNonGasProduct" ||
-      (type === "deleteNonGasProduct" && product)
-    ) {
-      setNonGasProduct({
-        id: product._id,
-        name: product.name,
-        category: product.category,
-        quantity: product.quantity,
-        costPerItem: product.costPerItem,
-        receivedDate: product.receivedDate,
-      });
-    }
-    if (type === "editGasProduct" || (type === "deleteGasProduct" && product)) {
-      setGasProduct({
-        id: product._id,
-        gasType: product.gasType,
-        quantityInGallons: product.quantityInGallons,
-        costPerGallon: product.costPerGallon,
-        receivedDate: product.receivedDate,
-      });
-    }
+    // if (
+    //   type === "editNonGasProduct" ||
+    //   (type === "deleteNonGasProduct" && product)
+    // ) {
+    //   setNonGasProduct({
+    //     id: product._id,
+    //     name: product.name,
+    //     category: product.category,
+    //     quantity: product.quantity,
+    //     costPerItem: product.costPerItem,
+    //     receivedDate: product.receivedDate,
+    //   });
+    // }
 
     if (
       type === "editSalesReport" ||
@@ -98,55 +84,32 @@ const Modal = ({
     e.stopPropagation();
   };
 
-  function handleGasCostChange(e) {
-    const value = e.target.value.replace(/\D/g, "");
-    setGasProduct({
-      ...gasProduct,
-      costPerGallon: value,
-    });
-  }
+  // function handleNonCostChange(e) {
+  //   const value = e.target.value.replace(/\D/g, "");
+  //   setNonGasProduct({
+  //     ...nonGasProduct,
+  //     costPerItem: value,
+  //   });
+  // }
 
-  function handleGasFocus(e) {
-    e.target.value = gasProduct.costPerGallon;
-  }
+  // function handleNonGasFocus(e) {
+  //   e.target.value = nonGasProduct.costPerItem;
+  // }
 
-  function handleGasBlur(e) {
-    e.target.value = toDisplayFormat(gasProduct.costPerGallon);
-  }
-
-  function handleNonCostChange(e) {
-    const value = e.target.value.replace(/\D/g, "");
-    setNonGasProduct({
-      ...nonGasProduct,
-      costPerItem: value,
-    });
-  }
-
-  function handleNonGasFocus(e) {
-    e.target.value = nonGasProduct.costPerItem;
-  }
-
-  function handleNonGasBlur(e) {
-    e.target.value = toDisplayFormat(nonGasProduct.costPerItem);
-  }
+  // function handleNonGasBlur(e) {
+  //   e.target.value = toDisplayFormat(nonGasProduct.costPerItem);
+  // }
 
   const handleSubmit = () => {
     if (type === "deleteUser") {
       onConfirm(user.id);
-    } else if (type === "addNonGasProduct" || type === "editNonGasProduct") {
-      onConfirm({
-        ...nonGasProduct,
-        costPerItem: toBackendFormat(nonGasProduct.costPerItem),
-      });
-    } else if (type === "deleteNonGasProduct") {
-      onConfirm(nonGasProduct);
-    } else if (type === "addGasProduct" || type === "editGasProduct") {
-      onConfirm({
-        ...gasProduct,
-        costPerGallon: toBackendFormat(gasProduct.costPerGallon),
-      });
-    } else if (type === "deleteGasProduct") {
-      onConfirm(gasProduct);
+      // } else if (type === "addNonGasProduct" || type === "editNonGasProduct") {
+      //   onConfirm({
+      //     ...nonGasProduct,
+      //     costPerItem: toBackendFormat(nonGasProduct.costPerItem),
+      //   });
+      // } else if (type === "deleteNonGasProduct") {
+      //   onConfirm(nonGasProduct);
     } else if (type === "editSalesReport") {
       onConfirm(salesReportData);
     } else if (type === "addSalesReport") {
@@ -156,19 +119,13 @@ const Modal = ({
     }
     onClose();
 
-    setNonGasProduct({
-      name: product?.name || "",
-      category: product?.category || "",
-      quantity: product?.quantity || 0,
-      costPerItem: product?.costPerItem || 0,
-      receivedDate: product?.receivedDate || getCurrentLocalDate(),
-    });
-    setGasProduct({
-      gasType: product?.gasType || "",
-      quantityInGallons: product?.quantityInGallons || 0,
-      costPerGallon: toDisplayFormat(product.costPerGallon),
-      receivedDate: product?.receivedDate || getCurrentLocalDate(),
-    });
+    // setNonGasProduct({
+    //   name: product?.name || "",
+    //   category: product?.category || "",
+    //   quantity: product?.quantity || 0,
+    //   costPerItem: product?.costPerItem || 0,
+    //   receivedDate: product?.receivedDate || getCurrentLocalDate(),
+    // });
 
     setSalesReportData({
       id: salesReport?._id || 0,
@@ -285,15 +242,35 @@ const Modal = ({
     );
   }
 
-  console.log("Modal props:", {
-    type,
-    property,
-    onClose,
-    onConfirm,
-    user,
-    product,
-    salesReport,
-  });
+  if (
+    type === "addGasProduct" ||
+    type === "editGasProduct" ||
+    type === "deleteGasProduct"
+  ) {
+    return (
+      <GasProductModal
+        type={type}
+        product={product}
+        onClose={onClose}
+        onConfirm={onConfirm}
+      />
+    );
+  }
+
+  if (
+    type === "addNonGasProduct" ||
+    type === "editNonGasProduct" ||
+    type === "deleteNonGasProduct"
+  ) {
+    return (
+      <NonGasProductModal
+        type={type}
+        product={product}
+        onClose={onClose}
+        onConfirm={onConfirm}
+      />
+    );
+  }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -579,7 +556,7 @@ const Modal = ({
           </form>
         ) : null}
 
-        {type === "editNonGasProduct" || type === "addNonGasProduct" ? (
+        {/* {type === "editNonGasProduct" || type === "addNonGasProduct" ? (
           <form>
             <div className="modal-input-group">
               <label htmlFor="productName">Name</label>
@@ -659,9 +636,9 @@ const Modal = ({
               />
             </div>
           </form>
-        ) : null}
+        ) : null} */}
 
-        {type === "editGasProduct" || type === "addGasProduct" ? (
+        {/* {type === "editGasProduct" || type === "addGasProduct" ? (
           <form>
             <div className="modal-input-group">
               <label htmlFor="gasType">Gas Type</label>
@@ -720,7 +697,7 @@ const Modal = ({
               />
             </div>
           </form>
-        ) : null}
+        ) : null} */}
 
         {type === "deleteUser" && (
           <span>Are you sure you want to delete your account?</span>
@@ -750,11 +727,11 @@ const Modal = ({
             </div>
           )}
 
-          {type === "deleteGasProduct" && (
+          {/* {type === "deleteGasProduct" && (
             <div className="modal-button delete-button" onClick={handleSubmit}>
               Delete
             </div>
-          )}
+          )} */}
 
           {type === "deleteUser" && (
             <div className="modal-button delete-button" onClick={handleSubmit}>
