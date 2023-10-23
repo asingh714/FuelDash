@@ -11,6 +11,7 @@ import { toDisplayFormat, toBackendFormat } from "../../utils/formatCurrency";
 
 import "./Modal.scss";
 import NonGasProductModal from "./NonGasProductModal/NonGasProductModal";
+import DeleteUserModal from "./DeleteUserModal/DeleteUserModal";
 
 const Modal = ({
   type,
@@ -21,14 +22,6 @@ const Modal = ({
   product,
   salesReport,
 }) => {
-  // const [nonGasProduct, setNonGasProduct] = useState({
-  //   name: product?.name || "",
-  //   category: product?.category || "",
-  //   quantity: product?.quantity || 0,
-  //   costPerItem: product?.costPerItem || 0,
-  //   receivedDate: product?.receivedDate || getCurrentLocalDate(),
-  // });
-
   const [salesReportData, setSalesReportData] = useState({
     id: salesReport?._id || 0,
     date: salesReport?.date || getCurrentLocalDate(),
@@ -44,20 +37,6 @@ const Modal = ({
   });
 
   useEffect(() => {
-    // if (
-    //   type === "editNonGasProduct" ||
-    //   (type === "deleteNonGasProduct" && product)
-    // ) {
-    //   setNonGasProduct({
-    //     id: product._id,
-    //     name: product.name,
-    //     category: product.category,
-    //     quantity: product.quantity,
-    //     costPerItem: product.costPerItem,
-    //     receivedDate: product.receivedDate,
-    //   });
-    // }
-
     if (
       type === "editSalesReport" ||
       (type === "deleteSalesReport" && salesReport)
@@ -84,32 +63,9 @@ const Modal = ({
     e.stopPropagation();
   };
 
-  // function handleNonCostChange(e) {
-  //   const value = e.target.value.replace(/\D/g, "");
-  //   setNonGasProduct({
-  //     ...nonGasProduct,
-  //     costPerItem: value,
-  //   });
-  // }
-
-  // function handleNonGasFocus(e) {
-  //   e.target.value = nonGasProduct.costPerItem;
-  // }
-
-  // function handleNonGasBlur(e) {
-  //   e.target.value = toDisplayFormat(nonGasProduct.costPerItem);
-  // }
-
   const handleSubmit = () => {
     if (type === "deleteUser") {
       onConfirm(user.id);
-      // } else if (type === "addNonGasProduct" || type === "editNonGasProduct") {
-      //   onConfirm({
-      //     ...nonGasProduct,
-      //     costPerItem: toBackendFormat(nonGasProduct.costPerItem),
-      //   });
-      // } else if (type === "deleteNonGasProduct") {
-      //   onConfirm(nonGasProduct);
     } else if (type === "editSalesReport") {
       onConfirm(salesReportData);
     } else if (type === "addSalesReport") {
@@ -118,14 +74,6 @@ const Modal = ({
       onConfirm(salesReportData.id);
     }
     onClose();
-
-    // setNonGasProduct({
-    //   name: product?.name || "",
-    //   category: product?.category || "",
-    //   quantity: product?.quantity || 0,
-    //   costPerItem: product?.costPerItem || 0,
-    //   receivedDate: product?.receivedDate || getCurrentLocalDate(),
-    // });
 
     setSalesReportData({
       id: salesReport?._id || 0,
@@ -266,6 +214,17 @@ const Modal = ({
       <NonGasProductModal
         type={type}
         product={product}
+        onClose={onClose}
+        onConfirm={onConfirm}
+      />
+    );
+  }
+
+  if (type === "deleteUser") {
+    return (
+      <DeleteUserModal
+        type={type}
+        user={user}
         onClose={onClose}
         onConfirm={onConfirm}
       />
@@ -556,160 +515,6 @@ const Modal = ({
           </form>
         ) : null}
 
-        {/* {type === "editNonGasProduct" || type === "addNonGasProduct" ? (
-          <form>
-            <div className="modal-input-group">
-              <label htmlFor="productName">Name</label>
-              <input
-                type="text"
-                id="productName"
-                value={nonGasProduct.name}
-                onChange={(e) =>
-                  setNonGasProduct({ ...nonGasProduct, name: e.target.value })
-                }
-              />
-            </div>
-
-            <div className="modal-input-group">
-              <label htmlFor="productCategory">Category</label>
-              <select
-                id="productCategory"
-                value={nonGasProduct.category}
-                onChange={(e) =>
-                  setNonGasProduct({
-                    ...nonGasProduct,
-                    category: e.target.value,
-                  })
-                }
-              >
-                <option value="">Select a category</option>
-                {[
-                  "Beverages",
-                  "Snacks",
-                  "Tobacco Products",
-                  "Automotive Supplies",
-                  "Groceries",
-                  "Health & Beauty",
-                  "Travel and Leisure",
-                ].map((category) => (
-                  <option key={category} value={category}>
-                    {category}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div className="modal-input-group">
-              <label htmlFor="productQuantity">Quantity</label>
-              <input
-                type="number"
-                id="productQuantity"
-                value={nonGasProduct.quantity}
-                onChange={(e) =>
-                  setNonGasProduct({
-                    ...nonGasProduct,
-                    quantity: e.target.value,
-                  })
-                }
-              />
-            </div>
-
-            <div className="modal-input-group">
-              <label htmlFor="productCost">Cost Per Item</label>
-              <input
-                type="text"
-                id="productCost"
-                value={toDisplayFormat(nonGasProduct.costPerItem)}
-                onChange={handleNonCostChange}
-                onFocus={handleNonGasFocus}
-                onBlur={handleNonGasBlur}
-              />
-            </div>
-
-            <div className="modal-input-group">
-              <label>Received Date</label>
-              <DateSelector
-                currentDate={nonGasProduct.receivedDate}
-                onDateChange={(date) =>
-                  setNonGasProduct({ ...nonGasProduct, receivedDate: date })
-                }
-              />
-            </div>
-          </form>
-        ) : null} */}
-
-        {/* {type === "editGasProduct" || type === "addGasProduct" ? (
-          <form>
-            <div className="modal-input-group">
-              <label htmlFor="gasType">Gas Type</label>
-              <select
-                id="gasType"
-                value={gasProduct.gasType}
-                onChange={(e) =>
-                  setGasProduct({ ...gasProduct, gasType: e.target.value })
-                }
-              >
-                <option value="">Select a gas type</option>
-                {["Regular", "Midgrade", "Premium", "Diesel", "E85"].map(
-                  (gasType) => (
-                    <option key={gasType} value={gasType}>
-                      {gasType}
-                    </option>
-                  )
-                )}
-              </select>
-            </div>
-
-            <div className="modal-input-group">
-              <label htmlFor="gasQuantity">Quantity (Gallons)</label>
-              <input
-                type="number"
-                id="gasQuantity"
-                value={gasProduct.quantityInGallons}
-                onChange={(e) =>
-                  setGasProduct({
-                    ...gasProduct,
-                    quantityInGallons: e.target.value,
-                  })
-                }
-              />
-            </div>
-
-            <div className="modal-input-group">
-              <label htmlFor="gasCost">Cost Per Gallon</label>
-              <input
-                type="text"
-                id="gasCost"
-                value={toDisplayFormat(gasProduct.costPerGallon)}
-                onChange={handleGasCostChange}
-                onFocus={handleGasFocus}
-                onBlur={handleGasBlur}
-              />
-            </div>
-
-            <div className="modal-input-group">
-              <label>Received Date</label>
-              <DateSelector
-                currentDate={gasProduct.receivedDate}
-                onDateChange={(date) =>
-                  setGasProduct({ ...gasProduct, receivedDate: date })
-                }
-              />
-            </div>
-          </form>
-        ) : null} */}
-
-        {type === "deleteUser" && (
-          <span>Are you sure you want to delete your account?</span>
-        )}
-        {type === "deleteNonGasProduct" && (
-          <span>Are you sure you want to delete this product?</span>
-        )}
-
-        {type === "deleteGasProduct" && (
-          <span>Are you sure you want to delete this product?</span>
-        )}
-
         {type === "deleteSalesReport" && (
           <span>Are you sure you want to delete this sales report?</span>
         )}
@@ -720,45 +525,6 @@ const Modal = ({
           <div className="modal-button" onClick={onClose}>
             Cancel
           </div>
-
-          {type === "deleteNonGasProduct" && (
-            <div className="modal-button delete-button" onClick={handleSubmit}>
-              Delete
-            </div>
-          )}
-
-          {/* {type === "deleteGasProduct" && (
-            <div className="modal-button delete-button" onClick={handleSubmit}>
-              Delete
-            </div>
-          )} */}
-
-          {type === "deleteUser" && (
-            <div className="modal-button delete-button" onClick={handleSubmit}>
-              Delete
-            </div>
-          )}
-
-          {type === "addNonGasProduct" && (
-            <div className="modal-button confirm-button" onClick={handleSubmit}>
-              Add Product
-            </div>
-          )}
-          {type === "editNonGasProduct" && (
-            <div className="modal-button confirm-button" onClick={handleSubmit}>
-              Edit Product
-            </div>
-          )}
-          {type === "addGasProduct" && (
-            <div className="modal-button confirm-button" onClick={handleSubmit}>
-              Add Product
-            </div>
-          )}
-          {type === "editGasProduct" && (
-            <div className="modal-button confirm-button" onClick={handleSubmit}>
-              Edit Product
-            </div>
-          )}
 
           {type === "editSalesReport" && (
             <div className="modal-button confirm-button" onClick={handleSubmit}>
