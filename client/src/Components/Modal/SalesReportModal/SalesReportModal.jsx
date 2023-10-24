@@ -44,7 +44,6 @@ const SalesReportModal = ({
   const [formData, setFormData] = useState(initializeState(type, salesReport));
   const [errors, setErrors] = useState({});
 
-  console.log("formData", formData);
   useEffect(() => {
     setFormData(initializeState(type, salesReport));
   }, [type, salesReport]);
@@ -258,18 +257,19 @@ const SalesReportModal = ({
             <h4>Gasoline Sales:</h4>
 
             {formData?.gasolineSales?.map((gasolineSale, index) => (
-              <div className="modal-input-group" key={gasolineSale._id}>
-                <label htmlFor={`gasType-${gasolineSale._id}`}>Gas Type</label>
+              <div className="modal-input-group" key={index}>
+                <label htmlFor={`gasType-${index}`}>Gas Type</label>
                 <select
-                  id={`gasType-${gasolineSale._id}`}
+                  id={`gasType-${index}`}
                   value={gasolineSale.gasType}
                   onChange={(e) => {
                     const updatedGasolineSales = formData.gasolineSales.map(
-                      (sale) =>
-                        sale._id === gasolineSale._id
+                      (sale, idx) =>
+                        idx === index
                           ? { ...sale, gasType: e.target.value }
                           : sale
                     );
+
                     setFormData({
                       ...formData,
                       gasolineSales: updatedGasolineSales,
@@ -288,20 +288,19 @@ const SalesReportModal = ({
 
                 <div className="row">
                   <div className="modal-input-group">
-                    <label htmlFor={`gallonsSold-${gasolineSale._id}`}>
-                      Gallons Sold
-                    </label>
+                    <label htmlFor={`gallonsSold-${index}`}>Gallons Sold</label>
                     <input
-                      id={`gallonsSold-${gasolineSale._id}`}
+                      id={`gallonsSold-${index}`}
                       type="number"
                       value={gasolineSale.gallonsSold}
                       onChange={(e) => {
                         const updatedGasolineSales = formData.gasolineSales.map(
-                          (sale) =>
-                            sale._id === gasolineSale._id
+                          (sale, idx) =>
+                            idx === index
                               ? { ...sale, gallonsSold: e.target.value }
                               : sale
                         );
+
                         setFormData({
                           ...formData,
                           gasolineSales: updatedGasolineSales,
@@ -310,11 +309,9 @@ const SalesReportModal = ({
                     />
                   </div>
                   <div className="modal-input-group">
-                    <label htmlFor={`priceSoldAt-${gasolineSale._id}`}>
-                      Price Sold At
-                    </label>
+                    <label htmlFor={`name-${index}`}>Price Sold At</label>
                     <input
-                      id={`priceSoldAt-${gasolineSale._id}`}
+                      id={`name-${index}`}
                       type="text"
                       value={toDisplayFormat(gasolineSale.priceSoldAt)}
                       onChange={(e) =>
@@ -364,19 +361,18 @@ const SalesReportModal = ({
             <h4>Non Gasoline Sales:</h4>
 
             {formData?.nonGasolineSales?.map((nonGasolineSale, index) => (
-              <div className="modal-input-group" key={nonGasolineSale._id}>
-                <label htmlFor={`name-${nonGasolineSale._id}`}>Name</label>
+              <div className="modal-input-group" key={index}>
+                <label htmlFor={`name-${index}`}>Name</label>
                 <input
-                  id={`name-${nonGasolineSale._id}`}
+                  id={`name-${index}`}
                   type="text"
                   value={nonGasolineSale.name}
                   onChange={(e) => {
                     const updatedNonGasolineSales =
-                      formData.nonGasolineSales.map((sale) =>
-                        sale._id === nonGasolineSale._id
-                          ? { ...sale, name: e.target.value }
-                          : sale
+                      formData.nonGasolineSales.map((sale, idx) =>
+                        idx === index ? { ...sale, name: e.target.value } : sale
                       );
+
                     setFormData({
                       ...formData,
                       nonGasolineSales: updatedNonGasolineSales,
@@ -385,20 +381,21 @@ const SalesReportModal = ({
                 />
                 <div className="row">
                   <div className="modal-input-group">
-                    <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
+                    <label htmlFor={`quantitySold-${index}`}>
                       Quantity Sold
                     </label>
                     <input
-                      id={`quantitySold-${nonGasolineSale._id}`}
+                      id={`quantitySold-${index}`}
                       type="number"
                       value={nonGasolineSale.quantitySold}
                       onChange={(e) => {
                         const updatedNonGasolineSales =
-                          formData.nonGasolineSales.map((sale) =>
-                            sale._id === nonGasolineSale._id
+                          formData.nonGasolineSales.map((sale, idx) =>
+                            idx === index
                               ? { ...sale, quantitySold: e.target.value }
                               : sale
                           );
+
                         setFormData({
                           ...formData,
                           nonGasolineSales: updatedNonGasolineSales,
@@ -408,11 +405,9 @@ const SalesReportModal = ({
                   </div>
 
                   <div className="modal-input-group">
-                    <label htmlFor={`quantitySold-${nonGasolineSale._id}`}>
-                      Price Sold At
-                    </label>
+                    <label htmlFor={`name-${index}`}>Price Sold At</label>
                     <input
-                      id={`priceSoldAt-${nonGasolineSale._id}`}
+                      id={`priceSoldAtNonGas-${index}`}
                       type="text"
                       value={toDisplayFormat(nonGasolineSale.priceSoldAt)}
                       onChange={(e) =>
