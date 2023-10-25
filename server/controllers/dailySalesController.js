@@ -231,16 +231,6 @@ const addDailySalesMetrics = async (req, res) => {
       await updateNonGasolineStocks(propertyId, sale.name, sale.quantitySold);
     }
 
-    // Process updates in parallel
-    // await Promise.all([
-    //   ...gasolineSales.map((sale) =>
-    //     updateGasolineBatches(propertyId, sale.gasType, sale.gallonsSold)
-    //   ),
-    //   ...nonGasolineSales.map((sale) =>
-    //     updateNonGasolineStocks(propertyId, sale.name, sale.quantitySold)
-    //   ),
-    // ]);
-
     res
       .status(201)
       .json({ message: "Daily sales metrics added successfully." });

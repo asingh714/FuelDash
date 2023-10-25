@@ -13,6 +13,31 @@ const getGasolineProducts = async (req, res) => {
   }
 };
 
+const getGasolineProductSummary = async (req, res) => {
+  const { propertyId } = req.params;
+
+  try {
+    const gasolineProducts = await GasolineProduct.find({
+      propertyId,
+    }).sort({ receivedDate: -1 });
+
+    const gasProductSummary = {};
+
+    for (const gasolineProduct of gasolineProducts) {
+      if (gasProductSummary[gasolineProduct.gasType]) {
+        gasProductSummary[gasolineProduct.gasType] +=
+          gasolineProduct.quantityInGallons;
+      } else {
+        gasProductSummary[gasolineProduct.gasType] =
+          gasolineProduct.quantityInGallons;
+      }
+    }
+    res.status(200).json({ gasProductSummary });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const addGasolineProduct = async (req, res) => {
   const { propertyId } = req.params;
 
@@ -137,4 +162,5 @@ module.exports = {
   deleteGasolineProduct,
   updateGasolineProduct,
   updateGasolineBatches,
+  getGasolineProductSummary,
 };

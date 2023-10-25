@@ -85,16 +85,17 @@ const SalesReportModal = ({
     onClose();
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (type !== "deleteSalesReport" && !validateForm()) {
       return;
     }
-
     if (type === "editSalesReport") {
       onConfirm(formData);
     } else if (type === "addSalesReport") {
       onConfirm(formData);
     } else if (type === "deleteSalesReport") {
+      console.log(formData.id);
       onConfirm(formData.id);
     }
     handleClose();
@@ -468,19 +469,15 @@ const SalesReportModal = ({
             </div>
           </form>
         ) : (
-          <div className="modal-form">
-            <h3>{`Delete Sales Report`}</h3>
-            <p>Are you sure you want to delete this sales report?</p>
-            <div className="modal-button">
-              <div className="cancel-btn" onClick={handleClose}>
-                Cancel
-              </div>
-              <div
-                className="modal-button confirm-button"
-                onClick={handleSubmit}
-              >
-                Confirm
-              </div>
+          <span>Are you sure you want to delete this sales report?</span>
+        )}
+        {type === "deleteSalesReport" && (
+          <div className="modal-button-container">
+            <div className="modal-button" onClick={onClose}>
+              Cancel
+            </div>
+            <div className="modal-button confirm-button" onClick={handleSubmit}>
+              Confirm
             </div>
           </div>
         )}
