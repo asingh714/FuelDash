@@ -8,8 +8,12 @@ const {
   addNonGasolineProduct,
   updateNonGasolineProduct,
   deleteNonGasolineProduct,
+  getNonGasolineProductInventory,
 } = require("../controllers/nonGasolineController");
 
+router
+  .route("/:propertyId/inventory")
+  .get(authenticate, getNonGasolineProductInventory);
 router.route("/:propertyId").get(authenticate, getNonGasolineProducts);
 router.route("/:propertyId").post(authenticate, addNonGasolineProduct);
 router.route("/:id").patch(authenticate, updateNonGasolineProduct);

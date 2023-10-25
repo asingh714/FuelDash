@@ -7,12 +7,12 @@ const {
   addGasolineProduct,
   updateGasolineProduct,
   deleteGasolineProduct,
-  getGasolineProductSummary,
+  getGasolineProductInventory,
 } = require("../controllers/gasolineController");
 
 router
-  .route("/:propertyId/summary")
-  .get(authenticate, getGasolineProductSummary);
+  .route("/:propertyId/inventory")
+  .get(authenticate, getGasolineProductInventory);
 router.route("/:propertyId").get(authenticate, getGasolineProducts);
 router.route("/:propertyId").post(authenticate, addGasolineProduct);
 router.route("/:id").patch(authenticate, updateGasolineProduct);

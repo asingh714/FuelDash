@@ -13,7 +13,7 @@ const getGasolineProducts = async (req, res) => {
   }
 };
 
-const getGasolineProductSummary = async (req, res) => {
+const getGasolineProductInventory = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -21,18 +21,18 @@ const getGasolineProductSummary = async (req, res) => {
       propertyId,
     }).sort({ receivedDate: -1 });
 
-    const gasProductSummary = {};
+    const gasProductInventory = {};
 
     for (const gasolineProduct of gasolineProducts) {
-      if (gasProductSummary[gasolineProduct.gasType]) {
-        gasProductSummary[gasolineProduct.gasType] +=
+      if (gasProductInventory[gasolineProduct.gasType]) {
+        gasProductInventory[gasolineProduct.gasType] +=
           gasolineProduct.quantityInGallons;
       } else {
-        gasProductSummary[gasolineProduct.gasType] =
+        gasProductInventory[gasolineProduct.gasType] =
           gasolineProduct.quantityInGallons;
       }
     }
-    res.status(200).json({ gasProductSummary });
+    res.status(200).json({ gasProductInventory });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -162,5 +162,5 @@ module.exports = {
   deleteGasolineProduct,
   updateGasolineProduct,
   updateGasolineBatches,
-  getGasolineProductSummary,
+  getGasolineProductInventory,
 };

@@ -13,6 +13,31 @@ const getNonGasolineProducts = async (req, res) => {
   }
 };
 
+const getNonGasolineProductInventory = async (req, res) => {
+  const { propertyId } = req.params;
+
+  try {
+    const nonGasolineProducts = await NonGasolineProduct.find({
+      propertyId,
+    }).sort({ receivedDate: -1 });
+
+    const nonGasProductInventory = {};
+
+    for (const nonGasolineProduct of nonGasolineProducts) {
+      if (nonGasProductInventory[nonGasolineProduct.name]) {
+        nonGasProductInventory[nonGasolineProduct.name] +=
+          nonGasolineProduct.quantity;
+      } else {
+        nonGasProductInventory[nonGasolineProduct.name] =
+          nonGasolineProduct.quantity;
+      }
+    }
+    res.status(200).json({ nonGasProductInventory });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const addNonGasolineProduct = async (req, res) => {
   const { propertyId } = req.params;
 
@@ -128,4 +153,5 @@ module.exports = {
   updateNonGasolineProduct,
   deleteNonGasolineProduct,
   updateNonGasolineStocks,
+  getNonGasolineProductInventory,
 };
