@@ -21,17 +21,51 @@ const getGasolineProductInventory = async (req, res) => {
       propertyId,
     }).sort({ receivedDate: -1 });
 
-    const gasProductInventory = {};
+    const gasProductInventory = [];
 
-    for (const gasolineProduct of gasolineProducts) {
-      if (gasProductInventory[gasolineProduct.gasType]) {
-        gasProductInventory[gasolineProduct.gasType] +=
-          gasolineProduct.quantityInGallons;
+    /* I want to return an array of objects like this:
+    [{gasType: Midgrade, quantityInGallons: 6394.81}, {gasType: Premium, quantityInGallons: 6394.81}]
+    */
+    for (gasolineProduct of gasolineProducts) {
+      const gasType = gasolineProduct.gasType;
+      const quantityInGallons = gasolineProduct.quantityInGallons;
+
+      if (gasProductInventory.length === 0) {
+        gasProductInventory.push({
+          gasType: gasType,
+          quantityInGallons: quantityInGallons,
+        });
       } else {
-        gasProductInventory[gasolineProduct.gasType] =
-          gasolineProduct.quantityInGallons;
+        let gasTypeFound = false;
+        for (gasProduct of gasProductInventory) {
+          if (gasProduct.gasType === gasType) {
+            gasTypeFound = true;
+            gasProduct.quantityInGallons += quantityInGallons;
+          }
+        }
+        if (!gasTypeFound) {
+          gasProductInventory.push({
+            gasType: gasType,
+            quantityInGallons: quantityInGallons,
+          });
+        }
       }
     }
+    /* 
+
+      {
+            "gasolineProduct": {
+                "_id": "653ef27f2fbfa64547760549",
+                "propertyId": "64ff54a2b485b42210278310",
+                "gasType": "Midgrade",
+                "quantityInGallons": 6394.81,
+                "costPerGallon": 2.55,
+                "receivedDate": "2023-10-30T00:00:00.000Z",
+                "__v": 0
+            }
+        },
+        */
+
     res.status(200).json({ gasProductInventory });
   } catch (error) {
     return res.status(500).json({ msg: error.message });

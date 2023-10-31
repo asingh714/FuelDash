@@ -7,6 +7,7 @@ import TinyChartBox from "../TinyChartBox/TinyChartBox";
 import TopProductSalesBox from "../TopProductSalesBox/TopProductSalesBox";
 import BarChartBox from "../BarChartBox/BarChartBox";
 import PropertyDropdown from "../PropertyDropdown/PropertyDropdown";
+import GasInventoryBoxes from "../GasInventoryBoxes/GasInventoryBoxes";
 import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
@@ -157,6 +158,12 @@ const DashboardContainer = () => {
               xaxis="day"
             />
           </div>
+
+          <div className="box box9">
+            <GasInventoryBoxes propertyId={propertyId} />
+          </div>
+
+          <div className="box box10"></div>
         </div>
       )}
     </div>

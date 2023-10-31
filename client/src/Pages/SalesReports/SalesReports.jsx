@@ -78,7 +78,6 @@ const SalesReports = () => {
   };
 
   const toggleRowExpansion = (rowId) => {
-    console.log("rowId", rowId); // undefined
     setExpandedRows((prevState) => ({
       ...prevState,
       [rowId]: !prevState[rowId],
@@ -115,11 +114,6 @@ const SalesReports = () => {
           <div
             className="edit-btn"
             onClick={() => {
-              // setSelectedProperty({
-              //   name: row.original.name,
-              //   address: row.original.address,
-              //   id: row.original._id,
-              // });
               setSelectedSalesReport(row.original);
               setModalType("editSalesReport");
               setModalOpen(true);
@@ -130,11 +124,6 @@ const SalesReports = () => {
           <div
             className="delete-btn"
             onClick={() => {
-              // setSelectedProperty({
-              //   name: row.original.name,
-              //   address: row.original.address,
-              //   id: row.original._id,
-              // });
               setSelectedSalesReport(row.original);
               setModalType("deleteSalesReport");
               setModalOpen(true);
