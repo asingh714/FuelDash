@@ -4,7 +4,7 @@
 
 .select-dropdown {
   position: relative;
-  background-color: $slate-900;
+  background-color: $dropdown-gray;
   border: 1px solid $gray-700;
   border-radius: 5px;
   overflow: hidden;
@@ -26,7 +26,7 @@
 
     option {
       color: $gray-300;
-      background-color: $slate-950;
+      background-color: $dropdown-gray;
 
       &:hover,
       &:active,

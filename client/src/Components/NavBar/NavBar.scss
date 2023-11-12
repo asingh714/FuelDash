@@ -120,7 +120,8 @@
       }
     }
 
-    #login-link, #dashboard-link {
+    #login-link,
+    #dashboard-link {
       transition: all 0.2s ease-in-out;
 
       &:hover {

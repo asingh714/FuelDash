@@ -3,14 +3,14 @@
 .dashboard-menu {
   // margin-top: 20rem;
   // height: 150vh;
-  background-color: $gray-900;
+  background-color: $dark-nav;
   // margin: 5rem 0 0 2rem;
   padding: 5rem 0 0 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
   min-width: 20rem;
-  border-right: 2px solid $gray-600;
+  border-right: 1px solid $gray-600;
 
   a {
     color: white;
@@ -28,7 +28,7 @@
 
     // hover
     &:hover {
-      background-color: $slate-950;
+      background-color: $dropdown-gray;
     }
   }
 }
