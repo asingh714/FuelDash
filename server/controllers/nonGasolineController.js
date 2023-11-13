@@ -21,17 +21,34 @@ const getNonGasolineProductInventory = async (req, res) => {
       propertyId,
     }).sort({ receivedDate: -1 });
 
-    const nonGasProductInventory = {};
+    const nonGasProductInventory = [];
 
-    for (const nonGasolineProduct of nonGasolineProducts) {
-      if (nonGasProductInventory[nonGasolineProduct.name]) {
-        nonGasProductInventory[nonGasolineProduct.name] +=
-          nonGasolineProduct.quantity;
+    for (nonGasolineProduct of nonGasolineProducts) {
+      const name = nonGasolineProduct.name;
+      const quantity = nonGasolineProduct.quantity;
+
+      if (nonGasProductInventory.length === 0) {
+        nonGasProductInventory.push({
+          name: name,
+          quantity: quantity,
+        });
       } else {
-        nonGasProductInventory[nonGasolineProduct.name] =
-          nonGasolineProduct.quantity;
+        let nameFound = false;
+        for (nonGasProduct of nonGasProductInventory) {
+          if (nonGasProduct.name === name) {
+            nameFound = true;
+            nonGasProduct.quantity += quantity;
+          }
+        }
+        if (!nameFound) {
+          nonGasProductInventory.push({
+            name: name,
+            quantity: quantity,
+          });
+        }
       }
     }
+
     res.status(200).json({ nonGasProductInventory });
   } catch (error) {
     return res.status(500).json({ msg: error.message });

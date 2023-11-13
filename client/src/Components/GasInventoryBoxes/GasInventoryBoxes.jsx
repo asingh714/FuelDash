@@ -16,10 +16,10 @@ const colors = {
 const GasInventoryBoxes = ({ propertyId }) => {
   const [errorMsg, setErrorMsg] = useState(null);
 
-  const { isLoading, error, data } = useQuery([propertyId], async () => {
+  const { isLoading, error, data } = useQuery(["gas", propertyId], async () => {
     if (!propertyId) return null;
     const response = await newRequest.get(`/gasoline/${propertyId}/inventory`);
-    console.log(response.data.nventory);
+    // console.log(response);
     if (!response.data || error) {
       setErrorMsg("No data returned");
     }
@@ -39,10 +39,10 @@ const GasInventoryBoxes = ({ propertyId }) => {
       <h2>Tank Volume</h2>
       <div className="inventory-boxes">
         {data &&
-          data.map(({ gasType, quantityInGallons, index }) => (
+          data?.map(({ gasType, quantityInGallons }, index) => (
             <div
-              key={`${gasType - quantityInGallons - index}`}
-              className={`single-inventory-box-container ${
+              key={index}
+              className={`single-gas-inventory-box-container ${
                 quantityInGallons > 100000
                   ? "green"
                   : quantityInGallons > 80000
@@ -55,10 +55,12 @@ const GasInventoryBoxes = ({ propertyId }) => {
                   className="dot"
                   style={{ backgroundColor: colors[gasType] }}
                 />
-                <div>{gasType} </div>
+                <div>{gasType}</div>
               </div>
 
-              <div>Gallons: {parseFloat(quantityInGallons.toFixed(2))} </div>
+              {quantityInGallons && (
+                <div>Gallons: {parseFloat(quantityInGallons?.toFixed(2))} </div>
+              )}
             </div>
           ))}
       </div>

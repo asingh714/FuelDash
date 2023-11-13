@@ -8,6 +8,7 @@ import TopProductSalesBox from "../TopProductSalesBox/TopProductSalesBox";
 import BarChartBox from "../BarChartBox/BarChartBox";
 import PropertyDropdown from "../PropertyDropdown/PropertyDropdown";
 import GasInventoryBoxes from "../GasInventoryBoxes/GasInventoryBoxes";
+import InventoryContainer from "../InventoryContainer/InventoryContainer";
 import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
@@ -163,7 +164,9 @@ const DashboardContainer = () => {
             <GasInventoryBoxes propertyId={propertyId} />
           </div>
 
-          <div className="box box10"></div>
+          <div className="box box10">
+            <InventoryContainer propertyId={propertyId} />
+          </div>
         </div>
       )}
     </div>

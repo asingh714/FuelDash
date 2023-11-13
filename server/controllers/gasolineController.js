@@ -23,9 +23,6 @@ const getGasolineProductInventory = async (req, res) => {
 
     const gasProductInventory = [];
 
-    /* I want to return an array of objects like this:
-    [{gasType: Midgrade, quantityInGallons: 6394.81}, {gasType: Premium, quantityInGallons: 6394.81}]
-    */
     for (gasolineProduct of gasolineProducts) {
       const gasType = gasolineProduct.gasType;
       const quantityInGallons = gasolineProduct.quantityInGallons;
@@ -51,20 +48,6 @@ const getGasolineProductInventory = async (req, res) => {
         }
       }
     }
-    /* 
-
-      {
-            "gasolineProduct": {
-                "_id": "653ef27f2fbfa64547760549",
-                "propertyId": "64ff54a2b485b42210278310",
-                "gasType": "Midgrade",
-                "quantityInGallons": 6394.81,
-                "costPerGallon": 2.55,
-                "receivedDate": "2023-10-30T00:00:00.000Z",
-                "__v": 0
-            }
-        },
-        */
 
     res.status(200).json({ gasProductInventory });
   } catch (error) {

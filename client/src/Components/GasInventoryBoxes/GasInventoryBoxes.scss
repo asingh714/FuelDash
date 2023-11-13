@@ -1,16 +1,26 @@
 @import "../../styles/variables.scss";
 
 .inventory-box-container {
+  h2 {
+    margin-bottom: 2.5rem;
+  }
   .inventory-boxes {
     display: flex;
     justify-content: space-evenly;
-    padding: 3rem 0;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
 
-    .single-inventory-box-container {
+    .single-gas-inventory-box-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       padding: 2rem;
       border-radius: 1rem;
-      // border: 2px solid $gray-600;
+      border: 2px solid $gray-600;
       color: white;
+      text-align: center;
 
       .dot-text {
         display: flex;
@@ -33,6 +43,44 @@
       border: 2px solid $yellow-300;
     }
 
+    .red {
+      border: 2px solid $red-500;
+    }
+  }
+
+  .nongas-inventory-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+    .single-inventory-box-container {
+      display: flex;
+      border: 1px solid $gray-600;
+      border-radius: 0.5rem;
+      width: 25rem;
+      padding: 2rem;
+      gap: 2rem;
+      align-items: center;
+
+      .product-image {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid $gray-600;
+      }
+
+      .right-container {
+        .inventory-name {
+          font-weight: 600;
+          color: $gray-100;
+        }
+        .inventory-quantity {
+          color: $gray-300;
+        }
+      }
+    }
     .red {
       border: 2px solid $red-500;
     }
