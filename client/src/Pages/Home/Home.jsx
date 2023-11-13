@@ -30,6 +30,14 @@ const Home = () => {
           </div>
         </section>
       </main>
+
+      <section id="dashboard-preview">
+        <img
+          src="./dashboard.png"
+          alt="FuelDash Dashboard Preview"
+          className="dashboard-image"
+        />
+      </section>
     </div>
   );
 };
