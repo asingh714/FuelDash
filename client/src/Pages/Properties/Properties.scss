@@ -4,13 +4,14 @@
   display: flex;
   color: #fff;
   min-height: 100vh;
+  background-color: $gray-800;
 
   .properties-container {
     flex: 1;
     padding: 5rem;
 
     hr {
-      border: 1px solid $gray-700;
+      border: 1px solid $gray-600;
       margin: 5rem 0;
     }
 
