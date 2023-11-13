@@ -39,7 +39,7 @@ const GasInventoryBoxes = ({ propertyId }) => {
       <h2>Tank Volume</h2>
       <div className="inventory-boxes">
         {data &&
-          data?.map(({ gasType, quantityInGallons }, index) => (
+          data.map(({ gasType, quantityInGallons }, index) => (
             <div
               key={index}
               className={`single-gas-inventory-box-container ${

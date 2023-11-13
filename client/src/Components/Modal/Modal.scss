@@ -13,9 +13,9 @@
   z-index: 10;
 
   .modal-container {
-    background-color: $slate-950;
+    background-color: $dark-nav;
     color: $gray-300;
-    border: 1px solid $gray-700;
+    border: 1px solid $gray-600;
     padding: 3rem;
     border-radius: 8px;
     width: 50rem;
@@ -43,10 +43,9 @@
         font-weight: 600;
         width: 100%;
         border-radius: 5px;
-        background-color: $slate-900;
-        color: $gray-300;
-        border: 1px solid $gray-700;
         padding: 0.75rem 1rem;
+        border: 1px solid $gray-300;
+        color: $zinc-400;
       }
 
       .error-text {
@@ -85,9 +84,9 @@
   }
 
   .wide {
-    background-color: $slate-950;
+    background-color: $dark-nav;
     color: $gray-300;
-    border: 1px solid $gray-700;
+    border: 1px solid $gray-600;
     padding: 5rem 0;
     border-radius: 8px;
     width: 90%;

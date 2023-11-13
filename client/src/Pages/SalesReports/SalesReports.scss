@@ -4,13 +4,19 @@
   display: flex;
   color: #fff;
   min-height: 100vh;
+  background-color: $gray-800;
 
   .sales-report-container {
     flex: 1;
     padding: 10rem;
 
+    .add-btn {
+      margin-top: 2rem;
+      margin-left: auto;
+    }
+
     hr {
-      border: 1px solid $gray-700;
+      border: 1px solid $gray-600;
       margin: 5rem 0;
     }
 

@@ -1,5 +1,8 @@
+@import "../../styles/variables.scss";
+
 .detail-report-page-container {
   display: flex;
+  background-color: $gray-800;
 
   .detail-report-container {
     display: flex;

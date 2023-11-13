@@ -1,34 +1,48 @@
 @import "../../styles/variables.scss";
 
 .dashboard-menu {
-  // margin-top: 20rem;
-  // height: 150vh;
   background-color: $dark-nav;
-  // margin: 5rem 0 0 2rem;
-  padding: 5rem 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   min-width: 20rem;
   border-right: 1px solid $gray-600;
+  padding: 1rem 0;
 
-  a {
-    color: white;
-    padding: 1rem 2rem;
+  .logo-container {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    // margin-bottom: 1rem;
-    // justify-content: center;
-    transition: all 0.3s;
-    .gas-logo {
-      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(162deg)
-        brightness(101%) contrast(104%);
+
+    img {
+      width: 8rem;
+      height: 8rem;
     }
 
-    // hover
-    &:hover {
-      background-color: $dropdown-gray;
+    span {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: white;
+    }
+  }
+  .dashboard-menu-links {
+    padding: 5rem 0 0 0;
+
+    a {
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: all 0.3s;
+
+      .gas-logo {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(162deg)
+          brightness(101%) contrast(104%);
+      }
+
+      // hover
+      &:hover {
+        background-color: $dropdown-gray;
+      }
     }
   }
 }

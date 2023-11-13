@@ -35,7 +35,7 @@ const InventoryContainer = ({ propertyId }) => {
       <h2>Product Inventory</h2>
       <div className="nongas-inventory-boxes">
         {data &&
-          data?.map((inventory, index) => (
+          data.map((inventory, index) => (
             <div
               className={`single-inventory-box-container  ${
                 inventory.quantity < 150 ? "red" : ""
