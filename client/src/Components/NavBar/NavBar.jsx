@@ -18,13 +18,13 @@ const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className="navbar-container">
+    <header className="navbar-container">
       <Link to="/" className="logo">
         <img src="/fueldash_logo.png" alt="" />
         <span>FuelDash</span>
       </Link>
 
-      <div className="links-container">
+      <nav className="links-container">
         <div className="resources-container">
           <span className="resource-link">
             Resources
@@ -69,8 +69,8 @@ const NavBar = () => {
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 
