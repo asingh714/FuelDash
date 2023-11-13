@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import NavBar from "../../Components/NavBar/NavBar";
 
 import "./Home.scss";
@@ -19,8 +21,12 @@ const Home = () => {
             empowering you to boost profitability and drive growth.
           </p>
           <div className="hero-btns">
-            <div>Get Started</div>
-            <div>Learn more</div>
+            <Link to="/signup" className="get-started-btn">
+              Get Started
+            </Link>
+            <Link to="/" className="learn-more-btn">
+              Learn more →
+            </Link>
           </div>
         </section>
       </main>
