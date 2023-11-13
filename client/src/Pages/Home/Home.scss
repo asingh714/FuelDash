@@ -137,30 +137,43 @@
       }
     }
 
-    .feature {
+    .features-boxes {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      max-width: 300px;
+      flex-direction: row;
+      gap: 5rem;
 
-      .feature-boxes {
+      .feature {
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+
         .feature-icon {
-          font-size: 3rem; // Assuming you're using a font icon, otherwise set the size of your image
-          margin-bottom: 1rem;
+          width: 4.5rem;
+          height: 4.5rem;
+          background-color: $indigo-500;
+          border-radius: 1rem;
+          margin-bottom: 2rem;
         }
 
         h3 {
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           color: white;
           margin-bottom: 0.5rem;
         }
 
         p {
-          font-size: 1rem;
-          text-align: center;
+          font-size: 1.6rem;
           margin-bottom: 1rem;
+          line-height: 2;
+          color: $gray-400;
+          font-weight: 500;
+        }
+        a {
+          margin-top: auto;
+          color: $indigo-400;
+          font-weight: 600;
+          font-size: 1.5rem;
         }
       }
     }

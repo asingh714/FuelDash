@@ -80,10 +80,10 @@ const Home = () => {
             station owners.
           </p>
         </div>
-        <sdiv className="features-boxes">
+        <div className="features-boxes">
           <div className="feature">
             <img
-              src="path-to-your-icon"
+              src="./Analytics.png"
               alt="Real-time Analytics"
               className="feature-icon"
             />
@@ -98,7 +98,7 @@ const Home = () => {
           </div>
           <div className="feature">
             <img
-              src="path-to-your-icon"
+              src="./Management.png"
               alt="Inventory Management"
               className="feature-icon"
             />
@@ -111,24 +111,10 @@ const Home = () => {
               Learn more →
             </Link>
           </div>
+
           <div className="feature">
             <img
-              src="path-to-your-icon"
-              alt="Payment Processing"
-              className="feature-icon"
-            />
-            <h3>Payment Processing</h3>
-            <p>
-              Accept payments quickly and securely. Understand your revenue
-              streams with breakdowns by payment type.
-            </p>
-            <Link to="/" className="learn-more-btn">
-              Learn more →
-            </Link>
-          </div>
-          <div className="feature">
-            <img
-              src="path-to-your-icon"
+              src="./Sales.png"
               alt="Sales Reports"
               className="feature-icon"
             />
@@ -141,22 +127,7 @@ const Home = () => {
               Learn more →
             </Link>
           </div>
-          <div className="feature">
-            <img
-              src="path-to-your-icon"
-              alt="Customer Insights"
-              className="feature-icon"
-            />
-            <h3>Customer Insights</h3>
-            <p>
-              Get to know your customers better. Learn about their buying habits
-              and preferences to tailor their experience.
-            </p>
-            <Link to="/" className="learn-more-btn">
-              Learn more →
-            </Link>
-          </div>
-        </sdiv>
+        </div>
       </section>
     </div>
   );
