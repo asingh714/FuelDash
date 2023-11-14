@@ -275,6 +275,24 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section id="final-cta">
+        <div className="container">
+          <h2>Optimize Your Operations Now</h2>
+          <p>
+            Join the countless gas station owners who are enhancing their
+            businesses with FuelDash. Experience the ease of managing sales,
+            inventory, and data analytics all in one place.
+          </p>
+          <div className="cta-buttons">
+            <a href="/signup" className="btn btn-primary">
+              Get Started
+            </a>
+            <a href="/features" className="btn btn-secondary">
+              Learn more →
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
