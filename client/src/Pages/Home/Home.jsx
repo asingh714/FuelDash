@@ -244,6 +244,37 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section id="fueldash-stats">
+        <div className="container">
+          <div className="stats-heading">
+            <span>Our track record</span>
+            <h2>Powering Performance at the Pump</h2>
+            <p>
+              Discover how FuelDash is driving success for independent gas
+              station owners across the country.
+            </p>
+          </div>
+          <div className="stats-container">
+            <div className="stat">
+              <h3>1,000+</h3>
+              <p>Stations Managed</p>
+            </div>
+            <div className="stat">
+              <h3>500k+</h3>
+              <p>Transactions Processed Daily</p>
+            </div>
+            <div className="stat">
+              <h3>99.8%</h3>
+              <p>Operational Uptime</p>
+            </div>
+            <div className="stat">
+              <h3>50m+</h3>
+              <p>Gallons of Fuel Monitored Monthly</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
