@@ -129,6 +129,71 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section id="sales-management">
+        <div className="container">
+          <div className="text-content">
+            <span>Everything you need</span>
+            <h2>Manage Your Sales Seamlessly</h2>
+            <p>
+              With FuelDash, stay on top of your sales data without the hassle.
+              Our platform simplifies complex analytics into actionable
+              insights.
+            </p>
+          </div>
+
+          <div className="sales-data-container">
+            <img src="./Sales_Data.png" alt="" className="sales-data-img" />
+            <div className="sales-data-overlay"></div>
+          </div>
+
+          <div className="features-list">
+            <div className="feature-item">
+              <img src="path-to-your-sales-icon" alt="Real-time Tracking" />
+              <h3>Real-time Tracking</h3>
+              <p>
+                Monitor sales as they happen, and adjust your strategy on the
+                fly for maximum efficiency and profitability.
+              </p>
+            </div>
+            <div className="feature-item">
+              <img src="path-to-your-analytics-icon" alt="In-Depth Analytics" />
+              <h3>In-Depth Analytics</h3>
+              <p>
+                Dig deep into your sales data with comprehensive analytics that
+                help you understand trends and customer behavior.
+              </p>
+            </div>
+            <div className="feature-item">
+              <img src="path-to-your-reports-icon" alt="Detailed Reports" />
+              <h3>Detailed Reports</h3>
+              <p>
+                Access detailed reports that give you a clear view of your
+                business performance over time.
+              </p>
+            </div>
+            <div className="feature-item">
+              <img src="path-to-your-customer-icon" alt="Customer Insights" />
+              <h3>Customer Insights</h3>
+              <p>
+                Get to know your customers better. Our platform provides
+                insights into buying patterns and preferences.
+              </p>
+            </div>
+            <div className="feature-item">
+              <img
+                src="path-to-your-inventory-icon"
+                alt="Inventory Management"
+              />
+              <h3>Inventory Management</h3>
+              <p>
+                Never miss a sale due to stockouts. Keep your inventory in check
+                with our efficient tracking tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
