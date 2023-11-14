@@ -191,6 +191,59 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section id="testimonials">
+        <div className="testimonial-container">
+          <div className="testimonial">
+            <img
+              src="./brand-logo-1.png"
+              alt="Brand Logo 1"
+              className="brand-logo"
+            />
+
+            <blockquote>
+              “FuelDash has transformed the way we manage our gas station. The
+              real-time tracking and inventory insights have been game-changers
+              for our daily operations.”
+            </blockquote>
+            <div className="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/19.jpg"
+                alt="John Doe"
+                className="author-image"
+              />
+              <div className="author-info">
+                <span className="author-name">John Doe</span>
+                <span className="author-title">Owner, Sun Valley Gas</span>
+              </div>
+            </div>
+          </div>
+          <div className="vertical-line"></div>
+          <div className="testimonial">
+            <img
+              src="./brand-logo-2.png"
+              alt="Brand Logo 2"
+              className="brand-logo"
+            />
+            <blockquote>
+              “Thanks to FuelDash, we have seen a significant improvement in our
+              sales and customer satisfaction. Their analytics tools are
+              top-notch.”
+            </blockquote>
+            <div className="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/61.jpg"
+                alt="John Smith"
+                className="author-image"
+              />
+              <div className="author-info">
+                <span className="author-name">Carlos Rodriguez</span>
+                <span className="author-title">Owner, Hudson Peaks Gas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

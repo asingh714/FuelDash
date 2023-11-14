@@ -91,7 +91,7 @@
       flex-wrap: wrap;
 
       .brand-logo {
-        max-width: 100px;
+        max-width: 10rem;
         margin: 0 1rem;
         transition: transform 0.3s ease;
 
@@ -184,7 +184,7 @@
     // background-color: $dark-bg;
     color: white;
     padding: 4rem 0;
-    margin: 15rem 0;
+    margin: 10rem 0;
 
     .container {
       max-width: 120rem;
@@ -273,6 +273,69 @@
             }
           }
         }
+      }
+    }
+  }
+
+  #testimonials {
+    color: white;
+    padding: 0 4rem;
+
+    .testimonial-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      height: 30rem;
+
+      .testimonial {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        height: 100%;
+        padding-left: 1rem;
+
+        .brand-logo {
+          max-width: 10rem;
+          margin-bottom: 2.5rem;
+        }
+
+        blockquote {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+          margin-top: auto;
+          display: flex;
+          align-items: center;
+
+          .author-image {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+          }
+
+          .author-info {
+            span {
+              display: block;
+            }
+
+            .author-name {
+              font-weight: bold;
+            }
+
+            .author-title {
+              font-size: smaller;
+              color: $gray-400;
+            }
+          }
+        }
+      }
+
+      .vertical-line {
+        border-left: 1px solid $gray-700;
+        height: 100%;
       }
     }
   }
