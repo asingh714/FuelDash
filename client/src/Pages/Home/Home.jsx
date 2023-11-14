@@ -149,44 +149,41 @@ const Home = () => {
 
           <div className="features-list">
             <div className="feature-item">
-              <img src="path-to-your-sales-icon" alt="Real-time Tracking" />
-              <h3>Real-time Tracking</h3>
+              <img src="./real-time.svg" alt="Real-time Tracking" />
               <p>
+                <span className="bold">Real-time Tracking. </span>
                 Monitor sales as they happen, and adjust your strategy on the
                 fly for maximum efficiency and profitability.
               </p>
             </div>
             <div className="feature-item">
-              <img src="path-to-your-analytics-icon" alt="In-Depth Analytics" />
-              <h3>In-Depth Analytics</h3>
+              <img src="./analytics.svg" alt="In-Depth Analytics" />
               <p>
+                <span className="bold">In-Depth Analytics. </span>
                 Dig deep into your sales data with comprehensive analytics that
                 help you understand trends and customer behavior.
               </p>
             </div>
             <div className="feature-item">
-              <img src="path-to-your-reports-icon" alt="Detailed Reports" />
-              <h3>Detailed Reports</h3>
+              <img src="./reports.svg" alt="Detailed Reports" />
               <p>
+                <span className="bold">Detailed Reports. </span>
                 Access detailed reports that give you a clear view of your
                 business performance over time.
               </p>
             </div>
             <div className="feature-item">
-              <img src="path-to-your-customer-icon" alt="Customer Insights" />
-              <h3>Customer Insights</h3>
+              <img src="./customer.svg" alt="Customer Insights" />
               <p>
+                <span className="bold">Customer Insights. </span>
                 Get to know your customers better. Our platform provides
                 insights into buying patterns and preferences.
               </p>
             </div>
             <div className="feature-item">
-              <img
-                src="path-to-your-inventory-icon"
-                alt="Inventory Management"
-              />
-              <h3>Inventory Management</h3>
+              <img src="./inventory.svg" alt="Inventory Management" />
               <p>
+                <span className="bold">Inventory Management. </span>
                 Never miss a sale due to stockouts. Keep your inventory in check
                 with our efficient tracking tools.
               </p>
