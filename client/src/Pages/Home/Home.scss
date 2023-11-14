@@ -41,7 +41,6 @@
       .get-started-btn {
         width: 10rem;
         padding: 1rem 0rem;
-
         border-radius: 5px;
         font-size: 1.4rem;
         cursor: pointer;
@@ -50,6 +49,11 @@
         border: 0;
         text-align: center;
         background-color: $indigo-500;
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+        }
       }
 
       .learn-more-btn {
@@ -58,6 +62,11 @@
         font-weight: 600;
         color: #fff;
         padding: 0.75rem 0rem;
+        transition: text-shadow 0.3s ease-in-out; /* Transition effect */
+
+        &:hover {
+          text-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+        }
       }
     }
   }
@@ -179,6 +188,12 @@
           color: $indigo-400;
           font-weight: 600;
           font-size: 1.5rem;
+
+          transition: text-shadow 0.3s ease-in-out; /* Transition effect */
+
+          &:hover {
+            text-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+          }
         }
       }
     }
@@ -440,8 +455,8 @@
         gap: 5rem;
 
         .btn {
-          text-decoration: none;
           color: $gray-900;
+          text-decoration: none;
 
           &.btn-primary {
             width: 10rem;
@@ -453,6 +468,11 @@
             border: 0;
             text-align: center;
             background-color: #ffffff;
+            transition: box-shadow 0.3s ease-in-out;
+
+            &:hover {
+              box-shadow: 0 6px 10px rgba(255, 255, 255, 0.15);
+            }
           }
 
           &.btn-secondary {
@@ -461,10 +481,11 @@
             font-weight: 600;
             color: #fff;
             padding: 0.75rem 0rem;
-          }
+            transition: text-shadow 0.3s ease-in-out; /* Transition effect */
 
-          &:hover {
-            // background-color: darken(#2563eb, 10%);
+            &:hover {
+              text-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+            }
           }
         }
       }
