@@ -196,17 +196,17 @@ const Home = () => {
         <div className="container">
           <h2>Simple pricing, right for you</h2>
           <p>
-            Whether you're just getting started or ready to manage more, we've
-            got a plan that fits your needs.
+            Whether you are just getting started or ready to manage more, we
+            have got a plan that fits your needs.
           </p>
           <div className="pricing-options">
-            <div className="pricing-card">
+            <div className="pricing-card free">
               <h3>Free Plan</h3>
               <p className="price">
                 $0<span className="price-detail"> / month</span>
               </p>
               <p className="plan-description">
-                Manage a single property absolutely free.
+                Manage upto 3 properties absolutely free.
               </p>
               <ul className="features-list">
                 <li>
@@ -224,25 +224,34 @@ const Home = () => {
               </ul>
               <button className="btn">Get started</button>
             </div>
-            <div className="pricing-card featured">
+            <div className="pricing-card premium">
               <h3>Premium Plan</h3>
               <p className="price">
                 $19.99<span className="price-detail"> / month</span>
               </p>
               <p className="plan-description">
-                Manage 5 properties or more with advanced features.
+                Manage an unlimited amount of properties with more with advanced
+                features.
               </p>
               <ul className="features-list">
-                <img src="./check.svg" alt="" />
-                <li>Advanced reporting</li>
-                <img src="./check.svg" alt="" />
-                <li>Premium email support</li>
-                <img src="./check.svg" alt="" />
-                <li>Manage multiple properties</li>
-                <img src="./check.svg" alt="" />
-                <li>Priority community access</li>
+                <li>
+                  <img src="./check2.svg" alt="" />
+                  Advanced reporting
+                </li>
+                <li>
+                  <img src="./check2.svg" alt="" />
+                  Premium email support
+                </li>
+                <li>
+                  <img src="./check2.svg" alt="" />
+                  Manage multiple properties
+                </li>
+                <li>
+                  <img src="./check2.svg" alt="" />
+                  Priority community access
+                </li>
               </ul>
-              <button className="btn">Buy this plan</button>
+              <button className="btn btn-primary">Buy this plan</button>
             </div>
           </div>
         </div>
