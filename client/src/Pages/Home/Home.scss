@@ -75,7 +75,7 @@
   #dashboard-preview {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    // padding: 2rem;
 
     .dashboard-image {
       box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
@@ -92,6 +92,10 @@
     max-width: 120rem;
     padding: 0 4rem;
 
+    @include md {
+      margin: 10rem 0;
+    }
+
     h4 {
       margin-bottom: 4rem;
       color: white;
@@ -103,7 +107,7 @@
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
-      gap: 5rem;
+      gap: 2.5rem;
 
       .brand-logo {
         max-width: 10rem;
@@ -126,6 +130,10 @@
     // background-color: $gray-900;
     color: white;
 
+    @include md {
+      padding: 5rem 2rem;
+    }
+
     .features-intro {
       text-align: center;
       max-width: 80rem;
@@ -138,7 +146,6 @@
       }
       h2 {
         text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
-
         font-size: 3.2rem;
         margin-bottom: 2rem;
       }
@@ -150,8 +157,10 @@
         font-weight: 500;
         text-align: center;
         max-width: 60rem;
-
         margin: auto;
+
+        @include md {
+        }
       }
     }
 
@@ -160,11 +169,22 @@
       flex-direction: row;
       gap: 5rem;
 
+      @include md {
+        flex-direction: column;
+
+        // gap: 2rem;
+        // padding: 0 2rem;
+      }
+
       .feature {
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 300px;
+        max-width: 30rem;
+
+        @include md {
+          max-width: 100%;
+        }
 
         .feature-icon {
           width: 4.5rem;
@@ -208,6 +228,10 @@
     color: white;
     padding: 4rem 0;
     margin: 10rem 0;
+
+    @include md {
+      margin: 5rem 0;
+    }
 
     .container {
       max-width: 120rem;
@@ -273,11 +297,19 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
 
+        @include md {
+          flex-direction: column;
+        }
+
         .feature-item {
           display: flex;
           // text-align: center;
           width: 30%;
           margin-bottom: 3rem;
+
+          @include md {
+            width: 100%;
+          }
 
           img {
             width: 2rem;
@@ -312,6 +344,16 @@
       $gray-900 100%
     );
 
+    @include md {
+      padding: 5rem 0;
+
+      background-image: radial-gradient(
+        circle at center,
+        $gray-700 5%,
+        $gray-900 75%
+      );
+    }
+
     .container {
       max-width: 120rem;
       margin: 0 auto;
@@ -322,6 +364,10 @@
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
       font-size: 5rem;
       margin-bottom: 2rem;
+
+      @include md {
+        font-size: 4rem;
+      }
     }
 
     p {
@@ -339,6 +385,10 @@
       justify-content: center;
       gap: 2rem;
       align-items: center;
+
+      @include md {
+        flex-direction: column;
+      }
     }
 
     .pricing-card {
@@ -347,6 +397,10 @@
       border: 1px solid $gray-700;
       width: 33%;
       height: 90%;
+
+      @include md {
+        width: 100%;
+      }
 
       h3 {
         font-size: 2.4rem;
@@ -437,11 +491,20 @@
     padding: 0 4rem;
     margin-top: 10rem;
 
+    @include md {
+    }
+
     .testimonial-container {
       display: flex;
       justify-content: space-between;
       gap: 2rem;
       height: 30rem;
+
+      @include md {
+        flex-direction: column;
+        height: auto;
+        gap: 5rem;
+      }
 
       .testimonial {
         display: flex;
@@ -449,6 +512,12 @@
         width: 48%;
         height: 100%;
         padding-left: 1rem;
+
+        @include md {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
 
         .brand-logo {
           max-width: 10rem;
@@ -464,6 +533,11 @@
           margin-top: auto;
           display: flex;
           align-items: center;
+
+          @include md {
+            margin-top: 2rem;
+            align-self: flex-start;
+          }
 
           .author-image {
             width: 5rem;
@@ -502,6 +576,10 @@
     max-width: 120rem;
     padding: 0 4rem;
 
+    @include md {
+      padding: 0 2rem;
+    }
+
     .container {
     }
 
@@ -539,6 +617,10 @@
       border-left: 1px solid $gray-700;
       padding-left: 2rem;
 
+      @include md {
+        padding: 0 2rem;
+      }
+
       h3 {
         font-size: 3rem;
         font-weight: bold;
@@ -554,7 +636,7 @@
   #final-cta {
     color: white;
     text-align: center;
-    height: 65rem;
+    height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -565,6 +647,10 @@
         $gray-900 100%
       ),
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    @include md {
+      height: 35rem;
+    }
 
     .container {
       max-width: 120rem;
@@ -625,84 +711,6 @@
 
             &:hover {
               text-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .fueldash-footer {
-    color: white;
-    padding: 12rem 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    max-width: 120rem;
-    margin: 0 auto;
-
-    .newsletter-section {
-      max-width: 40%;
-
-      h2 {
-        font-size: 2.4rem;
-        margin-bottom: 1rem;
-        text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
-      }
-
-      p {
-        margin-bottom: 2rem;
-      }
-
-      form {
-        display: flex;
-        gap: 0.5rem;
-
-        input {
-          flex: 1;
-          padding: 1rem;
-          border: none;
-          border-radius: 0.5rem;
-        }
-
-        button {
-          padding: 1rem 2rem;
-          border: none;
-          border-radius: 0.5rem;
-          background-color: $indigo-500;
-          color: white;
-          cursor: pointer;
-          transition: box-shadow 0.3s ease-in-out;
-
-          &:hover {
-            box-shadow: 0 6px 10px rgba(255, 255, 255, 0.15);
-          }
-        }
-      }
-    }
-
-    .footer-nav {
-      display: flex;
-      gap: 3rem;
-
-      .footer-column {
-        h4 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-          font-weight: 600;
-        }
-
-        ul {
-          list-style: none;
-          padding: 0;
-
-          li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-
-            &:hover {
-              color: $indigo-500; // Adjust to match your brand colors
             }
           }
         }

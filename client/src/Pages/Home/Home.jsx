@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../Components/NavBar/NavBar";
 
 import "./Home.scss";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
             <Link to="/signup" className="get-started-btn">
               Get Started
             </Link>
-            <Link to="/" className="learn-more-btn">
+            <Link to="/about" className="learn-more-btn">
               Learn more →
             </Link>
           </div>
@@ -92,7 +93,7 @@ const Home = () => {
               Track sales as they happen. Get up-to-the-minute data on fuel
               sales, inventory levels, and customer trends.
             </p>
-            <Link to="/" className="learn-more-btn">
+            <Link to="/about" className="learn-more-btn">
               Learn more →
             </Link>
           </div>
@@ -107,7 +108,7 @@ const Home = () => {
               Never run out of stock again. Our intelligent system predicts your
               inventory needs based on historical data and trends.
             </p>
-            <Link to="/" className="learn-more-btn">
+            <Link to="/about" className="learn-more-btn">
               Learn more →
             </Link>
           </div>
@@ -123,7 +124,7 @@ const Home = () => {
               Detailed reports to help you understand what’s selling, what’s
               not, and how to improve.
             </p>
-            <Link to="/" className="learn-more-btn">
+            <Link to="/about" className="learn-more-btn">
               Learn more →
             </Link>
           </div>
@@ -349,71 +350,16 @@ const Home = () => {
             inventory, and data analytics all in one place.
           </p>
           <div className="cta-buttons">
-            <a href="/signup" className="btn btn-primary">
+            <Link href="/signup" className="btn btn-primary">
               Get Started
-            </a>
-            <a href="/features" className="btn btn-secondary">
+            </Link>
+            <Link href="/about" className="btn btn-secondary">
               Learn more →
-            </a>
+            </Link>
           </div>
         </div>
       </section>
-
-      <footer className="fueldash-footer">
-        <div className="newsletter-section">
-          <h2>Stay Updated with FuelDash</h2>
-          <p>
-            Join our newsletter and get the latest on gas station management
-            tips, updates, and industry news every month.
-          </p>
-          <form action="/subscribe" method="post">
-            <input type="email" placeholder="Enter email address..." required />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-
-        <div className="footer-nav">
-          <div className="footer-column">
-            <h4>About</h4>
-            <ul>
-              <li>
-                <a href="/about">Our Story</a>
-              </li>
-              <li>
-                <a href="/team">Team</a>
-              </li>
-              <li>
-                <a href="/careers">Careers</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Explore</h4>
-            <ul>
-              <li>
-                <a href="/blog">Blog</a>
-              </li>
-              <li>
-                <a href="/customers">Customers</a>
-              </li>
-              <li>
-                <a href="/faqs">FAQs</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                <a href="/contact">Get in Touch</a>
-              </li>
-              <li>
-                <a href="/support">Support</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
