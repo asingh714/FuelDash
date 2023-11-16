@@ -1,7 +1,9 @@
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
+import BlogPosts from "../../Components/BlogPost/BlogPosts";
 
 import "./About.scss";
+// import "../../Components/BlogPost/BlogPosts.scss";
 
 const About = () => {
   return (
@@ -88,35 +90,7 @@ const About = () => {
         </div>
       </section>
 
-      <section id="blog-section">
-        <h2>Insights and Updates</h2>
-        <div className="blog-posts">
-          <article>
-            <img src="blog-post-1.jpg" alt="Blog Post Title" />
-            <h3>Maximizing Profits with Smart Inventory Management</h3>
-            <p>
-              Discover how integrating smart inventory systems can boost your
-              gas station&apos;s profitability.
-            </p>
-          </article>
-          <article>
-            <img src="blog-post-2.jpg" alt="Blog Post Title" />
-            <h3>Adapting to the Evolving Fuel Retail Landscape</h3>
-            <p>
-              Learn about the latest trends in the fuel retail industry and how
-              to stay ahead of the curve.
-            </p>
-          </article>
-          <article>
-            <img src="blog-post-3.jpg" alt="Blog Post Title" />
-            <h3>The Future of Fuel Stations: Electric and Beyond</h3>
-            <p>
-              Explore the future of fuel stations in a world moving towards
-              electric vehicles.
-            </p>
-          </article>
-        </div>
-      </section>
+      <BlogPosts />
 
       <Footer />
     </div>
