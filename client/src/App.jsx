@@ -15,6 +15,7 @@ import NotFound from "./Pages/NotFound/NotFound.jsx";
 import SalesReports from "./Pages/SalesReports/SalesReports.jsx";
 
 import "./styles/global.scss";
+import About from "./Pages/About/About.jsx";
 
 function App() {
   const queryClient = new QueryClient();
@@ -76,6 +77,10 @@ function App() {
         {
           path: "/sales-reports",
           element: <SalesReports />,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
         {
           path: "*",
