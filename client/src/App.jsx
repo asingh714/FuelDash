@@ -18,6 +18,7 @@ import "./styles/global.scss";
 import About from "./Pages/About/About.jsx";
 import Blog from "./Pages/Blog/Blog.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
+import Customers from "./Pages/Customers/Customers.jsx";
 
 function App() {
   const queryClient = new QueryClient();
@@ -89,6 +90,7 @@ function App() {
           element: <Blog />,
         },
         { path: "/contact", element: <Contact /> },
+        { path: "/customers", element: <Customers /> },
         {
           path: "*",
           element: <NotFound />,
