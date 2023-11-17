@@ -16,7 +16,7 @@ const Footer = () => {
     setError(null);
 
     try {
-      await newRequest.post("/subscribe", { email });
+      await newRequest.post("/contact/subscribe", { email });
       setIsSubscribed(true);
       setNotification({
         type: "success",

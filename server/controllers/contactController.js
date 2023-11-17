@@ -1,4 +1,5 @@
 const EmailSubscriber = require("../models/EmailSubscriber");
+const ContactInfo = require("../models/ContactInfo");
 const validator = require("validator");
 
 const registerSubscriber = async (req, res) => {
@@ -25,6 +26,34 @@ const registerSubscriber = async (req, res) => {
   }
 };
 
+const registerContactInfo = async (req, res) => {
+  const { firstName, lastName, email, message } = req.body;
+
+  if (!firstName || !lastName || !message) {
+    return res.status(400).json({
+      msg: "Please provide your name, email and a message",
+    });
+  }
+
+  const isEmailValid = validator.isEmail(email);
+  if (!email || !isEmailValid) {
+    return res.status(400).json({ msg: "Please provide a valid email" });
+  }
+
+  try {
+    const contactInfo = new ContactInfo({
+      firstName: firstName.trim(),
+      lastName: lastName.trim(),
+      email: email.trim().toLowerCase(),
+      message: message.trim(),
+    });
+    await contactInfo.save();
+    res.status(201).json({ contactInfo });
+  } catch (error) {
+    res.status(500).json({ msg: error });
+  }
+};
+
 const getAllSubscribers = async (req, res) => {
   try {
     const subscribers = await EmailSubscriber.find({});
@@ -37,4 +66,5 @@ const getAllSubscribers = async (req, res) => {
 module.exports = {
   registerSubscriber,
   getAllSubscribers,
+  registerContactInfo,
 };
