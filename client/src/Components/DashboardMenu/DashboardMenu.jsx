@@ -4,10 +4,12 @@ import "./DashboardMenu.scss";
 const DashboardMenu = () => {
   return (
     <div className="dashboard-menu">
-      <div className="logo-container">
-        <img src="/fueldash_logo.png" alt="" />
-        <span>FuelDash</span>
-      </div>
+      <Link to="/" className="logo">
+        <div className="logo-container">
+          <img src="/fueldash_logo.png" alt="" />
+          <span>FuelDash</span>
+        </div>
+      </Link>
 
       <div className="dashboard-menu-links">
         <Link to="/dashboard" className="active">

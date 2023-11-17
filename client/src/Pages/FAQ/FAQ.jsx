@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+
 import "./FAQ.scss";
 import Footer from "../../Components/Footer/Footer";
 import NavBar from "../../Components/NavBar/NavBar";
@@ -43,6 +45,16 @@ const FAQItem = ({ faq, index, toggleFAQ }) => (
     <div className="faq-answer">{faq.open && <p>{faq.answer}</p>}</div>
   </div>
 );
+
+FAQItem.propTypes = {
+  faq: PropTypes.shape({
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired,
+    open: PropTypes.bool,
+  }).isRequired,
+  index: PropTypes.number.isRequired,
+  toggleFAQ: PropTypes.func.isRequired,
+};
 
 const FAQs = () => {
   const [faqs, setFaqs] = useState(
