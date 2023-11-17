@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Notification from "../Notification/Notification";
 import newRequest from "../../utils/newRequest";
@@ -54,13 +55,10 @@ const Footer = () => {
             <h4>About</h4>
             <ul>
               <li>
-                <a href="/about">Our Story</a>
+                <Link to="/about">Our Story</Link>
               </li>
               <li>
-                <a href="/team">Team</a>
-              </li>
-              <li>
-                <a href="/careers">Careers</a>
+                <Link to="/blog">Blog</Link>
               </li>
             </ul>
           </div>
@@ -68,13 +66,10 @@ const Footer = () => {
             <h4>Explore</h4>
             <ul>
               <li>
-                <a href="/blog">Blog</a>
+                <Link to="/customers">Customers</Link>
               </li>
               <li>
-                <a href="/customers">Customers</a>
-              </li>
-              <li>
-                <a href="/faqs">FAQs</a>
+                <Link to="/faqs">FAQs</Link>
               </li>
             </ul>
           </div>
@@ -82,10 +77,7 @@ const Footer = () => {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="/contact">Get in Touch</a>
-              </li>
-              <li>
-                <a href="/support">Support</a>
+                <Link to="/contact">Get in Touch</Link>
               </li>
             </ul>
           </div>
