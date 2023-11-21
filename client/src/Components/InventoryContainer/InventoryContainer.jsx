@@ -10,13 +10,16 @@ const InventoryContainer = ({ propertyId }) => {
   const [errorMsg, setErrorMsg] = useState(null);
 
   const { isLoading, error, data } = useQuery(
-    ["nonGas", propertyId],
+    ["nonGasInventory", propertyId],
     async () => {
-      if (!propertyId) return null;
+      if (!propertyId) {
+        throw new Error("Property ID is required");
+      }
       const response = await newRequest.get(`/nonGas/${propertyId}/inventory`);
       console.log(response.data.nonGasProductInventory);
-      if (!response.data || error) {
+      if (!response.data) {
         setErrorMsg("No data returned");
+        throw new Error("No data returned from the API");
       }
       return response.data.nonGasProductInventory;
     }

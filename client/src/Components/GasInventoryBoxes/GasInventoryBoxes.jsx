@@ -16,15 +16,20 @@ const colors = {
 const GasInventoryBoxes = ({ propertyId }) => {
   const [errorMsg, setErrorMsg] = useState(null);
 
-  const { isLoading, error, data } = useQuery(["gas", propertyId], async () => {
-    if (!propertyId) return null;
-    const response = await newRequest.get(`/gasoline/${propertyId}/inventory`);
-    // console.log(response);
-    if (!response.data || error) {
-      setErrorMsg("No data returned");
+  const { isLoading, error, data } = useQuery(
+    ["gasInventory", propertyId],
+    async () => {
+      if (!propertyId) return null;
+      const response = await newRequest.get(
+        `/gasoline/${propertyId}/inventory`
+      );
+      // console.log(response);
+      if (!response.data || error) {
+        setErrorMsg("No data returned");
+      }
+      return response.data.gasProductInventory;
     }
-    return response.data.gasProductInventory;
-  });
+  );
 
   if (isLoading) {
     return <div className="loading-message">Loading...</div>;

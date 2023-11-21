@@ -14,6 +14,7 @@ const PropertyDropdown = ({
   const [currentUser, setCurrentUser] = useState(
     () => JSON.parse(localStorage.getItem("currentUser")) || ""
   );
+
   const currentUserId = currentUser?.user.currentUserId;
 
   const { data, isLoading, error } = useQuery(
@@ -29,7 +30,6 @@ const PropertyDropdown = ({
     }
   );
 
-  // Notify parent of fetched properties
   useEffect(() => {
     if (data) {
       onPropertiesFetched(data);
