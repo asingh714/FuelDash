@@ -26,6 +26,28 @@ const getAllDailySalesMetrics = async (req, res) => {
   }
 };
 
+const getLatestDailySalesMetricsData = async (req, res) => {
+  const { propertyId } = req.params;
+
+  try {
+    const dailySalesMetrics = await DailySalesMetrics.findOne({
+      propertyId,
+    }).sort({ date: -1 });
+
+    if (!dailySalesMetrics) {
+      return res.status(404).json({
+        msg: "No daily sales metrics found for the specified date.",
+      });
+    }
+
+    res.status(200).json({
+      date: dailySalesMetrics.date,
+    });
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+
 const getSingleDailySalesMetrics = async (req, res) => {
   const { propertyId } = req.params;
   const date = new Date(req.params.date);
@@ -35,8 +57,8 @@ const getSingleDailySalesMetrics = async (req, res) => {
     const dailySalesMetrics = await DailySalesMetrics.findOne({
       propertyId,
       date: {
-        $gte: new Date(date.setHours(0, 0, 0, 0)), // Set the date to the start of the day
-        $lte: new Date(date.setHours(23, 59, 59, 999)), // Set the date to the end of the day
+        $gte: new Date(date.setHours(0, 0, 0, 0)),
+        $lte: new Date(date.setHours(23, 59, 59, 999)),
       },
     });
 
@@ -246,4 +268,5 @@ module.exports = {
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
   addDailySalesMetrics,
+  getLatestDailySalesMetricsData,
 };

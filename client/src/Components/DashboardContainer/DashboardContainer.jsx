@@ -29,6 +29,7 @@ const DashboardContainer = () => {
   const [propertyId, setPropertyId] = useState(undefined);
   const [selectedDate, setSelectedDate] = useState(getCurrentLocalDate());
   const [notification, setNotification] = useState(null);
+  const [latestDate, setLatestDate] = useState(null);
 
   const navigate = useNavigate();
   const { currentUser } = useAuth();
@@ -45,12 +46,29 @@ const DashboardContainer = () => {
     }
   }, [currentUser, navigate]);
 
+  const fetchLatestDate = async () => {
+    if (!propertyId) return;
+    try {
+      const response = await newRequest.get(`/sales/${propertyId}/latestDate`);
+      setLatestDate(response.data.date);
+    } catch (error) {
+      console.error("Error fetching latest date:", error);
+      setErrorMsg("Error fetching latest date");
+    }
+  };
+
+  useEffect(() => {
+    fetchLatestDate();
+  }, [propertyId]);
+
   const { isLoading, error, data } = useQuery(
-    [propertyId, selectedDate],
+    [propertyId, selectedDate || latestDate],
     async () => {
       if (!propertyId) return null;
+      const dateToUse = selectedDate || latestDate;
+      if (!dateToUse) return null;
       const response = await newRequest.get(
-        `/sales/${propertyId}/${selectedDate}`
+        `/sales/${propertyId}/${dateToUse}`
       );
 
       if (!response.data || error) {

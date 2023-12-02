@@ -10,9 +10,14 @@ const {
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
   getSingleDashboardData,
+  getLatestDailySalesMetricsData,
 } = require("../controllers/dailySalesController");
 
 router.route("/:propertyId").get(authenticate, getAllDailySalesMetrics);
+
+router
+  .route("/:propertyId/latestDate")
+  .get(authenticate, getLatestDailySalesMetricsData);
 
 router
   .route("/:propertyId/:date")
