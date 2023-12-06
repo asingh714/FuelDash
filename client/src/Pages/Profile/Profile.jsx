@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import newRequest from "../../utils/newRequest";
+import { useAuth } from "../../utils/AuthContext";
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import Modal from "../../Components/Modal/Modal";
 import Notification from "../../Components/Notification/Notification";
@@ -20,17 +21,17 @@ const Profile = () => {
     type: "success",
   });
 
-  const [currentUser, setCurrentUser] = useState(
-    () => JSON.parse(localStorage.getItem("currentUser")) || ""
-  );
+  const { currentUser } = useAuth();
+  console.log("currentUser", currentUser);
 
   const navigate = useNavigate();
 
   const { loading, error, data } = useQuery([], async () => {
-    const response = await newRequest.get(`/user`);
+    const response = await newRequest.get(`/user`, currentUser.userId);
     if (!response.data) {
       throw new Error("No profile returned");
     }
+    console.log("response.data", response.data);
     setFormData({
       name: response.data.name,
       email: response.data.email,
@@ -51,6 +52,7 @@ const Profile = () => {
       console.error("An error occurred while logging out:", error);
     }
   };
+
   const handlePasswordChange = async (currentPassword, newPassword) => {
     try {
       const response = await newRequest.patch("/user/updatePassword", {
@@ -203,6 +205,11 @@ const Profile = () => {
           {data?.subscriptionStatus === "Free" && (
             <div className="button subscribe-button ">Subscribe</div>
           )}
+
+          {data?.subscriptionStatus === "Paid" && (
+            <div className="button subscribe-button ">Cancel Subscription</div>
+          )}
+
           <div
             onClick={() => {
               setModalType("deleteUser");

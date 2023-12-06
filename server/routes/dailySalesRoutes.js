@@ -9,7 +9,6 @@ const {
   getSingleDailySalesMetrics,
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
-  getSingleDashboardData,
   getLatestDailySalesMetricsData,
 } = require("../controllers/dailySalesController");
 

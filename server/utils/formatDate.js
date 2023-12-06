@@ -1,6 +1,6 @@
 const formatDate = (date) => {
   const d = new Date(date);
-  const timezoneOffset = d.getTimezoneOffset() * 60 * 1000; // convert minutes to milliseconds
+  const timezoneOffset = d.getTimezoneOffset() * 60 * 1000;
   const localDate = new Date(d.getTime() + timezoneOffset);
 
   let month = "" + (localDate.getMonth() + 1);

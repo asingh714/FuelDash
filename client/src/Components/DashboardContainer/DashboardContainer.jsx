@@ -33,6 +33,7 @@ const DashboardContainer = () => {
 
   const navigate = useNavigate();
   const { currentUser } = useAuth();
+  console.log("currentUser", currentUser);
 
   useEffect(() => {
     if (!currentUser) {

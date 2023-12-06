@@ -22,10 +22,6 @@ app.use(morgan("tiny"));
 app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello!</h1>");
-});
-
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
 app.use("/api/properties", propertyRouter);
