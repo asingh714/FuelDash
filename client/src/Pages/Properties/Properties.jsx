@@ -138,7 +138,7 @@ const Properties = () => {
             Add Properties
           </div>
         </div>
-        {data && data.properties ? (
+        {data && data.properties.length ? (
           <DataTable
             tableData={data.properties}
             columns={columns}
