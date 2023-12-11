@@ -19,7 +19,7 @@ const Properties = () => {
     if (!response.data) {
       throw new Error("No data returned");
     }
-    return response.data;
+    return response.data || {};
   });
 
   const addPropertyMutation = useMutation(
@@ -138,13 +138,13 @@ const Properties = () => {
             Add Properties
           </div>
         </div>
-        {data && data.properties.length ? (
+        {data &&
+        Array.isArray(data.properties) &&
+        data.properties.length > 0 ? (
           <DataTable
             tableData={data.properties}
             columns={columns}
             mainTable={true}
-
-            // className="properties-table"
           />
         ) : null}
       </div>

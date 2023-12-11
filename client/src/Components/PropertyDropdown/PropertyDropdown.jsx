@@ -47,7 +47,7 @@ const PropertyDropdown = ({
   const { data, isLoading, error } = useQuery(
     ["properties", currentUserId],
     async () => {
-      if (!currentUserId) return;
+      if (!currentUserId) return [];
       const response = await newRequest.get(
         `/properties?userId=${currentUserId}`
       );

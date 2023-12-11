@@ -8,6 +8,7 @@ import Modal from "../../Components/Modal/Modal";
 import newRequest from "../../utils/newRequest";
 import { formatCurrency } from "../../utils/formatCurrency";
 import formatDate from "../../utils/formatDate";
+import OvalLoader from "../../Components/OvalLoader/OvalLoader";
 import "./Products.scss";
 
 const Products = () => {
@@ -146,7 +147,7 @@ const Products = () => {
       {
         header: "Cost Per Gallons",
         accessorKey: "costPerGallon",
-        cell: ({ row }) => formatCurrency(row.original.costPerGallon),
+        cell: ({ row }) => formatCurrency(row.original.costPerGallon / 100),
       },
       {
         header: "Date",
@@ -250,9 +251,9 @@ const Products = () => {
           onPropertyChange={handlePropertyChange}
           defaultSelected={selectedProperty}
         />
-        {isGasDataLoading && isNonGasDataLoading && (
-          <div>Loading products...</div>
-        )}
+
+        {isGasDataLoading && isNonGasDataLoading && <OvalLoader />}
+
         {gasDataError && nonGasDataError && <div>Error loading products</div>}
         {gasData && (
           <div className="products-table-container">
