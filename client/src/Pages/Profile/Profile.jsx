@@ -30,7 +30,6 @@ const Profile = () => {
     if (!response.data) {
       throw new Error("No profile returned");
     }
-    console.log("response.data", response.data);
     setFormData({
       name: response.data.name,
       email: response.data.email,
@@ -71,7 +70,7 @@ const Profile = () => {
       }
     } catch (error) {
       setNotification({
-        message: "An error occurred. Please try again.",
+        message: error.response.data.msg,
         type: "error",
       });
     }
@@ -147,7 +146,7 @@ const Profile = () => {
     }
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>LOADING...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (

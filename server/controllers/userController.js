@@ -2,7 +2,6 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const validator = require("validator");
 
 const User = require("../models/User");
-const { createTokenUser, attachCookiesToResponse } = require("../utils");
 
 const getUserProfile = async (req, res) => {
   const userId = req.user.userId;
@@ -29,9 +28,9 @@ const updatePassword = async (req, res) => {
   const { currentPassword, newPassword } = req.body;
 
   if (!currentPassword || !newPassword || newPassword.length < 6) {
-    return res
-      .status(400)
-      .json({ msg: "Please provide current password and new password" });
+    return res.status(400).json({
+      msg: "Please provide current password and new password. New password must be at least 6 characters.",
+    });
   }
 
   const user = await User.findOne({ _id: userId });

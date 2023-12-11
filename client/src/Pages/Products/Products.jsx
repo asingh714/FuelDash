@@ -256,18 +256,20 @@ const Products = () => {
         {gasDataError && nonGasDataError && <div>Error loading products</div>}
         {gasData && (
           <div className="products-table-container">
-            <div>
-              <h3>Gas Products</h3>
-              <div
-                className="add-btn"
-                onClick={() => {
-                  setModalType("addGasProduct");
-                  setModalOpen(true);
-                }}
-              >
-                Add Gas Product
+            <div className="gas-products-container">
+              <div className="products-heading-btn-container">
+                <h3>Gas Products</h3>
+                <div
+                  className="add-btn"
+                  onClick={() => {
+                    setModalType("addGasProduct");
+                    setModalOpen(true);
+                  }}
+                >
+                  Add Gas Product
+                </div>
               </div>
-              {gasData && gasData.gasolineProducts ? (
+              {gasData && gasData.gasolineProducts.length ? (
                 <DataTable
                   tableData={gasData.gasolineProducts}
                   columns={columns.gasProducts}
@@ -277,18 +279,21 @@ const Products = () => {
                 />
               ) : null}
             </div>
-            <div>
-              <h3>Non-Gas Products</h3>
-              <div
-                className="add-btn"
-                onClick={() => {
-                  setModalType("addNonGasProduct");
-                  setModalOpen(true);
-                }}
-              >
-                Add Non Gas Product
+
+            <div className="nongas-products-container">
+              <div className="products-heading-btn-container">
+                <h3>Non-Gas Products</h3>
+                <div
+                  className="add-btn"
+                  onClick={() => {
+                    setModalType("addNonGasProduct");
+                    setModalOpen(true);
+                  }}
+                >
+                  Add Non Gas Product
+                </div>
               </div>
-              {nonGasData && nonGasData.nonGasolineProducts ? (
+              {nonGasData && nonGasData.nonGasolineProducts.length ? (
                 <DataTable
                   tableData={nonGasData.nonGasolineProducts}
                   columns={columns.nonGasProducts}
