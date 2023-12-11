@@ -1,7 +1,7 @@
 const createTokenUser = (user) => {
-  const { _id, name, subscriptionStatus } = user;
+  const { _id, name } = user;
 
-  return { userId: _id, name, subscriptionStatus };
+  return { userId: _id, name };
 };
 
 module.exports = createTokenUser;

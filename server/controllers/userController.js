@@ -17,7 +17,6 @@ const getUserProfile = async (req, res) => {
     res.status(200).json({
       name: user.name,
       email: user.email,
-      subscriptionStatus: user.subscriptionStatus,
     });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
@@ -109,53 +108,9 @@ const deleteUser = async (req, res) => {
   }
 };
 
-const becomePaidUser = async (req, res) => {
-  const { userId } = req.user;
-
-  try {
-    let user = await User.findById(userId);
-
-    if (!user.stripeCustomerId) {
-      const customer = await stripe.customers.create({
-        email: user.email,
-      });
-      user.stripeCustomerId = customer.id;
-      await user.save();
-    }
-
-    const subscription = await stripe.subscriptions.create({
-      customer: user.stripeCustomerId,
-      items: [{ price: process.env.STRIPE_PRICE_ID }],
-    });
-
-    user = await User.findByIdAndUpdate(
-      userId,
-      {
-        subscriptionStatus: "Paid",
-        stripeSubscriptionId: subscription.id,
-      },
-      { new: true, runValidators: true }
-    );
-
-    const tokenUser = createTokenUser({
-      _id: userId,
-      name: user.name,
-      subscriptionStatus: "Paid",
-    });
-
-    attachCookiesToResponse({ res, user: tokenUser });
-
-    res.status(200).json({ user });
-  } catch (error) {
-    console.error("Error upgrading user to paid plan:", error);
-    return res.status(500).json({ msg: error.message });
-  }
-};
-
 module.exports = {
   getUserProfile,
   updatePassword,
   updateUser,
   deleteUser,
-  becomePaidUser,
 };

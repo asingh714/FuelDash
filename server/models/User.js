@@ -23,33 +23,9 @@ const UserSchema = new mongoose.Schema({
     minlength: 2,
     maxlength: 50,
   },
-  subscriptionStatus: {
-    type: String,
-    enum: ["Free", "Paid"],
-    default: "Free",
-  },
-  subscriptionStartDate: {
-    type: Date,
-  },
   createdAt: {
     type: Date,
     default: Date.now,
-  },
-  isVerified: {
-    type: Boolean,
-    default: false,
-  },
-  verificationToken: {
-    type: String,
-  },
-  tokenExpiration: {
-    type: Date,
-  },
-  stripeCustomerId: {
-    type: String,
-  },
-  stripeSubscriptionId: {
-    type: String,
   },
 });
 
@@ -67,6 +43,5 @@ UserSchema.methods.comparePassword = async function (candidatePassword) {
 UserSchema.pre("remove", async function (next) {
   await this.model("Property").deleteMany({ userId: this._id });
 });
-
 
 module.exports = mongoose.model("User", UserSchema);

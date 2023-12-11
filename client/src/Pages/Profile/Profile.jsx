@@ -22,7 +22,6 @@ const Profile = () => {
   });
 
   const { currentUser } = useAuth();
-  console.log("currentUser", currentUser);
 
   const navigate = useNavigate();
 
@@ -198,18 +197,8 @@ const Profile = () => {
           Update User Info
         </button>
 
-        <span>Subscription Status: {data?.subscriptionStatus}</span>
-
         <hr />
         <div className="button-container">
-          {data?.subscriptionStatus === "Free" && (
-            <div className="button subscribe-button ">Subscribe</div>
-          )}
-
-          {data?.subscriptionStatus === "Paid" && (
-            <div className="button subscribe-button ">Cancel Subscription</div>
-          )}
-
           <div
             onClick={() => {
               setModalType("deleteUser");
@@ -228,7 +217,6 @@ const Profile = () => {
           >
             Change Password
           </div>
-
           <div
             onClick={() => {
               setModalType("logout");

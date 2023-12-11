@@ -33,8 +33,6 @@ const getSingleProperty = async (req, res) => {
 
 const addProperty = async (req, res) => {
   const userId = req.user.userId;
-  const subscriptionStatus = req.user.subscriptionStatus;
-  console.log("subscriptionStatus", subscriptionStatus);
 
   const { name, address } = req.body;
 
@@ -42,14 +40,6 @@ const addProperty = async (req, res) => {
     return res.status(400).json({ msg: "Please provide name and address" });
   }
 
-  if (subscriptionStatus === "Free") {
-    const properties = await Property.find({ userId });
-    if (properties.length >= 3) {
-      return res
-        .status(400)
-        .json({ msg: "You have reached the maximum number of properties" });
-    }
-  }
   try {
     const newProperty = new Property({ userId, name, address });
     await newProperty.save();
