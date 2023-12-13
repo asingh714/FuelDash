@@ -82,11 +82,10 @@ const addGasolineProduct = async (req, res) => {
 };
 
 const updateGasolineProduct = async (req, res) => {
-  const { id } = req.params; // Now we use id to find the gasolineProduct
+  const { id } = req.params;
   const { costPerGallon, quantityInGallons, gasType, receivedDate } = req.body;
 
   try {
-    // Find the GasolineProduct based on _id
     const gasolineProduct = await GasolineProduct.findById(id);
 
     if (!gasolineProduct) {
@@ -132,7 +131,6 @@ const deleteGasolineProduct = async (req, res) => {
 
 const updateGasolineBatches = async (propertyId, gasType, gallonsSold) => {
   try {
-    // Find the GasolineProduct based on propertyId and gasType, sorted by receivedDate
     const gasolineProducts = await GasolineProduct.find({
       propertyId,
       gasType,

@@ -87,7 +87,6 @@ const updateNonGasolineProduct = async (req, res) => {
   const { costPerItem, quantity, name, category, receivedDate } = req.body;
 
   try {
-    // Find the NonGasolineProduct based on _id
     const nonGasolineProduct = await NonGasolineProduct.findById(id);
 
     if (!nonGasolineProduct) {

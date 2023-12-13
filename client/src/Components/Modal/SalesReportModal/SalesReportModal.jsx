@@ -19,6 +19,7 @@ const SalesReportModal = ({
 }) => {
   const initializeState = (type, salesReport) => {
     if (type === "editSalesReport" || type === "deleteSalesReport") {
+      console.log(salesReport);
       return {
         id: salesReport._id,
         date: salesReport.date,
@@ -81,8 +82,10 @@ const SalesReportModal = ({
   };
 
   const handleClose = () => {
-    setFormData(initializeState(type, product));
+    setFormData(initializeState("", product));
     onClose();
+
+    console.log(formData);
   };
 
   const handleSubmit = (e) => {
@@ -141,7 +144,7 @@ const SalesReportModal = ({
 
   function handleMoneyChange(e, field) {
     const value = e.target.value;
-    const numericValue = parseFloat(value.replace(/\D/g, "")); // Strip non-numeric characters
+    const numericValue = parseFloat(value.replace(/\D/g, ""));
     const valueInCents = isNaN(numericValue) ? 0 : numericValue;
 
     setFormData((prev) => ({
@@ -160,7 +163,7 @@ const SalesReportModal = ({
 
   function handleNestedMoneyChange(e, arrayField, index, field) {
     const value = e.target.value;
-    const numericValue = parseFloat(value.replace(/\D/g, "")); // Strip non-numeric characters
+    const numericValue = parseFloat(value.replace(/\D/g, ""));
     const valueInCents = isNaN(numericValue) ? 0 : numericValue;
 
     const updatedArray = formData[arrayField].map((item, idx) =>
