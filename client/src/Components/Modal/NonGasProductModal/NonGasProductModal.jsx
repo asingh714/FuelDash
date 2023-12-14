@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import "../Modal.scss";
+import { formatToTwoDecimalPlaces } from "../../../utils/formatCurrency";
 import getCurrentLocalDate from "../../../utils/getCurrentLocalDate";
 import DateSelector from "../../DatePicker/DatePicker";
 
@@ -16,7 +17,7 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
         name: product.name,
         category: product.category,
         quantity: product.quantity,
-        costPerItem: product.costPerItem,
+        costPerItem: formatToTwoDecimalPlaces(product.costPerItem),
         receivedDate: product.receivedDate,
       };
     } else {
@@ -24,7 +25,7 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
         name: "",
         category: "",
         quantity: 0,
-        costPerItem: 0,
+        costPerItem: formatToTwoDecimalPlaces(0),
         receivedDate: getCurrentLocalDate(),
       };
     }
@@ -42,19 +43,8 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleNonGasCostChange = (e) => {
-    // const value = e.target.value.replace(/\D/g, "");
-    // setFormData({ ...formData, costPerItem: value });
-    setFormData({ ...formData, costPerItem: e.target.value });
-  };
-
-  // const handleNonGasFocus = (e) => {
-  //   e.target.value = formData.costPerItem;
-  // };
-
-  // const handleNonGasBlur = (e) => {
-  //   // e.target.value = toDisplayFormat(formData.costPerItem);
-  //   e.target.value = formData.costPerItem;
+  // const handleNonGasCostChange = (e) => {
+  //   setFormData({ ...formData, costPerItem: e.target.value });
   // };
 
   const validateForm = () => {
@@ -90,7 +80,8 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
     onClose();
   };
 
-  const handleConfirm = () => {
+  const handleConfirm = (e) => {
+    e.preventDefault();
     if (type !== "deleteNonGasProduct" && !validateForm()) {
       return;
     }
@@ -184,7 +175,7 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
                 name="costPerItem"
                 // value={toDisplayFormat(formData.costPerItem)}
                 value={formData.costPerItem}
-                onChange={handleNonGasCostChange}
+                onChange={handleInputChange}
                 // onFocus={handleNonGasFocus}
                 // onBlur={handleNonGasBlur}
               />

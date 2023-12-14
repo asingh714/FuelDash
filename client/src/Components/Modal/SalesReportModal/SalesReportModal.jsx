@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import "../Modal.scss";
-import {
-  toDisplayFormat,
-  toBackendFormat,
-} from "../../../utils/formatCurrency";
+import { formatToTwoDecimalPlaces } from "../../../utils/formatCurrency";
 import getCurrentLocalDate from "../../../utils/getCurrentLocalDate";
 import DateSelector from "../../DatePicker/DatePicker";
 
@@ -23,9 +20,13 @@ const SalesReportModal = ({
       return {
         id: salesReport._id,
         date: salesReport.date,
-        totalRevenue: salesReport.totalRevenue,
-        dailyCashPayments: salesReport.dailyCashPayments,
-        dailyCreditCardPayments: salesReport.dailyCreditCardPayments,
+        totalRevenue: formatToTwoDecimalPlaces(salesReport.totalRevenue),
+        dailyCashPayments: formatToTwoDecimalPlaces(
+          salesReport.dailyCashPayments
+        ),
+        dailyCreditCardPayments: formatToTwoDecimalPlaces(
+          salesReport.dailyCreditCardPayments
+        ),
         gasolineSales: salesReport.gasolineSales,
         nonGasolineSales: salesReport.nonGasolineSales,
       };
@@ -142,32 +143,33 @@ const SalesReportModal = ({
     });
   };
 
-  function handleMoneyChange(e, field) {
-    const value = e.target.value;
-    const numericValue = parseFloat(value.replace(/\D/g, ""));
-    const valueInCents = isNaN(numericValue) ? 0 : numericValue;
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    // const value = e.target.value;
+    // const numericValue = parseFloat(value.replace(/\D/g, ""));
+    // const valueInCents = isNaN(numericValue) ? 0 : numericValue;
 
     setFormData((prev) => ({
       ...prev,
-      [field]: valueInCents,
+      [name]: value,
     }));
   }
 
-  function handleMoneyFocus(e, value) {
-    e.target.value = value.toString();
-  }
+  // function handleMoneyFocus(e, value) {
+  //   e.target.value = value.toString();
+  // }
 
-  function handleMoneyBlur(e, field) {
-    e.target.value = toDisplayFormat(formData[field]);
-  }
+  // function handleMoneyBlur(e, field) {
+  //   e.target.value = toDisplayFormat(formData[field]);
+  // }
 
   function handleNestedMoneyChange(e, arrayField, index, field) {
     const value = e.target.value;
-    const numericValue = parseFloat(value.replace(/\D/g, ""));
-    const valueInCents = isNaN(numericValue) ? 0 : numericValue;
+    // const numericValue = parseFloat(value.replace(/\D/g, ""));
+    // const valueInCents = isNaN(numericValue) ? 0 : numericValue;
 
     const updatedArray = formData[arrayField].map((item, idx) =>
-      idx === index ? { ...item, [field]: valueInCents } : item
+      idx === index ? { ...item, [field]: value } : item
     );
     setFormData((prev) => ({
       ...prev,
@@ -175,13 +177,13 @@ const SalesReportModal = ({
     }));
   }
 
-  function handleNestedMoneyFocus(e, arrayField, index, field) {
-    e.target.value = formData[arrayField][index][field].toString();
-  }
+  // function handleNestedMoneyFocus(e, arrayField, index, field) {
+  //   e.target.value = formData[arrayField][index][field].toString();
+  // }
 
-  function handleNestedMoneyBlur(e, arrayField, index, field) {
-    e.target.value = toDisplayFormat(formData[arrayField][index][field]);
-  }
+  // function handleNestedMoneyBlur(e, arrayField, index, field) {
+  //   e.target.value = toDisplayFormat(formData[arrayField][index][field]);
+  // }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -213,46 +215,57 @@ const SalesReportModal = ({
 
                 <input
                   type="text"
+                  name="totalRevenue"
                   id="totalRevenue"
-                  value={toDisplayFormat(formData.totalRevenue)}
-                  onChange={(e) => handleMoneyChange(e, "totalRevenue")}
-                  onFocus={(e) => handleMoneyFocus(e, formData.totalRevenue)}
-                  onBlur={(e) => handleMoneyBlur(e, "totalRevenue")}
+                  value={formData.totalRevenue}
+                  onChange={handleInputChange}
+                  // onFocus={(e) => handleMoneyFocus(e, formData.totalRevenue)}
+                  // onBlur={(e) => handleMoneyBlur(e, "totalRevenue")}
                 />
               </div>
+              {errors.totalRevenue && (
+                <p className="error-text">{errors.totalRevenue}</p>
+              )}
             </div>
 
             <div className="row">
               <div className="modal-input-group">
-                <label htmlFor="cashPayments">Cash Payments</label>
+                <label htmlFor="dailyCashPayments">Cash Payments</label>
 
                 <input
                   type="text"
-                  id="cashPayments"
-                  value={toDisplayFormat(formData.dailyCashPayments)}
-                  onChange={(e) => handleMoneyChange(e, "dailyCashPayments")}
-                  onFocus={(e) =>
-                    handleMoneyFocus(e, formData.dailyCashPayments)
-                  }
-                  onBlur={(e) => handleMoneyBlur(e, "dailyCashPayments")}
+                  name="dailyCashPayments"
+                  id="dailyCashPayments"
+                  value={formData.dailyCashPayments}
+                  onChange={handleInputChange}
+                  // onFocus={(e) =>
+                  //   handleMoneyFocus(e, formData.dailyCashPayments)
+                  // }
+                  // onBlur={(e) => handleMoneyBlur(e, "dailyCashPayments")}
                 />
+                {errors.dailyCashPayments && (
+                  <p className="error-text">{errors.dailyCashPayments}</p>
+                )}
               </div>
 
               <div className="modal-input-group">
-                <label htmlFor="creditCardPayments">Credit Card Payments</label>
-
+                <label htmlFor="dailyCreditCardPayments">
+                  Credit Card Payments
+                </label>
                 <input
                   type="text"
-                  id="creditCardPayments"
-                  value={toDisplayFormat(formData.dailyCreditCardPayments)}
-                  onChange={(e) =>
-                    handleMoneyChange(e, "dailyCreditCardPayments")
-                  }
-                  onFocus={(e) =>
-                    handleMoneyFocus(e, formData.dailyCreditCardPayments)
-                  }
-                  onBlur={(e) => handleMoneyBlur(e, "dailyCreditCardPayments")}
+                  name="dailyCreditCardPayments"
+                  id="dailyCreditCardPayments"
+                  value={formData.dailyCreditCardPayments}
+                  onChange={handleInputChange}
+                  // onFocus={(e) =>
+                  //   handleMoneyFocus(e, formData.dailyCreditCardPayments)
+                  // }
+                  // onBlur={(e) => handleMoneyBlur(e, "dailyCreditCardPayments")}
                 />
+                {errors.dailyCreditCardPayments && (
+                  <p className="error-text">{errors.dailyCreditCardPayments}</p>
+                )}
               </div>
             </div>
 
@@ -317,7 +330,7 @@ const SalesReportModal = ({
                     <input
                       id={`name-${index}`}
                       type="text"
-                      value={toDisplayFormat(gasolineSale.priceSoldAt)}
+                      value={gasolineSale.priceSoldAt}
                       onChange={(e) =>
                         handleNestedMoneyChange(
                           e,
@@ -326,22 +339,22 @@ const SalesReportModal = ({
                           "priceSoldAt"
                         )
                       }
-                      onFocus={(e) =>
-                        handleNestedMoneyFocus(
-                          e,
-                          "gasolineSales",
-                          index,
-                          "priceSoldAt"
-                        )
-                      }
-                      onBlur={(e) =>
-                        handleNestedMoneyBlur(
-                          e,
-                          "gasolineSales",
-                          index,
-                          "priceSoldAt"
-                        )
-                      }
+                      // onFocus={(e) =>
+                      //   handleNestedMoneyFocus(
+                      //     e,
+                      //     "gasolineSales",
+                      //     index,
+                      //     "priceSoldAt"
+                      //   )
+                      // }
+                      // onBlur={(e) =>
+                      //   handleNestedMoneyBlur(
+                      //     e,
+                      //     "gasolineSales",
+                      //     index,
+                      //     "priceSoldAt"
+                      //   )
+                      // }
                     />
                   </div>
                 </div>
@@ -413,7 +426,7 @@ const SalesReportModal = ({
                     <input
                       id={`priceSoldAtNonGas-${index}`}
                       type="text"
-                      value={toDisplayFormat(nonGasolineSale.priceSoldAt)}
+                      value={nonGasolineSale.priceSoldAt}
                       onChange={(e) =>
                         handleNestedMoneyChange(
                           e,
@@ -422,22 +435,22 @@ const SalesReportModal = ({
                           "priceSoldAt"
                         )
                       }
-                      onFocus={(e) =>
-                        handleNestedMoneyFocus(
-                          e,
-                          "nonGasolineSales",
-                          index,
-                          "priceSoldAt"
-                        )
-                      }
-                      onBlur={(e) =>
-                        handleNestedMoneyBlur(
-                          e,
-                          "nonGasolineSales",
-                          index,
-                          "priceSoldAt"
-                        )
-                      }
+                      // onFocus={(e) =>
+                      //   handleNestedMoneyFocus(
+                      //     e,
+                      //     "nonGasolineSales",
+                      //     index,
+                      //     "priceSoldAt"
+                      //   )
+                      // }
+                      // onBlur={(e) =>
+                      //   handleNestedMoneyBlur(
+                      //     e,
+                      //     "nonGasolineSales",
+                      //     index,
+                      //     "priceSoldAt"
+                      //   )
+                      // }
                     />
                   </div>
                 </div>

@@ -93,18 +93,17 @@ const SalesReports = () => {
     {
       header: "Revenue",
       accessorKey: "totalRevenue",
-      cell: ({ row }) => formatCurrency(row.original.totalRevenue / 100),
+      cell: ({ row }) => formatCurrency(row.original.totalRevenue),
     },
     {
       header: "Cash Payments",
       accessorKey: "dailyCashPayments",
-      cell: ({ row }) => formatCurrency(row.original.dailyCashPayments / 100),
+      cell: ({ row }) => formatCurrency(row.original.dailyCashPayments),
     },
     {
       header: "Credit Card Payments",
       accessorKey: "dailyCreditCardPayments",
-      cell: ({ row }) =>
-        formatCurrency(row.original.dailyCreditCardPayments / 100),
+      cell: ({ row }) => formatCurrency(row.original.dailyCreditCardPayments),
     },
     {
       header: "",
@@ -163,6 +162,7 @@ const SalesReports = () => {
     {
       header: "Price Sold At",
       accessorKey: "priceSoldAt",
+      cell: ({ row }) => formatCurrency(row.original.priceSoldAt),
     },
   ];
 
@@ -178,6 +178,7 @@ const SalesReports = () => {
     {
       header: "Price Sold At",
       accessorKey: "priceSoldAt",
+      cell: ({ row }) => formatCurrency(row.original.priceSoldAt),
     },
   ];
 

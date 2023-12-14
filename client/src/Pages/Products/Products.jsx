@@ -147,8 +147,7 @@ const Products = () => {
       {
         header: "Cost Per Gallons",
         accessorKey: "costPerGallon",
-        cell: ({ row }) => formatCurrency(row.original.costPerGallon / 100),
-        // cell: ({ row }) => row.original.costPerGallon,
+        cell: ({ row }) => formatCurrency(row.original.costPerGallon),
       },
       {
         header: "Date",

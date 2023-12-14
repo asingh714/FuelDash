@@ -12,4 +12,14 @@ function toBackendFormat(value) {
   return parseInt(value, 10);
 }
 
-export { formatCurrency, toDisplayFormat, toBackendFormat };
+const formatToTwoDecimalPlaces = (num) => {
+  return parseFloat(num).toFixed(2);
+};
+
+
+export {
+  formatCurrency,
+  toDisplayFormat,
+  toBackendFormat,
+  formatToTwoDecimalPlaces,
+};

@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import "../Modal.scss";
-import {
-  toDisplayFormat,
-  toBackendFormat,
-} from "../../../utils/formatCurrency";
+import { formatToTwoDecimalPlaces } from "../../../utils/formatCurrency";
 import getCurrentLocalDate from "../../../utils/getCurrentLocalDate";
 import DateSelector from "../../DatePicker/DatePicker";
 
@@ -16,14 +13,14 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
         id: product._id,
         gasType: product.gasType,
         quantityInGallons: product.quantityInGallons,
-        costPerGallon: product.costPerGallon,
+        costPerGallon: formatToTwoDecimalPlaces(product.costPerGallon),
         receivedDate: product.receivedDate,
       };
     } else {
       return {
         gasType: "",
         quantityInGallons: 0,
-        costPerGallon: 0,
+        costPerGallon: formatToTwoDecimalPlaces(0),
         receivedDate: getCurrentLocalDate(),
       };
     }
@@ -41,19 +38,12 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleGasCostChange = (e) => {
-    const value = e.target.value.replace(/\D/g, "");
-    setFormData({ ...formData, costPerGallon: value });
-  };
-
-  const handleGasFocus = (e) => {
-    e.target.value = formData.costPerGallon;
-  };
-
-  const handleGasBlur = (e) => {
-    // e.target.value = toDisplayFormat(formData.costPerGallon);
-    e.target.value = formData.costPerGallon;
-  };
+  // const handleGasCostChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     costPerGallon: e.target.value,
+  //   });
+  // };
 
   const validateForm = () => {
     let errors = {};
@@ -89,7 +79,7 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
     if (type === "editGasProduct" || type === "addGasProduct") {
       onConfirm({
         ...formData,
-        costPerGallon: toBackendFormat(formData.costPerGallon),
+        costPerGallon: formData.costPerGallon,
       });
     } else if (type === "deleteGasProduct") {
       onConfirm(formData);
@@ -149,10 +139,9 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
                 type="text"
                 name="costPerGallon"
                 id="costPerGallon"
-                value={toDisplayFormat(formData.costPerGallon)}
-                onChange={handleGasCostChange}
-                onFocus={handleGasFocus}
-                onBlur={handleGasBlur}
+                value={formData.costPerGallon}
+                // onChange={handleGasCostChange}
+                onChange={handleInputChange}
               />
               {errors.costPerGallon && (
                 <p className="error-text">{errors.costPerGallon}</p>
