@@ -1,6 +1,7 @@
 const { createJWT, attachCookiesToResponse, isTokenValid } = require("./jwt");
 const createTokenUser = require("./createTokenUser");
 const formatDate = require("./formatDate");
+const formatCurrency = require("./formatCurrency");
 
 module.exports = {
   createJWT,
@@ -8,4 +9,5 @@ module.exports = {
   attachCookiesToResponse,
   isTokenValid,
   formatDate,
+  formatCurrency,
 };

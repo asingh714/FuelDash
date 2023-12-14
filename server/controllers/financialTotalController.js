@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { ObjectId } = mongoose.Types;
 const formatDate = require("../utils/formatDate");
+const formatCurrency = require("../utils/formatCurrency");
 
 const DailySalesMetrics = require("../models/DailySalesMetrics");
 
@@ -17,7 +18,8 @@ const getAllRevenueListAscending = async (req, res) => {
 
     const revenueList = dailySalesMetrics.map((metric) => ({
       id: metric._id,
-      Revenue: parseFloat(metric.totalRevenue),
+      Revenue: metric.totalRevenue,
+      // Revenue: formatCurrency((metric.totalRevenue / 100).toFixed(2)),
       Date: formatDate(metric.date),
     }));
 

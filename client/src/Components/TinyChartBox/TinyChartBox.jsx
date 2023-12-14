@@ -62,17 +62,7 @@ const TinyChartBox = ({
         >
           View All
         </Link>
-        {money ? (
-          <span>
-            {toDisplayFormat(total)}
-            {/* {new Intl.NumberFormat("en-US", {
-              style: "currency",
-              currency: "USD",
-            }).format(total)} */}
-          </span>
-        ) : (
-          <span>{total}</span>
-        )}
+        {money ? <span>{toDisplayFormat(total)}</span> : <span>{total}</span>}
       </div>
     </div>
   );
