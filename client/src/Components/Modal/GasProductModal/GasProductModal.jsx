@@ -51,7 +51,8 @@ const GasProductModal = ({ type, product, onClose, onConfirm }) => {
   };
 
   const handleGasBlur = (e) => {
-    e.target.value = toDisplayFormat(formData.costPerGallon);
+    // e.target.value = toDisplayFormat(formData.costPerGallon);
+    e.target.value = formData.costPerGallon;
   };
 
   const validateForm = () => {

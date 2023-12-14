@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import "../Modal.scss";
-import {
-  toDisplayFormat,
-  toBackendFormat,
-} from "../../../utils/formatCurrency";
 import getCurrentLocalDate from "../../../utils/getCurrentLocalDate";
 import DateSelector from "../../DatePicker/DatePicker";
 
@@ -47,17 +43,19 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
   };
 
   const handleNonGasCostChange = (e) => {
-    const value = e.target.value.replace(/\D/g, "");
-    setFormData({ ...formData, costPerItem: value });
+    // const value = e.target.value.replace(/\D/g, "");
+    // setFormData({ ...formData, costPerItem: value });
+    setFormData({ ...formData, costPerItem: e.target.value });
   };
 
-  const handleNonGasFocus = (e) => {
-    e.target.value = formData.costPerItem;
-  };
+  // const handleNonGasFocus = (e) => {
+  //   e.target.value = formData.costPerItem;
+  // };
 
-  const handleNonGasBlur = (e) => {
-    e.target.value = toDisplayFormat(formData.costPerItem);
-  };
+  // const handleNonGasBlur = (e) => {
+  //   // e.target.value = toDisplayFormat(formData.costPerItem);
+  //   e.target.value = formData.costPerItem;
+  // };
 
   const validateForm = () => {
     let errors = {};
@@ -100,7 +98,7 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
     if (type === "addNonGasProduct" || type === "editNonGasProduct") {
       onConfirm({
         ...formData,
-        costPerItem: toBackendFormat(formData.costPerItem),
+        costPerItem: formData.costPerItem,
       });
     } else if (type === "deleteNonGasProduct") {
       onConfirm(formData);
@@ -184,10 +182,11 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
                 type="text"
                 id="costPerItem"
                 name="costPerItem"
-                value={toDisplayFormat(formData.costPerItem)}
+                // value={toDisplayFormat(formData.costPerItem)}
+                value={formData.costPerItem}
                 onChange={handleNonGasCostChange}
-                onFocus={handleNonGasFocus}
-                onBlur={handleNonGasBlur}
+                // onFocus={handleNonGasFocus}
+                // onBlur={handleNonGasBlur}
               />
               {errors.costPerItem && (
                 <p className="error-text">{errors.costPerItem}</p>
