@@ -30,7 +30,7 @@ const addDailyGasolineDeliveryForProperties = async (properties) => {
 
     if (!alreadyExists) {
       const gasType = getRandomGasType();
-      const quantityInGallons = getRandomValue(2500, 8000);
+      const quantityInGallons = getRandomValue(2500, 5000);
       const costPerGallon = getRandomValue(2, 3.5);
       await GasolineProduct.create({
         propertyId: property._id,
@@ -72,7 +72,14 @@ function getRandomProduct() {
 function getRandomCategory(product) {
   const categories = {
     Beverages: ["Coca-Cola", "Juice Box", "Milk", "Water Bottle"],
-    Snacks: ["Beef Jerky", "Bread", "Cheese", "Chocolate Bar", "Potato Chips"],
+    Snacks: [
+      "Beef Jerky",
+      "Bread",
+      "Cheese",
+      "Chocolate Bar",
+      "Potato Chips",
+      "Chewing Gum",
+    ],
     "Tobacco Products": ["Cigarettes"],
     "Automotive Supplies": [
       "Engine Oil",
@@ -107,7 +114,7 @@ const addDailyNonGasolineDeliveryForProperties = async (properties) => {
     });
 
     if (!alreadyExists) {
-      const quantity = Math.floor(getRandomValue(50, 500));
+      const quantity = Math.floor(getRandomValue(20, 100));
       const costPerItem = getRandomValue(0.5, 10);
       await NonGasolineProduct.create({
         propertyId: property._id,
@@ -168,26 +175,35 @@ const addDailySalesMetricsForProperties = async (properties) => {
     if (!alreadyExists) {
       const gasolineSalesArray = [];
       let gasolineRevenue = 0;
-      for (let i = 0; i < 5; i++) {
+      const addedGasTypes = new Set();
+
+      while (addedGasTypes.size < 5) {
         const gasType = getRandomGasType();
-        const gallonsSold = parseFloat(getRandomValue(100, 1000));
-        const priceSoldAt = parseFloat(getRandomValue(2, 5));
-        gasolineSalesArray.push({ gasType, gallonsSold, priceSoldAt });
-        gasolineRevenue += gallonsSold * priceSoldAt;
+        if (!addedGasTypes.has(gasType)) {
+          addedGasTypes.add(gasType);
+          const gallonsSold = parseFloat(getRandomValue(500, 1100));
+          const priceSoldAt = parseFloat(getRandomValue(2, 4));
+          gasolineSalesArray.push({ gasType, gallonsSold, priceSoldAt });
+          gasolineRevenue += gallonsSold * priceSoldAt;
+        }
       }
 
       const nonGasolineSalesArray = [];
       let nonGasolineRevenue = 0;
-      for (let j = 0; j < 10; j++) {
+      const addedProducts = new Set();
+
+      while (addedProducts.size < 10) {
         const name = getRandomProduct();
-        const quantitySold = parseFloat(getRandomValue(1, 100));
-        const priceSoldAt = parseFloat(getRandomValue(1, 10));
-        nonGasolineSalesArray.push({ name, quantitySold, priceSoldAt });
-        nonGasolineRevenue += quantitySold * priceSoldAt;
+        if (!addedProducts.has(name)) {
+          addedProducts.add(name);
+          const quantitySold = parseFloat(getRandomValue(5, 20));
+          const priceSoldAt = parseFloat(getRandomValue(1, 6));
+          nonGasolineSalesArray.push({ name, quantitySold, priceSoldAt });
+          nonGasolineRevenue += quantitySold * priceSoldAt;
+        }
       }
 
       const totalRevenue = gasolineRevenue + nonGasolineRevenue;
-
       const cashPercentage = getRandomPercentage();
       const creditCardPercentage = 100 - cashPercentage;
 
@@ -198,9 +214,9 @@ const addDailySalesMetricsForProperties = async (properties) => {
       await DailySalesMetrics.create({
         propertyId: property._id,
         date: today,
-        totalRevenue: totalRevenue.toFixed(2),
-        dailyCashPayments: dailyCashPayments.toFixed(2),
-        dailyCreditCardPayments: dailyCreditCardPayments.toFixed(2),
+        totalRevenue: totalRevenue,
+        dailyCashPayments: dailyCashPayments,
+        dailyCreditCardPayments: dailyCreditCardPayments,
         gasolineSales: gasolineSalesArray,
         nonGasolineSales: nonGasolineSalesArray,
       });

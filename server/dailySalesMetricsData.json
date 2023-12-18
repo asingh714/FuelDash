@@ -2,7 +2,7 @@
   "DailySalesMetrics": [
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-01T00:00:00Z",
+      "date": "2023-10-26T00:00:00Z",
       "totalRevenue": 8138.5,
       "dailyCreditCardPayments": 6716.11,
       "dailyCashPayments": 1422.39,
@@ -123,7 +123,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-01T00:00:00Z",
+      "date": "2023-10-26T00:00:00Z",
       "totalRevenue": 4737.79,
       "dailyCreditCardPayments": 2442.96,
       "dailyCashPayments": 2294.83,
@@ -239,7 +239,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-01T00:00:00Z",
+      "date": "2023-10-26T00:00:00Z",
       "totalRevenue": 7423.51,
       "dailyCreditCardPayments": 1285.58,
       "dailyCashPayments": 6137.93,
@@ -355,7 +355,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-01T00:00:00Z",
+      "date": "2023-10-26T00:00:00Z",
       "totalRevenue": 7694.11,
       "dailyCreditCardPayments": 6473.33,
       "dailyCashPayments": 1220.78,
@@ -491,7 +491,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-01T00:00:00Z",
+      "date": "2023-10-26T00:00:00Z",
       "totalRevenue": 415.08,
       "dailyCreditCardPayments": 271.88,
       "dailyCashPayments": 143.2,
@@ -512,7 +512,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-02T00:00:00Z",
+      "date": "2023-10-27T00:00:00Z",
       "totalRevenue": 7942.28,
       "dailyCreditCardPayments": 2401.31,
       "dailyCashPayments": 5540.97,
@@ -638,7 +638,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-02T00:00:00Z",
+      "date": "2023-10-27T00:00:00Z",
       "totalRevenue": 4775.92,
       "dailyCreditCardPayments": 1370.79,
       "dailyCashPayments": 3405.13,
@@ -754,7 +754,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-02T00:00:00Z",
+      "date": "2023-10-27T00:00:00Z",
       "totalRevenue": 2712.4,
       "dailyCreditCardPayments": 1152.8,
       "dailyCashPayments": 1559.6,
@@ -780,7 +780,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-02T00:00:00Z",
+      "date": "2023-10-27T00:00:00Z",
       "totalRevenue": 7704.9,
       "dailyCreditCardPayments": 1777.19,
       "dailyCashPayments": 5927.71,
@@ -901,7 +901,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-02T00:00:00Z",
+      "date": "2023-10-27T00:00:00Z",
       "totalRevenue": 1217.99,
       "dailyCreditCardPayments": 358.23,
       "dailyCashPayments": 859.76,
@@ -927,7 +927,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-03T00:00:00Z",
+      "date": "2023-10-28T00:00:00Z",
       "totalRevenue": 9177.42,
       "dailyCreditCardPayments": 7147.32,
       "dailyCashPayments": 2030.1,
@@ -1063,7 +1063,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-03T00:00:00Z",
+      "date": "2023-10-28T00:00:00Z",
       "totalRevenue": 6270.11,
       "dailyCreditCardPayments": 2756.76,
       "dailyCashPayments": 3513.35,
@@ -1179,7 +1179,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-03T00:00:00Z",
+      "date": "2023-10-28T00:00:00Z",
       "totalRevenue": 3033.34,
       "dailyCreditCardPayments": 602.18,
       "dailyCashPayments": 2431.16,
@@ -1210,7 +1210,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-03T00:00:00Z",
+      "date": "2023-10-28T00:00:00Z",
       "totalRevenue": 7515.35,
       "dailyCreditCardPayments": 1699.82,
       "dailyCashPayments": 5815.53,
@@ -1336,7 +1336,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-03T00:00:00Z",
+      "date": "2023-10-28T00:00:00Z",
       "totalRevenue": 784.65,
       "dailyCreditCardPayments": 148.35,
       "dailyCashPayments": 636.3,
@@ -1362,7 +1362,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-04T00:00:00Z",
+      "date": "2023-10-29T00:00:00Z",
       "totalRevenue": 4587.94,
       "dailyCreditCardPayments": 1029.29,
       "dailyCashPayments": 3558.65,
@@ -1403,7 +1403,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-04T00:00:00Z",
+      "date": "2023-10-29T00:00:00Z",
       "totalRevenue": 7147.72,
       "dailyCreditCardPayments": 2217.98,
       "dailyCashPayments": 4929.74,
@@ -1524,7 +1524,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-04T00:00:00Z",
+      "date": "2023-10-29T00:00:00Z",
       "totalRevenue": 3047.22,
       "dailyCreditCardPayments": 2385.86,
       "dailyCashPayments": 661.36,
@@ -1555,7 +1555,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-04T00:00:00Z",
+      "date": "2023-10-29T00:00:00Z",
       "totalRevenue": 9789.58,
       "dailyCreditCardPayments": 7734.59,
       "dailyCashPayments": 2054.99,
@@ -1681,7 +1681,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-04T00:00:00Z",
+      "date": "2023-10-29T00:00:00Z",
       "totalRevenue": 2300.95,
       "dailyCreditCardPayments": 1731.14,
       "dailyCashPayments": 569.81,
@@ -1707,7 +1707,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-05T00:00:00Z",
+      "date": "2023-10-30T00:00:00Z",
       "totalRevenue": 2894.5,
       "dailyCreditCardPayments": 1543.91,
       "dailyCashPayments": 1350.59,
@@ -1753,7 +1753,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-05T00:00:00Z",
+      "date": "2023-10-30T00:00:00Z",
       "totalRevenue": 6170.35,
       "dailyCreditCardPayments": 1950.88,
       "dailyCashPayments": 4219.47,
@@ -1874,7 +1874,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-05T00:00:00Z",
+      "date": "2023-10-30T00:00:00Z",
       "totalRevenue": 3769.59,
       "dailyCreditCardPayments": 3224.34,
       "dailyCashPayments": 545.25,
@@ -1915,7 +1915,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-05T00:00:00Z",
+      "date": "2023-10-30T00:00:00Z",
       "totalRevenue": 9793.62,
       "dailyCreditCardPayments": 1515.54,
       "dailyCashPayments": 8278.08,
@@ -2041,7 +2041,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-05T00:00:00Z",
+      "date": "2023-10-30T00:00:00Z",
       "totalRevenue": 2854.55,
       "dailyCreditCardPayments": 592.99,
       "dailyCashPayments": 2261.56,
@@ -2072,7 +2072,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-06T00:00:00Z",
+      "date": "2023-10-31T00:00:00Z",
       "totalRevenue": 3784.52,
       "dailyCreditCardPayments": 2061.41,
       "dailyCashPayments": 1723.11,
@@ -2123,7 +2123,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-06T00:00:00Z",
+      "date": "2023-10-31T00:00:00Z",
       "totalRevenue": 8410.52,
       "dailyCreditCardPayments": 4405.4,
       "dailyCashPayments": 4005.12,
@@ -2249,7 +2249,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-06T00:00:00Z",
+      "date": "2023-10-31T00:00:00Z",
       "totalRevenue": 6409.78,
       "dailyCreditCardPayments": 1433.44,
       "dailyCashPayments": 4976.34,
@@ -2300,7 +2300,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-06T00:00:00Z",
+      "date": "2023-10-31T00:00:00Z",
       "totalRevenue": 2969.7,
       "dailyCreditCardPayments": 718.78,
       "dailyCashPayments": 2250.92,
@@ -2336,7 +2336,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-06T00:00:00Z",
+      "date": "2023-10-31T00:00:00Z",
       "totalRevenue": 2827.79,
       "dailyCreditCardPayments": 584.07,
       "dailyCashPayments": 2243.72,
@@ -2367,7 +2367,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-07T00:00:00Z",
+      "date": "2023-11-01T00:00:00Z",
       "totalRevenue": 6310.99,
       "dailyCreditCardPayments": 3511.69,
       "dailyCashPayments": 2799.3,
@@ -2418,7 +2418,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-07T00:00:00Z",
+      "date": "2023-11-01T00:00:00Z",
       "totalRevenue": 8385.38,
       "dailyCreditCardPayments": 5744.97,
       "dailyCashPayments": 2640.41,
@@ -2544,7 +2544,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-07T00:00:00Z",
+      "date": "2023-11-01T00:00:00Z",
       "totalRevenue": 3299.34,
       "dailyCreditCardPayments": 2460.02,
       "dailyCashPayments": 839.32,
@@ -2595,7 +2595,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-07T00:00:00Z",
+      "date": "2023-11-01T00:00:00Z",
       "totalRevenue": 2984.36,
       "dailyCreditCardPayments": 1238.21,
       "dailyCashPayments": 1746.15,
@@ -2636,7 +2636,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-07T00:00:00Z",
+      "date": "2023-11-01T00:00:00Z",
       "totalRevenue": 1735.23,
       "dailyCreditCardPayments": 293.26,
       "dailyCashPayments": 1441.97,
@@ -2667,7 +2667,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-08T00:00:00Z",
+      "date": "2023-11-02T00:00:00Z",
       "totalRevenue": 4676.28,
       "dailyCreditCardPayments": 2034.99,
       "dailyCashPayments": 2641.29,
@@ -2718,7 +2718,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-08T00:00:00Z",
+      "date": "2023-11-02T00:00:00Z",
       "totalRevenue": 7719.78,
       "dailyCreditCardPayments": 4381.52,
       "dailyCashPayments": 3338.26,
@@ -2854,7 +2854,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-08T00:00:00Z",
+      "date": "2023-11-02T00:00:00Z",
       "totalRevenue": 4215.95,
       "dailyCreditCardPayments": 3590.44,
       "dailyCashPayments": 625.51,
@@ -2905,7 +2905,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-08T00:00:00Z",
+      "date": "2023-11-02T00:00:00Z",
       "totalRevenue": 3483.03,
       "dailyCreditCardPayments": 2987.07,
       "dailyCashPayments": 495.96,
@@ -2946,7 +2946,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-08T00:00:00Z",
+      "date": "2023-11-02T00:00:00Z",
       "totalRevenue": 1910.63,
       "dailyCreditCardPayments": 1138.91,
       "dailyCashPayments": 771.72,
@@ -2977,7 +2977,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-09T00:00:00Z",
+      "date": "2023-11-03T00:00:00Z",
       "totalRevenue": 4385.18,
       "dailyCreditCardPayments": 1050.38,
       "dailyCashPayments": 3334.8,
@@ -3033,7 +3033,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-09T00:00:00Z",
+      "date": "2023-11-03T00:00:00Z",
       "totalRevenue": 7591.32,
       "dailyCreditCardPayments": 5400.04,
       "dailyCashPayments": 2191.28,
@@ -3169,7 +3169,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-09T00:00:00Z",
+      "date": "2023-11-03T00:00:00Z",
       "totalRevenue": 4650.78,
       "dailyCreditCardPayments": 2019.04,
       "dailyCashPayments": 2631.74,
@@ -3220,7 +3220,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-09T00:00:00Z",
+      "date": "2023-11-03T00:00:00Z",
       "totalRevenue": 2367.55,
       "dailyCreditCardPayments": 407.27,
       "dailyCashPayments": 1960.28,
@@ -3261,7 +3261,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-09T00:00:00Z",
+      "date": "2023-11-03T00:00:00Z",
       "totalRevenue": 3572.16,
       "dailyCreditCardPayments": 878.83,
       "dailyCashPayments": 2693.33,
@@ -3307,7 +3307,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-10T00:00:00Z",
+      "date": "2023-11-04T00:00:00Z",
       "totalRevenue": 5316.06,
       "dailyCreditCardPayments": 2914.67,
       "dailyCashPayments": 2401.39,
@@ -3363,7 +3363,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-10T00:00:00Z",
+      "date": "2023-11-04T00:00:00Z",
       "totalRevenue": 3980.96,
       "dailyCreditCardPayments": 1015.18,
       "dailyCashPayments": 2965.78,
@@ -3404,7 +3404,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-10T00:00:00Z",
+      "date": "2023-11-04T00:00:00Z",
       "totalRevenue": 3959.84,
       "dailyCreditCardPayments": 1923.05,
       "dailyCashPayments": 2036.79,
@@ -3455,7 +3455,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-10T00:00:00Z",
+      "date": "2023-11-04T00:00:00Z",
       "totalRevenue": 1767.41,
       "dailyCreditCardPayments": 376.74,
       "dailyCashPayments": 1390.67,
@@ -3496,7 +3496,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-10T00:00:00Z",
+      "date": "2023-11-04T00:00:00Z",
       "totalRevenue": 3186.45,
       "dailyCreditCardPayments": 1988.17,
       "dailyCashPayments": 1198.28,
@@ -3542,7 +3542,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-11T00:00:00Z",
+      "date": "2023-11-05T00:00:00Z",
       "totalRevenue": 5074.73,
       "dailyCreditCardPayments": 1551.12,
       "dailyCashPayments": 3523.61,
@@ -3598,7 +3598,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-11T00:00:00Z",
+      "date": "2023-11-05T00:00:00Z",
       "totalRevenue": 3753.83,
       "dailyCreditCardPayments": 1049.78,
       "dailyCashPayments": 2704.05,
@@ -3639,7 +3639,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-11T00:00:00Z",
+      "date": "2023-11-05T00:00:00Z",
       "totalRevenue": 3690.09,
       "dailyCreditCardPayments": 1197.21,
       "dailyCashPayments": 2492.88,
@@ -3690,7 +3690,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-11T00:00:00Z",
+      "date": "2023-11-05T00:00:00Z",
       "totalRevenue": 1917.98,
       "dailyCreditCardPayments": 441.64,
       "dailyCashPayments": 1476.34,
@@ -3731,7 +3731,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-11T00:00:00Z",
+      "date": "2023-11-05T00:00:00Z",
       "totalRevenue": 3338.89,
       "dailyCreditCardPayments": 902.5,
       "dailyCashPayments": 2436.39,
@@ -3777,7 +3777,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-12T00:00:00Z",
+      "date": "2023-11-06T00:00:00Z",
       "totalRevenue": 2097.58,
       "dailyCreditCardPayments": 761.19,
       "dailyCashPayments": 1336.39,
@@ -3833,7 +3833,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-12T00:00:00Z",
+      "date": "2023-11-06T00:00:00Z",
       "totalRevenue": 3698.68,
       "dailyCreditCardPayments": 2550.16,
       "dailyCashPayments": 1148.52,
@@ -3884,7 +3884,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-12T00:00:00Z",
+      "date": "2023-11-06T00:00:00Z",
       "totalRevenue": 6640.54,
       "dailyCreditCardPayments": 5342.91,
       "dailyCashPayments": 1297.63,
@@ -3935,7 +3935,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-12T00:00:00Z",
+      "date": "2023-11-06T00:00:00Z",
       "totalRevenue": 3442.27,
       "dailyCreditCardPayments": 708.42,
       "dailyCashPayments": 2733.85,
@@ -3976,7 +3976,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-12T00:00:00Z",
+      "date": "2023-11-06T00:00:00Z",
       "totalRevenue": 3726.75,
       "dailyCreditCardPayments": 3094.5,
       "dailyCashPayments": 632.25,
@@ -4022,7 +4022,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-13T00:00:00Z",
+      "date": "2023-11-07T00:00:00Z",
       "totalRevenue": 3253.16,
       "dailyCreditCardPayments": 2013.26,
       "dailyCashPayments": 1239.9,
@@ -4078,7 +4078,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-13T00:00:00Z",
+      "date": "2023-11-07T00:00:00Z",
       "totalRevenue": 3688.42,
       "dailyCreditCardPayments": 3248.92,
       "dailyCashPayments": 439.5,
@@ -4129,7 +4129,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-13T00:00:00Z",
+      "date": "2023-11-07T00:00:00Z",
       "totalRevenue": 7058.25,
       "dailyCreditCardPayments": 3267.62,
       "dailyCashPayments": 3790.63,
@@ -4180,7 +4180,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-13T00:00:00Z",
+      "date": "2023-11-07T00:00:00Z",
       "totalRevenue": 3419.84,
       "dailyCreditCardPayments": 1095.27,
       "dailyCashPayments": 2324.57,
@@ -4231,7 +4231,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-13T00:00:00Z",
+      "date": "2023-11-07T00:00:00Z",
       "totalRevenue": 3623.16,
       "dailyCreditCardPayments": 2011.67,
       "dailyCashPayments": 1611.49,
@@ -4277,7 +4277,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-14T00:00:00Z",
+      "date": "2023-11-08T00:00:00Z",
       "totalRevenue": 5020.07,
       "dailyCreditCardPayments": 3696.33,
       "dailyCashPayments": 1323.74,
@@ -4333,7 +4333,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-14T00:00:00Z",
+      "date": "2023-11-08T00:00:00Z",
       "totalRevenue": 3960.33,
       "dailyCreditCardPayments": 3005.78,
       "dailyCashPayments": 954.55,
@@ -4384,7 +4384,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-14T00:00:00Z",
+      "date": "2023-11-08T00:00:00Z",
       "totalRevenue": 6743.74,
       "dailyCreditCardPayments": 4287.96,
       "dailyCashPayments": 2455.78,
@@ -4435,7 +4435,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-14T00:00:00Z",
+      "date": "2023-11-08T00:00:00Z",
       "totalRevenue": 3602.68,
       "dailyCreditCardPayments": 2361.59,
       "dailyCashPayments": 1241.09,
@@ -4491,7 +4491,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-14T00:00:00Z",
+      "date": "2023-11-08T00:00:00Z",
       "totalRevenue": 3814.94,
       "dailyCreditCardPayments": 1506.42,
       "dailyCashPayments": 2308.52,
@@ -4537,7 +4537,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-15T00:00:00Z",
+      "date": "2023-11-09T00:00:00Z",
       "totalRevenue": 4114.33,
       "dailyCreditCardPayments": 877.74,
       "dailyCashPayments": 3236.59,
@@ -4593,7 +4593,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-15T00:00:00Z",
+      "date": "2023-11-09T00:00:00Z",
       "totalRevenue": 3354.87,
       "dailyCreditCardPayments": 1411.24,
       "dailyCashPayments": 1943.63,
@@ -4644,7 +4644,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-15T00:00:00Z",
+      "date": "2023-11-09T00:00:00Z",
       "totalRevenue": 6835.62,
       "dailyCreditCardPayments": 1929.86,
       "dailyCashPayments": 4905.76,
@@ -4695,7 +4695,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-15T00:00:00Z",
+      "date": "2023-11-09T00:00:00Z",
       "totalRevenue": 5730.58,
       "dailyCreditCardPayments": 2486.86,
       "dailyCashPayments": 3243.72,
@@ -4756,7 +4756,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-15T00:00:00Z",
+      "date": "2023-11-09T00:00:00Z",
       "totalRevenue": 3918.24,
       "dailyCreditCardPayments": 2795.57,
       "dailyCashPayments": 1122.67,
@@ -4807,7 +4807,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-16T00:00:00Z",
+      "date": "2023-11-10T00:00:00Z",
       "totalRevenue": 4323.23,
       "dailyCreditCardPayments": 882.19,
       "dailyCashPayments": 3441.04,
@@ -4868,7 +4868,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-16T00:00:00Z",
+      "date": "2023-11-10T00:00:00Z",
       "totalRevenue": 3003.44,
       "dailyCreditCardPayments": 1163.3,
       "dailyCashPayments": 1840.14,
@@ -4924,7 +4924,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-16T00:00:00Z",
+      "date": "2023-11-10T00:00:00Z",
       "totalRevenue": 5123.11,
       "dailyCreditCardPayments": 1417.22,
       "dailyCashPayments": 3705.89,
@@ -4975,7 +4975,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-16T00:00:00Z",
+      "date": "2023-11-10T00:00:00Z",
       "totalRevenue": 5656.69,
       "dailyCreditCardPayments": 3852.08,
       "dailyCashPayments": 1804.61,
@@ -5036,7 +5036,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-16T00:00:00Z",
+      "date": "2023-11-10T00:00:00Z",
       "totalRevenue": 4703.43,
       "dailyCreditCardPayments": 3526.88,
       "dailyCashPayments": 1176.55,
@@ -5087,7 +5087,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-17T00:00:00Z",
+      "date": "2023-11-11T00:00:00Z",
       "totalRevenue": 4410.03,
       "dailyCreditCardPayments": 1267.37,
       "dailyCashPayments": 3142.66,
@@ -5148,7 +5148,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-17T00:00:00Z",
+      "date": "2023-11-11T00:00:00Z",
       "totalRevenue": 3610.8,
       "dailyCreditCardPayments": 1674.91,
       "dailyCashPayments": 1935.89,
@@ -5204,7 +5204,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-17T00:00:00Z",
+      "date": "2023-11-11T00:00:00Z",
       "totalRevenue": 5965.03,
       "dailyCreditCardPayments": 4636.35,
       "dailyCashPayments": 1328.68,
@@ -5260,7 +5260,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-17T00:00:00Z",
+      "date": "2023-11-11T00:00:00Z",
       "totalRevenue": 4703.33,
       "dailyCreditCardPayments": 1582.21,
       "dailyCashPayments": 3121.12,
@@ -5321,7 +5321,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-17T00:00:00Z",
+      "date": "2023-11-11T00:00:00Z",
       "totalRevenue": 3904,
       "dailyCreditCardPayments": 1085.65,
       "dailyCashPayments": 2818.35,
@@ -5372,7 +5372,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-18T00:00:00Z",
+      "date": "2023-11-12T00:00:00Z",
       "totalRevenue": 5282.41,
       "dailyCreditCardPayments": 2542.26,
       "dailyCashPayments": 2740.15,
@@ -5433,7 +5433,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-18T00:00:00Z",
+      "date": "2023-11-12T00:00:00Z",
       "totalRevenue": 3714.66,
       "dailyCreditCardPayments": 2603.34,
       "dailyCashPayments": 1111.32,
@@ -5489,7 +5489,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-18T00:00:00Z",
+      "date": "2023-11-12T00:00:00Z",
       "totalRevenue": 5210.78,
       "dailyCreditCardPayments": 1927.8,
       "dailyCashPayments": 3282.98,
@@ -5545,7 +5545,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-18T00:00:00Z",
+      "date": "2023-11-12T00:00:00Z",
       "totalRevenue": 6559.27,
       "dailyCreditCardPayments": 2132.59,
       "dailyCashPayments": 4426.68,
@@ -5606,7 +5606,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-18T00:00:00Z",
+      "date": "2023-11-12T00:00:00Z",
       "totalRevenue": 3468.88,
       "dailyCreditCardPayments": 1901.4,
       "dailyCashPayments": 1567.48,
@@ -5657,7 +5657,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-19T00:00:00Z",
+      "date": "2023-11-13T00:00:00Z",
       "totalRevenue": 3638.08,
       "dailyCreditCardPayments": 1888.23,
       "dailyCashPayments": 1749.85,
@@ -5718,7 +5718,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-19T00:00:00Z",
+      "date": "2023-11-13T00:00:00Z",
       "totalRevenue": 4493.85,
       "dailyCreditCardPayments": 2097.9,
       "dailyCashPayments": 2395.95,
@@ -5774,7 +5774,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-19T00:00:00Z",
+      "date": "2023-11-13T00:00:00Z",
       "totalRevenue": 5541.63,
       "dailyCreditCardPayments": 4428.82,
       "dailyCashPayments": 1112.81,
@@ -5835,7 +5835,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-19T00:00:00Z",
+      "date": "2023-11-13T00:00:00Z",
       "totalRevenue": 4541.6,
       "dailyCreditCardPayments": 3707.23,
       "dailyCashPayments": 834.37,
@@ -5896,7 +5896,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-19T00:00:00Z",
+      "date": "2023-11-13T00:00:00Z",
       "totalRevenue": 3169.05,
       "dailyCreditCardPayments": 551.25,
       "dailyCashPayments": 2617.8,
@@ -5947,7 +5947,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-20T00:00:00Z",
+      "date": "2023-11-14T00:00:00Z",
       "totalRevenue": 4305.75,
       "dailyCreditCardPayments": 759.72,
       "dailyCashPayments": 3546.03,
@@ -6008,7 +6008,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-20T00:00:00Z",
+      "date": "2023-11-14T00:00:00Z",
       "totalRevenue": 4157.32,
       "dailyCreditCardPayments": 1829.03,
       "dailyCashPayments": 2328.29,
@@ -6064,7 +6064,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-20T00:00:00Z",
+      "date": "2023-11-14T00:00:00Z",
       "totalRevenue": 5330.8,
       "dailyCreditCardPayments": 1231.23,
       "dailyCashPayments": 4099.57,
@@ -6125,7 +6125,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-20T00:00:00Z",
+      "date": "2023-11-14T00:00:00Z",
       "totalRevenue": 4827.87,
       "dailyCreditCardPayments": 1031.67,
       "dailyCashPayments": 3796.2,
@@ -6186,7 +6186,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-20T00:00:00Z",
+      "date": "2023-11-14T00:00:00Z",
       "totalRevenue": 4229.67,
       "dailyCreditCardPayments": 3708.07,
       "dailyCashPayments": 521.6,
@@ -6242,7 +6242,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-21T00:00:00Z",
+      "date": "2023-11-15T00:00:00Z",
       "totalRevenue": 4969.09,
       "dailyCreditCardPayments": 2378.23,
       "dailyCashPayments": 2590.86,
@@ -6303,7 +6303,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-21T00:00:00Z",
+      "date": "2023-11-15T00:00:00Z",
       "totalRevenue": 4105.24,
       "dailyCreditCardPayments": 1342.63,
       "dailyCashPayments": 2762.61,
@@ -6359,7 +6359,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-21T00:00:00Z",
+      "date": "2023-11-15T00:00:00Z",
       "totalRevenue": 4570.18,
       "dailyCreditCardPayments": 2076.05,
       "dailyCashPayments": 2494.13,
@@ -6420,7 +6420,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-21T00:00:00Z",
+      "date": "2023-11-15T00:00:00Z",
       "totalRevenue": 3281.11,
       "dailyCreditCardPayments": 2205.17,
       "dailyCashPayments": 1075.94,
@@ -6481,7 +6481,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-21T00:00:00Z",
+      "date": "2023-11-15T00:00:00Z",
       "totalRevenue": 2828.76,
       "dailyCreditCardPayments": 1702.35,
       "dailyCashPayments": 1126.41,
@@ -6542,7 +6542,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-22T00:00:00Z",
+      "date": "2023-11-16T00:00:00Z",
       "totalRevenue": 5707.49,
       "dailyCreditCardPayments": 3671.83,
       "dailyCashPayments": 2035.66,
@@ -6603,7 +6603,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-22T00:00:00Z",
+      "date": "2023-11-16T00:00:00Z",
       "totalRevenue": 2378.98,
       "dailyCreditCardPayments": 1328.85,
       "dailyCashPayments": 1050.13,
@@ -6659,7 +6659,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-22T00:00:00Z",
+      "date": "2023-11-16T00:00:00Z",
       "totalRevenue": 4030.24,
       "dailyCreditCardPayments": 3100.78,
       "dailyCashPayments": 929.46,
@@ -6720,7 +6720,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-22T00:00:00Z",
+      "date": "2023-11-16T00:00:00Z",
       "totalRevenue": 4218.37,
       "dailyCreditCardPayments": 643.14,
       "dailyCashPayments": 3575.23,
@@ -6781,7 +6781,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-22T00:00:00Z",
+      "date": "2023-11-16T00:00:00Z",
       "totalRevenue": 4029.35,
       "dailyCreditCardPayments": 430.55,
       "dailyCashPayments": 3598.8,
@@ -6842,7 +6842,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-23T00:00:00Z",
+      "date": "2023-11-17T00:00:00Z",
       "totalRevenue": 4391.32,
       "dailyCreditCardPayments": 2084.25,
       "dailyCashPayments": 2307.07,
@@ -6903,7 +6903,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-23T00:00:00Z",
+      "date": "2023-11-17T00:00:00Z",
       "totalRevenue": 4888.79,
       "dailyCreditCardPayments": 3040.31,
       "dailyCashPayments": 1848.48,
@@ -6959,7 +6959,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-23T00:00:00Z",
+      "date": "2023-11-17T00:00:00Z",
       "totalRevenue": 5915.52,
       "dailyCreditCardPayments": 1099.81,
       "dailyCashPayments": 4815.71,
@@ -7020,7 +7020,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-23T00:00:00Z",
+      "date": "2023-11-17T00:00:00Z",
       "totalRevenue": 5438.72,
       "dailyCreditCardPayments": 4193.39,
       "dailyCashPayments": 1245.33,
@@ -7081,7 +7081,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-23T00:00:00Z",
+      "date": "2023-11-17T00:00:00Z",
       "totalRevenue": 4734.81,
       "dailyCreditCardPayments": 1273.79,
       "dailyCashPayments": 3461.02,
@@ -7142,7 +7142,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-24T00:00:00Z",
+      "date": "2023-11-18T00:00:00Z",
       "totalRevenue": 4272.8,
       "dailyCreditCardPayments": 3444.04,
       "dailyCashPayments": 828.76,
@@ -7203,7 +7203,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-24T00:00:00Z",
+      "date": "2023-11-18T00:00:00Z",
       "totalRevenue": 4509.84,
       "dailyCreditCardPayments": 483.14,
       "dailyCashPayments": 4026.7,
@@ -7259,7 +7259,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-24T00:00:00Z",
+      "date": "2023-11-18T00:00:00Z",
       "totalRevenue": 6465.58,
       "dailyCreditCardPayments": 4508.3,
       "dailyCashPayments": 1957.28,
@@ -7320,7 +7320,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-24T00:00:00Z",
+      "date": "2023-11-18T00:00:00Z",
       "totalRevenue": 6701.69,
       "dailyCreditCardPayments": 2072.39,
       "dailyCashPayments": 4629.3,
@@ -7381,7 +7381,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-24T00:00:00Z",
+      "date": "2023-11-18T00:00:00Z",
       "totalRevenue": 6116.88,
       "dailyCreditCardPayments": 4362.06,
       "dailyCashPayments": 1754.82,
@@ -7442,7 +7442,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-25T00:00:00Z",
+      "date": "2023-11-19T00:00:00Z",
       "totalRevenue": 3947.29,
       "dailyCreditCardPayments": 2378.05,
       "dailyCashPayments": 1569.24,
@@ -7503,7 +7503,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-25T00:00:00Z",
+      "date": "2023-11-19T00:00:00Z",
       "totalRevenue": 2468.03,
       "dailyCreditCardPayments": 433.55,
       "dailyCashPayments": 2034.48,
@@ -7559,7 +7559,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-25T00:00:00Z",
+      "date": "2023-11-19T00:00:00Z",
       "totalRevenue": 6526.68,
       "dailyCreditCardPayments": 5873.09,
       "dailyCashPayments": 653.59,
@@ -7620,7 +7620,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-25T00:00:00Z",
+      "date": "2023-11-19T00:00:00Z",
       "totalRevenue": 5672.13,
       "dailyCreditCardPayments": 1900.48,
       "dailyCashPayments": 3771.65,
@@ -7681,7 +7681,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-25T00:00:00Z",
+      "date": "2023-11-19T00:00:00Z",
       "totalRevenue": 3645.69,
       "dailyCreditCardPayments": 558.01,
       "dailyCashPayments": 3087.68,
@@ -7742,7 +7742,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-26T00:00:00Z",
+      "date": "2023-11-20T00:00:00Z",
       "totalRevenue": 4365.6,
       "dailyCreditCardPayments": 3282.36,
       "dailyCashPayments": 1083.24,
@@ -7803,7 +7803,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-26T00:00:00Z",
+      "date": "2023-11-20T00:00:00Z",
       "totalRevenue": 4740.31,
       "dailyCreditCardPayments": 2097.25,
       "dailyCashPayments": 2643.06,
@@ -7859,7 +7859,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-26T00:00:00Z",
+      "date": "2023-11-20T00:00:00Z",
       "totalRevenue": 4115.18,
       "dailyCreditCardPayments": 3023.52,
       "dailyCashPayments": 1091.66,
@@ -7920,7 +7920,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-26T00:00:00Z",
+      "date": "2023-11-20T00:00:00Z",
       "totalRevenue": 3860.43,
       "dailyCreditCardPayments": 2394.14,
       "dailyCashPayments": 1466.29,
@@ -7981,7 +7981,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-26T00:00:00Z",
+      "date": "2023-11-20T00:00:00Z",
       "totalRevenue": 3405.57,
       "dailyCreditCardPayments": 1813.94,
       "dailyCashPayments": 1591.63,
@@ -8042,7 +8042,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-27T00:00:00Z",
+      "date": "2023-11-21T00:00:00Z",
       "totalRevenue": 4904.22,
       "dailyCreditCardPayments": 2518.86,
       "dailyCashPayments": 2385.36,
@@ -8103,7 +8103,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-27T00:00:00Z",
+      "date": "2023-11-21T00:00:00Z",
       "totalRevenue": 4944.42,
       "dailyCreditCardPayments": 1322.9,
       "dailyCashPayments": 3621.52,
@@ -8159,7 +8159,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-27T00:00:00Z",
+      "date": "2023-11-21T00:00:00Z",
       "totalRevenue": 6963.72,
       "dailyCreditCardPayments": 1668.48,
       "dailyCashPayments": 5295.24,
@@ -8220,7 +8220,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-27T00:00:00Z",
+      "date": "2023-11-21T00:00:00Z",
       "totalRevenue": 3532.69,
       "dailyCreditCardPayments": 1388.3,
       "dailyCashPayments": 2144.39,
@@ -8281,7 +8281,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-27T00:00:00Z",
+      "date": "2023-11-21T00:00:00Z",
       "totalRevenue": 5583.17,
       "dailyCreditCardPayments": 2028.95,
       "dailyCashPayments": 3554.22,
@@ -8340,609 +8340,10 @@
         }
       ]
     },
+
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-28T00:00:00Z",
-      "totalRevenue": 3348.77,
-      "dailyCreditCardPayments": 957.85,
-      "dailyCashPayments": 2390.92,
-      "gasolineSales": [
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 103,
-          "priceSoldAt": 2.56
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 434,
-          "priceSoldAt": 2.73
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 478,
-          "priceSoldAt": 1.75
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 127,
-          "priceSoldAt": 2.12
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 70,
-          "priceSoldAt": 3.84
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Potato Chips",
-          "quantitySold": 38,
-          "priceSoldAt": 3.03
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 48,
-          "priceSoldAt": 4.1
-        },
-        {
-          "name": "Cheese",
-          "quantitySold": 14,
-          "priceSoldAt": 3.94
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 17,
-          "priceSoldAt": 0.79
-        },
-        {
-          "name": "Cigarettes",
-          "quantitySold": 30,
-          "priceSoldAt": 4.84
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-28T00:00:00Z",
-      "totalRevenue": 3984.36,
-      "dailyCreditCardPayments": 2461.23,
-      "dailyCashPayments": 1523.13,
-      "gasolineSales": [
-        {
-          "gasType": "Premium",
-          "gallonsSold": 490,
-          "priceSoldAt": 2.55
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 298,
-          "priceSoldAt": 1.8
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 149,
-          "priceSoldAt": 3.1
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 315,
-          "priceSoldAt": 3.83
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 93,
-          "priceSoldAt": 2.42
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Potato Chips",
-          "quantitySold": 30,
-          "priceSoldAt": 5.92
-        },
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 10,
-          "priceSoldAt": 1.8
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 47,
-          "priceSoldAt": 1.04
-        },
-        {
-          "name": "Bread",
-          "quantitySold": 9,
-          "priceSoldAt": 6.73
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-28T00:00:00Z",
-      "totalRevenue": 3665.59,
-      "dailyCreditCardPayments": 2932.58,
-      "dailyCashPayments": 733.01,
-      "gasolineSales": [
-        {
-          "gasType": "E85",
-          "gallonsSold": 317,
-          "priceSoldAt": 2.4
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 65,
-          "priceSoldAt": 3.74
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 256,
-          "priceSoldAt": 3.4
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 51,
-          "priceSoldAt": 3.79
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 289,
-          "priceSoldAt": 3.74
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Engine Oil",
-          "quantitySold": 43,
-          "priceSoldAt": 5.07
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 44,
-          "priceSoldAt": 0.66
-        },
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 8,
-          "priceSoldAt": 1.6
-        },
-        {
-          "name": "Travel Pillow",
-          "quantitySold": 33,
-          "priceSoldAt": 4.04
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 49,
-          "priceSoldAt": 2.53
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-28T00:00:00Z",
-      "totalRevenue": 5373.88,
-      "dailyCreditCardPayments": 3663.8,
-      "dailyCashPayments": 1710.08,
-      "gasolineSales": [
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 391,
-          "priceSoldAt": 2.88
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 419,
-          "priceSoldAt": 2.46
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 108,
-          "priceSoldAt": 3.63
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 423,
-          "priceSoldAt": 3.4
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 387,
-          "priceSoldAt": 2.44
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 29,
-          "priceSoldAt": 2.21
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 41,
-          "priceSoldAt": 1.73
-        },
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 44,
-          "priceSoldAt": 5.26
-        },
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 12,
-          "priceSoldAt": 4.98
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 12,
-          "priceSoldAt": 1.36
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-28T00:00:00Z",
-      "totalRevenue": 3935.73,
-      "dailyCreditCardPayments": 1001.42,
-      "dailyCashPayments": 2934.31,
-      "gasolineSales": [
-        {
-          "gasType": "Regular",
-          "gallonsSold": 289,
-          "priceSoldAt": 2.03
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 336,
-          "priceSoldAt": 2.48
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 268,
-          "priceSoldAt": 3.06
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 119,
-          "priceSoldAt": 2.23
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 231,
-          "priceSoldAt": 2.79
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Water Bottle",
-          "quantitySold": 46,
-          "priceSoldAt": 3.23
-        },
-        {
-          "name": "Coca-Cola",
-          "quantitySold": 41,
-          "priceSoldAt": 5.08
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 25,
-          "priceSoldAt": 4.65
-        },
-        {
-          "name": "Shampoo",
-          "quantitySold": 14,
-          "priceSoldAt": 5.39
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 33,
-          "priceSoldAt": 7.19
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-29T00:00:00Z",
-      "totalRevenue": 5500.32,
-      "dailyCreditCardPayments": 4412.07,
-      "dailyCashPayments": 1088.25,
-      "gasolineSales": [
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 486,
-          "priceSoldAt": 2.93
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 144,
-          "priceSoldAt": 2.79
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 237,
-          "priceSoldAt": 2.29
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 493,
-          "priceSoldAt": 2.27
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 329,
-          "priceSoldAt": 3.99
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Potato Chips",
-          "quantitySold": 48,
-          "priceSoldAt": 2.63
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 22,
-          "priceSoldAt": 3.75
-        },
-        {
-          "name": "Cheese",
-          "quantitySold": 45,
-          "priceSoldAt": 4.66
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 39,
-          "priceSoldAt": 0.86
-        },
-        {
-          "name": "Cigarettes",
-          "quantitySold": 41,
-          "priceSoldAt": 6.05
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-29T00:00:00Z",
-      "totalRevenue": 3073.93,
-      "dailyCreditCardPayments": 1122.27,
-      "dailyCashPayments": 1951.66,
-      "gasolineSales": [
-        {
-          "gasType": "Premium",
-          "gallonsSold": 137,
-          "priceSoldAt": 2.85
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 383,
-          "priceSoldAt": 1.93
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 212,
-          "priceSoldAt": 2.52
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 193,
-          "priceSoldAt": 2.96
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 78,
-          "priceSoldAt": 2.64
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Potato Chips",
-          "quantitySold": 43,
-          "priceSoldAt": 5.96
-        },
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 26,
-          "priceSoldAt": 2.06
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 23,
-          "priceSoldAt": 1.17
-        },
-        {
-          "name": "Bread",
-          "quantitySold": 47,
-          "priceSoldAt": 6.3
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-29T00:00:00Z",
-      "totalRevenue": 5130.18,
-      "dailyCreditCardPayments": 2002.25,
-      "dailyCashPayments": 3127.93,
-      "gasolineSales": [
-        {
-          "gasType": "E85",
-          "gallonsSold": 207,
-          "priceSoldAt": 2.79
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 292,
-          "priceSoldAt": 3.51
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 218,
-          "priceSoldAt": 3.46
-        },
-        {
-          "gasType": "Regular",
-          "gallonsSold": 453,
-          "priceSoldAt": 3.44
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 223,
-          "priceSoldAt": 3.35
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Engine Oil",
-          "quantitySold": 41,
-          "priceSoldAt": 5.37
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 35,
-          "priceSoldAt": 0.64
-        },
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 13,
-          "priceSoldAt": 1.99
-        },
-        {
-          "name": "Travel Pillow",
-          "quantitySold": 15,
-          "priceSoldAt": 4.92
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 44,
-          "priceSoldAt": 2.86
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-29T00:00:00Z",
-      "totalRevenue": 4652.1,
-      "dailyCreditCardPayments": 3908.51,
-      "dailyCashPayments": 743.59,
-      "gasolineSales": [
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 346,
-          "priceSoldAt": 3.03
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 458,
-          "priceSoldAt": 2.76
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 55,
-          "priceSoldAt": 3.92
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 443,
-          "priceSoldAt": 3.1
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 203,
-          "priceSoldAt": 2.64
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 11,
-          "priceSoldAt": 2.14
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 16,
-          "priceSoldAt": 1.93
-        },
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 7,
-          "priceSoldAt": 5.94
-        },
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 19,
-          "priceSoldAt": 5.42
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 12,
-          "priceSoldAt": 1.32
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-29T00:00:00Z",
-      "totalRevenue": 4988.95,
-      "dailyCreditCardPayments": 2719.49,
-      "dailyCashPayments": 2269.46,
-      "gasolineSales": [
-        {
-          "gasType": "Regular",
-          "gallonsSold": 163,
-          "priceSoldAt": 1.93
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 360,
-          "priceSoldAt": 2.58
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 335,
-          "priceSoldAt": 3.46
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 267,
-          "priceSoldAt": 2.72
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 392,
-          "priceSoldAt": 3.06
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Water Bottle",
-          "quantitySold": 34,
-          "priceSoldAt": 2.62
-        },
-        {
-          "name": "Coca-Cola",
-          "quantitySold": 14,
-          "priceSoldAt": 4.34
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 34,
-          "priceSoldAt": 6.3
-        },
-        {
-          "name": "Shampoo",
-          "quantitySold": 15,
-          "priceSoldAt": 5.16
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 38,
-          "priceSoldAt": 5.77
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-30T00:00:00Z",
+      "date": "2023-11-22T00:00:00Z",
       "totalRevenue": 4019.91,
       "dailyCreditCardPayments": 461.51,
       "dailyCashPayments": 3558.4,
@@ -9003,7 +8404,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-30T00:00:00Z",
+      "date": "2023-11-22T00:00:00Z",
       "totalRevenue": 4325.41,
       "dailyCreditCardPayments": 1173.87,
       "dailyCashPayments": 3151.54,
@@ -9059,7 +8460,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-30T00:00:00Z",
+      "date": "2023-11-22T00:00:00Z",
       "totalRevenue": 3782.76,
       "dailyCreditCardPayments": 2367.91,
       "dailyCashPayments": 1414.85,
@@ -9120,7 +8521,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-30T00:00:00Z",
+      "date": "2023-11-22T00:00:00Z",
       "totalRevenue": 5552.38,
       "dailyCreditCardPayments": 1060.1,
       "dailyCashPayments": 4492.28,
@@ -9181,7 +8582,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-30T00:00:00Z",
+      "date": "2023-11-22T00:00:00Z",
       "totalRevenue": 5413.52,
       "dailyCreditCardPayments": 2319.89,
       "dailyCashPayments": 3093.63,
@@ -9242,7 +8643,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-08-31T00:00:00Z",
+      "date": "2023-11-23T00:00:00Z",
       "totalRevenue": 4503.16,
       "dailyCreditCardPayments": 1497.24,
       "dailyCashPayments": 3005.92,
@@ -9303,7 +8704,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-08-31T00:00:00Z",
+      "date": "2023-11-23T00:00:00Z",
       "totalRevenue": 5627.11,
       "dailyCreditCardPayments": 4583.6,
       "dailyCashPayments": 1043.51,
@@ -9359,7 +8760,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-08-31T00:00:00Z",
+      "date": "2023-11-23T00:00:00Z",
       "totalRevenue": 4767.76,
       "dailyCreditCardPayments": 1332.13,
       "dailyCashPayments": 3435.63,
@@ -9420,7 +8821,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-08-31T00:00:00Z",
+      "date": "2023-11-23T00:00:00Z",
       "totalRevenue": 4521.9,
       "dailyCreditCardPayments": 689.09,
       "dailyCashPayments": 3832.81,
@@ -9481,7 +8882,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-08-31T00:00:00Z",
+      "date": "2023-11-23T00:00:00Z",
       "totalRevenue": 3416.25,
       "dailyCreditCardPayments": 1522.85,
       "dailyCashPayments": 1893.4,
@@ -9542,7 +8943,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-01T00:00:00Z",
+      "date": "2023-11-24T00:00:00Z",
       "totalRevenue": 2756.96,
       "dailyCreditCardPayments": 713.52,
       "dailyCashPayments": 2043.44,
@@ -9603,7 +9004,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-01T00:00:00Z",
+      "date": "2023-11-24T00:00:00Z",
       "totalRevenue": 5490.73,
       "dailyCreditCardPayments": 3537.81,
       "dailyCashPayments": 1952.92,
@@ -9659,7 +9060,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-01T00:00:00Z",
+      "date": "2023-11-24T00:00:00Z",
       "totalRevenue": 5399.13,
       "dailyCreditCardPayments": 2188.92,
       "dailyCashPayments": 3210.21,
@@ -9720,7 +9121,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-01T00:00:00Z",
+      "date": "2023-11-24T00:00:00Z",
       "totalRevenue": 6114.54,
       "dailyCreditCardPayments": 1595.56,
       "dailyCashPayments": 4518.98,
@@ -9781,7 +9182,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-01T00:00:00Z",
+      "date": "2023-11-24T00:00:00Z",
       "totalRevenue": 4997.52,
       "dailyCreditCardPayments": 584.56,
       "dailyCashPayments": 4412.96,
@@ -9842,7 +9243,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-02T00:00:00Z",
+      "date": "2023-11-25T00:00:00Z",
       "totalRevenue": 5688.95,
       "dailyCreditCardPayments": 2483.11,
       "dailyCashPayments": 3205.84,
@@ -9903,7 +9304,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-02T00:00:00Z",
+      "date": "2023-11-25T00:00:00Z",
       "totalRevenue": 3936.14,
       "dailyCreditCardPayments": 692.74,
       "dailyCashPayments": 3243.4,
@@ -9959,7 +9360,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-02T00:00:00Z",
+      "date": "2023-11-25T00:00:00Z",
       "totalRevenue": 4108.07,
       "dailyCreditCardPayments": 3479.96,
       "dailyCashPayments": 628.11,
@@ -10020,7 +9421,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-02T00:00:00Z",
+      "date": "2023-11-25T00:00:00Z",
       "totalRevenue": 3742.26,
       "dailyCreditCardPayments": 2338.6,
       "dailyCashPayments": 1403.66,
@@ -10081,7 +9482,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-02T00:00:00Z",
+      "date": "2023-11-25T00:00:00Z",
       "totalRevenue": 4558.63,
       "dailyCreditCardPayments": 1694.48,
       "dailyCashPayments": 2864.15,
@@ -10142,7 +9543,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-03T00:00:00Z",
+      "date": "2023-11-26T00:00:00Z",
       "totalRevenue": 2707.8,
       "dailyCreditCardPayments": 547.78,
       "dailyCashPayments": 2160.02,
@@ -10203,7 +9604,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-03T00:00:00Z",
+      "date": "2023-11-26T00:00:00Z",
       "totalRevenue": 5722.55,
       "dailyCreditCardPayments": 599.8,
       "dailyCashPayments": 5122.75,
@@ -10259,7 +9660,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-03T00:00:00Z",
+      "date": "2023-11-26T00:00:00Z",
       "totalRevenue": 6983.11,
       "dailyCreditCardPayments": 4356.37,
       "dailyCashPayments": 2626.74,
@@ -10320,7 +9721,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-03T00:00:00Z",
+      "date": "2023-11-26T00:00:00Z",
       "totalRevenue": 4660.86,
       "dailyCreditCardPayments": 2254.98,
       "dailyCashPayments": 2405.88,
@@ -10381,7 +9782,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-03T00:00:00Z",
+      "date": "2023-11-26T00:00:00Z",
       "totalRevenue": 5407.26,
       "dailyCreditCardPayments": 4376.87,
       "dailyCashPayments": 1030.39,
@@ -10442,7 +9843,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-04T00:00:00Z",
+      "date": "2023-11-27T00:00:00Z",
       "totalRevenue": 4222.53,
       "dailyCreditCardPayments": 1814.53,
       "dailyCashPayments": 2408,
@@ -10503,7 +9904,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-04T00:00:00Z",
+      "date": "2023-11-27T00:00:00Z",
       "totalRevenue": 3753.86,
       "dailyCreditCardPayments": 1514.37,
       "dailyCashPayments": 2239.49,
@@ -10559,7 +9960,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-04T00:00:00Z",
+      "date": "2023-11-27T00:00:00Z",
       "totalRevenue": 5906.74,
       "dailyCreditCardPayments": 4249.05,
       "dailyCashPayments": 1657.69,
@@ -10620,7 +10021,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-04T00:00:00Z",
+      "date": "2023-11-27T00:00:00Z",
       "totalRevenue": 5613.01,
       "dailyCreditCardPayments": 3741.43,
       "dailyCashPayments": 1871.58,
@@ -10681,7 +10082,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-04T00:00:00Z",
+      "date": "2023-11-27T00:00:00Z",
       "totalRevenue": 4146.6,
       "dailyCreditCardPayments": 2529.51,
       "dailyCashPayments": 1617.09,
@@ -10742,7 +10143,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-05T00:00:00Z",
+      "date": "2023-11-28T00:00:00Z",
       "totalRevenue": 5488.26,
       "dailyCreditCardPayments": 1105.95,
       "dailyCashPayments": 4382.31,
@@ -10803,7 +10204,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-05T00:00:00Z",
+      "date": "2023-11-28T00:00:00Z",
       "totalRevenue": 4595.9,
       "dailyCreditCardPayments": 3176.31,
       "dailyCashPayments": 1419.59,
@@ -10859,7 +10260,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-05T00:00:00Z",
+      "date": "2023-11-28T00:00:00Z",
       "totalRevenue": 4756.89,
       "dailyCreditCardPayments": 1625.67,
       "dailyCashPayments": 3131.22,
@@ -10920,7 +10321,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-05T00:00:00Z",
+      "date": "2023-11-28T00:00:00Z",
       "totalRevenue": 4643.38,
       "dailyCreditCardPayments": 608.02,
       "dailyCashPayments": 4035.36,
@@ -10981,7 +10382,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-05T00:00:00Z",
+      "date": "2023-11-28T00:00:00Z",
       "totalRevenue": 4435.73,
       "dailyCreditCardPayments": 3289.81,
       "dailyCashPayments": 1145.92,
@@ -11042,7 +10443,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-06T00:00:00Z",
+      "date": "2023-11-29T00:00:00Z",
       "totalRevenue": 4150.16,
       "dailyCreditCardPayments": 1895.08,
       "dailyCashPayments": 2255.08,
@@ -11103,7 +10504,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-06T00:00:00Z",
+      "date": "2023-11-29T00:00:00Z",
       "totalRevenue": 5519.14,
       "dailyCreditCardPayments": 1863.79,
       "dailyCashPayments": 3655.35,
@@ -11159,7 +10560,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-06T00:00:00Z",
+      "date": "2023-11-29T00:00:00Z",
       "totalRevenue": 4320.12,
       "dailyCreditCardPayments": 1123.22,
       "dailyCashPayments": 3196.9,
@@ -11220,7 +10621,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-06T00:00:00Z",
+      "date": "2023-11-29T00:00:00Z",
       "totalRevenue": 3804.15,
       "dailyCreditCardPayments": 1625.37,
       "dailyCashPayments": 2178.78,
@@ -11281,7 +10682,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-06T00:00:00Z",
+      "date": "2023-11-29T00:00:00Z",
       "totalRevenue": 3777.92,
       "dailyCreditCardPayments": 628.98,
       "dailyCashPayments": 3148.94,
@@ -11342,7 +10743,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-07T00:00:00Z",
+      "date": "2023-11-30T00:00:00Z",
       "totalRevenue": 5285.89,
       "dailyCreditCardPayments": 3825.94,
       "dailyCashPayments": 1459.95,
@@ -11403,7 +10804,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-07T00:00:00Z",
+      "date": "2023-11-30T00:00:00Z",
       "totalRevenue": 3262.94,
       "dailyCreditCardPayments": 894.46,
       "dailyCashPayments": 2368.48,
@@ -11459,7 +10860,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-07T00:00:00Z",
+      "date": "2023-11-30T00:00:00Z",
       "totalRevenue": 5854.22,
       "dailyCreditCardPayments": 3618.82,
       "dailyCashPayments": 2235.4,
@@ -11520,7 +10921,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-07T00:00:00Z",
+      "date": "2023-11-30T00:00:00Z",
       "totalRevenue": 4276.54,
       "dailyCreditCardPayments": 2935.71,
       "dailyCashPayments": 1340.83,
@@ -11581,7 +10982,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-07T00:00:00Z",
+      "date": "2023-11-30T00:00:00Z",
       "totalRevenue": 3603.62,
       "dailyCreditCardPayments": 2383.53,
       "dailyCashPayments": 1220.09,
@@ -11642,7 +11043,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-08T00:00:00Z",
+      "date": "2023-12-01T00:00:00Z",
       "totalRevenue": 5179.11,
       "dailyCreditCardPayments": 4192.74,
       "dailyCashPayments": 986.37,
@@ -11703,7 +11104,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-08T00:00:00Z",
+      "date": "2023-12-01T00:00:00Z",
       "totalRevenue": 4547.09,
       "dailyCreditCardPayments": 2427.42,
       "dailyCashPayments": 2119.67,
@@ -11764,7 +11165,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-08T00:00:00Z",
+      "date": "2023-12-01T00:00:00Z",
       "totalRevenue": 5640.86,
       "dailyCreditCardPayments": 1663.33,
       "dailyCashPayments": 3977.53,
@@ -11825,7 +11226,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-08T00:00:00Z",
+      "date": "2023-12-01T00:00:00Z",
       "totalRevenue": 4694.5,
       "dailyCreditCardPayments": 3759.51,
       "dailyCashPayments": 934.99,
@@ -11886,7 +11287,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-08T00:00:00Z",
+      "date": "2023-12-01T00:00:00Z",
       "totalRevenue": 5130.01,
       "dailyCreditCardPayments": 3224.57,
       "dailyCashPayments": 1905.44,
@@ -11947,7 +11348,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-09T00:00:00Z",
+      "date": "2023-12-02T00:00:00Z",
       "totalRevenue": 3541.72,
       "dailyCreditCardPayments": 782.55,
       "dailyCashPayments": 2759.17,
@@ -12008,7 +11409,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-09T00:00:00Z",
+      "date": "2023-12-02T00:00:00Z",
       "totalRevenue": 3823.66,
       "dailyCreditCardPayments": 1921.58,
       "dailyCashPayments": 1902.08,
@@ -12069,7 +11470,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-09T00:00:00Z",
+      "date": "2023-12-02T00:00:00Z",
       "totalRevenue": 3222.59,
       "dailyCreditCardPayments": 899.85,
       "dailyCashPayments": 2322.74,
@@ -12130,7 +11531,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-09T00:00:00Z",
+      "date": "2023-12-02T00:00:00Z",
       "totalRevenue": 5580.05,
       "dailyCreditCardPayments": 1333.9,
       "dailyCashPayments": 4246.15,
@@ -12191,7 +11592,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-09T00:00:00Z",
+      "date": "2023-12-02T00:00:00Z",
       "totalRevenue": 3772.79,
       "dailyCreditCardPayments": 617.83,
       "dailyCashPayments": 3154.96,
@@ -12252,7 +11653,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-10T00:00:00Z",
+      "date": "2023-12-03T00:00:00Z",
       "totalRevenue": 4247.94,
       "dailyCreditCardPayments": 3773.39,
       "dailyCashPayments": 474.55,
@@ -12313,7 +11714,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-10T00:00:00Z",
+      "date": "2023-12-03T00:00:00Z",
       "totalRevenue": 4226.01,
       "dailyCreditCardPayments": 1472.63,
       "dailyCashPayments": 2753.38,
@@ -12374,7 +11775,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-10T00:00:00Z",
+      "date": "2023-12-03T00:00:00Z",
       "totalRevenue": 7044.22,
       "dailyCreditCardPayments": 2471.76,
       "dailyCashPayments": 4572.46,
@@ -12435,7 +11836,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-10T00:00:00Z",
+      "date": "2023-12-03T00:00:00Z",
       "totalRevenue": 4064.02,
       "dailyCreditCardPayments": 2330.1,
       "dailyCashPayments": 1733.92,
@@ -12496,7 +11897,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-10T00:00:00Z",
+      "date": "2023-12-03T00:00:00Z",
       "totalRevenue": 4925.18,
       "dailyCreditCardPayments": 980.14,
       "dailyCashPayments": 3945.04,
@@ -12557,7 +11958,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-11T00:00:00Z",
+      "date": "2023-12-04T00:00:00Z",
       "totalRevenue": 4763.97,
       "dailyCreditCardPayments": 697.47,
       "dailyCashPayments": 4066.5,
@@ -12618,7 +12019,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-11T00:00:00Z",
+      "date": "2023-12-04T00:00:00Z",
       "totalRevenue": 3276.73,
       "dailyCreditCardPayments": 1045.74,
       "dailyCashPayments": 2230.99,
@@ -12679,7 +12080,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-11T00:00:00Z",
+      "date": "2023-12-04T00:00:00Z",
       "totalRevenue": 4178.47,
       "dailyCreditCardPayments": 1952.52,
       "dailyCashPayments": 2225.95,
@@ -12740,7 +12141,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-11T00:00:00Z",
+      "date": "2023-12-04T00:00:00Z",
       "totalRevenue": 3594.93,
       "dailyCreditCardPayments": 1019.49,
       "dailyCashPayments": 2575.44,
@@ -12801,7 +12202,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-11T00:00:00Z",
+      "date": "2023-12-04T00:00:00Z",
       "totalRevenue": 4447.4,
       "dailyCreditCardPayments": 3383.25,
       "dailyCashPayments": 1064.15,
@@ -12862,7 +12263,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-12T00:00:00Z",
+      "date": "2023-12-05T00:00:00Z",
       "totalRevenue": 3686.08,
       "dailyCreditCardPayments": 975.84,
       "dailyCashPayments": 2710.24,
@@ -12923,7 +12324,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-12T00:00:00Z",
+      "date": "2023-12-05T00:00:00Z",
       "totalRevenue": 2996.17,
       "dailyCreditCardPayments": 301.61,
       "dailyCashPayments": 2694.56,
@@ -12984,7 +12385,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-12T00:00:00Z",
+      "date": "2023-12-05T00:00:00Z",
       "totalRevenue": 6146.32,
       "dailyCreditCardPayments": 1678.7,
       "dailyCashPayments": 4467.62,
@@ -13045,7 +12446,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-12T00:00:00Z",
+      "date": "2023-12-05T00:00:00Z",
       "totalRevenue": 4164.81,
       "dailyCreditCardPayments": 962.64,
       "dailyCashPayments": 3202.17,
@@ -13106,7 +12507,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-12T00:00:00Z",
+      "date": "2023-12-05T00:00:00Z",
       "totalRevenue": 3079.39,
       "dailyCreditCardPayments": 1167.77,
       "dailyCashPayments": 1911.62,
@@ -13167,7 +12568,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-13T00:00:00Z",
+      "date": "2023-12-06T00:00:00Z",
       "totalRevenue": 4527.19,
       "dailyCreditCardPayments": 2835.52,
       "dailyCashPayments": 1691.67,
@@ -13228,7 +12629,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-13T00:00:00Z",
+      "date": "2023-12-06T00:00:00Z",
       "totalRevenue": 4212.78,
       "dailyCreditCardPayments": 443.16,
       "dailyCashPayments": 3769.62,
@@ -13289,7 +12690,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-13T00:00:00Z",
+      "date": "2023-12-06T00:00:00Z",
       "totalRevenue": 4495.95,
       "dailyCreditCardPayments": 2974.2,
       "dailyCashPayments": 1521.75,
@@ -13350,7 +12751,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-13T00:00:00Z",
+      "date": "2023-12-06T00:00:00Z",
       "totalRevenue": 5670.58,
       "dailyCreditCardPayments": 4305.26,
       "dailyCashPayments": 1365.32,
@@ -13411,7 +12812,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-13T00:00:00Z",
+      "date": "2023-12-06T00:00:00Z",
       "totalRevenue": 3886.56,
       "dailyCreditCardPayments": 978.1,
       "dailyCashPayments": 2908.46,
@@ -13472,7 +12873,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-14T00:00:00Z",
+      "date": "2023-12-07T00:00:00Z",
       "totalRevenue": 4500.26,
       "dailyCreditCardPayments": 2692.91,
       "dailyCashPayments": 1807.35,
@@ -13533,7 +12934,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-14T00:00:00Z",
+      "date": "2023-12-07T00:00:00Z",
       "totalRevenue": 4877.76,
       "dailyCreditCardPayments": 3299.46,
       "dailyCashPayments": 1578.3,
@@ -13594,7 +12995,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-14T00:00:00Z",
+      "date": "2023-12-07T00:00:00Z",
       "totalRevenue": 3064.61,
       "dailyCreditCardPayments": 1942.25,
       "dailyCashPayments": 1122.36,
@@ -13655,7 +13056,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-14T00:00:00Z",
+      "date": "2023-12-07T00:00:00Z",
       "totalRevenue": 4618.09,
       "dailyCreditCardPayments": 1790.07,
       "dailyCashPayments": 2828.02,
@@ -13716,7 +13117,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-14T00:00:00Z",
+      "date": "2023-12-07T00:00:00Z",
       "totalRevenue": 3657.01,
       "dailyCreditCardPayments": 2004.9,
       "dailyCashPayments": 1652.11,
@@ -13777,7 +13178,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-15T00:00:00Z",
+      "date": "2023-12-08T00:00:00Z",
       "totalRevenue": 4538.04,
       "dailyCreditCardPayments": 2379.41,
       "dailyCashPayments": 2158.63,
@@ -13838,7 +13239,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-15T00:00:00Z",
+      "date": "2023-12-08T00:00:00Z",
       "totalRevenue": 3065.56,
       "dailyCreditCardPayments": 2322.76,
       "dailyCashPayments": 742.8,
@@ -13899,7 +13300,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-15T00:00:00Z",
+      "date": "2023-12-08T00:00:00Z",
       "totalRevenue": 6202.23,
       "dailyCreditCardPayments": 3090.78,
       "dailyCashPayments": 3111.45,
@@ -13960,7 +13361,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-15T00:00:00Z",
+      "date": "2023-12-08T00:00:00Z",
       "totalRevenue": 3349.19,
       "dailyCreditCardPayments": 2101.13,
       "dailyCashPayments": 1248.06,
@@ -14021,7 +13422,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-15T00:00:00Z",
+      "date": "2023-12-08T00:00:00Z",
       "totalRevenue": 4253.86,
       "dailyCreditCardPayments": 3164.86,
       "dailyCashPayments": 1089,
@@ -14082,7 +13483,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-16T00:00:00Z",
+      "date": "2023-12-09T00:00:00Z",
       "totalRevenue": 2818.15,
       "dailyCreditCardPayments": 1080.45,
       "dailyCashPayments": 1737.7,
@@ -14143,7 +13544,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-16T00:00:00Z",
+      "date": "2023-12-09T00:00:00Z",
       "totalRevenue": 5427.08,
       "dailyCreditCardPayments": 4650.4,
       "dailyCashPayments": 776.68,
@@ -14204,7 +13605,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-16T00:00:00Z",
+      "date": "2023-12-09T00:00:00Z",
       "totalRevenue": 4394.95,
       "dailyCreditCardPayments": 3013.61,
       "dailyCashPayments": 1381.34,
@@ -14265,7 +13666,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-16T00:00:00Z",
+      "date": "2023-12-09T00:00:00Z",
       "totalRevenue": 5000.83,
       "dailyCreditCardPayments": 3329.18,
       "dailyCashPayments": 1671.65,
@@ -14326,7 +13727,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-16T00:00:00Z",
+      "date": "2023-12-09T00:00:00Z",
       "totalRevenue": 5874.91,
       "dailyCreditCardPayments": 5131.78,
       "dailyCashPayments": 743.13,
@@ -14387,7 +13788,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-17T00:00:00Z",
+      "date": "2023-12-10T00:00:00Z",
       "totalRevenue": 4200.1,
       "dailyCreditCardPayments": 2360.05,
       "dailyCashPayments": 1840.05,
@@ -14448,7 +13849,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-17T00:00:00Z",
+      "date": "2023-12-10T00:00:00Z",
       "totalRevenue": 3149.78,
       "dailyCreditCardPayments": 321.46,
       "dailyCashPayments": 2828.32,
@@ -14509,7 +13910,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-17T00:00:00Z",
+      "date": "2023-12-10T00:00:00Z",
       "totalRevenue": 6259.97,
       "dailyCreditCardPayments": 665.9,
       "dailyCashPayments": 5594.07,
@@ -14570,7 +13971,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-17T00:00:00Z",
+      "date": "2023-12-10T00:00:00Z",
       "totalRevenue": 4137.45,
       "dailyCreditCardPayments": 3376.94,
       "dailyCashPayments": 760.51,
@@ -14631,7 +14032,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-17T00:00:00Z",
+      "date": "2023-12-10T00:00:00Z",
       "totalRevenue": 4395.69,
       "dailyCreditCardPayments": 1095.54,
       "dailyCashPayments": 3300.15,
@@ -14692,7 +14093,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-18T00:00:00Z",
+      "date": "2023-12-11T00:00:00Z",
       "totalRevenue": 5503.93,
       "dailyCreditCardPayments": 4169.44,
       "dailyCashPayments": 1334.49,
@@ -14753,7 +14154,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-18T00:00:00Z",
+      "date": "2023-12-11T00:00:00Z",
       "totalRevenue": 3541.15,
       "dailyCreditCardPayments": 1191.45,
       "dailyCashPayments": 2349.7,
@@ -14814,7 +14215,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-18T00:00:00Z",
+      "date": "2023-12-11T00:00:00Z",
       "totalRevenue": 5371.53,
       "dailyCreditCardPayments": 2002.88,
       "dailyCashPayments": 3368.65,
@@ -14875,7 +14276,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-18T00:00:00Z",
+      "date": "2023-12-11T00:00:00Z",
       "totalRevenue": 3328.19,
       "dailyCreditCardPayments": 1035.66,
       "dailyCashPayments": 2292.53,
@@ -14936,7 +14337,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-18T00:00:00Z",
+      "date": "2023-12-11T00:00:00Z",
       "totalRevenue": 4848.04,
       "dailyCreditCardPayments": 2207.78,
       "dailyCashPayments": 2640.26,
@@ -14997,7 +14398,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-19T00:00:00Z",
+      "date": "2023-12-12T00:00:00Z",
       "totalRevenue": 4145.31,
       "dailyCreditCardPayments": 3248.04,
       "dailyCashPayments": 897.27,
@@ -15058,7 +14459,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-19T00:00:00Z",
+      "date": "2023-12-12T00:00:00Z",
       "totalRevenue": 4749.01,
       "dailyCreditCardPayments": 2010.5,
       "dailyCashPayments": 2738.51,
@@ -15119,7 +14520,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-19T00:00:00Z",
+      "date": "2023-12-12T00:00:00Z",
       "totalRevenue": 4768.85,
       "dailyCreditCardPayments": 709.12,
       "dailyCashPayments": 4059.73,
@@ -15180,7 +14581,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-19T00:00:00Z",
+      "date": "2023-12-12T00:00:00Z",
       "totalRevenue": 4241.51,
       "dailyCreditCardPayments": 1186.69,
       "dailyCashPayments": 3054.82,
@@ -15241,7 +14642,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-19T00:00:00Z",
+      "date": "2023-12-12T00:00:00Z",
       "totalRevenue": 3203.33,
       "dailyCreditCardPayments": 1229.89,
       "dailyCashPayments": 1973.44,
@@ -15302,7 +14703,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-20T00:00:00Z",
+      "date": "2023-12-13T00:00:00Z",
       "totalRevenue": 3295.85,
       "dailyCreditCardPayments": 2175.2,
       "dailyCashPayments": 1120.65,
@@ -15363,7 +14764,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-20T00:00:00Z",
+      "date": "2023-12-13T00:00:00Z",
       "totalRevenue": 4135.86,
       "dailyCreditCardPayments": 3316.59,
       "dailyCashPayments": 819.27,
@@ -15424,7 +14825,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-20T00:00:00Z",
+      "date": "2023-12-13T00:00:00Z",
       "totalRevenue": 4063.96,
       "dailyCreditCardPayments": 1819.51,
       "dailyCashPayments": 2244.45,
@@ -15485,7 +14886,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-20T00:00:00Z",
+      "date": "2023-12-13T00:00:00Z",
       "totalRevenue": 5121.38,
       "dailyCreditCardPayments": 2348.51,
       "dailyCashPayments": 2772.87,
@@ -15546,7 +14947,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-20T00:00:00Z",
+      "date": "2023-12-13T00:00:00Z",
       "totalRevenue": 3867.09,
       "dailyCreditCardPayments": 2839.85,
       "dailyCashPayments": 1027.24,
@@ -15607,7 +15008,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-21",
+      "date": "2023-12-14",
       "totalRevenue": 11830.51,
       "dailyCreditCardPayments": 3962.61,
       "dailyCashPayments": 7867.9,
@@ -15743,7 +15144,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-21",
+      "date": "2023-12-14",
       "totalRevenue": 11222.32,
       "dailyCreditCardPayments": 9155.44,
       "dailyCashPayments": 2066.88,
@@ -15879,7 +15280,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-21",
+      "date": "2023-12-14",
       "totalRevenue": 10301.33,
       "dailyCreditCardPayments": 1596.98,
       "dailyCashPayments": 8704.35,
@@ -16015,7 +15416,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-21",
+      "date": "2023-12-14",
       "totalRevenue": 12480.75,
       "dailyCreditCardPayments": 3288.62,
       "dailyCashPayments": 9192.13,
@@ -16151,7 +15552,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-21",
+      "date": "2023-12-14",
       "totalRevenue": 9254.57,
       "dailyCreditCardPayments": 2269.18,
       "dailyCashPayments": 6985.39,
@@ -16287,7 +15688,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-22",
+      "date": "2023-12-15",
       "totalRevenue": 12178.48,
       "dailyCreditCardPayments": 2663.99,
       "dailyCashPayments": 9514.49,
@@ -16423,7 +15824,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-22",
+      "date": "2023-12-15",
       "totalRevenue": 9486.54,
       "dailyCreditCardPayments": 5215.15,
       "dailyCashPayments": 4271.39,
@@ -16559,7 +15960,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-22",
+      "date": "2023-12-15",
       "totalRevenue": 10290.48,
       "dailyCreditCardPayments": 7636.57,
       "dailyCashPayments": 2653.91,
@@ -16695,7 +16096,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-22",
+      "date": "2023-12-15",
       "totalRevenue": 9343.71,
       "dailyCreditCardPayments": 8087.1,
       "dailyCashPayments": 1256.61,
@@ -16831,7 +16232,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-22",
+      "date": "2023-12-15",
       "totalRevenue": 7420.5,
       "dailyCreditCardPayments": 5074.46,
       "dailyCashPayments": 2346.04,
@@ -16967,7 +16368,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-23",
+      "date": "2023-12-16",
       "totalRevenue": 8699.5,
       "dailyCreditCardPayments": 3209.34,
       "dailyCashPayments": 5490.16,
@@ -17103,7 +16504,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-23",
+      "date": "2023-12-16",
       "totalRevenue": 10276.62,
       "dailyCreditCardPayments": 1667.26,
       "dailyCashPayments": 8609.36,
@@ -17239,7 +16640,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-23",
+      "date": "2023-12-16",
       "totalRevenue": 12126.68,
       "dailyCreditCardPayments": 3564.77,
       "dailyCashPayments": 8561.91,
@@ -17375,7 +16776,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-23",
+      "date": "2023-12-16",
       "totalRevenue": 11603.25,
       "dailyCreditCardPayments": 5398.33,
       "dailyCashPayments": 6204.92,
@@ -17511,7 +16912,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-23",
+      "date": "2023-12-16",
       "totalRevenue": 10867.78,
       "dailyCreditCardPayments": 6101.79,
       "dailyCashPayments": 4765.99,
@@ -17647,7 +17048,7 @@
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-24",
+      "date": "2023-12-17",
       "totalRevenue": 8487.96,
       "dailyCreditCardPayments": 1416.77,
       "dailyCashPayments": 7071.19,
@@ -17783,7 +17184,7 @@
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-24",
+      "date": "2023-12-17",
       "totalRevenue": 9007.86,
       "dailyCreditCardPayments": 5047.94,
       "dailyCashPayments": 3959.92,
@@ -17919,7 +17320,7 @@
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-24",
+      "date": "2023-12-17",
       "totalRevenue": 10344.21,
       "dailyCreditCardPayments": 3807.67,
       "dailyCashPayments": 6536.54,
@@ -18055,7 +17456,7 @@
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-24",
+      "date": "2023-12-17",
       "totalRevenue": 6887.91,
       "dailyCreditCardPayments": 1148.9,
       "dailyCashPayments": 5739.01,
@@ -18191,7 +17592,7 @@
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-24",
+      "date": "2023-12-17",
       "totalRevenue": 10689.67,
       "dailyCreditCardPayments": 6291.71,
       "dailyCashPayments": 4397.96,
@@ -18322,686 +17723,6 @@
           "name": "Windshield Wiper Fluid",
           "quantitySold": 10,
           "priceSoldAt": 18.1
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54a2b485b42210278310",
-      "date": "2023-09-25",
-      "totalRevenue": 11279.5,
-      "dailyCreditCardPayments": 3068.98,
-      "dailyCashPayments": 8210.52,
-      "gasolineSales": [
-        {
-          "gasType": "Regular",
-          "gallonsSold": 114,
-          "priceSoldAt": 2.15
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 218,
-          "priceSoldAt": 3.95
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 371,
-          "priceSoldAt": 3.39
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 298,
-          "priceSoldAt": 4.57
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 339,
-          "priceSoldAt": 4.81
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 48,
-          "priceSoldAt": 19.31
-        },
-        {
-          "name": "Bread",
-          "quantitySold": 9,
-          "priceSoldAt": 2.08
-        },
-        {
-          "name": "Cheese",
-          "quantitySold": 25,
-          "priceSoldAt": 15.09
-        },
-        {
-          "name": "Chewing Gum",
-          "quantitySold": 40,
-          "priceSoldAt": 1.44
-        },
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 6,
-          "priceSoldAt": 18.68
-        },
-        {
-          "name": "Cigarettes",
-          "quantitySold": 41,
-          "priceSoldAt": 12.73
-        },
-        {
-          "name": "Coca-Cola",
-          "quantitySold": 34,
-          "priceSoldAt": 10.71
-        },
-        {
-          "name": "Engine Oil",
-          "quantitySold": 48,
-          "priceSoldAt": 17.12
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 50,
-          "priceSoldAt": 2.87
-        },
-        {
-          "name": "Magazine",
-          "quantitySold": 22,
-          "priceSoldAt": 14.59
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 26,
-          "priceSoldAt": 9.08
-        },
-        {
-          "name": "Motorcycle Oil",
-          "quantitySold": 22,
-          "priceSoldAt": 12.29
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 22,
-          "priceSoldAt": 19.82
-        },
-        {
-          "name": "Shampoo",
-          "quantitySold": 33,
-          "priceSoldAt": 8.02
-        },
-        {
-          "name": "Soap",
-          "quantitySold": 48,
-          "priceSoldAt": 9.27
-        },
-        {
-          "name": "Sunglasses",
-          "quantitySold": 12,
-          "priceSoldAt": 8.16
-        },
-        {
-          "name": "Toothpaste",
-          "quantitySold": 6,
-          "priceSoldAt": 2.74
-        },
-        {
-          "name": "Travel Pillow",
-          "quantitySold": 30,
-          "priceSoldAt": 7.52
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 4,
-          "priceSoldAt": 2.96
-        },
-        {
-          "name": "Windshield Wiper Fluid",
-          "quantitySold": 30,
-          "priceSoldAt": 8.48
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54aeb485b42210278312",
-      "date": "2023-09-25",
-      "totalRevenue": 11529.29,
-      "dailyCreditCardPayments": 5107.41,
-      "dailyCashPayments": 6421.88,
-      "gasolineSales": [
-        {
-          "gasType": "Regular",
-          "gallonsSold": 455,
-          "priceSoldAt": 3.97
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 210,
-          "priceSoldAt": 3.02
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 483,
-          "priceSoldAt": 2.04
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 165,
-          "priceSoldAt": 4.87
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 293,
-          "priceSoldAt": 2.97
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 26,
-          "priceSoldAt": 14.44
-        },
-        {
-          "name": "Bread",
-          "quantitySold": 10,
-          "priceSoldAt": 4.54
-        },
-        {
-          "name": "Cheese",
-          "quantitySold": 38,
-          "priceSoldAt": 10.44
-        },
-        {
-          "name": "Chewing Gum",
-          "quantitySold": 23,
-          "priceSoldAt": 18.64
-        },
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 23,
-          "priceSoldAt": 13.26
-        },
-        {
-          "name": "Cigarettes",
-          "quantitySold": 47,
-          "priceSoldAt": 14.58
-        },
-        {
-          "name": "Coca-Cola",
-          "quantitySold": 46,
-          "priceSoldAt": 11.43
-        },
-        {
-          "name": "Engine Oil",
-          "quantitySold": 45,
-          "priceSoldAt": 17.74
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 48,
-          "priceSoldAt": 4.31
-        },
-        {
-          "name": "Magazine",
-          "quantitySold": 28,
-          "priceSoldAt": 17.42
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 32,
-          "priceSoldAt": 16.05
-        },
-        {
-          "name": "Motorcycle Oil",
-          "quantitySold": 49,
-          "priceSoldAt": 2.72
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 25,
-          "priceSoldAt": 18.02
-        },
-        {
-          "name": "Shampoo",
-          "quantitySold": 35,
-          "priceSoldAt": 1.71
-        },
-        {
-          "name": "Soap",
-          "quantitySold": 41,
-          "priceSoldAt": 9.12
-        },
-        {
-          "name": "Sunglasses",
-          "quantitySold": 25,
-          "priceSoldAt": 4.23
-        },
-        {
-          "name": "Toothpaste",
-          "quantitySold": 28,
-          "priceSoldAt": 16.49
-        },
-        {
-          "name": "Travel Pillow",
-          "quantitySold": 13,
-          "priceSoldAt": 2.11
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 3,
-          "priceSoldAt": 7.14
-        },
-        {
-          "name": "Windshield Wiper Fluid",
-          "quantitySold": 5,
-          "priceSoldAt": 5.39
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54b8b485b42210278314",
-      "date": "2023-09-25",
-      "totalRevenue": 9394.28,
-      "dailyCreditCardPayments": 5556.52,
-      "dailyCashPayments": 3837.76,
-      "gasolineSales": [
-        {
-          "gasType": "Regular",
-          "gallonsSold": 54,
-          "priceSoldAt": 4.12
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 216,
-          "priceSoldAt": 3.59
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 197,
-          "priceSoldAt": 4.54
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 128,
-          "priceSoldAt": 2.92
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 432,
-          "priceSoldAt": 2.48
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 10,
-          "priceSoldAt": 14.91
-        },
-        {
-          "name": "Bread",
-          "quantitySold": 48,
-          "priceSoldAt": 3.06
-        },
-        {
-          "name": "Cheese",
-          "quantitySold": 16,
-          "priceSoldAt": 8.22
-        },
-        {
-          "name": "Chewing Gum",
-          "quantitySold": 21,
-          "priceSoldAt": 19.49
-        },
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 21,
-          "priceSoldAt": 10
-        },
-        {
-          "name": "Cigarettes",
-          "quantitySold": 41,
-          "priceSoldAt": 15.83
-        },
-        {
-          "name": "Coca-Cola",
-          "quantitySold": 27,
-          "priceSoldAt": 18.27
-        },
-        {
-          "name": "Engine Oil",
-          "quantitySold": 15,
-          "priceSoldAt": 7.51
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 10,
-          "priceSoldAt": 13.79
-        },
-        {
-          "name": "Magazine",
-          "quantitySold": 5,
-          "priceSoldAt": 16.14
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 38,
-          "priceSoldAt": 12.53
-        },
-        {
-          "name": "Motorcycle Oil",
-          "quantitySold": 48,
-          "priceSoldAt": 19.74
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 44,
-          "priceSoldAt": 17.45
-        },
-        {
-          "name": "Shampoo",
-          "quantitySold": 34,
-          "priceSoldAt": 8.99
-        },
-        {
-          "name": "Soap",
-          "quantitySold": 21,
-          "priceSoldAt": 7.97
-        },
-        {
-          "name": "Sunglasses",
-          "quantitySold": 22,
-          "priceSoldAt": 4.74
-        },
-        {
-          "name": "Toothpaste",
-          "quantitySold": 41,
-          "priceSoldAt": 12.7
-        },
-        {
-          "name": "Travel Pillow",
-          "quantitySold": 32,
-          "priceSoldAt": 1.25
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 15,
-          "priceSoldAt": 9.22
-        },
-        {
-          "name": "Windshield Wiper Fluid",
-          "quantitySold": 29,
-          "priceSoldAt": 2.37
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54c0b485b42210278316",
-      "date": "2023-09-25",
-      "totalRevenue": 9999.71,
-      "dailyCreditCardPayments": 3312.65,
-      "dailyCashPayments": 6687.06,
-      "gasolineSales": [
-        {
-          "gasType": "Regular",
-          "gallonsSold": 393,
-          "priceSoldAt": 4.5
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 102,
-          "priceSoldAt": 3.09
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 341,
-          "priceSoldAt": 2.98
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 176,
-          "priceSoldAt": 4.06
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 243,
-          "priceSoldAt": 3.35
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 39,
-          "priceSoldAt": 15.71
-        },
-        {
-          "name": "Bread",
-          "quantitySold": 23,
-          "priceSoldAt": 10.73
-        },
-        {
-          "name": "Cheese",
-          "quantitySold": 10,
-          "priceSoldAt": 9.52
-        },
-        {
-          "name": "Chewing Gum",
-          "quantitySold": 9,
-          "priceSoldAt": 13.44
-        },
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 7,
-          "priceSoldAt": 16.16
-        },
-        {
-          "name": "Cigarettes",
-          "quantitySold": 32,
-          "priceSoldAt": 12.02
-        },
-        {
-          "name": "Coca-Cola",
-          "quantitySold": 9,
-          "priceSoldAt": 19.53
-        },
-        {
-          "name": "Engine Oil",
-          "quantitySold": 37,
-          "priceSoldAt": 19.62
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 26,
-          "priceSoldAt": 18.77
-        },
-        {
-          "name": "Magazine",
-          "quantitySold": 11,
-          "priceSoldAt": 8.33
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 18,
-          "priceSoldAt": 18.85
-        },
-        {
-          "name": "Motorcycle Oil",
-          "quantitySold": 18,
-          "priceSoldAt": 13.64
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 19,
-          "priceSoldAt": 7.88
-        },
-        {
-          "name": "Shampoo",
-          "quantitySold": 3,
-          "priceSoldAt": 6.71
-        },
-        {
-          "name": "Soap",
-          "quantitySold": 21,
-          "priceSoldAt": 16.36
-        },
-        {
-          "name": "Sunglasses",
-          "quantitySold": 22,
-          "priceSoldAt": 4.53
-        },
-        {
-          "name": "Toothpaste",
-          "quantitySold": 16,
-          "priceSoldAt": 13.58
-        },
-        {
-          "name": "Travel Pillow",
-          "quantitySold": 39,
-          "priceSoldAt": 9.33
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 27,
-          "priceSoldAt": 8.72
-        },
-        {
-          "name": "Windshield Wiper Fluid",
-          "quantitySold": 40,
-          "priceSoldAt": 7.55
-        }
-      ]
-    },
-    {
-      "propertyId": "64ff54c8b485b42210278318",
-      "date": "2023-09-25",
-      "totalRevenue": 9620.66,
-      "dailyCreditCardPayments": 8540.86,
-      "dailyCashPayments": 1079.8,
-      "gasolineSales": [
-        {
-          "gasType": "Regular",
-          "gallonsSold": 406,
-          "priceSoldAt": 4.13
-        },
-        {
-          "gasType": "Midgrade",
-          "gallonsSold": 50,
-          "priceSoldAt": 4.28
-        },
-        {
-          "gasType": "Premium",
-          "gallonsSold": 233,
-          "priceSoldAt": 2.42
-        },
-        {
-          "gasType": "Diesel",
-          "gallonsSold": 480,
-          "priceSoldAt": 4.08
-        },
-        {
-          "gasType": "E85",
-          "gallonsSold": 122,
-          "priceSoldAt": 3.44
-        }
-      ],
-      "nonGasolineSales": [
-        {
-          "name": "Beef Jerky",
-          "quantitySold": 32,
-          "priceSoldAt": 12.07
-        },
-        {
-          "name": "Bread",
-          "quantitySold": 34,
-          "priceSoldAt": 11.07
-        },
-        {
-          "name": "Cheese",
-          "quantitySold": 27,
-          "priceSoldAt": 15.09
-        },
-        {
-          "name": "Chewing Gum",
-          "quantitySold": 41,
-          "priceSoldAt": 6.3
-        },
-        {
-          "name": "Chocolate Bar",
-          "quantitySold": 31,
-          "priceSoldAt": 6.97
-        },
-        {
-          "name": "Cigarettes",
-          "quantitySold": 17,
-          "priceSoldAt": 15.85
-        },
-        {
-          "name": "Coca-Cola",
-          "quantitySold": 22,
-          "priceSoldAt": 3.44
-        },
-        {
-          "name": "Engine Oil",
-          "quantitySold": 9,
-          "priceSoldAt": 8.01
-        },
-        {
-          "name": "Juice Box",
-          "quantitySold": 39,
-          "priceSoldAt": 2.45
-        },
-        {
-          "name": "Magazine",
-          "quantitySold": 49,
-          "priceSoldAt": 12.68
-        },
-        {
-          "name": "Milk",
-          "quantitySold": 24,
-          "priceSoldAt": 16.6
-        },
-        {
-          "name": "Motorcycle Oil",
-          "quantitySold": 35,
-          "priceSoldAt": 6.14
-        },
-        {
-          "name": "Potato Chips",
-          "quantitySold": 3,
-          "priceSoldAt": 18.55
-        },
-        {
-          "name": "Shampoo",
-          "quantitySold": 7,
-          "priceSoldAt": 11.34
-        },
-        {
-          "name": "Soap",
-          "quantitySold": 20,
-          "priceSoldAt": 13.09
-        },
-        {
-          "name": "Sunglasses",
-          "quantitySold": 2,
-          "priceSoldAt": 3.48
-        },
-        {
-          "name": "Toothpaste",
-          "quantitySold": 19,
-          "priceSoldAt": 12.96
-        },
-        {
-          "name": "Travel Pillow",
-          "quantitySold": 31,
-          "priceSoldAt": 13.64
-        },
-        {
-          "name": "Water Bottle",
-          "quantitySold": 43,
-          "priceSoldAt": 1.82
-        },
-        {
-          "name": "Windshield Wiper Fluid",
-          "quantitySold": 50,
-          "priceSoldAt": 4.9
         }
       ]
     }

@@ -5,1960 +5,1925 @@
       "gasType": "Regular",
       "quantityInGallons": 7194.92,
       "costPerGallon": 2.07,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 3609.86,
       "costPerGallon": 2.8,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 7698.43,
       "costPerGallon": 2.51,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 4013.68,
       "costPerGallon": 3.27,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 3883.24,
       "costPerGallon": 3.4,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 2037.42,
       "costPerGallon": 2.84,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 4659.76,
       "costPerGallon": 2.75,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 4705.83,
       "costPerGallon": 3.11,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 7767.62,
       "costPerGallon": 2.39,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 2295.44,
       "costPerGallon": 2.06,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 7175.63,
       "costPerGallon": 2.67,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 6948.1,
       "costPerGallon": 2.03,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 4914.88,
       "costPerGallon": 3.15,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 5015.17,
       "costPerGallon": 2.99,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 7059.9,
       "costPerGallon": 2.23,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 2365.13,
       "costPerGallon": 3.39,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 7716.09,
       "costPerGallon": 3.17,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 4460.86,
       "costPerGallon": 3.24,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 4667.8,
       "costPerGallon": 2.15,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 3475.72,
       "costPerGallon": 3.34,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 7639.46,
       "costPerGallon": 2.24,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 2260.94,
       "costPerGallon": 3.11,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 6107.65,
       "costPerGallon": 2.28,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 3204.71,
       "costPerGallon": 2.3,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 5461.45,
       "costPerGallon": 2.62,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 4946.59,
       "costPerGallon": 2.03,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Diesel",
       "quantityInGallons": 4247.54,
       "costPerGallon": 3.34,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 2015.97,
       "costPerGallon": 2.74,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 7676.63,
       "costPerGallon": 3.48,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 4398.18,
       "costPerGallon": 2.44,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 4427.67,
       "costPerGallon": 2.44,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 5777.25,
       "costPerGallon": 3.47,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Midgrade",
       "quantityInGallons": 3747.69,
       "costPerGallon": 2.23,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Regular",
       "quantityInGallons": 3884.66,
       "costPerGallon": 2.12,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 3331.56,
       "costPerGallon": 2.02,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 5852.26,
       "costPerGallon": 3.04,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 4729.88,
       "costPerGallon": 2.1,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 5920.06,
       "costPerGallon": 2.12,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 7433.01,
       "costPerGallon": 2.56,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 7203.29,
       "costPerGallon": 2.6,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 6471.19,
       "costPerGallon": 2.82,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 5854.4,
       "costPerGallon": 2.14,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Midgrade",
       "quantityInGallons": 6678.99,
       "costPerGallon": 2.03,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 7973.81,
       "costPerGallon": 3.43,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 4460.63,
       "costPerGallon": 2.96,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 3202.36,
       "costPerGallon": 2.08,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 7014.83,
       "costPerGallon": 2.2,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 2132.63,
       "costPerGallon": 3.09,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 4905.35,
       "costPerGallon": 2.92,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 2882.33,
       "costPerGallon": 2.16,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 6043.28,
       "costPerGallon": 3.37,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 4096.66,
       "costPerGallon": 2.17,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 5956.06,
       "costPerGallon": 3.11,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 7880.58,
       "costPerGallon": 2.92,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 5388.05,
       "costPerGallon": 2.78,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 2808.77,
       "costPerGallon": 2.78,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 6259.54,
       "costPerGallon": 2.72,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 2736.48,
       "costPerGallon": 2.52,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Regular",
       "quantityInGallons": 2982.13,
       "costPerGallon": 2.37,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 7968.93,
       "costPerGallon": 2.3,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 4487.63,
       "costPerGallon": 2.49,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 2024.05,
       "costPerGallon": 3.19,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 3158.9,
       "costPerGallon": 3.05,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 3369.87,
       "costPerGallon": 2.22,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 5756.85,
       "costPerGallon": 2.36,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 3216.4,
       "costPerGallon": 3.43,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 7940.66,
       "costPerGallon": 3.37,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 7224.64,
       "costPerGallon": 2.1,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 6230.39,
       "costPerGallon": 2.54,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 5171.27,
       "costPerGallon": 2.14,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 7871.03,
       "costPerGallon": 2.86,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 2482.3,
       "costPerGallon": 2.68,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 2541.8,
       "costPerGallon": 2.82,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 2020.59,
       "costPerGallon": 2.71,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 4740.04,
       "costPerGallon": 2.99,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 4957.59,
       "costPerGallon": 2.49,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 6603.84,
       "costPerGallon": 2.11,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 4090.23,
       "costPerGallon": 2.38,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 6213.74,
       "costPerGallon": 2.26,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 7172.34,
       "costPerGallon": 3.13,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 5332.6,
       "costPerGallon": 2.54,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 4352.81,
       "costPerGallon": 2.72,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 6561.96,
       "costPerGallon": 2.92,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 6930.67,
       "costPerGallon": 3.17,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 3759.68,
       "costPerGallon": 2.02,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 7474.8,
       "costPerGallon": 2.88,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Diesel",
       "quantityInGallons": 6804.78,
       "costPerGallon": 2.17,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 3195.75,
       "costPerGallon": 3.33,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 4673.5,
       "costPerGallon": 3.37,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 3842.17,
       "costPerGallon": 2.03,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 7045.89,
       "costPerGallon": 3.4,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 2348.41,
       "costPerGallon": 2.97,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 4964.16,
       "costPerGallon": 2.49,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 7944.45,
       "costPerGallon": 3.31,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 7481.13,
       "costPerGallon": 3.47,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 5443.74,
       "costPerGallon": 3.23,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 7647.8,
       "costPerGallon": 2.78,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Midgrade",
       "quantityInGallons": 6579.75,
       "costPerGallon": 3.19,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 4264.68,
       "costPerGallon": 3.26,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 5002.01,
       "costPerGallon": 2.52,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 3347.08,
       "costPerGallon": 3.06,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 7244.22,
       "costPerGallon": 3.02,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 5530.2,
       "costPerGallon": 3.33,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 3724.22,
       "costPerGallon": 3.5,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 4727.91,
       "costPerGallon": 2.97,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 6212.06,
       "costPerGallon": 2.91,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 7907.7,
       "costPerGallon": 3.26,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 2352.62,
       "costPerGallon": 2.49,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 6761.86,
       "costPerGallon": 2.76,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 6126.91,
       "costPerGallon": 2.51,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 4002.87,
       "costPerGallon": 2.3,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 2835.39,
       "costPerGallon": 2.8,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 5209.54,
       "costPerGallon": 2.68,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 5087.89,
       "costPerGallon": 2,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 2754.28,
       "costPerGallon": 2.53,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 4357.42,
       "costPerGallon": 2.26,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 3782.97,
       "costPerGallon": 2.32,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 2103.8,
       "costPerGallon": 3.08,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Regular",
       "quantityInGallons": 7805.12,
       "costPerGallon": 2.36,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 3762.83,
       "costPerGallon": 2.79,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 7838.66,
       "costPerGallon": 3.01,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 5664.42,
       "costPerGallon": 2.33,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 7246.23,
       "costPerGallon": 2.29,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 4442.29,
       "costPerGallon": 3.25,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 3628.35,
       "costPerGallon": 2.31,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 2543.82,
       "costPerGallon": 2.83,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 2318.68,
       "costPerGallon": 2.58,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 3992.56,
       "costPerGallon": 2.16,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 7035.34,
       "costPerGallon": 2.47,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 3318.66,
       "costPerGallon": 2.18,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 2891.39,
       "costPerGallon": 3.49,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 6879.49,
       "costPerGallon": 3.16,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 6214.81,
       "costPerGallon": 2.67,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 2694.68,
       "costPerGallon": 2.4,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 6919.4,
       "costPerGallon": 3.07,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 3941.3,
       "costPerGallon": 2.07,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 7459.31,
       "costPerGallon": 3.48,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 5363.98,
       "costPerGallon": 2.31,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 6208.32,
       "costPerGallon": 2.76,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 7653.58,
       "costPerGallon": 2.92,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 5493.43,
       "costPerGallon": 2.05,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 7939.81,
       "costPerGallon": 2.26,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 6124.73,
       "costPerGallon": 2.21,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Regular",
       "quantityInGallons": 7533.07,
       "costPerGallon": 2.33,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 5481.99,
       "costPerGallon": 2.62,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 5601.08,
       "costPerGallon": 2.72,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 5257.78,
       "costPerGallon": 3.01,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 5248,
       "costPerGallon": 3.45,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 7975.37,
       "costPerGallon": 2.04,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 5532.39,
       "costPerGallon": 3.23,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 7997.33,
       "costPerGallon": 2.58,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 6044.8,
       "costPerGallon": 2.71,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 4212.33,
       "costPerGallon": 2.79,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 3876.19,
       "costPerGallon": 2.63,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 6242.64,
       "costPerGallon": 2.01,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 7639.75,
       "costPerGallon": 3.24,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Diesel",
       "quantityInGallons": 4377.35,
       "costPerGallon": 2.08,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 4206.42,
       "costPerGallon": 2.87,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 4086.05,
       "costPerGallon": 3.04,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 3766.74,
       "costPerGallon": 2.06,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 5039.16,
       "costPerGallon": 2.53,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Diesel",
       "quantityInGallons": 4747.06,
       "costPerGallon": 2.53,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 3378.02,
       "costPerGallon": 3.23,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 2807.26,
       "costPerGallon": 3.07,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 4802.27,
       "costPerGallon": 3.45,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 4636.49,
       "costPerGallon": 2.26,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 5588.68,
       "costPerGallon": 2.31,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 2486.91,
       "costPerGallon": 2.31,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 7145.99,
       "costPerGallon": 2.38,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 2813.84,
       "costPerGallon": 2.87,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 4432.5,
       "costPerGallon": 2.62,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 7444.6,
       "costPerGallon": 3.14,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 2003.85,
       "costPerGallon": 3.4,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 5603.24,
       "costPerGallon": 2.3,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 2743.8,
       "costPerGallon": 2.89,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 3594.4,
       "costPerGallon": 3.15,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Diesel",
       "quantityInGallons": 2278.42,
       "costPerGallon": 2.42,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 7030.37,
       "costPerGallon": 2.61,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 6045.64,
       "costPerGallon": 3.33,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 4637.61,
       "costPerGallon": 2.23,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 5319.68,
       "costPerGallon": 2.93,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 2736.21,
       "costPerGallon": 3.42,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 4172.13,
       "costPerGallon": 3.33,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 2612,
       "costPerGallon": 3.03,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 3409.73,
       "costPerGallon": 2.71,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 2782.81,
       "costPerGallon": 2.55,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 3525.76,
       "costPerGallon": 3.06,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 7627.09,
       "costPerGallon": 2.7,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 7206.54,
       "costPerGallon": 3.06,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 3084.5,
       "costPerGallon": 3.04,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 4948.6,
       "costPerGallon": 2.41,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Diesel",
       "quantityInGallons": 5222.12,
       "costPerGallon": 2.16,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 3653.06,
       "costPerGallon": 3.17,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "E85",
       "quantityInGallons": 4413.02,
       "costPerGallon": 2.3,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 3867.62,
       "costPerGallon": 2.23,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 2313.81,
       "costPerGallon": 2.53,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 4754.59,
       "costPerGallon": 2.93,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 5050.68,
       "costPerGallon": 3.34,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 2283.17,
       "costPerGallon": 3.24,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 4873.06,
       "costPerGallon": 2.64,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 5861.2,
       "costPerGallon": 2.21,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 7063.61,
       "costPerGallon": 2.25,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 6283.18,
       "costPerGallon": 2.51,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Regular",
       "quantityInGallons": 7836.21,
       "costPerGallon": 2.32,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 2965.94,
       "costPerGallon": 2.84,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 4408.75,
       "costPerGallon": 2.86,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 3347.56,
       "costPerGallon": 2.23,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 6809.7,
       "costPerGallon": 3.09,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 4683.5,
       "costPerGallon": 2.92,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 2704.5,
       "costPerGallon": 2.78,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 4078.75,
       "costPerGallon": 3.32,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 3882.63,
       "costPerGallon": 2.32,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 7424.59,
       "costPerGallon": 2.79,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 7408.03,
       "costPerGallon": 2.03,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 3032.24,
       "costPerGallon": 2.11,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 5606.18,
       "costPerGallon": 3.12,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 5664.24,
       "costPerGallon": 2.3,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 4846.23,
       "costPerGallon": 3.45,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 6627.35,
       "costPerGallon": 2.04,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 6100.75,
       "costPerGallon": 2.7,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 3125.79,
       "costPerGallon": 2.11,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 5103.83,
       "costPerGallon": 2.49,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 2410.27,
       "costPerGallon": 3.47,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 2876.06,
       "costPerGallon": 2.41,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 7858.08,
       "costPerGallon": 3,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 3338,
       "costPerGallon": 3.33,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 6626.52,
       "costPerGallon": 3.18,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Midgrade",
       "quantityInGallons": 7539.81,
       "costPerGallon": 2.29,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 6891.66,
       "costPerGallon": 3.11,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 7904.57,
       "costPerGallon": 3.15,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 7364.73,
       "costPerGallon": 3.39,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 2403.76,
       "costPerGallon": 2.49,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 5626.13,
       "costPerGallon": 3.31,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 3963.69,
       "costPerGallon": 2.88,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Premium",
       "quantityInGallons": 7448.26,
       "costPerGallon": 2.95,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 2541.86,
       "costPerGallon": 2.89,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 7951.67,
       "costPerGallon": 2.78,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Midgrade",
       "quantityInGallons": 3526.29,
       "costPerGallon": 3.16,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 4016.93,
       "costPerGallon": 2.17,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 6874.01,
       "costPerGallon": 2.41,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "E85",
       "quantityInGallons": 7449.39,
       "costPerGallon": 3.13,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 7611.22,
       "costPerGallon": 2.38,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 5875.51,
       "costPerGallon": 2.49,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 5270.4,
       "costPerGallon": 2.45,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 2300.76,
       "costPerGallon": 2.36,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 4945.4,
       "costPerGallon": 2.88,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 5852.3,
       "costPerGallon": 3.49,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Premium",
       "quantityInGallons": 2579.49,
       "costPerGallon": 2.72,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 5908.76,
       "costPerGallon": 2.84,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 2528.97,
       "costPerGallon": 2.14,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Premium",
       "quantityInGallons": 6906.73,
       "costPerGallon": 3.43,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Premium",
       "quantityInGallons": 6673.29,
       "costPerGallon": 3.41,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 6678.92,
       "costPerGallon": 2.9,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Regular",
       "quantityInGallons": 4341.06,
       "costPerGallon": 2.28,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "E85",
       "quantityInGallons": 4015.49,
       "costPerGallon": 2.45,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Regular",
       "quantityInGallons": 7194.92,
       "costPerGallon": 2.07,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Regular",
       "quantityInGallons": 3609.86,
       "costPerGallon": 2.8,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 7698.43,
       "costPerGallon": 2.51,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 4013.68,
       "costPerGallon": 3.27,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Regular",
       "quantityInGallons": 3883.24,
       "costPerGallon": 3.4,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 7639.46,
       "costPerGallon": 2.24,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "E85",
       "quantityInGallons": 2260.94,
       "costPerGallon": 3.11,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "E85",
       "quantityInGallons": 6107.65,
       "costPerGallon": 2.28,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Midgrade",
       "quantityInGallons": 3204.71,
       "costPerGallon": 2.3,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 5461.45,
       "costPerGallon": 2.62,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Diesel",
       "quantityInGallons": 6043.28,
       "costPerGallon": 3.37,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Midgrade",
       "quantityInGallons": 4096.66,
       "costPerGallon": 2.17,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Regular",
       "quantityInGallons": 5956.06,
       "costPerGallon": 3.11,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Diesel",
       "quantityInGallons": 7880.58,
       "costPerGallon": 2.92,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Midgrade",
       "quantityInGallons": 5388.05,
       "costPerGallon": 2.78,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
       "gasType": "Midgrade",
       "quantityInGallons": 7474.8,
       "costPerGallon": 2.88,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
       "gasType": "Diesel",
       "quantityInGallons": 6804.78,
       "costPerGallon": 2.17,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
       "gasType": "Diesel",
       "quantityInGallons": 3195.75,
       "costPerGallon": 3.33,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
       "gasType": "Premium",
       "quantityInGallons": 4673.5,
       "costPerGallon": 3.37,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
       "gasType": "Diesel",
       "quantityInGallons": 3842.17,
       "costPerGallon": 2.03,
-      "receivedDate": "2023-09-24T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54a2b485b42210278310",
-      "gasType": "Regular",
-      "quantityInGallons": 5601.08,
-      "costPerGallon": 2.72,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54aeb485b42210278312",
-      "gasType": "Premium",
-      "quantityInGallons": 5257.78,
-      "costPerGallon": 3.01,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54b8b485b42210278314",
-      "gasType": "E85",
-      "quantityInGallons": 5248,
-      "costPerGallon": 3.45,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54c0b485b42210278316",
-      "gasType": "E85",
-      "quantityInGallons": 7975.37,
-      "costPerGallon": 2.04,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54c8b485b42210278318",
-      "gasType": "Regular",
-      "quantityInGallons": 5532.39,
-      "costPerGallon": 3.23,
-      "receivedDate": "2023-09-25T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     }
   ]
 }

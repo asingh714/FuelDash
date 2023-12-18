@@ -6,7 +6,7 @@
       "category": "Groceries",
       "quantity": 41,
       "costPerItem": 0.82,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -14,7 +14,7 @@
       "category": "Health & Beauty",
       "quantity": 81,
       "costPerItem": 1.46,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -22,7 +22,7 @@
       "category": "Automotive Supplies",
       "quantity": 27,
       "costPerItem": 2.83,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -30,7 +30,7 @@
       "category": "Groceries",
       "quantity": 59,
       "costPerItem": 3.98,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -38,7 +38,7 @@
       "category": "Groceries",
       "quantity": 93,
       "costPerItem": 1.22,
-      "receivedDate": "2023-08-01T00:00:00Z"
+      "receivedDate": "2023-10-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -46,7 +46,7 @@
       "category": "Automotive Supplies",
       "quantity": 92,
       "costPerItem": 2.93,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -54,7 +54,7 @@
       "category": "Travel and Leisure",
       "quantity": 62,
       "costPerItem": 3.9,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -62,7 +62,7 @@
       "category": "Beverages",
       "quantity": 75,
       "costPerItem": 2.37,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -70,7 +70,7 @@
       "category": "Snacks",
       "quantity": 47,
       "costPerItem": 2.1,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -78,7 +78,7 @@
       "category": "Snacks",
       "quantity": 59,
       "costPerItem": 3.93,
-      "receivedDate": "2023-08-02T00:00:00Z"
+      "receivedDate": "2023-10-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -86,7 +86,7 @@
       "category": "Tobacco Products",
       "quantity": 55,
       "costPerItem": 2.21,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -94,7 +94,7 @@
       "category": "Health & Beauty",
       "quantity": 21,
       "costPerItem": 1.5,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -102,7 +102,7 @@
       "category": "Automotive Supplies",
       "quantity": 70,
       "costPerItem": 0.96,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -110,7 +110,7 @@
       "category": "Groceries",
       "quantity": 80,
       "costPerItem": 1.02,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -118,7 +118,7 @@
       "category": "Health & Beauty",
       "quantity": 97,
       "costPerItem": 2.63,
-      "receivedDate": "2023-08-03T00:00:00Z"
+      "receivedDate": "2023-10-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -126,7 +126,7 @@
       "category": "Automotive Supplies",
       "quantity": 84,
       "costPerItem": 2.09,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -134,7 +134,7 @@
       "category": "Travel and Leisure",
       "quantity": 57,
       "costPerItem": 4.95,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -142,7 +142,7 @@
       "category": "Snacks",
       "quantity": 58,
       "costPerItem": 4,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -150,7 +150,7 @@
       "category": "Travel and Leisure",
       "quantity": 54,
       "costPerItem": 4.61,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -158,7 +158,7 @@
       "category": "Snacks",
       "quantity": 73,
       "costPerItem": 2.7,
-      "receivedDate": "2023-08-04T00:00:00Z"
+      "receivedDate": "2023-10-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -166,7 +166,7 @@
       "category": "Tobacco Products",
       "quantity": 92,
       "costPerItem": 3.46,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -174,7 +174,7 @@
       "category": "Beverages",
       "quantity": 23,
       "costPerItem": 3.5,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -182,7 +182,7 @@
       "category": "Travel and Leisure",
       "quantity": 81,
       "costPerItem": 4.7,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -190,7 +190,7 @@
       "category": "Groceries",
       "quantity": 81,
       "costPerItem": 4.52,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -198,7 +198,7 @@
       "category": "Groceries",
       "quantity": 89,
       "costPerItem": 3.07,
-      "receivedDate": "2023-08-05T00:00:00Z"
+      "receivedDate": "2023-10-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -206,7 +206,7 @@
       "category": "Travel and Leisure",
       "quantity": 43,
       "costPerItem": 1.32,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -214,7 +214,7 @@
       "category": "Automotive Supplies",
       "quantity": 70,
       "costPerItem": 1.5,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -222,7 +222,7 @@
       "category": "Beverages",
       "quantity": 97,
       "costPerItem": 1.87,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -230,7 +230,7 @@
       "category": "Beverages",
       "quantity": 26,
       "costPerItem": 2.81,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -238,7 +238,7 @@
       "category": "Snacks",
       "quantity": 79,
       "costPerItem": 0.52,
-      "receivedDate": "2023-08-06T00:00:00Z"
+      "receivedDate": "2023-10-31T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -246,7 +246,7 @@
       "category": "Snacks",
       "quantity": 68,
       "costPerItem": 4.71,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -254,7 +254,7 @@
       "category": "Tobacco Products",
       "quantity": 48,
       "costPerItem": 3.1,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -262,7 +262,7 @@
       "category": "Beverages",
       "quantity": 63,
       "costPerItem": 1.29,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -270,7 +270,7 @@
       "category": "Automotive Supplies",
       "quantity": 95,
       "costPerItem": 0.52,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -278,7 +278,7 @@
       "category": "Groceries",
       "quantity": 26,
       "costPerItem": 1.09,
-      "receivedDate": "2023-08-07T00:00:00Z"
+      "receivedDate": "2023-11-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -286,7 +286,7 @@
       "category": "Groceries",
       "quantity": 42,
       "costPerItem": 2.83,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -294,7 +294,7 @@
       "category": "Beverages",
       "quantity": 26,
       "costPerItem": 0.73,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -302,7 +302,7 @@
       "category": "Beverages",
       "quantity": 73,
       "costPerItem": 3.24,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -310,7 +310,7 @@
       "category": "Tobacco Products",
       "quantity": 42,
       "costPerItem": 3.93,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -318,7 +318,7 @@
       "category": "Beverages",
       "quantity": 81,
       "costPerItem": 2.95,
-      "receivedDate": "2023-08-08T00:00:00Z"
+      "receivedDate": "2023-11-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -326,7 +326,7 @@
       "category": "Tobacco Products",
       "quantity": 94,
       "costPerItem": 4.15,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -334,7 +334,7 @@
       "category": "Beverages",
       "quantity": 90,
       "costPerItem": 2.69,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -342,7 +342,7 @@
       "category": "Automotive Supplies",
       "quantity": 94,
       "costPerItem": 1.45,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -350,7 +350,7 @@
       "category": "Automotive Supplies",
       "quantity": 88,
       "costPerItem": 2.79,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -358,7 +358,7 @@
       "category": "Tobacco Products",
       "quantity": 70,
       "costPerItem": 3.91,
-      "receivedDate": "2023-08-09T00:00:00Z"
+      "receivedDate": "2023-11-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -366,7 +366,7 @@
       "category": "Tobacco Products",
       "quantity": 85,
       "costPerItem": 4.89,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -374,7 +374,7 @@
       "category": "Automotive Supplies",
       "quantity": 53,
       "costPerItem": 4.77,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -382,7 +382,7 @@
       "category": "Travel and Leisure",
       "quantity": 25,
       "costPerItem": 1.29,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -390,7 +390,7 @@
       "category": "Automotive Supplies",
       "quantity": 88,
       "costPerItem": 2.03,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -398,7 +398,7 @@
       "category": "Beverages",
       "quantity": 56,
       "costPerItem": 3.87,
-      "receivedDate": "2023-08-10T00:00:00Z"
+      "receivedDate": "2023-11-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -406,7 +406,7 @@
       "category": "Travel and Leisure",
       "quantity": 30,
       "costPerItem": 3.08,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -414,7 +414,7 @@
       "category": "Health & Beauty",
       "quantity": 49,
       "costPerItem": 1.29,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -422,7 +422,7 @@
       "category": "Health & Beauty",
       "quantity": 54,
       "costPerItem": 1.59,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -430,7 +430,7 @@
       "category": "Automotive Supplies",
       "quantity": 85,
       "costPerItem": 2.4,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -438,7 +438,7 @@
       "category": "Tobacco Products",
       "quantity": 58,
       "costPerItem": 3.79,
-      "receivedDate": "2023-08-11T00:00:00Z"
+      "receivedDate": "2023-11-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -446,7 +446,7 @@
       "category": "Health & Beauty",
       "quantity": 94,
       "costPerItem": 1.18,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -454,7 +454,7 @@
       "category": "Health & Beauty",
       "quantity": 88,
       "costPerItem": 1.62,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -462,7 +462,7 @@
       "category": "Groceries",
       "quantity": 68,
       "costPerItem": 1.92,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -470,7 +470,7 @@
       "category": "Groceries",
       "quantity": 29,
       "costPerItem": 0.86,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -478,7 +478,7 @@
       "category": "Health & Beauty",
       "quantity": 59,
       "costPerItem": 3.98,
-      "receivedDate": "2023-08-12T00:00:00Z"
+      "receivedDate": "2023-11-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -486,7 +486,7 @@
       "category": "Groceries",
       "quantity": 26,
       "costPerItem": 3.41,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -494,7 +494,7 @@
       "category": "Tobacco Products",
       "quantity": 50,
       "costPerItem": 1.99,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -502,7 +502,7 @@
       "category": "Tobacco Products",
       "quantity": 28,
       "costPerItem": 0.58,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -510,7 +510,7 @@
       "category": "Snacks",
       "quantity": 37,
       "costPerItem": 1.02,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -518,7 +518,7 @@
       "category": "Beverages",
       "quantity": 31,
       "costPerItem": 2.18,
-      "receivedDate": "2023-08-13T00:00:00Z"
+      "receivedDate": "2023-11-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -526,7 +526,7 @@
       "category": "Tobacco Products",
       "quantity": 63,
       "costPerItem": 3.91,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -534,7 +534,7 @@
       "category": "Groceries",
       "quantity": 85,
       "costPerItem": 2.46,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -542,7 +542,7 @@
       "category": "Tobacco Products",
       "quantity": 30,
       "costPerItem": 3.86,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -550,7 +550,7 @@
       "category": "Health & Beauty",
       "quantity": 60,
       "costPerItem": 4.95,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -558,7 +558,7 @@
       "category": "Travel and Leisure",
       "quantity": 75,
       "costPerItem": 3.67,
-      "receivedDate": "2023-08-14T00:00:00Z"
+      "receivedDate": "2023-11-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -566,7 +566,7 @@
       "category": "Travel and Leisure",
       "quantity": 60,
       "costPerItem": 1.9,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -574,7 +574,7 @@
       "category": "Beverages",
       "quantity": 52,
       "costPerItem": 3.8,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -582,7 +582,7 @@
       "category": "Tobacco Products",
       "quantity": 59,
       "costPerItem": 0.7,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -590,7 +590,7 @@
       "category": "Travel and Leisure",
       "quantity": 74,
       "costPerItem": 1.08,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -598,7 +598,7 @@
       "category": "Health & Beauty",
       "quantity": 42,
       "costPerItem": 1.18,
-      "receivedDate": "2023-08-15T00:00:00Z"
+      "receivedDate": "2023-11-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -606,7 +606,7 @@
       "category": "Health & Beauty",
       "quantity": 37,
       "costPerItem": 1.99,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -614,7 +614,7 @@
       "category": "Health & Beauty",
       "quantity": 81,
       "costPerItem": 3.5,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -622,7 +622,7 @@
       "category": "Automotive Supplies",
       "quantity": 21,
       "costPerItem": 4.92,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -630,7 +630,7 @@
       "category": "Travel and Leisure",
       "quantity": 75,
       "costPerItem": 4.21,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -638,7 +638,7 @@
       "category": "Health & Beauty",
       "quantity": 53,
       "costPerItem": 2.16,
-      "receivedDate": "2023-08-16T00:00:00Z"
+      "receivedDate": "2023-11-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -646,7 +646,7 @@
       "category": "Automotive Supplies",
       "quantity": 55,
       "costPerItem": 0.94,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -654,7 +654,7 @@
       "category": "Snacks",
       "quantity": 56,
       "costPerItem": 1.51,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -662,7 +662,7 @@
       "category": "Tobacco Products",
       "quantity": 45,
       "costPerItem": 4.33,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -670,7 +670,7 @@
       "category": "Groceries",
       "quantity": 55,
       "costPerItem": 4.2,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -678,7 +678,7 @@
       "category": "Health & Beauty",
       "quantity": 44,
       "costPerItem": 2.61,
-      "receivedDate": "2023-08-17T00:00:00Z"
+      "receivedDate": "2023-11-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -686,7 +686,7 @@
       "category": "Snacks",
       "quantity": 32,
       "costPerItem": 3.36,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -694,7 +694,7 @@
       "category": "Travel and Leisure",
       "quantity": 33,
       "costPerItem": 4.89,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -702,7 +702,7 @@
       "category": "Groceries",
       "quantity": 23,
       "costPerItem": 3.79,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -710,7 +710,7 @@
       "category": "Tobacco Products",
       "quantity": 81,
       "costPerItem": 4.17,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -718,7 +718,7 @@
       "category": "Tobacco Products",
       "quantity": 83,
       "costPerItem": 3.97,
-      "receivedDate": "2023-08-18T00:00:00Z"
+      "receivedDate": "2023-11-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -726,7 +726,7 @@
       "category": "Health & Beauty",
       "quantity": 61,
       "costPerItem": 2.26,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -734,7 +734,7 @@
       "category": "Tobacco Products",
       "quantity": 58,
       "costPerItem": 3.05,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -742,7 +742,7 @@
       "category": "Travel and Leisure",
       "quantity": 95,
       "costPerItem": 0.83,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -750,7 +750,7 @@
       "category": "Automotive Supplies",
       "quantity": 28,
       "costPerItem": 4.73,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -758,7 +758,7 @@
       "category": "Groceries",
       "quantity": 95,
       "costPerItem": 4.9,
-      "receivedDate": "2023-08-19T00:00:00Z"
+      "receivedDate": "2023-11-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -766,7 +766,7 @@
       "category": "Groceries",
       "quantity": 65,
       "costPerItem": 0.92,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -774,7 +774,7 @@
       "category": "Automotive Supplies",
       "quantity": 88,
       "costPerItem": 4.5,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -782,7 +782,7 @@
       "category": "Health & Beauty",
       "quantity": 34,
       "costPerItem": 1.01,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -790,7 +790,7 @@
       "category": "Groceries",
       "quantity": 71,
       "costPerItem": 4.96,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -798,7 +798,7 @@
       "category": "Travel and Leisure",
       "quantity": 49,
       "costPerItem": 2.86,
-      "receivedDate": "2023-08-20T00:00:00Z"
+      "receivedDate": "2023-11-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -806,7 +806,7 @@
       "category": "Tobacco Products",
       "quantity": 78,
       "costPerItem": 3.11,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -814,7 +814,7 @@
       "category": "Automotive Supplies",
       "quantity": 41,
       "costPerItem": 2.67,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -822,7 +822,7 @@
       "category": "Automotive Supplies",
       "quantity": 34,
       "costPerItem": 4.37,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -830,7 +830,7 @@
       "category": "Groceries",
       "quantity": 90,
       "costPerItem": 3.25,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -838,7 +838,7 @@
       "category": "Automotive Supplies",
       "quantity": 90,
       "costPerItem": 0.57,
-      "receivedDate": "2023-08-21T00:00:00Z"
+      "receivedDate": "2023-11-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -846,7 +846,7 @@
       "category": "Beverages",
       "quantity": 73,
       "costPerItem": 3.86,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -854,7 +854,7 @@
       "category": "Travel and Leisure",
       "quantity": 37,
       "costPerItem": 2.6,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -862,7 +862,7 @@
       "category": "Snacks",
       "quantity": 29,
       "costPerItem": 3.06,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -870,7 +870,7 @@
       "category": "Travel and Leisure",
       "quantity": 97,
       "costPerItem": 3.96,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -878,7 +878,7 @@
       "category": "Snacks",
       "quantity": 88,
       "costPerItem": 4.69,
-      "receivedDate": "2023-08-22T00:00:00Z"
+      "receivedDate": "2023-11-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -886,7 +886,7 @@
       "category": "Groceries",
       "quantity": 62,
       "costPerItem": 4.23,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -894,7 +894,7 @@
       "category": "Travel and Leisure",
       "quantity": 45,
       "costPerItem": 3.92,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -902,7 +902,7 @@
       "category": "Groceries",
       "quantity": 84,
       "costPerItem": 3.37,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -910,7 +910,7 @@
       "category": "Travel and Leisure",
       "quantity": 96,
       "costPerItem": 4.4,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -918,7 +918,7 @@
       "category": "Travel and Leisure",
       "quantity": 83,
       "costPerItem": 3.28,
-      "receivedDate": "2023-08-23T00:00:00Z"
+      "receivedDate": "2023-11-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -926,7 +926,7 @@
       "category": "Groceries",
       "quantity": 62,
       "costPerItem": 3.09,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -934,7 +934,7 @@
       "category": "Travel and Leisure",
       "quantity": 99,
       "costPerItem": 4.59,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -942,7 +942,7 @@
       "category": "Snacks",
       "quantity": 76,
       "costPerItem": 3.92,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -950,7 +950,7 @@
       "category": "Automotive Supplies",
       "quantity": 90,
       "costPerItem": 3.65,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -958,7 +958,7 @@
       "category": "Tobacco Products",
       "quantity": 23,
       "costPerItem": 0.99,
-      "receivedDate": "2023-08-24T00:00:00Z"
+      "receivedDate": "2023-11-18T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -966,7 +966,7 @@
       "category": "Beverages",
       "quantity": 88,
       "costPerItem": 3.63,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -974,7 +974,7 @@
       "category": "Tobacco Products",
       "quantity": 72,
       "costPerItem": 4.75,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -982,7 +982,7 @@
       "category": "Health & Beauty",
       "quantity": 68,
       "costPerItem": 0.85,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -990,7 +990,7 @@
       "category": "Snacks",
       "quantity": 27,
       "costPerItem": 1.11,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -998,7 +998,7 @@
       "category": "Automotive Supplies",
       "quantity": 98,
       "costPerItem": 1.49,
-      "receivedDate": "2023-08-25T00:00:00Z"
+      "receivedDate": "2023-11-19T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1006,7 +1006,7 @@
       "category": "Automotive Supplies",
       "quantity": 29,
       "costPerItem": 1.59,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1014,7 +1014,7 @@
       "category": "Health & Beauty",
       "quantity": 61,
       "costPerItem": 2.38,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1022,7 +1022,7 @@
       "category": "Automotive Supplies",
       "quantity": 47,
       "costPerItem": 2.45,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1030,7 +1030,7 @@
       "category": "Tobacco Products",
       "quantity": 75,
       "costPerItem": 3.52,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1038,7 +1038,7 @@
       "category": "Tobacco Products",
       "quantity": 46,
       "costPerItem": 2.22,
-      "receivedDate": "2023-08-26T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1046,7 +1046,7 @@
       "category": "Tobacco Products",
       "quantity": 33,
       "costPerItem": 2.74,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1054,7 +1054,7 @@
       "category": "Tobacco Products",
       "quantity": 78,
       "costPerItem": 4.23,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1062,7 +1062,7 @@
       "category": "Groceries",
       "quantity": 92,
       "costPerItem": 0.87,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1070,7 +1070,7 @@
       "category": "Groceries",
       "quantity": 44,
       "costPerItem": 2.24,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1078,7 +1078,7 @@
       "category": "Beverages",
       "quantity": 86,
       "costPerItem": 0.98,
-      "receivedDate": "2023-08-27T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1086,7 +1086,7 @@
       "category": "Beverages",
       "quantity": 89,
       "costPerItem": 4.95,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1094,7 +1094,7 @@
       "category": "Health & Beauty",
       "quantity": 39,
       "costPerItem": 1.47,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1102,7 +1102,7 @@
       "category": "Travel and Leisure",
       "quantity": 78,
       "costPerItem": 1.5,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1110,7 +1110,7 @@
       "category": "Health & Beauty",
       "quantity": 43,
       "costPerItem": 0.95,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1118,7 +1118,7 @@
       "category": "Travel and Leisure",
       "quantity": 87,
       "costPerItem": 1.5,
-      "receivedDate": "2023-08-28T00:00:00Z"
+      "receivedDate": "2023-11-20T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1126,7 +1126,7 @@
       "category": "Groceries",
       "quantity": 47,
       "costPerItem": 3.43,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1134,7 +1134,7 @@
       "category": "Health & Beauty",
       "quantity": 49,
       "costPerItem": 3.09,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1142,7 +1142,7 @@
       "category": "Automotive Supplies",
       "quantity": 69,
       "costPerItem": 2.8,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1150,7 +1150,7 @@
       "category": "Beverages",
       "quantity": 30,
       "costPerItem": 2.16,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1158,7 +1158,7 @@
       "category": "Beverages",
       "quantity": 87,
       "costPerItem": 2.06,
-      "receivedDate": "2023-08-29T00:00:00Z"
+      "receivedDate": "2023-11-21T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1166,7 +1166,7 @@
       "category": "Travel and Leisure",
       "quantity": 55,
       "costPerItem": 3.4,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1174,7 +1174,7 @@
       "category": "Travel and Leisure",
       "quantity": 94,
       "costPerItem": 4.71,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1182,7 +1182,7 @@
       "category": "Snacks",
       "quantity": 94,
       "costPerItem": 1.42,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1190,7 +1190,7 @@
       "category": "Beverages",
       "quantity": 84,
       "costPerItem": 0.69,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1198,7 +1198,7 @@
       "category": "Snacks",
       "quantity": 44,
       "costPerItem": 1.09,
-      "receivedDate": "2023-08-30T00:00:00Z"
+      "receivedDate": "2023-11-22T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1206,7 +1206,7 @@
       "category": "Beverages",
       "quantity": 27,
       "costPerItem": 2.65,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1214,7 +1214,7 @@
       "category": "Automotive Supplies",
       "quantity": 34,
       "costPerItem": 3.83,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1222,7 +1222,7 @@
       "category": "Travel and Leisure",
       "quantity": 34,
       "costPerItem": 3.93,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1230,7 +1230,7 @@
       "category": "Health & Beauty",
       "quantity": 23,
       "costPerItem": 3.02,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1238,7 +1238,7 @@
       "category": "Automotive Supplies",
       "quantity": 42,
       "costPerItem": 1.46,
-      "receivedDate": "2023-08-31T00:00:00Z"
+      "receivedDate": "2023-11-23T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1246,7 +1246,7 @@
       "category": "Groceries",
       "quantity": 50,
       "costPerItem": 3.53,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1254,7 +1254,7 @@
       "category": "Health & Beauty",
       "quantity": 41,
       "costPerItem": 2.32,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1262,7 +1262,7 @@
       "category": "Health & Beauty",
       "quantity": 33,
       "costPerItem": 3.23,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1270,7 +1270,7 @@
       "category": "Beverages",
       "quantity": 82,
       "costPerItem": 1.46,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1278,7 +1278,7 @@
       "category": "Tobacco Products",
       "quantity": 34,
       "costPerItem": 2.76,
-      "receivedDate": "2023-09-01T00:00:00Z"
+      "receivedDate": "2023-11-24T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1286,7 +1286,7 @@
       "category": "Automotive Supplies",
       "quantity": 96,
       "costPerItem": 2.58,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1294,7 +1294,7 @@
       "category": "Health & Beauty",
       "quantity": 79,
       "costPerItem": 1.1,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1302,7 +1302,7 @@
       "category": "Groceries",
       "quantity": 61,
       "costPerItem": 3.72,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1310,7 +1310,7 @@
       "category": "Automotive Supplies",
       "quantity": 98,
       "costPerItem": 1.45,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1318,7 +1318,7 @@
       "category": "Automotive Supplies",
       "quantity": 56,
       "costPerItem": 3.8,
-      "receivedDate": "2023-09-02T00:00:00Z"
+      "receivedDate": "2023-11-25T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1326,7 +1326,7 @@
       "category": "Tobacco Products",
       "quantity": 51,
       "costPerItem": 0.96,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1334,7 +1334,7 @@
       "category": "Health & Beauty",
       "quantity": 27,
       "costPerItem": 2.83,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1342,7 +1342,7 @@
       "category": "Beverages",
       "quantity": 82,
       "costPerItem": 3.61,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1350,7 +1350,7 @@
       "category": "Travel and Leisure",
       "quantity": 96,
       "costPerItem": 0.54,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1358,7 +1358,7 @@
       "category": "Groceries",
       "quantity": 90,
       "costPerItem": 2.75,
-      "receivedDate": "2023-09-03T00:00:00Z"
+      "receivedDate": "2023-11-26T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1366,7 +1366,7 @@
       "category": "Tobacco Products",
       "quantity": 76,
       "costPerItem": 4.03,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1374,7 +1374,7 @@
       "category": "Tobacco Products",
       "quantity": 27,
       "costPerItem": 3.09,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1382,7 +1382,7 @@
       "category": "Groceries",
       "quantity": 87,
       "costPerItem": 2.79,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1390,7 +1390,7 @@
       "category": "Beverages",
       "quantity": 92,
       "costPerItem": 2.18,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1398,7 +1398,7 @@
       "category": "Automotive Supplies",
       "quantity": 68,
       "costPerItem": 2.04,
-      "receivedDate": "2023-09-04T00:00:00Z"
+      "receivedDate": "2023-11-27T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1406,7 +1406,7 @@
       "category": "Beverages",
       "quantity": 42,
       "costPerItem": 2.9,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1414,7 +1414,7 @@
       "category": "Travel and Leisure",
       "quantity": 99,
       "costPerItem": 3.97,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1422,7 +1422,7 @@
       "category": "Automotive Supplies",
       "quantity": 35,
       "costPerItem": 4.12,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1430,7 +1430,7 @@
       "category": "Groceries",
       "quantity": 60,
       "costPerItem": 3.56,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1438,7 +1438,7 @@
       "category": "Tobacco Products",
       "quantity": 25,
       "costPerItem": 3.92,
-      "receivedDate": "2023-09-05T00:00:00Z"
+      "receivedDate": "2023-11-28T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1446,7 +1446,7 @@
       "category": "Automotive Supplies",
       "quantity": 82,
       "costPerItem": 3.2,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1454,7 +1454,7 @@
       "category": "Automotive Supplies",
       "quantity": 33,
       "costPerItem": 1.74,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1462,7 +1462,7 @@
       "category": "Travel and Leisure",
       "quantity": 90,
       "costPerItem": 3.7,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1470,7 +1470,7 @@
       "category": "Travel and Leisure",
       "quantity": 39,
       "costPerItem": 3.86,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1478,7 +1478,7 @@
       "category": "Automotive Supplies",
       "quantity": 40,
       "costPerItem": 2.35,
-      "receivedDate": "2023-09-06T00:00:00Z"
+      "receivedDate": "2023-11-29T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1486,7 +1486,7 @@
       "category": "Groceries",
       "quantity": 35,
       "costPerItem": 4.26,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1494,7 +1494,7 @@
       "category": "Travel and Leisure",
       "quantity": 82,
       "costPerItem": 1.68,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1502,7 +1502,7 @@
       "category": "Groceries",
       "quantity": 80,
       "costPerItem": 1.65,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1510,7 +1510,7 @@
       "category": "Automotive Supplies",
       "quantity": 56,
       "costPerItem": 4.32,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1518,7 +1518,7 @@
       "category": "Beverages",
       "quantity": 34,
       "costPerItem": 2.9,
-      "receivedDate": "2023-09-07T00:00:00Z"
+      "receivedDate": "2023-11-30T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1526,7 +1526,7 @@
       "category": "Tobacco Products",
       "quantity": 89,
       "costPerItem": 3.51,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1534,7 +1534,7 @@
       "category": "Health & Beauty",
       "quantity": 59,
       "costPerItem": 3.9,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1542,7 +1542,7 @@
       "category": "Automotive Supplies",
       "quantity": 35,
       "costPerItem": 3.83,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1550,7 +1550,7 @@
       "category": "Beverages",
       "quantity": 68,
       "costPerItem": 2.21,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1558,7 +1558,7 @@
       "category": "Groceries",
       "quantity": 21,
       "costPerItem": 2.82,
-      "receivedDate": "2023-09-08T00:00:00Z"
+      "receivedDate": "2023-12-01T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1566,7 +1566,7 @@
       "category": "Travel and Leisure",
       "quantity": 26,
       "costPerItem": 3.93,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1574,7 +1574,7 @@
       "category": "Health & Beauty",
       "quantity": 68,
       "costPerItem": 2.98,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1582,7 +1582,7 @@
       "category": "Beverages",
       "quantity": 32,
       "costPerItem": 4.26,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1590,7 +1590,7 @@
       "category": "Automotive Supplies",
       "quantity": 22,
       "costPerItem": 2.19,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1598,7 +1598,7 @@
       "category": "Snacks",
       "quantity": 48,
       "costPerItem": 4.23,
-      "receivedDate": "2023-09-09T00:00:00Z"
+      "receivedDate": "2023-12-02T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1606,7 +1606,7 @@
       "category": "Automotive Supplies",
       "quantity": 85,
       "costPerItem": 1.88,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1614,7 +1614,7 @@
       "category": "Health & Beauty",
       "quantity": 45,
       "costPerItem": 1.8,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1622,7 +1622,7 @@
       "category": "Automotive Supplies",
       "quantity": 97,
       "costPerItem": 4.3,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1630,7 +1630,7 @@
       "category": "Health & Beauty",
       "quantity": 32,
       "costPerItem": 1.12,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1638,7 +1638,7 @@
       "category": "Health & Beauty",
       "quantity": 86,
       "costPerItem": 1.19,
-      "receivedDate": "2023-09-10T00:00:00Z"
+      "receivedDate": "2023-12-03T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1646,7 +1646,7 @@
       "category": "Automotive Supplies",
       "quantity": 58,
       "costPerItem": 2.97,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1654,7 +1654,7 @@
       "category": "Automotive Supplies",
       "quantity": 88,
       "costPerItem": 3.25,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1662,7 +1662,7 @@
       "category": "Tobacco Products",
       "quantity": 71,
       "costPerItem": 1.81,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1670,7 +1670,7 @@
       "category": "Snacks",
       "quantity": 83,
       "costPerItem": 1.69,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1678,7 +1678,7 @@
       "category": "Groceries",
       "quantity": 75,
       "costPerItem": 2.92,
-      "receivedDate": "2023-09-11T00:00:00Z"
+      "receivedDate": "2023-12-04T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1686,7 +1686,7 @@
       "category": "Travel and Leisure",
       "quantity": 65,
       "costPerItem": 1.75,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1694,7 +1694,7 @@
       "category": "Beverages",
       "quantity": 33,
       "costPerItem": 2.87,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1702,7 +1702,7 @@
       "category": "Automotive Supplies",
       "quantity": 43,
       "costPerItem": 3.25,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1710,7 +1710,7 @@
       "category": "Health & Beauty",
       "quantity": 21,
       "costPerItem": 1.43,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1718,7 +1718,7 @@
       "category": "Health & Beauty",
       "quantity": 27,
       "costPerItem": 2.94,
-      "receivedDate": "2023-09-12T00:00:00Z"
+      "receivedDate": "2023-12-05T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1726,7 +1726,7 @@
       "category": "Beverages",
       "quantity": 71,
       "costPerItem": 4.99,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1734,7 +1734,7 @@
       "category": "Tobacco Products",
       "quantity": 73,
       "costPerItem": 3.95,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1742,7 +1742,7 @@
       "category": "Health & Beauty",
       "quantity": 97,
       "costPerItem": 1.88,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1750,7 +1750,7 @@
       "category": "Automotive Supplies",
       "quantity": 68,
       "costPerItem": 3.43,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1758,7 +1758,7 @@
       "category": "Groceries",
       "quantity": 87,
       "costPerItem": 0.51,
-      "receivedDate": "2023-09-13T00:00:00Z"
+      "receivedDate": "2023-12-06T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1766,7 +1766,7 @@
       "category": "Beverages",
       "quantity": 58,
       "costPerItem": 1.42,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1774,7 +1774,7 @@
       "category": "Beverages",
       "quantity": 58,
       "costPerItem": 4.73,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1782,7 +1782,7 @@
       "category": "Snacks",
       "quantity": 42,
       "costPerItem": 3.88,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1790,7 +1790,7 @@
       "category": "Snacks",
       "quantity": 46,
       "costPerItem": 3.47,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1798,7 +1798,7 @@
       "category": "Health & Beauty",
       "quantity": 73,
       "costPerItem": 3.33,
-      "receivedDate": "2023-09-14T00:00:00Z"
+      "receivedDate": "2023-12-07T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1806,7 +1806,7 @@
       "category": "Travel and Leisure",
       "quantity": 89,
       "costPerItem": 1.46,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1814,7 +1814,7 @@
       "category": "Health & Beauty",
       "quantity": 49,
       "costPerItem": 4.17,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1822,7 +1822,7 @@
       "category": "Beverages",
       "quantity": 95,
       "costPerItem": 4.42,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1830,7 +1830,7 @@
       "category": "Beverages",
       "quantity": 34,
       "costPerItem": 2.88,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1838,7 +1838,7 @@
       "category": "Automotive Supplies",
       "quantity": 25,
       "costPerItem": 1.47,
-      "receivedDate": "2023-09-15T00:00:00Z"
+      "receivedDate": "2023-12-08T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1846,7 +1846,7 @@
       "category": "Tobacco Products",
       "quantity": 23,
       "costPerItem": 1.38,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1854,7 +1854,7 @@
       "category": "Groceries",
       "quantity": 47,
       "costPerItem": 1.7,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1862,7 +1862,7 @@
       "category": "Groceries",
       "quantity": 86,
       "costPerItem": 4.78,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1870,7 +1870,7 @@
       "category": "Automotive Supplies",
       "quantity": 45,
       "costPerItem": 0.53,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1878,7 +1878,7 @@
       "category": "Beverages",
       "quantity": 48,
       "costPerItem": 4.37,
-      "receivedDate": "2023-09-16T00:00:00Z"
+      "receivedDate": "2023-12-09T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1886,7 +1886,7 @@
       "category": "Groceries",
       "quantity": 39,
       "costPerItem": 0.55,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1894,7 +1894,7 @@
       "category": "Beverages",
       "quantity": 69,
       "costPerItem": 2.7,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1902,7 +1902,7 @@
       "category": "Tobacco Products",
       "quantity": 71,
       "costPerItem": 2.89,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1910,7 +1910,7 @@
       "category": "Snacks",
       "quantity": 90,
       "costPerItem": 1.12,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1918,7 +1918,7 @@
       "category": "Automotive Supplies",
       "quantity": 78,
       "costPerItem": 2.65,
-      "receivedDate": "2023-09-17T00:00:00Z"
+      "receivedDate": "2023-12-10T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1926,7 +1926,7 @@
       "category": "Travel and Leisure",
       "quantity": 42,
       "costPerItem": 0.57,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1934,7 +1934,7 @@
       "category": "Snacks",
       "quantity": 80,
       "costPerItem": 1.48,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1942,7 +1942,7 @@
       "category": "Groceries",
       "quantity": 86,
       "costPerItem": 0.98,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1950,7 +1950,7 @@
       "category": "Tobacco Products",
       "quantity": 47,
       "costPerItem": 4.92,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1958,7 +1958,7 @@
       "category": "Beverages",
       "quantity": 68,
       "costPerItem": 4.21,
-      "receivedDate": "2023-09-18T00:00:00Z"
+      "receivedDate": "2023-12-11T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -1966,7 +1966,7 @@
       "category": "Health & Beauty",
       "quantity": 65,
       "costPerItem": 2.14,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -1974,7 +1974,7 @@
       "category": "Automotive Supplies",
       "quantity": 67,
       "costPerItem": 1.99,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -1982,7 +1982,7 @@
       "category": "Automotive Supplies",
       "quantity": 49,
       "costPerItem": 2.17,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -1990,7 +1990,7 @@
       "category": "Health & Beauty",
       "quantity": 39,
       "costPerItem": 4.24,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -1998,7 +1998,7 @@
       "category": "Automotive Supplies",
       "quantity": 67,
       "costPerItem": 2,
-      "receivedDate": "2023-09-19T00:00:00Z"
+      "receivedDate": "2023-12-12T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -2006,7 +2006,7 @@
       "category": "Tobacco Products",
       "quantity": 77,
       "costPerItem": 1.43,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -2014,7 +2014,7 @@
       "category": "Groceries",
       "quantity": 95,
       "costPerItem": 1.96,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -2022,7 +2022,7 @@
       "category": "Tobacco Products",
       "quantity": 55,
       "costPerItem": 3.11,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -2030,7 +2030,7 @@
       "category": "Beverages",
       "quantity": 82,
       "costPerItem": 1.95,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -2038,7 +2038,7 @@
       "category": "Health & Beauty",
       "quantity": 45,
       "costPerItem": 0.71,
-      "receivedDate": "2023-09-20T00:00:00Z"
+      "receivedDate": "2023-12-13T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -2046,7 +2046,7 @@
       "category": "Automotive Supplies",
       "quantity": 84,
       "costPerItem": 2.09,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -2054,7 +2054,7 @@
       "category": "Travel and Leisure",
       "quantity": 57,
       "costPerItem": 4.95,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -2062,7 +2062,7 @@
       "category": "Snacks",
       "quantity": 58,
       "costPerItem": 4,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -2070,7 +2070,7 @@
       "category": "Travel and Leisure",
       "quantity": 54,
       "costPerItem": 4.61,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -2078,7 +2078,7 @@
       "category": "Snacks",
       "quantity": 73,
       "costPerItem": 2.7,
-      "receivedDate": "2023-09-21T00:00:00Z"
+      "receivedDate": "2023-12-14T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -2086,7 +2086,7 @@
       "category": "Travel and Leisure",
       "quantity": 43,
       "costPerItem": 1.32,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -2094,7 +2094,7 @@
       "category": "Automotive Supplies",
       "quantity": 70,
       "costPerItem": 1.5,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -2102,7 +2102,7 @@
       "category": "Beverages",
       "quantity": 97,
       "costPerItem": 1.87,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -2110,7 +2110,7 @@
       "category": "Beverages",
       "quantity": 26,
       "costPerItem": 2.81,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -2118,7 +2118,7 @@
       "category": "Snacks",
       "quantity": 79,
       "costPerItem": 0.52,
-      "receivedDate": "2023-09-22T00:00:00Z"
+      "receivedDate": "2023-12-15T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -2126,7 +2126,7 @@
       "category": "Groceries",
       "quantity": 42,
       "costPerItem": 2.83,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -2134,7 +2134,7 @@
       "category": "Beverages",
       "quantity": 26,
       "costPerItem": 0.73,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -2142,7 +2142,7 @@
       "category": "Beverages",
       "quantity": 73,
       "costPerItem": 3.24,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -2150,7 +2150,7 @@
       "category": "Tobacco Products",
       "quantity": 42,
       "costPerItem": 3.93,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -2158,7 +2158,7 @@
       "category": "Beverages",
       "quantity": 81,
       "costPerItem": 2.95,
-      "receivedDate": "2023-09-23T00:00:00Z"
+      "receivedDate": "2023-12-16T00:00:00Z"
     },
     {
       "propertyId": "64ff54a2b485b42210278310",
@@ -2166,7 +2166,7 @@
       "category": "Beverages",
       "quantity": 73,
       "costPerItem": 3.86,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54aeb485b42210278312",
@@ -2174,7 +2174,7 @@
       "category": "Travel and Leisure",
       "quantity": 37,
       "costPerItem": 2.6,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54b8b485b42210278314",
@@ -2182,7 +2182,7 @@
       "category": "Snacks",
       "quantity": 29,
       "costPerItem": 3.06,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c0b485b42210278316",
@@ -2190,7 +2190,7 @@
       "category": "Travel and Leisure",
       "quantity": 97,
       "costPerItem": 3.96,
-      "receivedDate": "2023-09-24T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     },
     {
       "propertyId": "64ff54c8b485b42210278318",
@@ -2198,47 +2198,7 @@
       "category": "Snacks",
       "quantity": 88,
       "costPerItem": 4.69,
-      "receivedDate": "2023-09-24T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54a2b485b42210278310",
-      "name": "Milk",
-      "category": "Groceries",
-      "quantity": 47,
-      "costPerItem": 3.43,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54aeb485b42210278312",
-      "name": "Cigarettes",
-      "category": "Health & Beauty",
-      "quantity": 49,
-      "costPerItem": 3.09,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54b8b485b42210278314",
-      "name": "Engine Oil",
-      "category": "Automotive Supplies",
-      "quantity": 69,
-      "costPerItem": 2.8,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54c0b485b42210278316",
-      "name": "Bread",
-      "category": "Beverages",
-      "quantity": 30,
-      "costPerItem": 2.16,
-      "receivedDate": "2023-09-25T00:00:00Z"
-    },
-    {
-      "propertyId": "64ff54c8b485b42210278318",
-      "name": "Magazine",
-      "category": "Beverages",
-      "quantity": 87,
-      "costPerItem": 2.06,
-      "receivedDate": "2023-09-25T00:00:00Z"
+      "receivedDate": "2023-12-17T00:00:00Z"
     }
   ]
 }

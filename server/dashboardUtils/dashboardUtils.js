@@ -195,7 +195,7 @@ const getTopNonGasProducts = async (propertyId, date) => {
       {
         $project: {
           _id: 1,
-          totalQuantitySold: { $toInt: "$totalQuantitySold" }, // convert to integer here
+          totalQuantitySold: { $toInt: "$totalQuantitySold" },
           averagePrice: 1,
         },
       },
@@ -211,7 +211,7 @@ const getTopNonGasProducts = async (propertyId, date) => {
 
     const topNonGasProducts = result.map((item) => ({
       name: item._id,
-      price: parseFloat((item.averagePrice / 100).toFixed(2)),
+      price: item.averagePrice,
       quantitySold: item.totalQuantitySold,
     }));
 
