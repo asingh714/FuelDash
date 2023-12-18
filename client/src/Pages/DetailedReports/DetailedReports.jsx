@@ -2,7 +2,10 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 
 import newRequest from "../../utils/newRequest";
-import { toDisplayFormat } from "../../utils/formatCurrency";
+import {
+  formatCurrency,
+  formatNumberToTwoDecimalPlaces,
+} from "../../utils/formatCurrency";
 import SimpleLineChart from "../../Components/SimpleLineChart/SimpleLineChart";
 import DataTable from "../../Components/DataTable/DataTable";
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
@@ -22,7 +25,7 @@ const dataInfo = {
       {
         header: "Revenue",
         accessorKey: "Revenue",
-        cell: ({ row }) => toDisplayFormat(row.original.Revenue),
+        cell: ({ row }) => formatCurrency(row.original.Revenue),
       },
     ],
   },
@@ -38,6 +41,7 @@ const dataInfo = {
       {
         header: "Gallons",
         accessorKey: "Gallons",
+        cell: ({ row }) => formatNumberToTwoDecimalPlaces(row.original.Gallons),
       },
     ],
   },
@@ -53,7 +57,7 @@ const dataInfo = {
       {
         header: "Cash",
         accessorKey: "Cash",
-        cell: ({ row }) => toDisplayFormat(row.original.Cash),
+        cell: ({ row }) => formatCurrency(row.original.Cash),
       },
     ],
   },
@@ -69,7 +73,7 @@ const dataInfo = {
       {
         header: "Credit Card",
         accessorKey: "Credit Card",
-        cell: ({ row }) => toDisplayFormat(row.original["Credit Card"]),
+        cell: ({ row }) => formatCurrency(row.original["Credit Card"]),
       },
     ],
   },

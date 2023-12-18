@@ -6,7 +6,10 @@ import PropertyDropdown from "../../Components/PropertyDropdown/PropertyDropdown
 import DataTable from "../../Components/DataTable/DataTable";
 import newRequest from "../../utils/newRequest";
 import Modal from "../../Components/Modal/Modal";
-import { formatCurrency } from "../../utils/formatCurrency";
+import {
+  formatCurrency,
+  formatNumberToTwoDecimalPlaces,
+} from "../../utils/formatCurrency";
 import formatDate from "../../utils/formatDate";
 
 import "./SalesReports.scss";
@@ -158,6 +161,8 @@ const SalesReports = () => {
     {
       header: "Gallons Sold",
       accessorKey: "gallonsSold",
+      cell: ({ row }) =>
+        formatNumberToTwoDecimalPlaces(row.original.gallonsSold),
     },
     {
       header: "Price Sold At",
@@ -174,6 +179,8 @@ const SalesReports = () => {
     {
       header: "Quantity Sold",
       accessorKey: "quantitySold",
+      cell: ({ row }) =>
+        formatNumberToTwoDecimalPlaces(row.original.quantitySold),
     },
     {
       header: "Price Sold At",

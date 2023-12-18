@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
 
 import defaultImages from "../../utils/imageData";
+import {
+  formatCurrency,
+  formatNumberToWholeNumbers,
+} from "../../utils/formatCurrency";
 import "./TopProductSalesBox.scss";
 
 const TopProductSalesBox = ({ chartData = [] }) => {
@@ -17,9 +21,13 @@ const TopProductSalesBox = ({ chartData = [] }) => {
             />
             <div className="name-price-container">
               <span className="product-name">{product.name}</span>
-              <span className="product-price">${product.price}</span>
+              <span className="product-price">
+                {formatCurrency(product.price)}
+              </span>
             </div>
-            <span className="product-sales">{product.quantitySold}</span>
+            <span className="product-sales">
+              {formatNumberToWholeNumbers(product.quantitySold)}
+            </span>
           </div>
         ))}
       </div>

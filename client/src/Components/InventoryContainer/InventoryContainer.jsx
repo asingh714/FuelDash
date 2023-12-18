@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 
 import newRequest from "../../utils/newRequest";
 import defaultImages from "../../utils/imageData";
+import { formatNumberToWholeNumbers } from "../../utils/formatCurrency";
+
 import "../GasInventoryBoxes/GasInventoryBoxes.scss";
 
 const InventoryContainer = ({ propertyId }) => {
@@ -52,7 +54,9 @@ const InventoryContainer = ({ propertyId }) => {
               />
               <div className="right-container">
                 <div className="inventory-name">{inventory.name}</div>
-                <div className="inventory-quantity">{inventory.quantity}</div>
+                <div className="inventory-quantity">
+                  {formatNumberToWholeNumbers(inventory.quantity)}
+                </div>
               </div>
             </div>
           ))}

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import "./GasInventoryBoxes.scss";
 import newRequest from "../../utils/newRequest";
+import { formatNumberToTwoDecimalPlaces } from "../../utils/formatCurrency";
 
 const colors = {
   Midgrade: "#84cc16",
@@ -64,7 +65,9 @@ const GasInventoryBoxes = ({ propertyId }) => {
               </div>
 
               {quantityInGallons && (
-                <div>Gallons: {parseFloat(quantityInGallons?.toFixed(2))} </div>
+                <div>
+                  Gallons: {formatNumberToTwoDecimalPlaces(quantityInGallons)}
+                </div>
               )}
             </div>
           ))}

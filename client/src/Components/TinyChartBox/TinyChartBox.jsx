@@ -10,7 +10,10 @@ import {
 } from "recharts";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { toDisplayFormat } from "../../utils/formatCurrency";
+import {
+  formatCurrency,
+  formatNumberToTwoDecimalPlaces,
+} from "../../utils/formatCurrency";
 
 import "./TinyChartBox.scss";
 
@@ -62,7 +65,11 @@ const TinyChartBox = ({
         >
           View All
         </Link>
-        {money ? <span>{toDisplayFormat(total)}</span> : <span>{total}</span>}
+        {money ? (
+          <span>{formatCurrency(total)}</span>
+        ) : (
+          <span>{formatNumberToTwoDecimalPlaces(total)}</span>
+        )}
       </div>
     </div>
   );

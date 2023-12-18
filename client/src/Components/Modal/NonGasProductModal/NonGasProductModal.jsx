@@ -173,7 +173,7 @@ const NonGasProductModal = ({ type, product, onClose, onConfirm }) => {
                 type="text"
                 id="costPerItem"
                 name="costPerItem"
-                // value={toDisplayFormat(formData.costPerItem)}
+
                 value={formData.costPerItem}
                 onChange={handleInputChange}
                 // onFocus={handleNonGasFocus}

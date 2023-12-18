@@ -145,9 +145,6 @@ const SalesReportModal = ({
 
   function handleInputChange(e) {
     const { name, value } = e.target;
-    // const value = e.target.value;
-    // const numericValue = parseFloat(value.replace(/\D/g, ""));
-    // const valueInCents = isNaN(numericValue) ? 0 : numericValue;
 
     setFormData((prev) => ({
       ...prev,
@@ -155,18 +152,8 @@ const SalesReportModal = ({
     }));
   }
 
-  // function handleMoneyFocus(e, value) {
-  //   e.target.value = value.toString();
-  // }
-
-  // function handleMoneyBlur(e, field) {
-  //   e.target.value = toDisplayFormat(formData[field]);
-  // }
-
   function handleNestedMoneyChange(e, arrayField, index, field) {
     const value = e.target.value;
-    // const numericValue = parseFloat(value.replace(/\D/g, ""));
-    // const valueInCents = isNaN(numericValue) ? 0 : numericValue;
 
     const updatedArray = formData[arrayField].map((item, idx) =>
       idx === index ? { ...item, [field]: value } : item
@@ -176,14 +163,6 @@ const SalesReportModal = ({
       [arrayField]: updatedArray,
     }));
   }
-
-  // function handleNestedMoneyFocus(e, arrayField, index, field) {
-  //   e.target.value = formData[arrayField][index][field].toString();
-  // }
-
-  // function handleNestedMoneyBlur(e, arrayField, index, field) {
-  //   e.target.value = toDisplayFormat(formData[arrayField][index][field]);
-  // }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
