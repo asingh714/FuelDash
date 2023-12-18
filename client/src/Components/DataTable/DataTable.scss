@@ -50,23 +50,25 @@
     gap: 5rem;
     // margin-bottom: 2rem;
 
-    button {
+    .table-button {
       background-color: white;
+      font-weight: 700;
       color: $gray-900;
-      width: 10rem;
+      width: 12rem;
       padding: 1rem 0rem;
-      border-radius: 1.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid $gray-500;
       margin-top: 2.5rem;
       font-size: 1.4rem;
       cursor: pointer;
     }
 
-    .button:hover {
-      background-color: $gray-500;
+    .table-button:hover {
+      background-color: $gray-200;
     }
 
-    .button:disabled {
-      background-color: $gray-300;
+    .table-button:disabled {
+      background-color: $gray-500;
       cursor: not-allowed;
     }
   }

@@ -93,21 +93,33 @@ const DataTable = ({ tableData, columns, expandedContent, mainTable }) => {
       </table>
       {mainTable && tableData?.length > 10 && (
         <div className="button-container">
-          <button onClick={() => table.setPageIndex(0)}>First page</button>
+          <button
+            className="table-button"
+            onClick={() => table.setPageIndex(0)}
+            disabled={!table.getCanPreviousPage()}
+          >
+            First
+          </button>
           <button
             disabled={!table.getCanPreviousPage()}
             onClick={() => table.previousPage()}
+            className="table-button"
           >
-            Previous page
+            Previous
           </button>
           <button
             disabled={!table.getCanNextPage()}
             onClick={() => table.nextPage()}
+            className="table-button"
           >
-            Next page
+            Next
           </button>
-          <button onClick={() => table.setPageIndex(table.getPageCount() - 1)}>
-            Last page
+          <button
+            onClick={() => table.setPageIndex(table.getPageCount() - 1)}
+            className="table-button"
+            disabled={!table.getCanNextPage()}
+          >
+            Last
           </button>
         </div>
       )}
