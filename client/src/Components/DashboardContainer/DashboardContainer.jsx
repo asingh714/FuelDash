@@ -29,12 +29,9 @@ const DashboardContainer = () => {
   const [propertyId, setPropertyId] = useState(undefined);
   const [notification, setNotification] = useState(null);
   const [date, setDate] = useState(null);
-  // const [selectedDate, setSelectedDate] = useState(undefined);
-  // const [latestDate, setLatestDate] = useState(null);
 
   const navigate = useNavigate();
   const { currentUser } = useAuth();
-  console.log("currentUser", currentUser);
 
   useEffect(() => {
     if (!currentUser) {
@@ -59,7 +56,7 @@ const DashboardContainer = () => {
         return;
       }
       const response = await newRequest.get(`/sales/${propertyId}/latestDate`);
-      // setLatestDate(response.data.date);
+
       setDate(response.data.date);
     } catch (error) {
       console.error("Error fetching latest date:", error);
@@ -68,23 +65,17 @@ const DashboardContainer = () => {
     }
   };
 
-  const { isLoading, error, data } = useQuery(
-    // [propertyId, selectedDate || latestDate],
+  const { isLoading, isError, error, data } = useQuery(
     [propertyId, date],
     async () => {
-      if (!propertyId) return null;
-      // const dateToUse = selectedDate || latestDate;
-      const dateToUse = date;
-      if (!dateToUse) return null;
+      if (!propertyId || !date) return null;
 
-      const response = await newRequest.get(
-        `/sales/${propertyId}/${dateToUse}`
-      );
+      const response = await newRequest.get(`/sales/${propertyId}/${date}`);
+      console.log("response.data", response);
 
-      if (!response.data || error) {
-        setErrorMsg("No data returned");
-      }
-
+      // if (!response.data || error) {
+      //   setErrorMsg("No data returned");
+      // }
       return response.data;
     },
     { enabled: !!date }
@@ -98,8 +89,16 @@ const DashboardContainer = () => {
     }
   }, [error]);
 
+  const hasData = data && Object.keys(data).length > 0;
   if (isLoading) {
     return <div className="loading-message">Loading...</div>;
+  }
+
+  if (isError) {
+    console.error("Error loading data:", error);
+    return (
+      <div className="error-message">{errorMsg || "Error loading data"}</div>
+    );
   }
 
   return (
@@ -130,8 +129,13 @@ const DashboardContainer = () => {
             defaultSelected={propertyId}
           />
         </div>
-        {error ? (
-          <div className="error-message">{errorMsg}</div>
+        {!hasData ? (
+          <div className="error-message">
+            <p>
+              No sales data available. Please enter sales data to view the
+              dashboard.
+            </p>
+          </div>
         ) : (
           <div className="dashboard-container">
             <div className="box box1">
