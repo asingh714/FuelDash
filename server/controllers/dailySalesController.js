@@ -26,7 +26,7 @@ const getAllDailySalesMetrics = async (req, res) => {
   }
 };
 
-const getLatestDailySalesMetricsData = async (req, res) => {
+const getLatestDailySalesMetricsDate = async (req, res) => {
   const { propertyId } = req.params;
 
   try {
@@ -36,13 +36,14 @@ const getLatestDailySalesMetricsData = async (req, res) => {
 
     if (!dailySalesMetrics) {
       return res.status(404).json({
-        msg: "No daily sales metrics found for the specified date.",
+        date: "",
       });
     }
 
     res.status(200).json({
       date: dailySalesMetrics.date,
     });
+    
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
@@ -268,5 +269,5 @@ module.exports = {
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
   addDailySalesMetrics,
-  getLatestDailySalesMetricsData,
+  getLatestDailySalesMetricsDate,
 };

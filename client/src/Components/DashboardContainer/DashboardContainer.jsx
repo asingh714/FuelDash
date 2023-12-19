@@ -16,6 +16,7 @@ import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
 
+// TODO Fix latest date bug.
 const getCurrentLocalDate = () => {
   const now = new Date();
   const year = now.getFullYear();
@@ -27,9 +28,10 @@ const getCurrentLocalDate = () => {
 const DashboardContainer = () => {
   const [errorMsg, setErrorMsg] = useState(null);
   const [propertyId, setPropertyId] = useState(undefined);
-  const [selectedDate, setSelectedDate] = useState(getCurrentLocalDate());
   const [notification, setNotification] = useState(null);
-  const [latestDate, setLatestDate] = useState(null);
+  const [date, setDate] = useState(null);
+  // const [selectedDate, setSelectedDate] = useState(undefined);
+  // const [latestDate, setLatestDate] = useState(null);
 
   const navigate = useNavigate();
   const { currentUser } = useAuth();
@@ -47,27 +49,35 @@ const DashboardContainer = () => {
     }
   }, [currentUser, navigate]);
 
-  const fetchLatestDate = async () => {
-    if (!propertyId) return;
-    try {
-      const response = await newRequest.get(`/sales/${propertyId}/latestDate`);
-      setLatestDate(response.data.date);
-    } catch (error) {
-      console.error("Error fetching latest date:", error);
-      setErrorMsg("Error fetching latest date");
-    }
-  };
-
   useEffect(() => {
     fetchLatestDate();
   }, [propertyId]);
 
+  const fetchLatestDate = async () => {
+    try {
+      if (!propertyId) {
+        setDate(getCurrentLocalDate());
+        return;
+      }
+      const response = await newRequest.get(`/sales/${propertyId}/latestDate`);
+      // setLatestDate(response.data.date);
+      setDate(response.data.date);
+    } catch (error) {
+      console.error("Error fetching latest date:", error);
+      setDate(getCurrentLocalDate());
+      setErrorMsg("Error fetching latest date");
+    }
+  };
+
   const { isLoading, error, data } = useQuery(
-    [propertyId, selectedDate || latestDate],
+    // [propertyId, selectedDate || latestDate],
+    [propertyId, date],
     async () => {
       if (!propertyId) return null;
-      const dateToUse = selectedDate || latestDate;
+      // const dateToUse = selectedDate || latestDate;
+      const dateToUse = date;
       if (!dateToUse) return null;
+      
       const response = await newRequest.get(
         `/sales/${propertyId}/${dateToUse}`
       );
@@ -77,7 +87,8 @@ const DashboardContainer = () => {
       }
 
       return response.data;
-    }
+    },
+    { enabled: !!date }
   );
 
   useEffect(() => {
@@ -104,8 +115,10 @@ const DashboardContainer = () => {
       <div className="dashboard-whole-container">
         <div className="dashboard-menu-container">
           <DateSelector
-            currentDate={selectedDate}
-            onDateChange={setSelectedDate}
+            // currentDate={selectedDate}
+            // onDateChange={setSelectedDate}
+            currentDate={date}
+            onDateChange={setDate}
           />
 
           <PropertyDropdown

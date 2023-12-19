@@ -73,7 +73,7 @@ const SalesReportModal = ({
       errors.dailyCreditCardPayments = "Daily credit card payments is required";
     }
 
-    if (formData.gasolineSales.length === 0) {
+    if (!formData.gasolineSales || formData.gasolineSales.length === 0) {
       errors.gasolineSales = "At least one gasoline sale is required";
     }
 
@@ -201,10 +201,10 @@ const SalesReportModal = ({
                   // onFocus={(e) => handleMoneyFocus(e, formData.totalRevenue)}
                   // onBlur={(e) => handleMoneyBlur(e, "totalRevenue")}
                 />
+                {errors.totalRevenue && (
+                  <p className="error-text">{errors.totalRevenue}</p>
+                )}
               </div>
-              {errors.totalRevenue && (
-                <p className="error-text">{errors.totalRevenue}</p>
-              )}
             </div>
 
             <div className="row">
@@ -249,8 +249,15 @@ const SalesReportModal = ({
             </div>
 
             <hr />
+            <div className="title-btn-container">
+              <h4>Gasoline Sales:</h4>
 
-            <h4>Gasoline Sales:</h4>
+              {type === "addSalesReport" && (
+                <div className="add-btn" onClick={addGasolineSale}>
+                  Add Gasoline Sale
+                </div>
+              )}
+            </div>
 
             {formData?.gasolineSales?.map((gasolineSale, index) => (
               <div className="modal-input-group" key={index}>
@@ -303,6 +310,11 @@ const SalesReportModal = ({
                         });
                       }}
                     />
+
+                    {/* TODO */}
+                    {errors.gasolineSales && (
+                      <p className="error-text">{errors.gasolineSales}</p>
+                    )}
                   </div>
                   <div className="modal-input-group">
                     <label htmlFor={`name-${index}`}>Price Sold At</label>
@@ -337,6 +349,7 @@ const SalesReportModal = ({
                     />
                   </div>
                 </div>
+
                 {type === "addSalesReport" && (
                   <div
                     className="delete-btn"
@@ -345,17 +358,18 @@ const SalesReportModal = ({
                     Remove
                   </div>
                 )}
-                {type === "addSalesReport" && (
-                  <div className="add-btn" onClick={addGasolineSale}>
-                    Add Gasoline Sale
-                  </div>
-                )}
               </div>
             ))}
 
             <hr />
-            <h4>Non Gasoline Sales:</h4>
-
+            <div className="title-btn-container">
+              <h4>Non Gasoline Sales:</h4>
+              {type === "addSalesReport" && (
+                <div className="add-btn" onClick={addNonGasolineSale}>
+                  Add Non Gasoline Sale
+                </div>
+              )}
+            </div>
             {formData?.nonGasolineSales?.map((nonGasolineSale, index) => (
               <div className="modal-input-group" key={index}>
                 <label htmlFor={`name-${index}`}>Name</label>
@@ -444,12 +458,6 @@ const SalesReportModal = ({
               </div>
             ))}
 
-            {type === "addSalesReport" && (
-              <div className="add-btn" onClick={addNonGasolineSale}>
-                Add Non Gasoline Sale
-              </div>
-            )}
-
             <hr />
             <div className="modal-button-container">
               <div className="modal-button" onClick={handleClose}>
@@ -474,16 +482,6 @@ const SalesReportModal = ({
             <div className="modal-button confirm-button" onClick={handleSubmit}>
               Confirm
             </div>
-          </div>
-        )}
-
-        {Object.keys(errors).length > 0 && (
-          <div className="modal-errors">
-            <ul>
-              {Object.values(errors).map((error) => (
-                <li key={error}>{error}</li>
-              ))}
-            </ul>
           </div>
         )}
       </div>

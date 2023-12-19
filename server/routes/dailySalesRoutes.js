@@ -9,14 +9,14 @@ const {
   getSingleDailySalesMetrics,
   updateSingleDailySalesMetrics,
   deleteSingleDailySalesMetrics,
-  getLatestDailySalesMetricsData,
+  getLatestDailySalesMetricsDate,
 } = require("../controllers/dailySalesController");
 
 router.route("/:propertyId").get(authenticate, getAllDailySalesMetrics);
 
 router
   .route("/:propertyId/latestDate")
-  .get(authenticate, getLatestDailySalesMetricsData);
+  .get(authenticate, getLatestDailySalesMetricsDate);
 
 router
   .route("/:propertyId/:date")
