@@ -3,95 +3,79 @@ import { useNavigate, Link } from "react-router-dom";
 import validator from "validator";
 import { ThreeDots } from "react-loader-spinner";
 
-import newRequest from "../../utils/newRequest";
+import { useAuth } from "../../utils/AuthContext";
 import "./signupForm.scss";
 
 const SignupForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [nameError, setNameError] = useState(false);
-  const [emailError, setEmailError] = useState(false);
-  const [passwordError, setPasswordError] = useState(false);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
 
+  const { register, authError, isLoading, clearAuthError } = useAuth();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleInputChange = (e) => {
+    if (authError) clearAuthError();
+    // Update the state based on input name
+
+    if (e.target.name === "name") {
+      setName(e.target.value);
+    }
+
+    if (e.target.name === "email") {
+      setEmail(e.target.value);
+    }
+
+    if (e.target.name === "password") {
+      setPassword(e.target.value);
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    let isValid = true;
-
-    if (name === "") {
-      setNameError(true);
-      isValid = false;
-    } else {
-      setNameError(false);
-    }
-
-    if (email === "" || !validator.isEmail(email)) {
-      setEmailError(true);
-      isValid = false;
-    } else {
-      setEmailError(false);
-    }
-
-    if (password === "" || password.length < 6) {
-      setPasswordError(true);
-      isValid = false;
-    } else {
-      setPasswordError(false);
-    }
-
-    if (isValid) {
-      setLoading(true);
-      setTimeout(async () => {
-        try {
-          const res = await newRequest.post("/auth/register", {
-            name,
-            email,
-            password,
-          });
-          localStorage.setItem("currentUser", JSON.stringify(res.data));
-          navigate("/welcome");
-        } catch (error) {
-          setError(error.response.data.msg);
-        }
-        setLoading(false);
-      }, 2000);
+    try {
+      await register(name, email, password);
+      navigate("/welcome");
+    } catch (error) {
+      console.error(error);
     }
   };
 
   return (
     <form className="signup-form" onSubmit={handleSubmit}>
+      {authError && (
+        <p className="error-login-text">
+          <img src="/red-icon.svg" alt="" />
+          {authError}
+        </p>
+      )}
       <label>Name</label>
       <input
-        className={nameError ? "error" : ""}
+        className={authError ? "error" : ""}
         name="name"
-        onChange={(e) => setName(e.target.value)}
+        onChange={(e) => handleInputChange(e)}
         placeholder="Your name"
         type="text"
       />
-      {nameError && <p className="error-text">Name is required.</p>}
+
       <label>Email</label>
       <input
-        className={emailError ? "error" : ""}
+        className={authError ? "error" : ""}
         name="email"
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={(e) => handleInputChange(e)}
         placeholder="Your email"
         type="text"
       />
-      {emailError && <p className="error-text">Email is required.</p>}
+
       <label>Password</label>
       <input
-        className={passwordError ? "error" : ""}
+        className={authError ? "error" : ""}
         name="password"
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={(e) => handleInputChange(e)}
         placeholder="Must be at least 6 characters."
         type="password"
       />
-      {passwordError && <p className="error-text">Password is required.</p>}
-      {error && <p className="error-text">{error}</p>}
+
       <span id="terms">
         By clicking the button below, I agree to FuelDash&apos;s{" "}
         <Link className="agreements" to="/terms-of-use" target="_blank">
@@ -100,7 +84,7 @@ const SignupForm = () => {
         and Privacy Policy, and acknowledge receipt of the Equal Credit
         Opportunity Act Notice.
       </span>
-      {loading ? (
+      {isLoading ? (
         <ThreeDots
           height="20"
           width="30"

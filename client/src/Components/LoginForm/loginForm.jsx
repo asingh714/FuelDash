@@ -1,89 +1,71 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import validator from "validator";
 import { ThreeDots } from "react-loader-spinner";
 
-import newRequest from "../../utils/newRequest";
+import { useAuth } from "../../utils/AuthContext";
+
 import "./loginForm.scss";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [emailError, setEmailError] = useState(false);
-  const [passwordError, setPasswordError] = useState(false);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+
+  const { login, authError, isLoading, clearAuthError } = useAuth();
 
   const navigate = useNavigate();
 
-  const delayedLogin = async () => {
-    let isValid = true;
-
-    if (email === "" || !validator.isEmail(email)) {
-      setEmailError(true);
-      isValid = false;
-    } else {
-      setEmailError(false);
-    }
-
-    if (password === "") {
-      setPasswordError(true);
-      isValid = false;
-    } else {
-      setPasswordError(false);
-    }
-
-    if (isValid) {
-      setLoading(true);
-      setTimeout(async () => {
-        try {
-          const res = await newRequest.post("/auth/login", {
-            email,
-            password,
-          });
-          localStorage.setItem("currentUser", JSON.stringify(res.data));
-          navigate("/dashboard");
-        } catch (error) {
-          setError(error.response.data.msg);
-        }
-        setLoading(false);
-      }, 2000);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await login(email, password);
+      navigate("/dashboard");
+    } catch (error) {
+      console.error(error);
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    delayedLogin();
+  const handleInputChange = (e) => {
+    if (authError) clearAuthError();
+    // Update the state based on input name
+
+    if (e.target.name === "email") {
+      setEmail(e.target.value);
+    }
+
+    if (e.target.name === "password") {
+      setPassword(e.target.value);
+    }
   };
 
   return (
     <form className="login-form" onSubmit={handleSubmit}>
-      {/* include red-icon.svg in error message below*/}
-      {error && (
+      {authError && (
         <p className="error-login-text">
           <img src="/red-icon.svg" alt="" />
-          {error}
+          {authError}
         </p>
       )}
       <label>Email</label>
       <input
-        className={emailError ? "error" : ""}
+        className={authError ? "error" : ""}
         name="email"
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={(e) => handleInputChange(e)}
         placeholder="Your email"
         type="text"
+        disabled={isLoading}
       />
-      {emailError && <p className="error-text">Email is required.</p>}
+
       <label>Password</label>
       <input
-        className={passwordError ? "error" : ""}
+        className={authError ? "error" : ""}
         name="password"
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={(e) => handleInputChange(e)}
         placeholder="Your password"
         type="password"
+        disabled={isLoading}
       />
-      {passwordError && <p className="error-text">Password is required.</p>}
-      {loading ? (
+
+      {isLoading ? (
         <ThreeDots
           height="20"
           width="30"

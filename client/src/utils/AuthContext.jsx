@@ -6,8 +6,15 @@ const AuthContext = createContext(null);
 
 export const useAuth = () => useContext(AuthContext);
 
+// TODO add register
 export const AuthProvider = ({ children }) => {
   const [authError, setAuthError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const clearAuthError = useCallback(() => {
+    setAuthError(null);
+  }, []);
+
   const [currentUser, setCurrentUser] = useState(() => {
     try {
       const user = localStorage.getItem("currentUser");
@@ -17,16 +24,47 @@ export const AuthProvider = ({ children }) => {
     }
   });
 
-  const login = useCallback(async (email, password) => {
-    try {
-      const res = await newRequest.post("/auth/login", { email, password });
-      localStorage.setItem("currentUser", JSON.stringify(res.data));
-      setCurrentUser(res.data);
-    } catch (error) {
-      setAuthError(error.response.data.msg || "Login failed");
-      throw error;
-    }
-  }, []);
+  const login = useCallback(
+    async (email, password) => {
+      clearAuthError();
+      setIsLoading(true);
+      try {
+        const res = await newRequest.post("/auth/login", { email, password });
+        localStorage.setItem("currentUser", JSON.stringify(res.data));
+        setCurrentUser(res.data);
+        setAuthError(null);
+        setIsLoading(false);
+      } catch (error) {
+        setAuthError(error.response.data.msg || "Login failed");
+        setIsLoading(false);
+        throw error;
+      }
+    },
+    [clearAuthError]
+  );
+
+  const register = useCallback(
+    async (name, email, password) => {
+      clearAuthError();
+      setIsLoading(true);
+      try {
+        const res = await newRequest.post("/auth/register", {
+          name,
+          email,
+          password,
+        });
+        localStorage.setItem("currentUser", JSON.stringify(res.data));
+        setCurrentUser(res.data);
+        setAuthError(null);
+        setIsLoading(false);
+      } catch (error) {
+        setAuthError(error.response.data.msg || "Register failed");
+        setIsLoading(false);
+        throw error;
+      }
+    },
+    [clearAuthError]
+  );
 
   const logout = useCallback(async () => {
     try {
@@ -54,7 +92,16 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ currentUser, login, logout, refreshCurrentUser, authError }}
+      value={{
+        currentUser,
+        clearAuthError,
+        login,
+        register,
+        logout,
+        refreshCurrentUser,
+        authError,
+        isLoading,
+      }}
     >
       {children}
     </AuthContext.Provider>

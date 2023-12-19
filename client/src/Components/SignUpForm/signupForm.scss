@@ -35,14 +35,24 @@
     background-color: $red-50;
   }
 
-  .error-text {
-    font-size: 1.2rem;
-    font-weight: 500;
+  .error-login-text {
+    font-size: 1.3rem;
+    font-weight: 400;
     color: $red-600;
-    margin-top: -5px;
+    background-color: $red-200;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
     margin-bottom: 10px;
-  }
+    display: flex;
+    align-items: center;
+    max-width: 35rem;
 
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 5px;
+    }
+  }
   #terms {
     font-size: 1.2rem;
     .agreements {

@@ -16,7 +16,6 @@ import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
 
-// TODO Fix latest date bug.
 const getCurrentLocalDate = () => {
   const now = new Date();
   const year = now.getFullYear();
@@ -77,7 +76,7 @@ const DashboardContainer = () => {
       // const dateToUse = selectedDate || latestDate;
       const dateToUse = date;
       if (!dateToUse) return null;
-      
+
       const response = await newRequest.get(
         `/sales/${propertyId}/${dateToUse}`
       );

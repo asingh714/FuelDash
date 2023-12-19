@@ -311,7 +311,7 @@ const SalesReportModal = ({
                       }}
                     />
 
-                    {/* TODO */}
+                    {/* TODO fix this gasoline bug */}
                     {errors.gasolineSales && (
                       <p className="error-text">{errors.gasolineSales}</p>
                     )}

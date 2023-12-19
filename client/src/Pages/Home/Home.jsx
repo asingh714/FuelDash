@@ -285,10 +285,10 @@ const Home = () => {
             inventory, and data analytics all in one place.
           </p>
           <div className="cta-buttons">
-            <Link href="/signup" className="btn btn-primary">
+            <Link to="/signup" className="btn btn-primary">
               Get Started
             </Link>
-            <Link href="/about" className="btn btn-secondary">
+            <Link to="/about" className="btn btn-secondary">
               Learn more →
             </Link>
           </div>
