@@ -8,6 +8,7 @@ import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 import Modal from "../../Components/Modal/Modal";
 import Notification from "../../Components/Notification/Notification";
 import "./Profile.scss";
+import OvalLoader from "../../Components/OvalLoader/OvalLoader";
 
 const Profile = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -146,7 +147,7 @@ const Profile = () => {
     }
   };
 
-  if (loading) return <p>LOADING...</p>;
+  if (loading) return <OvalLoader />;
   if (error) return <p>Error: {error.message}</p>;
 
   return (

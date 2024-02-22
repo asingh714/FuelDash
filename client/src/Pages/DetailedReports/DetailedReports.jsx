@@ -11,6 +11,7 @@ import DataTable from "../../Components/DataTable/DataTable";
 import DashboardMenu from "../../Components/DashboardMenu/DashboardMenu";
 
 import "./DetailedReports.scss";
+import OvalLoader from "../../Components/OvalLoader/OvalLoader";
 
 const dataInfo = {
   revenue: {
@@ -110,7 +111,7 @@ const DetailedReports = () => {
   );
 
   if (query1.isLoading || query2.isLoading) {
-    return <div>Loading...</div>;
+    return <OvalLoader />;
   }
 
   if (query1.error) {

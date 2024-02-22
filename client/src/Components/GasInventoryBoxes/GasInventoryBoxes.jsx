@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import "./GasInventoryBoxes.scss";
 import newRequest from "../../utils/newRequest";
 import { formatNumberToTwoDecimalPlaces } from "../../utils/formatCurrency";
+import OvalLoader from "../OvalLoader/OvalLoader";
 
 const colors = {
   Midgrade: "#84cc16",
@@ -33,7 +34,7 @@ const GasInventoryBoxes = ({ propertyId }) => {
   );
 
   if (isLoading) {
-    return <div className="loading-message">Loading...</div>;
+    return <OvalLoader />;
   }
 
   if (error) {

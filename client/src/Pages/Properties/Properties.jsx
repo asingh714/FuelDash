@@ -6,6 +6,7 @@ import DataTable from "../../Components/DataTable/DataTable";
 import Modal from "../../Components/Modal/Modal";
 import newRequest from "../../utils/newRequest";
 import "./Properties.scss";
+import OvalLoader from "../../Components/OvalLoader/OvalLoader";
 
 const Properties = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -108,7 +109,7 @@ const Properties = () => {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <OvalLoader />;
   }
 
   if (error) {

@@ -13,6 +13,7 @@ import {
 import formatDate from "../../utils/formatDate";
 
 import "./SalesReports.scss";
+import OvalLoader from "../../Components/OvalLoader/OvalLoader";
 
 const SalesReports = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -190,7 +191,7 @@ const SalesReports = () => {
   ];
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <OvalLoader />;
   }
 
   if (error) {

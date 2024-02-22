@@ -6,7 +6,6 @@ const AuthContext = createContext(null);
 
 export const useAuth = () => useContext(AuthContext);
 
-// TODO add register
 export const AuthProvider = ({ children }) => {
   const [authError, setAuthError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);

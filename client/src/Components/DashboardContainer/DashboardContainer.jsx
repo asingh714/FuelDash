@@ -15,6 +15,7 @@ import InventoryContainer from "../InventoryContainer/InventoryContainer";
 import DateSelector from "../DatePicker/DatePicker";
 
 import "./DashboardContainer.scss";
+import OvalLoader from "../OvalLoader/OvalLoader";
 
 const getCurrentLocalDate = () => {
   const now = new Date();
@@ -91,7 +92,7 @@ const DashboardContainer = () => {
 
   const hasData = data && Object.keys(data).length > 0;
   if (isLoading) {
-    return <div className="loading-message">Loading...</div>;
+    return <OvalLoader />;
   }
 
   if (isError) {

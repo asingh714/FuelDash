@@ -7,6 +7,7 @@ import defaultImages from "../../utils/imageData";
 import { formatNumberToWholeNumbers } from "../../utils/formatCurrency";
 
 import "../GasInventoryBoxes/GasInventoryBoxes.scss";
+import OvalLoader from "../OvalLoader/OvalLoader";
 
 const InventoryContainer = ({ propertyId }) => {
   const [errorMsg, setErrorMsg] = useState(null);
@@ -28,7 +29,7 @@ const InventoryContainer = ({ propertyId }) => {
   );
 
   if (isLoading) {
-    return <div className="loading-message">Loading...</div>;
+    return <OvalLoader />;
   }
 
   if (error) {

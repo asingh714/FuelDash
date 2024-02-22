@@ -8,6 +8,7 @@ import newRequest from "../../utils/newRequest";
 import Dropdown from "../Dropdown/Dropdown";
 import Notification from "../Notification/Notification";
 import "./PropertyDropdown.scss";
+import OvalLoader from "../OvalLoader/OvalLoader";
 
 const PropertyDropdown = ({
   onPropertiesFetched = () => {},
@@ -68,7 +69,7 @@ const PropertyDropdown = ({
     onPropertyChange(e.target.value);
   };
 
-  if (isLoading) return "Loading...";
+  if (isLoading) return <OvalLoader />;
   if (error) return "Error loading properties";
 
   return (

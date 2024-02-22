@@ -257,8 +257,8 @@ const Products = () => {
           defaultSelected={selectedProperty}
         />
 
-        {isGasDataLoading && isNonGasDataLoading && <OvalLoader />}
-
+        {/* {isGasDataLoading && isNonGasDataLoading && <OvalLoader />} */}
+        {/* TODO FIX Component for empty */}
         {gasDataError && nonGasDataError && <div>Error loading products</div>}
         {gasData && (
           <div className="products-table-container">
@@ -275,7 +275,8 @@ const Products = () => {
                   Add Gas Product
                 </div>
               </div>
-              {gasData && gasData.gasolineProducts.length ? (
+              {Array.isArray(gasData.gasolineProducts) &&
+              gasData.gasolineProducts.length > 0 ? (
                 <DataTable
                   tableData={gasData.gasolineProducts}
                   columns={columns.gasProducts}
@@ -299,9 +300,10 @@ const Products = () => {
                   Add Non Gas Product
                 </div>
               </div>
-              {nonGasData && nonGasData.nonGasolineProducts.length ? (
+              {Array.isArray(nonGasData.nonGasolineProducts) &&
+              nonGasData.nonGasolineProducts.length > 0 ? (
                 <DataTable
-                  tableData={nonGasData.nonGasolineProducts}
+                  tableData={nonGasData?.nonGasolineProducts}
                   columns={columns.nonGasProducts}
                   mainTable={true}
 
