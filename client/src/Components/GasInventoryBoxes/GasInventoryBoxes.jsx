@@ -25,7 +25,6 @@ const GasInventoryBoxes = ({ propertyId }) => {
       const response = await newRequest.get(
         `/gasoline/${propertyId}/inventory`
       );
-      // console.log(response);
       if (!response.data || error) {
         setErrorMsg("No data returned");
       }

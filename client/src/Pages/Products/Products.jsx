@@ -275,14 +275,12 @@ const Products = () => {
                   Add Gas Product
                 </div>
               </div>
-              {Array.isArray(gasData.gasolineProducts) &&
-              gasData.gasolineProducts.length > 0 ? (
+              {Array.isArray(gasData?.gasolineProducts) &&
+              gasData?.gasolineProducts.length > 0 ? (
                 <DataTable
-                  tableData={gasData.gasolineProducts}
+                  tableData={gasData?.gasolineProducts}
                   columns={columns.gasProducts}
                   mainTable={true}
-
-                  // className="properties-table"
                 />
               ) : null}
             </div>
@@ -300,8 +298,8 @@ const Products = () => {
                   Add Non Gas Product
                 </div>
               </div>
-              {Array.isArray(nonGasData.nonGasolineProducts) &&
-              nonGasData.nonGasolineProducts.length > 0 ? (
+              {Array.isArray(nonGasData?.nonGasolineProducts) &&
+              nonGasData?.nonGasolineProducts.length > 0 ? (
                 <DataTable
                   tableData={nonGasData?.nonGasolineProducts}
                   columns={columns.nonGasProducts}

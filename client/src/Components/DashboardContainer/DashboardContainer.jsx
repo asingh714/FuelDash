@@ -74,9 +74,6 @@ const DashboardContainer = () => {
       const response = await newRequest.get(`/sales/${propertyId}/${date}`);
       console.log("response.data", response);
 
-      // if (!response.data || error) {
-      //   setErrorMsg("No data returned");
-      // }
       return response.data;
     },
     { enabled: !!date }
@@ -91,6 +88,7 @@ const DashboardContainer = () => {
   }, [error]);
 
   const hasData = data && Object.keys(data).length > 0;
+
   if (isLoading) {
     return <OvalLoader />;
   }
@@ -113,12 +111,7 @@ const DashboardContainer = () => {
       )}
       <div className="dashboard-whole-container">
         <div className="dashboard-menu-container">
-          <DateSelector
-            // currentDate={selectedDate}
-            // onDateChange={setSelectedDate}
-            currentDate={date}
-            onDateChange={setDate}
-          />
+          <DateSelector currentDate={date} onDateChange={setDate} />
 
           <PropertyDropdown
             onPropertiesFetched={(properties) => {

@@ -26,7 +26,6 @@ const LoginForm = () => {
 
   const handleInputChange = (e) => {
     if (authError) clearAuthError();
-    // Update the state based on input name
 
     if (e.target.name === "email") {
       setEmail(e.target.value);
