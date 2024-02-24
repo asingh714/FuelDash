@@ -1,7 +1,7 @@
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import PropTypes from "prop-types";
 
-import "./pieChartBox.scss";
+import "./PieChartBox.scss";
 
 const colors = {
   Midgrade: "#84cc16",
