@@ -3,6 +3,13 @@
 ## Introduction
 FuelDash is an innovative platform designed specifically for independent gas station owners. It provides a comprehensive dashboard that transforms complex data into actionable insights, enabling business owners to make informed decisions that enhance profitability and stimulate growth. With its user-friendly interface, FuelDash empowers small businesses by offering tools for revenue tracking, gallons sold, product management, and financial metrics analysis.
 
+## Live Demo Account
+To truly experience the full potential of FuelDash and explore its rich features firsthand, we have set up a demo account pre-loaded with comprehensive data. This account gives you immediate access to an extensive range of analytics, inventory management examples, sales reports, and much more, demonstrating the powerful insights and optimizations FuelDash offers to gas station owners.
+
+### Demo Account Details:
+- **Username**: bobby@email.com
+- **Password**: password1
+
 
 ## Contact
 

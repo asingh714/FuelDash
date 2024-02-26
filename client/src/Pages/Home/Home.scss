@@ -455,9 +455,13 @@
     .stats-container {
       display: flex;
       justify-content: space-between;
-      // gap: 17.5rem;
       align-items: center;
       margin-top: 5rem;
+      @include md {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
     }
 
     .stat {
@@ -466,6 +470,7 @@
 
       @include md {
         padding: 0 2rem;
+        border: none;
       }
 
       h3 {

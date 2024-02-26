@@ -10,7 +10,6 @@ const NavBar = () => {
     const currentUser = localStorage.getItem("currentUser");
     if (currentUser) {
       setIsUserLoggedIn(true);
-      console.log("currentUser", currentUser);
     }
   }, []);
 
