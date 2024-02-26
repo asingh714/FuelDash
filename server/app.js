@@ -29,6 +29,7 @@ app.use(
       "https://www.fueldash.co/",
       "https://fueldash.co",
       "https://fueldash.co/",
+      "https://fueldash.co/dashboard",
     ];
     const origin = req.header("Origin");
     let corsOptions;
@@ -40,6 +41,7 @@ app.use(
     callback(null, corsOptions);
   })
 );
+
 app.use(morgan("tiny"));
 app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
