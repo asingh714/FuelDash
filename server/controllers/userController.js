@@ -4,7 +4,7 @@ const User = require("../models/User");
 
 const getUserProfile = async (req, res) => {
   const userId = req.user.userId;
-
+  console.log("getUserProfile -> userId", userId);
   try {
     const user = await User.findOne({ _id: userId });
 

@@ -22,15 +22,7 @@ const app = express();
 // CORS configuration to enable cross-origin requests from specified origins
 app.use(
   cors((req, callback) => {
-    const allowedOrigins = [
-      "https://fueldash-client.onrender.com",
-      "https://fueldash-client.onrender.com/",
-      "https://www.fueldash.co",
-      "https://www.fueldash.co/",
-      "https://fueldash.co",
-      "https://fueldash.co/",
-      "https://fueldash.co/dashboard",
-    ];
+    const allowedOrigins = ["https://www.fueldash.co", "https://fueldash.co"];
     const origin = req.header("Origin");
     let corsOptions;
     if (allowedOrigins.includes(origin)) {
