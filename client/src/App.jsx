@@ -6,12 +6,12 @@ import Home from "./Pages/Home/Home.jsx";
 import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
-import TermsOfUse from "./Pages/TermsOfUse/TermsOfUse.jsx";
 import DetailedReports from "./Pages/DetailedReports/DetailedReports.jsx";
 import Profile from "./Pages/Profile/Profile.jsx";
 import Properties from "./Pages/Properties/Properties.jsx";
 import Welcome from "./Pages/Welcome/Welcome.jsx";
 import Products from "./Pages/Products/Products.jsx";
+import TermsOfUse from "./Pages/TermsOfUse/TermsOfUse.jsx";
 import NotFound from "./Pages/NotFound/NotFound.jsx";
 import SalesReports from "./Pages/SalesReports/SalesReports.jsx";
 

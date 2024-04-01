@@ -78,7 +78,7 @@ const SignupForm = () => {
 
       <span id="terms">
         By clicking the button below, I agree to FuelDash&apos;s{" "}
-        <Link className="agreements" to="/terms-of-use" target="_blank">
+        <Link className="agreements" to="/terms-of-use">
           Terms of Service
         </Link>{" "}
         and Privacy Policy, and acknowledge receipt of the Equal Credit
