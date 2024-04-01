@@ -96,7 +96,6 @@ function App() {
         { path: "/contact", element: <Contact /> },
         { path: "/customers", element: <Customers /> },
         { path: "/faqs", element: <FAQs /> },
-
         {
           path: "*",
           element: <NotFound />,

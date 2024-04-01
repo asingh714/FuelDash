@@ -6,7 +6,7 @@ const TermsOfUse = () => {
   return (
     <div className="terms-of-use-page">
       <header>
-        <span>Updated September 13, 2023</span>
+        <span>Updated March 13, 2024</span>
         <h1>Terms of Use</h1>
       </header>
       <div className="terms-of-use-content">
