@@ -1,5 +1,7 @@
 # FuelDash
 
+[![Home Page](client/public/dashboard.png)](https://www.fueldash.co/)
+
 ## Introduction
 FuelDash is an innovative platform designed specifically for independent gas station owners. It provides a comprehensive dashboard that transforms complex data into actionable insights, enabling business owners to make informed decisions that enhance profitability and stimulate growth. With its user-friendly interface, FuelDash empowers small businesses by offering tools for revenue tracking, gallons sold, product management, and financial metrics analysis.
 
