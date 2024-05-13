@@ -199,7 +199,7 @@ const Profile = () => {
 
         <hr />
         <div className="button-container">
-          <div
+          {/* <div
             onClick={() => {
               setModalType("deleteUser");
               setModalOpen(true);
@@ -207,7 +207,7 @@ const Profile = () => {
             className="button delete-button"
           >
             Delete Account
-          </div>
+          </div> */}
           <div
             onClick={() => {
               setModalType("changePassword");
